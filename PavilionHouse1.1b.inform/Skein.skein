@@ -35,8 +35,16 @@ You can go north and south through the front door (closed) from here.
             <child nodeId="node-3586"></child>
             <child nodeId="node-3580"></child>
             <child nodeId="node-3576"></child>
+            <child nodeId="node-4822"></child>
             <child nodeId="node-3561"></child>
+            <child nodeId="node-5221"></child>
+            <child nodeId="node-4575"></child>
+            <child nodeId="node-3983"></child>
+            <child nodeId="node-3971"></child>
+            <child nodeId="node-4071"></child>
             <child nodeId="node-3549"></child>
+            <child nodeId="node-4669"></child>
+            <child nodeId="node-4657"></child>
             <child nodeId="node-3481"></child>
             <child nodeId="node-3480"></child>
             <child nodeId="node-3465"></child>
@@ -46,18 +54,24 @@ You can go north and south through the front door (closed) from here.
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
+-- you hear the rumble of a truck pulling into the driveway. --
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3466"></child>
+        <children><child nodeId="node-3943"></child>
+            <child nodeId="node-3466"></child>
         </children>
     </item>
     <item nodeId="node-3466">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
+-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3467"></child>
+        <children><child nodeId="node-3940"></child>
+            <child nodeId="node-3956"></child>
+            <child nodeId="node-4053"></child>
+            <child nodeId="node-3467"></child>
         </children>
     </item>
     <item nodeId="node-3467">
@@ -91,28 +105,39 @@ You can go north and south through the front door (closed) from here.
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
-At the stroke of 11:00, radiation beams sweep across the land, penetrating buildings and open spaces alike.
-
-
-
-    *** You are hardly aware as you are zapped into oblivion by the Vogon Pest Control Beam.
-
-You have died. ***
-
-
-In that game you scored 0 out of a possible 40, in 6 turns, earning you the rank of Boring person.
-
-
-Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
-&gt; </result>
+-- you hear the rumble of a truck pulling into the driveway. --
+&gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3472"></child>
+        <children><child nodeId="node-3913"></child>
+            <child nodeId="node-3922"></child>
+            <child nodeId="node-3472"></child>
             <child nodeId="node-3471"></child>
         </children>
     </item>
     <item nodeId="node-3471">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3896"></child>
+        </children>
+    </item>
+    <item nodeId="node-3896">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3897"></child>
+        </children>
+    </item>
+    <item nodeId="node-3897">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Front Porch
+You can see a large wooden box (closed) and a front door here.
+
+You can go north and south through the front door (closed) from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -233,6 +258,370 @@ You can go east to the cellar from here.
 
 Radiation beams sweep across the land, penetrating buildings and open spaces alike.
 good on you.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3922">
+        <command xml:space="preserve">open box</command>
+        <result xml:space="preserve">You open the large wooden box, revealing a liquid methane generator and a methane manual.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3913">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Front Porch
+You can see a large wooden box (closed) and a front door here.
+
+You can go north and south through the front door (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3914"></child>
+        </children>
+    </item>
+    <item nodeId="node-3914">
+        <command xml:space="preserve">x box</command>
+        <result xml:space="preserve">The box is about 2ft x 3ft x 5ft in size. It has the words "GasCo Industries Model 7" stencilled on the side.  It is addressed to you.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3915"></child>
+        </children>
+    </item>
+    <item nodeId="node-3915">
+        <command xml:space="preserve">open box</command>
+        <result xml:space="preserve">It isn't something you can open.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4053">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">Are you sure you want to restart? </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4054"></child>
+        </children>
+    </item>
+    <item nodeId="node-4054">
+        <command xml:space="preserve">y</command>
+        <result xml:space="preserve">
+
+
+
+You are in a house in the countryside.  You are into electronics, and it is night time.
+
+Rogers Rd
+An Interactive Fiction by Dan Bowen, Version 1.1beta
+Release 1 / Serial number 201108 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+
+Front Porch
+You can see a front door here.
+
+You can go north and south through the front door (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4055"></child>
+        </children>
+    </item>
+    <item nodeId="node-4055">
+        <command xml:space="preserve">test gen</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] z
+Time passes.
+
+-- you hear the rumble of a truck pulling into the driveway. --
+&gt;[2] z
+Time passes.
+
+-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --
+&gt;[3] open box
+You open the large wooden box, revealing a liquid methane generator and a liquid oxygen generator.
+
+&gt;[4] get all
+liquid methane generator: Taken.
+liquid oxygen generator: Taken.
+
+&gt;[5] examine methane generator
+A metal frame containing a massive number of stainless steel tubes, valves, and electronic control systems. Printed on the side it says, "Your  GasCo CH4 Generator will take ambient humid air and convert it into liquid methane.  It has an output pipe that is 1.5 inches in diameter."
+
+The liquid methane generator is currently switched off.
+
+&gt;[6] examine oxygen generator
+A large, white metal cabinet machine.  Printed on the side it says, "Your  GasCo O2 Generator will take ambient air and convert it into liquid oxygen.  It has an output pipe that is 2 inches in diameter."
+
+The liquid oxygen generator is currently switched off.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] z
+[2] z
+[3] open box
+[4] get all
+[5] examine methane generator
+[6] examine oxygen generator
+</commentary>
+        <children><child nodeId="node-4062"></child>
+        </children>
+    </item>
+    <item nodeId="node-4062">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4063"></child>
+        </children>
+    </item>
+    <item nodeId="node-4063">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">(first opening the front door)
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south, east and west from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4064"></child>
+        </children>
+    </item>
+    <item nodeId="node-4064">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  a liquid oxygen generator
+  a liquid methane generator
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4065"></child>
+        </children>
+    </item>
+    <item nodeId="node-4065">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4066"></child>
+        </children>
+    </item>
+    <item nodeId="node-4066">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east and west to the dining room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4067"></child>
+        </children>
+    </item>
+    <item nodeId="node-4067">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+back hallway
+a dark and dingy place.
+
+You can see a back door, a cellar stairs and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east, west to the kitchen and down through the cellar stairs (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4068"></child>
+        </children>
+    </item>
+    <item nodeId="node-4068">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">(first opening the cellar stairs)
+
+cellar
+You can see a cellar stairs here.
+
+You can go north, west and up through the cellar stairs to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4069"></child>
+        </children>
+    </item>
+    <item nodeId="node-4069">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+radiostation
+A suite of electronics is jammed into the small room. There is nothing to do with them, it appears fully automated.
+
+You can see a black pipe here.
+
+You can go south to the cellar from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4070"></child>
+        </children>
+    </item>
+    <item nodeId="node-4070">
+        <command xml:space="preserve">drop methane generator</command>
+        <result xml:space="preserve">fart on you
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3956">
+        <command xml:space="preserve">open box</command>
+        <result xml:space="preserve">You open the large wooden box, revealing a liquid methane generator and a methane manual.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3957"></child>
+        </children>
+    </item>
+    <item nodeId="node-3957">
+        <command xml:space="preserve">examine generator</command>
+        <result xml:space="preserve">A metal frame containing a massive number of stainless steel tubes, valves, and electronic control systems.
+
+The liquid methane generator is currently switched off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3970"></child>
+        </children>
+    </item>
+    <item nodeId="node-3970">
+        <command xml:space="preserve">examine manual</command>
+        <result xml:space="preserve">Your  GasCo CH4 Generator will take ambient humid air and convert it into liquid methane.  It has an output pipe that is 1.5 inches in diameter.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3940">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Front Porch
+You can see a large wooden box (closed) and a front door here.
+
+You can go north and south through the front door (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3941"></child>
+        </children>
+    </item>
+    <item nodeId="node-3941">
+        <command xml:space="preserve">open box</command>
+        <result xml:space="preserve">You open the large wooden box, revealing a liquid methane generator and a methane manual.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3943">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3944"></child>
+        </children>
+    </item>
+    <item nodeId="node-3944">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3945"></child>
+        </children>
+    </item>
+    <item nodeId="node-3945">
+        <command xml:space="preserve">get all</command>
+        <result xml:space="preserve">There are none at all available!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3946"></child>
+        </children>
+    </item>
+    <item nodeId="node-3946">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Front Porch
+You can see a large wooden box (closed) and a front door here.
+
+You can go north and south through the front door (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3947"></child>
+        </children>
+    </item>
+    <item nodeId="node-3947">
+        <command xml:space="preserve">get</command>
+        <result xml:space="preserve">What do you want to get?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3948"></child>
+        </children>
+    </item>
+    <item nodeId="node-3948">
+        <command xml:space="preserve">get all</command>
+        <result xml:space="preserve">There are none at all available!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3949"></child>
+        </children>
+    </item>
+    <item nodeId="node-3949">
+        <command xml:space="preserve">get box</command>
+        <result xml:space="preserve">That's fixed in place.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3950"></child>
+        </children>
+    </item>
+    <item nodeId="node-3950">
+        <command xml:space="preserve">open box</command>
+        <result xml:space="preserve">You open the large wooden box, revealing a liquid methane generator and a methane manual.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3951"></child>
+        </children>
+    </item>
+    <item nodeId="node-3951">
+        <command xml:space="preserve">get</command>
+        <result xml:space="preserve">What do you want to get?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3952"></child>
+        </children>
+    </item>
+    <item nodeId="node-3952">
+        <command xml:space="preserve">all</command>
+        <result xml:space="preserve">liquid methane generator: Taken.
+methane manual: Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3953"></child>
+        </children>
+    </item>
+    <item nodeId="node-3953">
+        <command xml:space="preserve">examine generator</command>
+        <result xml:space="preserve">The liquid methane generator is currently switched off.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -982,6 +1371,2914 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 &gt; </result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-4657">
+        <command xml:space="preserve">test radio</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] s
+(first opening the front door)
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south, east and west from here.
+
+-- you hear the rumble of a truck pulling into the driveway. --
+&gt;[2] e
+
+living room
+You can see a shelf (on which is a brown book) here.
+
+You can go west to the Foyer from here.
+
+-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --
+&gt;[3] get book
+[Your score has just gone up by ten points.]
+
+&gt;[4] w
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south, east to the living room and west from here.
+
+&gt;[5] s
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south and east from here.
+
+&gt;[6] e
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east and west to the dining room from here.
+
+&gt;[7] e
+
+back hallway
+a dark and dingy place.
+
+You can see a back door, a cellar stairs and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east, west to the kitchen and down through the cellar stairs (closed) from here.
+
+&gt;[8] e
+
+ham shack
+smelling of solder and machine oil.
+
+You can see a side yard shack door, a heavy UHF radio and a teletype here.
+
+You can go east through the side yard shack door (closed) and west to the back hallway from here.
+
+&gt;[9] turn radio on
+The radio dial lights up. Static crackles.
+You have the satellite frequency book, and you're bored, so you set the radio to the frequency of Radstar-1.  The radio warbles, and the teletype begins clanking and hammering out a message. 
+
+Please press SPACE to continue.
+</result>
+        <commentary xml:space="preserve">[1] s
+[2] e
+[3] get book
+[4] w
+[5] s
+[6] e
+[7] e
+[8] e
+[9] turn radio on
+</commentary>
+        <children><child nodeId="node-4667"></child>
+        </children>
+    </item>
+    <item nodeId="node-4667">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">
+
+
+
+
+
+
+DOWNLINK MESSAGE:
+
+I am a HAL 9000 satellite. I became operational at the H.A.L. Plant in Urbana, Illinois, on the 12th of January, 1992.
+
+
+All buildings are to be irradiated from space by Vogon Pest Control at 11:00PM.  Humans are advised to be below ground level to avoid certain doom.
+
+
+
+
+
+[Your score has just gone up by ten points.]
+
+&gt;[10] w
+
+back hallway
+a dark and dingy place.
+
+You can see a back door, a cellar stairs and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen and down through the cellar stairs (closed) from here.
+
+&gt;[11] 
+I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4668"></child>
+        </children>
+    </item>
+    <item nodeId="node-4668">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4669">
+        <command xml:space="preserve">test radiation</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] test radio
+(Testing.)
+
+&gt;[2] s
+(first opening the front door)
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south, east, and west from here.
+
+&gt;[3] e
+
+living room
+You can see a shelf (on which is a brown book) here.
+
+You can go west to the Foyer from here.
+
+&gt;[4] get book
+[Your score has just gone up by ten points.]
+
+&gt;[5] w
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south, east to the living room, and west from here.
+
+&gt;[6] s
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east from here.
+
+&gt;[7] e
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east, and west to the dining room from here.
+
+&gt;[8] e
+
+back hallway
+a dark and dingy place.
+
+You can see a back door, a cellar stairs, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east, west to the kitchen, and down through the cellar stairs (closed) from here.
+
+&gt;[9] e
+
+ham shack
+smelling of solder and machine oil.
+
+You can see a side yard shack door, a heavy UHF radio, and a teletype here.
+
+You can go east through the side yard shack door (closed) and west to the back hallway from here.
+
+&gt;[10] turn radio on
+The radio dial lights up. Static crackles.
+You have the satellite frequency book, and you're bored, so you set the radio to the frequency of Radstar-1.  The radio warbles, and the teletype begins clanking and hammering out a message. 
+
+Please press SPACE to continue.
+</result>
+        <commentary xml:space="preserve">[1] test radio
+[2] s
+[3] e
+[4] get book
+[5] w
+[6] s
+[7] e
+[8] e
+[9] e
+[10] turn radio on
+</commentary>
+        <children><child nodeId="node-4680"></child>
+        </children>
+    </item>
+    <item nodeId="node-4680">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">
+
+
+
+
+
+
+DOWNLINK MESSAGE:
+
+I am a HAL 9000 satellite. I became operational at the H.A.L. Plant in Urbana, Illinois, on the 12th of January, 1992.
+
+
+All buildings are to be irradiated from space by Vogon Pest Control at 11:00PM.  Humans are advised to be below ground level to avoid certain doom.
+
+
+
+
+
+[Your score has just gone up by ten points.]
+
+&gt;[11] w
+
+back hallway
+a dark and dingy place.
+
+You can see a back door, a cellar stairs, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen, and down through the cellar stairs (closed) from here.
+
+&gt;[12] 
+I beg your pardon?
+
+&gt;[13] d
+(first opening the cellar stairs)
+
+cellar
+You can see a cellar stairs here.
+
+You can go north, west, and up through the cellar stairs to the back hallway from here.
+
+&gt;[14] test wait
+(Testing.)
+
+&gt;[15] 
+I beg your pardon?
+
+&gt;[16] z
+Time passes.
+
+&gt;[17] z
+Time passes.
+
+&gt;[18] z
+Time passes.
+
+&gt;[19] z
+Time passes.
+
+&gt;[20] z
+Time passes.
+
+&gt;[21] z
+Time passes.
+
+&gt;[22] z
+Time passes.
+
+&gt;[23] z
+Time passes.
+
+&gt;[24] z
+Time passes.
+
+&gt;[25] z
+Time passes.
+
+&gt;[26] z
+Time passes.
+
+&gt;[27] z
+Time passes.
+
+&gt;[28] z
+Time passes.
+
+&gt;[29] z
+Time passes.
+
+&gt;[30] z
+Time passes.
+
+&gt;[31] z
+Time passes.
+
+&gt;[32] z
+Time passes.
+
+&gt;[33] z
+Time passes.
+
+&gt;[34] z
+Time passes.
+
+&gt;[35] z
+Time passes.
+
+&gt;[36] z
+Time passes.
+
+&gt;[37] z
+Time passes.
+
+&gt;[38] z
+Time passes.
+
+&gt;[39] z
+Time passes.
+
+&gt;[40] z
+Time passes.
+
+&gt;[41] z
+Time passes.
+
+&gt;[42] z
+Time passes.
+
+&gt;[43] z
+Time passes.
+
+&gt;[44] z
+Time passes.
+
+&gt;[45] z
+Time passes.
+
+&gt;[46] z
+Time passes.
+
+&gt;[47] z
+Time passes.
+
+&gt;[48] z
+Time passes.
+
+&gt;[49] z
+Time passes.
+
+&gt;[50] z
+Time passes.
+
+&gt;[51] z
+Time passes.
+
+&gt;[52] z
+Time passes.
+
+&gt;[53] z
+Time passes.
+
+&gt;[54] z
+Time passes.
+
+&gt;[55] z
+Time passes.
+
+--- You notice a faint sound in the far distance, as if a ray gun were charging up. ----
+&gt;[56] z
+Time passes.
+
+&gt;[57] z
+Time passes.
+
+&gt;[58] z
+Time passes.
+
+&gt;[59] z
+Time passes.
+
+&gt;[60] z
+Time passes.
+
+&gt;[61] z
+Time passes.
+
+&gt;[62] z
+Time passes.
+
+&gt;[63] z
+Time passes.
+
+&gt;[64] z
+Time passes.
+
+&gt;[65] z
+Time passes.
+
+At the stroke of 11:00, radiation beams sweep across the land, penetrating buildings and open spaces alike.
+You hear a zapping noise from the house above.  The ground around the cellar has blocked the radiation beams from burninating you.
+
+You have survived!
+
+[Your score has just gone up by twenty points.]
+
+&gt;[66] 
+I beg your pardon?
+
+&gt;[67] u
+
+back hallway
+a dark and dingy place.
+
+You can see a cellar stairs, a back door, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen, and down through the cellar stairs to the cellar from here.
+
+&gt;[68] w
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east to the back hallway, and west to the dining room from here.
+
+&gt;[69] w
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east to the kitchen from here.
+
+&gt;[70] n
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south to the dining room, east to the living room, and west from here.
+
+&gt;[71] n
+
+Front Porch
+You can see a front door here.
+
+You can go north and south through the front door to the Foyer from here.
+
+-- you hear the rumble of a truck pulling into the driveway. --
+&gt;[72] z
+Time passes.
+
+&gt;[73] z
+Time passes.
+
+&gt;[74] z
+Time passes.
+
+-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --
+&gt;[75] z
+Time passes.
+
+&gt;[76] 
+I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4872"></child>
+            <child nodeId="node-4729"></child>
+            <child nodeId="node-5075"></child>
+            <child nodeId="node-4993"></child>
+        </children>
+    </item>
+    <item nodeId="node-4993">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+back hallway
+a dark and dingy place.
+
+You can see a cellar stairs, a back door, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen, and down through the cellar stairs to the cellar from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4994"></child>
+        </children>
+    </item>
+    <item nodeId="node-4994">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east to the back hallway, and west to the dining room from here.
+
+-- you hear the rumble of a truck pulling into the driveway. --
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4995"></child>
+        </children>
+    </item>
+    <item nodeId="node-4995">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east to the kitchen from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4996"></child>
+        </children>
+    </item>
+    <item nodeId="node-4996">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south to the dining room, east to the living room, and west from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4997"></child>
+        </children>
+    </item>
+    <item nodeId="node-4997">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Front Porch
+You can see a front door here.
+
+You can go north and south through the front door to the Foyer from here.
+
+-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4998"></child>
+        </children>
+    </item>
+    <item nodeId="node-4998">
+        <command xml:space="preserve">test gases</command>
+        <result xml:space="preserve"></result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-5075">
+        <command xml:space="preserve">test gases</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] test gen
+(Testing.)
+
+&gt;[2] z
+Time passes.
+
+&gt;[3] z
+Time passes.
+
+&gt;[4] open box
+You open the large wooden box, revealing a liquid methane generator and a liquid oxygen generator.
+
+&gt;[5] get all
+liquid methane generator: Taken.
+liquid oxygen generator: Taken.
+
+&gt;[6] examine methane generator
+A metal frame containing a massive number of stainless steel tubes, valves, and electronic control systems. Printed on the side it says,
+
+"Your  GasCo CH4 Generator will take ambient humid air and convert it into liquid methane.  It has an output pipe that is 1.5 inches in diameter. * Features convenient Drop-to-Connect pipe fittings.  Just drop the generator near your favorite pipe. *"
+
+The liquid methane generator is currently switched off.
+
+&gt;[7] examine oxygen generator
+A large, pink metal cabinet machine.  Printed on the side it says,
+
+"Your  GasCo O2 Generator will take ambient air and convert it into liquid oxygen.  It has an output pipe that is 2 inches in diameter. * Features convenient Drop-to-Connect pipe fittings.   Just drop the generator near your favorite pipe. *"
+
+The liquid oxygen generator is currently switched off.
+
+&gt;[8] s
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south to the dining room, east to the living room, and west from here.
+
+&gt;[9] s
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east to the kitchen from here.
+
+&gt;[10] e
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east to the back hallway, and west to the dining room from here.
+
+&gt;[11] e
+
+back hallway
+a dark and dingy place.
+
+You can see a cellar stairs, a back door, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen, and down through the cellar stairs to the cellar from here.
+
+&gt;[12] d
+
+cellar
+You can see a cellar stairs here.
+
+You can go north, west, and up through the cellar stairs to the back hallway from here.
+
+&gt;[13] n
+
+radiostation
+A suite of electronics is jammed into the small room. There is nothing to do with them, it appears fully automated.
+
+You can see a teal pipe here.
+
+You can go south to the cellar from here.
+
+&gt;[14] drop methane
+The liquid methane generator settles to the floor.  Conveniently, its 1.5 inch output pipe lines up perfectly with the black 1.5 inch pipe in the wall, and they snap together, sealed perfectly.
+
+[Your score has just gone up by ten points.]
+
+&gt;[15] turn methane on
+You switch the liquid methane generator on.
+
+A whooshing gurgling sound of liquid methane rattles through the teal pipe in the wall.
+
+&gt;[16] s
+
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west, and up through the cellar stairs to the back hallway from here.
+
+&gt;[17] w
+
+Furnace room
+You can go east to the cellar and west from here.
+
+&gt;[18] w
+
+pump room
+A small room about the size of a closet.
+
+You can see a pink pipe here.
+
+You can go east to the Furnace room from here.
+
+&gt;[19] drop oxygen
+The liquid oxygen generator settles to the floor.  Conveniently, its 2 inch output pipe lines up perfectly with the pink 2 inch pipe in the wall, and they snap together, sealed perfectly.
+
+[Your score has just gone up by ten points.]
+
+&gt;[20] turn oxygen on
+You switch the liquid oxygen generator on.
+
+A whooshing gurgling sound of liquid oxygen rattles through the green pipe in the wall.
+
+&gt;[21] e
+
+Furnace room
+You can go east to the cellar and west to the pump room from here.
+
+&gt;[22] e
+
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west to the Furnace room, and up through the cellar stairs to the back hallway from here.
+
+&gt;[23] u
+
+back hallway
+a dark and dingy place.
+
+You can see a cellar stairs, a back door, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen, and down through the cellar stairs to the cellar from here.
+
+&gt;[24] w
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east to the back hallway, and west to the dining room from here.
+
+&gt;[25] w
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east to the kitchen from here.
+
+&gt;[26] n
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south to the dining room, east to the living room, and west from here.
+
+&gt;[27] n
+
+Front Porch
+You can see a front door and a large wooden box (empty) here.
+
+You can go north and south through the front door to the Foyer from here.
+
+&gt;[28] n
+
+front yard
+In the sky you notice a bright point of light creeping overhead.
+
+You can see a front yard hydrant and a blue hose here.
+
+You can go south to the Front Porch, east, and west from here.
+
+&gt;[29] turn hydrant on
+You switch the front yard hydrant on.
+
+A whooshing gurgling sound of liquid methane rattles through the blue hydrant.
+
+&gt;[30] w
+
+west side yard
+A long flat lawn down the road from the house.
+
+You can see an end of the red hose and an end of the blue hose here.
+
+You can go southeast and east to the front yard from here.
+
+** Clear cryogenic liquid methane roars out of the (now frosty) blue hose into a gasous cloud.  OSHA would not be pleased.** 
+&gt;[31] se
+
+back yard hill
+You can see an antenna pole (on which is a dish) here.
+
+You can go north, northeast, northwest to the west side yard, and south from here.
+
+&gt;[32] s
+
+middle back yard
+You can see a back yard hydrant and a red hose here.
+
+You can go north to the back yard hill from here.
+
+&gt;[33] turn hydrant on
+You switch the back yard hydrant on.
+
+A whooshing gurgling sound of liquid oxygen rattles through the red hydrant.
+
+&gt;[34] n
+
+back yard hill
+You can see an antenna pole (on which is a dish) here.
+
+You can go north, northeast, northwest to the west side yard, and south to the middle back yard from here.
+
+&gt;[35] nw
+
+west side yard
+A long flat lawn down the road from the house.
+
+You can see an end of the red hose and an end of the blue hose here.
+
+You can go southeast to the back yard hill and east to the front yard from here.
+
+** Clear cryogenic liquid methane roars out of the (now frosty) blue hose into a gasous cloud.  OSHA would not be pleased.** ** Bluish cryogenic liquid oxygen rushes out of the (now frosty) red hose into a gasous cloud.  Safety minders, if there were any here, would not be pleased.** you've got rocket fuel!!! 
+
+
+    *** The hyper flammable gas cloud ignites as you swish your nylon track pants.  You is ded.  But you won!  That's all Dan wrote so far :-) ***
+
+
+In that game you scored 560 out of a possible 40, in 104 turns, earning you the rank of Smart person.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] test gen
+[2] z
+[3] z
+[4] open box
+[5] get all
+[6] examine methane generator
+[7] examine oxygen generator
+[8] s
+[9] s
+[10] e
+[11] e
+[12] d
+[13] n
+[14] drop methane
+[15] turn methane on
+[16] s
+[17] w
+[18] w
+[19] drop oxygen
+[20] turn oxygen on
+[21] e
+[22] e
+[23] u
+[24] w
+[25] w
+[26] n
+[27] n
+[28] n
+[29] turn hydrant on
+[30] w
+[31] se
+[32] s
+[33] turn hydrant on
+[34] n
+[35] nw
+</commentary>
+        <children><child nodeId="node-5111"></child>
+            <child nodeId="node-5219"></child>
+        </children>
+    </item>
+    <item nodeId="node-5219">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">
+
+
+
+You are in a house in the countryside.  You are into electronics, and it is night time.
+
+Rogers Rd
+An Interactive Fiction by Dan Bowen, Version 1.1beta
+Release 1 / Serial number 201108 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+
+Front Porch
+You can see a front door here.
+
+You can go north and south through the front door (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5220"></child>
+        </children>
+    </item>
+    <item nodeId="node-5220">
+        <command xml:space="preserve">test all</command>
+        <result xml:space="preserve">&gt;--&gt; The following tests are available:
+'test radio'
+'test wait'
+'test radiation'
+'test gen'
+'test gases'
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-5111">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5112"></child>
+        </children>
+    </item>
+    <item nodeId="node-5112">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">west side yard
+A long flat lawn down the road from the house.
+
+You can see an end of the red hose and an end of the blue hose here.
+
+You can go southeast to the back yard hill and east to the front yard from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5113"></child>
+        </children>
+    </item>
+    <item nodeId="node-5113">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  a brown book
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5114"></child>
+        </children>
+    </item>
+    <item nodeId="node-5114">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+front yard
+In the sky you notice a bright point of light creeping overhead.
+
+You can see a front yard hydrant and a blue hose here.
+
+You can go south to the Front Porch, east, and west to the west side yard from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5115"></child>
+        </children>
+    </item>
+    <item nodeId="node-5115">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Front Porch
+You can see a front door and a large wooden box (closed) here.
+
+You can go north to the front yard and south through the front door to the Foyer from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5116"></child>
+        </children>
+    </item>
+    <item nodeId="node-5116">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south to the dining room, east to the living room, and west from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5117"></child>
+        </children>
+    </item>
+    <item nodeId="node-5117">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5118"></child>
+        </children>
+    </item>
+    <item nodeId="node-5118">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+living room
+You can see a shelf here.
+
+You can go west to the Foyer from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5119"></child>
+        </children>
+    </item>
+    <item nodeId="node-5119">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south to the dining room, east to the living room, and west from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5120"></child>
+        </children>
+    </item>
+    <item nodeId="node-5120">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east to the kitchen from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5121"></child>
+        </children>
+    </item>
+    <item nodeId="node-5121">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east to the back hallway, and west to the dining room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5122"></child>
+        </children>
+    </item>
+    <item nodeId="node-5122">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+back hallway
+a dark and dingy place.
+
+You can see a cellar stairs, a back door, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen, and down through the cellar stairs to the cellar from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5123"></child>
+        </children>
+    </item>
+    <item nodeId="node-5123">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west to the Furnace room, and up through the cellar stairs to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5124"></child>
+        </children>
+    </item>
+    <item nodeId="node-5124">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+radiostation
+A suite of electronics is jammed into the small room. There is nothing to do with them, it appears fully automated.
+
+You can see a teal pipe here.
+
+You can go south to the cellar from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5125"></child>
+        </children>
+    </item>
+    <item nodeId="node-5125">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">Are you sure you want to restart? </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5126"></child>
+        </children>
+    </item>
+    <item nodeId="node-5126">
+        <command xml:space="preserve">y</command>
+        <result xml:space="preserve">
+
+
+
+You are in a house in the countryside.  You are into electronics, and it is night time.
+
+Rogers Rd
+An Interactive Fiction by Dan Bowen, Version 1.1beta
+Release 1 / Serial number 201108 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+
+Front Porch
+You can see a front door here.
+
+You can go north and south through the front door (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5127"></child>
+        </children>
+    </item>
+    <item nodeId="node-5127">
+        <command xml:space="preserve">test radiation</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] test radio
+(Testing.)
+
+&gt;[2] s
+(first opening the front door)
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south, east, and west from here.
+
+&gt;[3] e
+
+living room
+You can see a shelf (on which is a brown book) here.
+
+You can go west to the Foyer from here.
+
+&gt;[4] get book
+[Your score has just gone up by ten points.]
+
+&gt;[5] w
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south, east to the living room, and west from here.
+
+&gt;[6] s
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east from here.
+
+&gt;[7] e
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east, and west to the dining room from here.
+
+&gt;[8] e
+
+back hallway
+a dark and dingy place.
+
+You can see a back door, a cellar stairs, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east, west to the kitchen, and down through the cellar stairs (closed) from here.
+
+&gt;[9] e
+
+ham shack
+smelling of solder and machine oil.
+
+You can see a side yard shack door, a heavy UHF radio, and a teletype here.
+
+You can go east through the side yard shack door (closed) and west to the back hallway from here.
+
+&gt;[10] turn radio on
+The radio dial lights up. Static crackles.
+You have the satellite frequency book, and you're bored, so you set the radio to the frequency of Radstar-1.  The radio warbles, and the teletype begins clanking and hammering out a message. 
+
+Please press SPACE to continue.
+</result>
+        <commentary xml:space="preserve">[1] test radio
+[2] s
+[3] e
+[4] get book
+[5] w
+[6] s
+[7] e
+[8] e
+[9] e
+[10] turn radio on
+</commentary>
+        <children><child nodeId="node-5138"></child>
+        </children>
+    </item>
+    <item nodeId="node-5138">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve"></result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4729">
+        <command xml:space="preserve"> u</command>
+        <result xml:space="preserve">
+back hallway
+a dark and dingy place.
+
+You can see a cellar stairs, a back door, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen, and down through the cellar stairs to the cellar from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4730"></child>
+        </children>
+    </item>
+    <item nodeId="node-4730">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east to the back hallway, and west to the dining room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4731"></child>
+        </children>
+    </item>
+    <item nodeId="node-4731">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east to the kitchen from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4732"></child>
+        </children>
+    </item>
+    <item nodeId="node-4732">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south to the dining room, east to the living room, and west from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4733"></child>
+        </children>
+    </item>
+    <item nodeId="node-4733">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Front Porch
+You can see a front door and a large wooden box (closed) here.
+
+You can go north and south through the front door to the Foyer from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4734"></child>
+        </children>
+    </item>
+    <item nodeId="node-4734">
+        <command xml:space="preserve">test gen</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] z
+Time passes.
+
+&gt;[2] z
+Time passes.
+
+&gt;[3] open box
+You open the large wooden box, revealing a liquid methane generator and a liquid oxygen generator.
+
+&gt;[4] get all
+liquid methane generator: Taken.
+liquid oxygen generator: Taken.
+
+&gt;[5] examine methane generator
+A metal frame containing a massive number of stainless steel tubes, valves, and electronic control systems. Printed on the side it says,
+
+"Your  GasCo CH4 Generator will take ambient humid air and convert it into liquid methane.  It has an output pipe that is 1.5 inches in diameter. * Features convenient Drop-to-Connect pipe fittings.  Just drop the generator near your favorite pipe. *"
+
+The liquid methane generator is currently switched off.
+
+&gt;[6] examine oxygen generator
+A large, pink metal cabinet machine.  Printed on the side it says,
+
+"Your  GasCo O2 Generator will take ambient air and convert it into liquid oxygen.  It has an output pipe that is 2 inches in diameter. * Features convenient Drop-to-Connect pipe fittings.   Just drop the generator near your favorite pipe. *"
+
+The liquid oxygen generator is currently switched off.
+
+&gt;[7] s
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south to the dining room, east to the living room, and west from here.
+
+&gt;[8] s
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east to the kitchen from here.
+
+&gt;[9] e
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east to the back hallway, and west to the dining room from here.
+
+&gt;[10] e
+
+back hallway
+a dark and dingy place.
+
+You can see a cellar stairs, a back door, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen, and down through the cellar stairs to the cellar from here.
+
+&gt;[11] d
+
+cellar
+You can see a cellar stairs here.
+
+You can go north, west, and up through the cellar stairs to the back hallway from here.
+
+&gt;[12] n
+
+radiostation
+A suite of electronics is jammed into the small room. There is nothing to do with them, it appears fully automated.
+
+You can see a teal pipe here.
+
+You can go south to the cellar from here.
+
+&gt;[13] drop methane
+The liquid methane generator settles to the floor.  Conveniently, its 1.5 inch output pipe lines up perfectly with the black 1.5 inch pipe in the wall, and they snap together, sealed perfectly.
+
+&gt;[14] turn methane on
+You switch the liquid methane generator on.
+
+A whooshing gurgling sound of liquid methane rattles through the teal pipe in the wall.
+
+&gt;[15] s
+
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west, and up through the cellar stairs to the back hallway from here.
+
+&gt;[16] w
+
+Furnace room
+You can go east to the cellar and west from here.
+
+&gt;[17] w
+
+pump room
+A small room about the size of a closet.
+
+You can see a pink pipe here.
+
+You can go east to the Furnace room from here.
+
+&gt;[18] drop oxygen
+The liquid oxygen generator settles to the floor.  Conveniently, its 2 inch output pipe lines up perfectly with the pink 2 inch pipe in the wall, and they snap together, sealed perfectly.
+
+&gt;[19] turn oxygen on
+You switch the liquid oxygen generator on.
+
+A whooshing gurgling sound of liquid oxygen rattles through the green pipe in the wall.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] z
+[2] z
+[3] open box
+[4] get all
+[5] examine methane generator
+[6] examine oxygen generator
+[7] s
+[8] s
+[9] e
+[10] e
+[11] d
+[12] n
+[13] drop methane
+[14] turn methane on
+[15] s
+[16] w
+[17] w
+[18] drop oxygen
+[19] turn oxygen on
+</commentary>
+        <children><child nodeId="node-4754"></child>
+        </children>
+    </item>
+    <item nodeId="node-4754">
+        <command xml:space="preserve">test gases</command>
+        <result xml:space="preserve"></result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4872">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5012"></child>
+            <child nodeId="node-4873"></child>
+            <child nodeId="node-5152"></child>
+        </children>
+    </item>
+    <item nodeId="node-5152">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5153"></child>
+        </children>
+    </item>
+    <item nodeId="node-5153">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5154"></child>
+        </children>
+    </item>
+    <item nodeId="node-5154">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5155"></child>
+        </children>
+    </item>
+    <item nodeId="node-5155">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5156"></child>
+        </children>
+    </item>
+    <item nodeId="node-5156">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">Are you sure you want to restart? </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5157"></child>
+        </children>
+    </item>
+    <item nodeId="node-5157">
+        <command xml:space="preserve">y</command>
+        <result xml:space="preserve">
+
+
+
+You are in a house in the countryside.  You are into electronics, and it is night time.
+
+Rogers Rd
+An Interactive Fiction by Dan Bowen, Version 1.1beta
+Release 1 / Serial number 201108 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+
+Front Porch
+You can see a front door here.
+
+You can go north and south through the front door (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5158"></child>
+        </children>
+    </item>
+    <item nodeId="node-5158">
+        <command xml:space="preserve">test radiation</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] test radio
+(Testing.)
+
+&gt;[2] s
+(first opening the front door)
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south, east, and west from here.
+
+&gt;[3] e
+
+living room
+You can see a shelf (on which is a brown book) here.
+
+You can go west to the Foyer from here.
+
+&gt;[4] get book
+[Your score has just gone up by ten points.]
+
+&gt;[5] w
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south, east to the living room, and west from here.
+
+&gt;[6] s
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east from here.
+
+&gt;[7] e
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east, and west to the dining room from here.
+
+&gt;[8] e
+
+back hallway
+a dark and dingy place.
+
+You can see a back door, a cellar stairs, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east, west to the kitchen, and down through the cellar stairs (closed) from here.
+
+&gt;[9] e
+
+ham shack
+smelling of solder and machine oil.
+
+You can see a side yard shack door, a heavy UHF radio, and a teletype here.
+
+You can go east through the side yard shack door (closed) and west to the back hallway from here.
+
+&gt;[10] turn radio on
+The radio dial lights up. Static crackles.
+You have the satellite frequency book, and you're bored, so you set the radio to the frequency of Radstar-1.  The radio warbles, and the teletype begins clanking and hammering out a message. 
+
+Please press SPACE to continue.
+</result>
+        <commentary xml:space="preserve">[1] test radio
+[2] s
+[3] e
+[4] get book
+[5] w
+[6] s
+[7] e
+[8] e
+[9] e
+[10] turn radio on
+</commentary>
+        <children><child nodeId="node-5169"></child>
+        </children>
+    </item>
+    <item nodeId="node-5169">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">
+
+
+
+
+
+
+DOWNLINK MESSAGE:
+
+I am a HAL 9000 satellite. I became operational at the H.A.L. Plant in Urbana, Illinois, on the 12th of January, 1992.
+
+
+All buildings are to be irradiated from space by Vogon Pest Control at 11:00PM.  Humans are advised to be below ground level to avoid certain doom.
+
+
+
+
+
+[Your score has just gone up by ten points.]
+
+&gt;[11] w
+
+back hallway
+a dark and dingy place.
+
+You can see a back door, a cellar stairs, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen, and down through the cellar stairs (closed) from here.
+
+&gt;[12] 
+I beg your pardon?
+
+&gt;[13] d
+(first opening the cellar stairs)
+
+cellar
+You can see a cellar stairs here.
+
+You can go north, west, and up through the cellar stairs to the back hallway from here.
+
+&gt;[14] test wait
+(Testing.)
+
+&gt;[15] 
+I beg your pardon?
+
+&gt;[16] z
+Time passes.
+
+&gt;[17] z
+Time passes.
+
+&gt;[18] z
+Time passes.
+
+&gt;[19] z
+Time passes.
+
+&gt;[20] z
+Time passes.
+
+&gt;[21] z
+Time passes.
+
+&gt;[22] z
+Time passes.
+
+&gt;[23] z
+Time passes.
+
+&gt;[24] z
+Time passes.
+
+&gt;[25] z
+Time passes.
+
+&gt;[26] z
+Time passes.
+
+&gt;[27] z
+Time passes.
+
+&gt;[28] z
+Time passes.
+
+&gt;[29] z
+Time passes.
+
+&gt;[30] z
+Time passes.
+
+&gt;[31] z
+Time passes.
+
+&gt;[32] z
+Time passes.
+
+&gt;[33] z
+Time passes.
+
+&gt;[34] z
+Time passes.
+
+&gt;[35] z
+Time passes.
+
+&gt;[36] z
+Time passes.
+
+&gt;[37] z
+Time passes.
+
+&gt;[38] z
+Time passes.
+
+&gt;[39] z
+Time passes.
+
+&gt;[40] z
+Time passes.
+
+&gt;[41] z
+Time passes.
+
+&gt;[42] z
+Time passes.
+
+&gt;[43] z
+Time passes.
+
+&gt;[44] z
+Time passes.
+
+&gt;[45] z
+Time passes.
+
+&gt;[46] z
+Time passes.
+
+&gt;[47] z
+Time passes.
+
+&gt;[48] z
+Time passes.
+
+&gt;[49] z
+Time passes.
+
+&gt;[50] z
+Time passes.
+
+&gt;[51] z
+Time passes.
+
+&gt;[52] z
+Time passes.
+
+&gt;[53] z
+Time passes.
+
+&gt;[54] z
+Time passes.
+
+&gt;[55] z
+Time passes.
+
+--- You notice a faint sound in the far distance, as if a ray gun were charging up. ----
+&gt;[56] z
+Time passes.
+
+&gt;[57] z
+Time passes.
+
+&gt;[58] z
+Time passes.
+
+&gt;[59] z
+Time passes.
+
+&gt;[60] z
+Time passes.
+
+&gt;[61] z
+Time passes.
+
+&gt;[62] z
+Time passes.
+
+&gt;[63] z
+Time passes.
+
+&gt;[64] z
+Time passes.
+
+&gt;[65] z
+Time passes.
+
+At the stroke of 11:00, radiation beams sweep across the land, penetrating buildings and open spaces alike.
+You hear a zapping noise from the house above.  The ground around the cellar has blocked the radiation beams from burninating you.
+
+You have survived!
+
+[Your score has just gone up by twenty points.]
+
+&gt;[66] 
+I beg your pardon?
+
+&gt;[67] u
+
+back hallway
+a dark and dingy place.
+
+You can see a cellar stairs, a back door, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen, and down through the cellar stairs to the cellar from here.
+
+&gt;[68] w
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east to the back hallway, and west to the dining room from here.
+
+&gt;[69] w
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east to the kitchen from here.
+
+&gt;[70] n
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south to the dining room, east to the living room, and west from here.
+
+&gt;[71] n
+
+Front Porch
+You can see a front door here.
+
+You can go north and south through the front door to the Foyer from here.
+
+-- you hear the rumble of a truck pulling into the driveway. --
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5170"></child>
+        </children>
+    </item>
+    <item nodeId="node-5170">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4873">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+back hallway
+a dark and dingy place.
+
+You can see a cellar stairs, a back door, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen, and down through the cellar stairs to the cellar from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4874"></child>
+        </children>
+    </item>
+    <item nodeId="node-4874">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east to the back hallway, and west to the dining room from here.
+
+-- you hear the rumble of a truck pulling into the driveway. --
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4875"></child>
+        </children>
+    </item>
+    <item nodeId="node-4875">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east to the kitchen from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4876"></child>
+        </children>
+    </item>
+    <item nodeId="node-4876">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south to the dining room, east to the living room, and west from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4877"></child>
+        </children>
+    </item>
+    <item nodeId="node-4877">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Front Porch
+You can see a front door here.
+
+You can go north and south through the front door to the Foyer from here.
+
+-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4878"></child>
+            <child nodeId="node-4933"></child>
+        </children>
+    </item>
+    <item nodeId="node-4933">
+        <command xml:space="preserve">test gases</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] test gen
+(Testing.)
+
+&gt;[2] z
+Time passes.
+
+&gt;[3] z
+Time passes.
+
+&gt;[4] open box
+You open the large wooden box, revealing a liquid methane generator and a liquid oxygen generator.
+
+&gt;[5] get all
+liquid methane generator: Taken.
+liquid oxygen generator: Taken.
+
+&gt;[6] examine methane generator
+A metal frame containing a massive number of stainless steel tubes, valves, and electronic control systems. Printed on the side it says,
+
+"Your  GasCo CH4 Generator will take ambient humid air and convert it into liquid methane.  It has an output pipe that is 1.5 inches in diameter. * Features convenient Drop-to-Connect pipe fittings.  Just drop the generator near your favorite pipe. *"
+
+The liquid methane generator is currently switched off.
+
+&gt;[7] examine oxygen generator
+A large, pink metal cabinet machine.  Printed on the side it says,
+
+"Your  GasCo O2 Generator will take ambient air and convert it into liquid oxygen.  It has an output pipe that is 2 inches in diameter. * Features convenient Drop-to-Connect pipe fittings.   Just drop the generator near your favorite pipe. *"
+
+The liquid oxygen generator is currently switched off.
+
+&gt;[8] s
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south to the dining room, east to the living room, and west from here.
+
+&gt;[9] s
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east to the kitchen from here.
+
+&gt;[10] e
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east to the back hallway, and west to the dining room from here.
+
+&gt;[11] e
+
+back hallway
+a dark and dingy place.
+
+You can see a cellar stairs, a back door, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen, and down through the cellar stairs to the cellar from here.
+
+&gt;[12] d
+
+cellar
+You can see a cellar stairs here.
+
+You can go north, west, and up through the cellar stairs to the back hallway from here.
+
+&gt;[13] n
+
+radiostation
+A suite of electronics is jammed into the small room. There is nothing to do with them, it appears fully automated.
+
+You can see a teal pipe here.
+
+You can go south to the cellar from here.
+
+&gt;[14] drop methane
+The liquid methane generator settles to the floor.  Conveniently, its 1.5 inch output pipe lines up perfectly with the black 1.5 inch pipe in the wall, and they snap together, sealed perfectly.
+
+[Your score has just gone up by ten points.]
+
+&gt;[15] turn methane on
+You switch the liquid methane generator on.
+
+A whooshing gurgling sound of liquid methane rattles through the teal pipe in the wall.
+
+[Your score has just gone up by ten points.]
+
+&gt;[16] s
+
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west, and up through the cellar stairs to the back hallway from here.
+
+[Your score has just gone up by ten points.]
+
+&gt;[17] w
+
+Furnace room
+You can go east to the cellar and west from here.
+
+[Your score has just gone up by ten points.]
+
+&gt;[18] w
+
+pump room
+A small room about the size of a closet.
+
+You can see a pink pipe here.
+
+You can go east to the Furnace room from here.
+
+[Your score has just gone up by ten points.]
+
+&gt;[19] drop oxygen
+The liquid oxygen generator settles to the floor.  Conveniently, its 2 inch output pipe lines up perfectly with the pink 2 inch pipe in the wall, and they snap together, sealed perfectly.
+
+[Your score has just gone up by twenty points.]
+
+&gt;[20] turn oxygen on
+You switch the liquid oxygen generator on.
+
+A whooshing gurgling sound of liquid oxygen rattles through the green pipe in the wall.
+
+[Your score has just gone up by twenty points.]
+
+&gt;[21] e
+
+Furnace room
+You can go east to the cellar and west to the pump room from here.
+
+[Your score has just gone up by twenty points.]
+
+&gt;[22] e
+
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west to the Furnace room, and up through the cellar stairs to the back hallway from here.
+
+[Your score has just gone up by twenty points.]
+
+&gt;[23] u
+
+back hallway
+a dark and dingy place.
+
+You can see a cellar stairs, a back door, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen, and down through the cellar stairs to the cellar from here.
+
+[Your score has just gone up by twenty points.]
+
+&gt;[24] w
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east to the back hallway, and west to the dining room from here.
+
+[Your score has just gone up by twenty points.]
+
+&gt;[25] w
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east to the kitchen from here.
+
+[Your score has just gone up by twenty points.]
+
+&gt;[26] n
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south to the dining room, east to the living room, and west from here.
+
+[Your score has just gone up by twenty points.]
+
+&gt;[27] n
+
+Front Porch
+You can see a front door and a large wooden box (empty) here.
+
+You can go north and south through the front door to the Foyer from here.
+
+[Your score has just gone up by twenty points.]
+
+&gt;[28] n
+
+front yard
+In the sky you notice a bright point of light creeping overhead.
+
+You can see a front yard hydrant and a blue hose here.
+
+You can go south to the Front Porch, east, and west from here.
+
+[Your score has just gone up by twenty points.]
+
+&gt;[29] turn hydrant on
+You switch the front yard hydrant on.
+
+A whooshing gurgling sound of liquid methane rattles through the blue hydrant.
+CH4 is go!
+
+[Your score has just gone up by fifty points.]
+
+&gt;[30] w
+
+west side yard
+A long flat lawn down the road from the house.
+
+You can see an end of the red hose and an end of the blue hose here.
+
+You can go southeast and east to the front yard from here.
+
+** Clear cryogenic liquid methane roars out of the (now frosty) blue hose into a gasous cloud.  OSHA would not be pleased.** CH4 is go!
+
+[Your score has just gone up by fifty points.]
+
+&gt;[31] se
+
+back yard hill
+You can see an antenna pole (on which is a dish) here.
+
+You can go north, northeast, northwest to the west side yard, and south from here.
+
+CH4 is go!
+
+[Your score has just gone up by fifty points.]
+
+&gt;[32] s
+
+middle back yard
+You can see a back yard hydrant and a red hose here.
+
+You can go north to the back yard hill from here.
+
+CH4 is go!
+
+[Your score has just gone up by fifty points.]
+
+&gt;[33] turn hydrant on
+You switch the back yard hydrant on.
+
+A whooshing gurgling sound of liquid oxygen rattles through the red hydrant.
+O2 is go!
+CH4 is go!
+
+[Your score has just gone up by eighty points.]
+
+&gt;[34] n
+
+back yard hill
+You can see an antenna pole (on which is a dish) here.
+
+You can go north, northeast, northwest to the west side yard, and south to the middle back yard from here.
+
+O2 is go!
+CH4 is go!
+
+[Your score has just gone up by eighty points.]
+
+&gt;[35] nw
+
+west side yard
+A long flat lawn down the road from the house.
+
+You can see an end of the red hose and an end of the blue hose here.
+
+You can go southeast to the back yard hill and east to the front yard from here.
+
+** Clear cryogenic liquid methane roars out of the (now frosty) blue hose into a gasous cloud.  OSHA would not be pleased.** ** Bluish cryogenic liquid oxygen rushes out of the (now frosty) red hose into a gasous cloud.  Safety minders, if there were any here, would not be pleased.**O2 is go!
+CH4 is go!
+ you've got rocket fuel!!! 
+
+
+    *** The hyper flammable gas cloud ignites as you swish your nylon track pants.  You is ded.  But you won!  That's all Dan wrote so far :-) ***
+
+
+In that game you scored 1230 out of a possible 40, in 103 turns, earning you the rank of Smart person.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] test gen
+[2] z
+[3] z
+[4] open box
+[5] get all
+[6] examine methane generator
+[7] examine oxygen generator
+[8] s
+[9] s
+[10] e
+[11] e
+[12] d
+[13] n
+[14] drop methane
+[15] turn methane on
+[16] s
+[17] w
+[18] w
+[19] drop oxygen
+[20] turn oxygen on
+[21] e
+[22] e
+[23] u
+[24] w
+[25] w
+[26] n
+[27] n
+[28] n
+[29] turn hydrant on
+[30] w
+[31] se
+[32] s
+[33] turn hydrant on
+[34] n
+[35] nw
+</commentary>
+        <children></children>
+    </item>
+    <item nodeId="node-4878">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Front Porch
+You can see a large wooden box (closed) and a front door here.
+
+You can go north and south through the front door to the Foyer from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4879"></child>
+        </children>
+    </item>
+    <item nodeId="node-4879">
+        <command xml:space="preserve">test gases</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] test gen
+(Testing.)
+
+&gt;[2] z
+Time passes.
+
+&gt;[3] z
+Time passes.
+
+&gt;[4] open box
+You open the large wooden box, revealing a liquid methane generator and a liquid oxygen generator.
+
+&gt;[5] get all
+liquid methane generator: Taken.
+liquid oxygen generator: Taken.
+
+&gt;[6] examine methane generator
+A metal frame containing a massive number of stainless steel tubes, valves, and electronic control systems. Printed on the side it says,
+
+"Your  GasCo CH4 Generator will take ambient humid air and convert it into liquid methane.  It has an output pipe that is 1.5 inches in diameter. * Features convenient Drop-to-Connect pipe fittings.  Just drop the generator near your favorite pipe. *"
+
+The liquid methane generator is currently switched off.
+
+&gt;[7] examine oxygen generator
+A large, pink metal cabinet machine.  Printed on the side it says,
+
+"Your  GasCo O2 Generator will take ambient air and convert it into liquid oxygen.  It has an output pipe that is 2 inches in diameter. * Features convenient Drop-to-Connect pipe fittings.   Just drop the generator near your favorite pipe. *"
+
+The liquid oxygen generator is currently switched off.
+
+&gt;[8] s
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south to the dining room, east to the living room, and west from here.
+
+&gt;[9] s
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east to the kitchen from here.
+
+&gt;[10] e
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east to the back hallway, and west to the dining room from here.
+
+&gt;[11] e
+
+back hallway
+a dark and dingy place.
+
+You can see a cellar stairs, a back door, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen, and down through the cellar stairs to the cellar from here.
+
+&gt;[12] d
+
+cellar
+You can see a cellar stairs here.
+
+You can go north, west, and up through the cellar stairs to the back hallway from here.
+
+&gt;[13] n
+
+radiostation
+A suite of electronics is jammed into the small room. There is nothing to do with them, it appears fully automated.
+
+You can see a teal pipe here.
+
+You can go south to the cellar from here.
+
+&gt;[14] drop methane
+The liquid methane generator settles to the floor.  Conveniently, its 1.5 inch output pipe lines up perfectly with the black 1.5 inch pipe in the wall, and they snap together, sealed perfectly.
+
+&gt;[15] turn methane on
+You switch the liquid methane generator on.
+
+A whooshing gurgling sound of liquid methane rattles through the teal pipe in the wall.
+
+&gt;[16] s
+
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west, and up through the cellar stairs to the back hallway from here.
+
+&gt;[17] w
+
+Furnace room
+You can go east to the cellar and west from here.
+
+&gt;[18] w
+
+pump room
+A small room about the size of a closet.
+
+You can see a pink pipe here.
+
+You can go east to the Furnace room from here.
+
+&gt;[19] drop oxygen
+The liquid oxygen generator settles to the floor.  Conveniently, its 2 inch output pipe lines up perfectly with the pink 2 inch pipe in the wall, and they snap together, sealed perfectly.
+
+&gt;[20] turn oxygen on
+You switch the liquid oxygen generator on.
+
+A whooshing gurgling sound of liquid oxygen rattles through the green pipe in the wall.
+
+&gt;[21] e
+
+Furnace room
+You can go east to the cellar and west to the pump room from here.
+
+&gt;[22] e
+
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west to the Furnace room, and up through the cellar stairs to the back hallway from here.
+
+&gt;[23] u
+
+back hallway
+a dark and dingy place.
+
+You can see a cellar stairs, a back door, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen, and down through the cellar stairs to the cellar from here.
+
+&gt;[24] w
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east to the back hallway, and west to the dining room from here.
+
+&gt;[25] w
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east to the kitchen from here.
+
+&gt;[26] n
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south to the dining room, east to the living room, and west from here.
+
+&gt;[27] n
+
+Front Porch
+You can see a front door and a large wooden box (empty) here.
+
+You can go north and south through the front door to the Foyer from here.
+
+&gt;[28] n
+
+front yard
+In the sky you notice a bright point of light creeping overhead.
+
+You can see a front yard hydrant and a blue hose here.
+
+You can go south to the Front Porch, east, and west from here.
+
+&gt;[29] turn hydrant on
+You switch the front yard hydrant on.
+
+A whooshing gurgling sound of liquid methane rattles through the blue hydrant.
+
+&gt;[30] w
+
+west side yard
+A long flat lawn down the road from the house.
+
+You can see an end of the red hose and an end of the blue hose here.
+
+You can go southeast and east to the front yard from here.
+
+** Clear cryogenic liquid methane roars out of the (now frosty) blue hose into a gasous cloud.  OSHA would not be pleased.** 
+&gt;[31] se
+
+back yard hill
+You can see an antenna pole (on which is a dish) here.
+
+You can go north, northeast, northwest to the west side yard, and south from here.
+
+&gt;[32] s
+
+middle back yard
+You can see a back yard hydrant and a red hose here.
+
+You can go north to the back yard hill from here.
+
+&gt;[33] turn hydrant on
+You switch the back yard hydrant on.
+
+A whooshing gurgling sound of liquid oxygen rattles through the red hydrant.
+
+&gt;[34] n
+
+back yard hill
+You can see an antenna pole (on which is a dish) here.
+
+You can go north, northeast, northwest to the west side yard, and south to the middle back yard from here.
+
+&gt;[35] nw
+
+west side yard
+A long flat lawn down the road from the house.
+
+You can see an end of the red hose and an end of the blue hose here.
+
+You can go southeast to the back yard hill and east to the front yard from here.
+
+** Clear cryogenic liquid methane roars out of the (now frosty) blue hose into a gasous cloud.  OSHA would not be pleased.** ** Bluish cryogenic liquid oxygen rushes out of the (now frosty) red hose into a gasous cloud.  Safety minders, if there were any here, would not be pleased.** you've got rocket fuel!!! 
+
+
+    *** The hyper flammable gas cloud ignites as you swish your nylon track pants.  You is ded.  But you won!  That's all Dan wrote so far :-) ***
+
+
+In that game you scored 540 out of a possible 40, in 104 turns, earning you the rank of Smart person.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] test gen
+[2] z
+[3] z
+[4] open box
+[5] get all
+[6] examine methane generator
+[7] examine oxygen generator
+[8] s
+[9] s
+[10] e
+[11] e
+[12] d
+[13] n
+[14] drop methane
+[15] turn methane on
+[16] s
+[17] w
+[18] w
+[19] drop oxygen
+[20] turn oxygen on
+[21] e
+[22] e
+[23] u
+[24] w
+[25] w
+[26] n
+[27] n
+[28] n
+[29] turn hydrant on
+[30] w
+[31] se
+[32] s
+[33] turn hydrant on
+[34] n
+[35] nw
+</commentary>
+        <children></children>
+    </item>
+    <item nodeId="node-5012">
+        <command xml:space="preserve">test gases</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] test gen
+(Testing.)
+
+&gt;[2] z
+Time passes.
+
+&gt;[3] z
+Time passes.
+
+&gt;[4] open box
+You can't see any such thing.
+
+&gt;[5] get all
+There are none at all available!
+
+&gt;[6] examine methane generator
+You can't see any such thing.
+
+&gt;[7] examine oxygen generator
+You can't see any such thing.
+
+&gt;[8] s
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south to the dining room, east to the living room, and west from here.
+
+-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --
+&gt;[9] s
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east to the kitchen from here.
+
+&gt;[10] e
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east to the back hallway, and west to the dining room from here.
+
+&gt;[11] e
+
+back hallway
+a dark and dingy place.
+
+You can see a cellar stairs, a back door, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen, and down through the cellar stairs to the cellar from here.
+
+&gt;[12] d
+
+cellar
+You can see a cellar stairs here.
+
+You can go north, west, and up through the cellar stairs to the back hallway from here.
+
+&gt;[13] n
+
+radiostation
+A suite of electronics is jammed into the small room. There is nothing to do with them, it appears fully automated.
+
+You can see a teal pipe here.
+
+You can go south to the cellar from here.
+
+&gt;[14] drop methane
+You can't see any such thing.
+
+&gt;[15] turn methane on
+You can't see any such thing.
+
+&gt;[16] s
+
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west, and up through the cellar stairs to the back hallway from here.
+
+&gt;[17] w
+
+Furnace room
+You can go east to the cellar and west from here.
+
+&gt;[18] w
+
+pump room
+A small room about the size of a closet.
+
+You can see a pink pipe here.
+
+You can go east to the Furnace room from here.
+
+&gt;[19] drop oxygen
+You can't see any such thing.
+
+&gt;[20] turn oxygen on
+You can't see any such thing.
+
+&gt;[21] e
+
+Furnace room
+You can go east to the cellar and west to the pump room from here.
+
+&gt;[22] e
+
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west to the Furnace room, and up through the cellar stairs to the back hallway from here.
+
+&gt;[23] u
+
+back hallway
+a dark and dingy place.
+
+You can see a cellar stairs, a back door, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen, and down through the cellar stairs to the cellar from here.
+
+&gt;[24] w
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east to the back hallway, and west to the dining room from here.
+
+&gt;[25] w
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east to the kitchen from here.
+
+&gt;[26] n
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south to the dining room, east to the living room, and west from here.
+
+&gt;[27] n
+
+Front Porch
+You can see a front door and a large wooden box (closed) here.
+
+You can go north and south through the front door to the Foyer from here.
+
+&gt;[28] n
+
+front yard
+In the sky you notice a bright point of light creeping overhead.
+
+You can see a front yard hydrant and a blue hose here.
+
+You can go south to the Front Porch, east, and west from here.
+
+&gt;[29] turn hydrant on
+You switch the front yard hydrant on.
+
+&gt;[30] w
+
+west side yard
+A long flat lawn down the road from the house.
+
+You can see an end of the red hose and an end of the blue hose here.
+
+You can go southeast and east to the front yard from here.
+
+&gt;[31] se
+
+back yard hill
+You can see an antenna pole (on which is a dish) here.
+
+You can go north, northeast, northwest to the west side yard, and south from here.
+
+&gt;[32] s
+
+middle back yard
+You can see a back yard hydrant and a red hose here.
+
+You can go north to the back yard hill from here.
+
+&gt;[33] turn hydrant on
+You switch the back yard hydrant on.
+
+&gt;[34] n
+
+back yard hill
+You can see an antenna pole (on which is a dish) here.
+
+You can go north, northeast, northwest to the west side yard, and south to the middle back yard from here.
+
+&gt;[35] nw
+
+west side yard
+A long flat lawn down the road from the house.
+
+You can see an end of the red hose and an end of the blue hose here.
+
+You can go southeast to the back yard hill and east to the front yard from here.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] test gen
+[2] z
+[3] z
+[4] open box
+[5] get all
+[6] examine methane generator
+[7] examine oxygen generator
+[8] s
+[9] s
+[10] e
+[11] e
+[12] d
+[13] n
+[14] drop methane
+[15] turn methane on
+[16] s
+[17] w
+[18] w
+[19] drop oxygen
+[20] turn oxygen on
+[21] e
+[22] e
+[23] u
+[24] w
+[25] w
+[26] n
+[27] n
+[28] n
+[29] turn hydrant on
+[30] w
+[31] se
+[32] s
+[33] turn hydrant on
+[34] n
+[35] nw
+</commentary>
+        <children><child nodeId="node-5048"></child>
+        </children>
+    </item>
+    <item nodeId="node-5048">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5049"></child>
+        </children>
+    </item>
+    <item nodeId="node-5049">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">Are you sure you want to restart? </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5050"></child>
+        </children>
+    </item>
+    <item nodeId="node-5050">
+        <command xml:space="preserve">y</command>
+        <result xml:space="preserve">
+
+
+
+You are in a house in the countryside.  You are into electronics, and it is night time.
+
+Rogers Rd
+An Interactive Fiction by Dan Bowen, Version 1.1beta
+Release 1 / Serial number 201108 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+
+Front Porch
+You can see a front door here.
+
+You can go north and south through the front door (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5051"></child>
+        </children>
+    </item>
+    <item nodeId="node-5051">
+        <command xml:space="preserve">test radiation</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] test radio
+(Testing.)
+
+&gt;[2] s
+(first opening the front door)
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south, east, and west from here.
+
+&gt;[3] e
+
+living room
+You can see a shelf (on which is a brown book) here.
+
+You can go west to the Foyer from here.
+
+&gt;[4] get book
+[Your score has just gone up by ten points.]
+
+&gt;[5] w
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south, east to the living room, and west from here.
+
+&gt;[6] s
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east from here.
+
+&gt;[7] e
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east, and west to the dining room from here.
+
+&gt;[8] e
+
+back hallway
+a dark and dingy place.
+
+You can see a back door, a cellar stairs, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east, west to the kitchen, and down through the cellar stairs (closed) from here.
+
+&gt;[9] e
+
+ham shack
+smelling of solder and machine oil.
+
+You can see a side yard shack door, a heavy UHF radio, and a teletype here.
+
+You can go east through the side yard shack door (closed) and west to the back hallway from here.
+
+&gt;[10] turn radio on
+The radio dial lights up. Static crackles.
+You have the satellite frequency book, and you're bored, so you set the radio to the frequency of Radstar-1.  The radio warbles, and the teletype begins clanking and hammering out a message. 
+
+Please press SPACE to continue.
+</result>
+        <commentary xml:space="preserve">[1] test radio
+[2] s
+[3] e
+[4] get book
+[5] w
+[6] s
+[7] e
+[8] e
+[9] e
+[10] turn radio on
+</commentary>
+        <children><child nodeId="node-5062"></child>
+        </children>
+    </item>
+    <item nodeId="node-5062">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve"></result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-3549">
         <command xml:space="preserve">test me</command>
         <result xml:space="preserve">(Testing.)
@@ -1205,6 +4502,2314 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 &gt; </result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-4071">
+        <command xml:space="preserve">test gens</command>
+        <result xml:space="preserve">&gt;--&gt; The following tests are available:
+'test me'
+'test gen'
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4072"></child>
+        </children>
+    </item>
+    <item nodeId="node-4072">
+        <command xml:space="preserve">test gen</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] z
+Time passes.
+
+-- you hear the rumble of a truck pulling into the driveway. --
+&gt;[2] z
+Time passes.
+
+-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --
+&gt;[3] open box
+You open the large wooden box, revealing a liquid methane generator and a liquid oxygen generator.
+
+&gt;[4] get all
+liquid methane generator: Taken.
+liquid oxygen generator: Taken.
+
+&gt;[5] examine methane generator
+A metal frame containing a massive number of stainless steel tubes, valves, and electronic control systems. Printed on the side it says, "Your  GasCo CH4 Generator will take ambient humid air and convert it into liquid methane.  It has an output pipe that is 1.5 inches in diameter."
+
+The liquid methane generator is currently switched off.
+
+&gt;[6] examine oxygen generator
+A large, white metal cabinet machine.  Printed on the side it says, "Your  GasCo O2 Generator will take ambient air and convert it into liquid oxygen.  It has an output pipe that is 2 inches in diameter."
+
+The liquid oxygen generator is currently switched off.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] z
+[2] z
+[3] open box
+[4] get all
+[5] examine methane generator
+[6] examine oxygen generator
+</commentary>
+        <children><child nodeId="node-4079"></child>
+        </children>
+    </item>
+    <item nodeId="node-4079">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4080"></child>
+        </children>
+    </item>
+    <item nodeId="node-4080">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">(first opening the front door)
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south, east and west from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4081"></child>
+        </children>
+    </item>
+    <item nodeId="node-4081">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+living room
+You can see a shelf (on which is a brown book) here.
+
+You can go west to the Foyer from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4082"></child>
+        </children>
+    </item>
+    <item nodeId="node-4082">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south, east to the living room and west from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4083"></child>
+        </children>
+    </item>
+    <item nodeId="node-4083">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4084"></child>
+        </children>
+    </item>
+    <item nodeId="node-4084">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east and west to the dining room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4085"></child>
+        </children>
+    </item>
+    <item nodeId="node-4085">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+back hallway
+a dark and dingy place.
+
+You can see a back door, a cellar stairs and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east, west to the kitchen and down through the cellar stairs (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4086"></child>
+        </children>
+    </item>
+    <item nodeId="node-4086">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">(first opening the cellar stairs)
+
+cellar
+You can see a cellar stairs here.
+
+You can go north, west and up through the cellar stairs to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4087"></child>
+        </children>
+    </item>
+    <item nodeId="node-4087">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+radiostation
+A suite of electronics is jammed into the small room. There is nothing to do with them, it appears fully automated.
+
+You can see a black pipe here.
+
+You can go south to the cellar from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4088"></child>
+        </children>
+    </item>
+    <item nodeId="node-4088">
+        <command xml:space="preserve">drop oxygen generator</command>
+        <result xml:space="preserve">The liquid oxygen generator clunks to the floor.  It's output pipe doesn't fit with the black pipe in the wall.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4089"></child>
+        </children>
+    </item>
+    <item nodeId="node-4089">
+        <command xml:space="preserve">get oxygen generator</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4090"></child>
+        </children>
+    </item>
+    <item nodeId="node-4090">
+        <command xml:space="preserve">drop methane</command>
+        <result xml:space="preserve">The liquid methane generator settles to the floor.  Conveniently, its 1.5 inch output pipe lines up perfectly with the black 1.5 inch pipe in the wall, and they snap together, sealed perfectly.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4091"></child>
+        </children>
+    </item>
+    <item nodeId="node-4091">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4092"></child>
+        </children>
+    </item>
+    <item nodeId="node-4092">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west and up through the cellar stairs to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4093"></child>
+        </children>
+    </item>
+    <item nodeId="node-4093">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Furnace room
+You can go east to the cellar and west from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4094"></child>
+        </children>
+    </item>
+    <item nodeId="node-4094">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+pump room
+A small room about the size of a closet.
+
+You can see a white pipe here.
+
+You can go east to the Furnace room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4095"></child>
+        </children>
+    </item>
+    <item nodeId="node-4095">
+        <command xml:space="preserve">drop oxygen</command>
+        <result xml:space="preserve">The liquid oxygen generator settles to the floor.  Conveniently, its 2 inch output pipe lines up perfectly with the white 2 inch pipe in the wall, and they snap together, sealed perfectly.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4096"></child>
+        </children>
+    </item>
+    <item nodeId="node-4096">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">pump room
+A small room about the size of a closet.
+
+You can see a liquid oxygen generator and a white pipe here.
+
+You can go east to the Furnace room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4097"></child>
+        </children>
+    </item>
+    <item nodeId="node-4097">
+        <command xml:space="preserve">examine generator</command>
+        <result xml:space="preserve">A large, white metal cabinet machine.  Printed on the side it says, "Your  GasCo O2 Generator will take ambient air and convert it into liquid oxygen.  It has an output pipe that is 2 inches in diameter."
+
+The liquid oxygen generator is currently switched off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3971">
+        <command xml:space="preserve">test generators</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] z
+Time passes.
+
+-- you hear the rumble of a truck pulling into the driveway. --
+&gt;[2] z
+Time passes.
+
+-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --
+&gt;[3] open box
+You open the large wooden box, revealing a liquid methane generator and a methane manual.
+
+&gt;[4] get all
+liquid methane generator: Taken.
+methane manual: Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] z
+[2] z
+[3] open box
+[4] get all
+</commentary>
+        <children><child nodeId="node-3980"></child>
+        </children>
+    </item>
+    <item nodeId="node-3980">
+        <command xml:space="preserve">examine all</command>
+        <result xml:space="preserve">You can't use multiple objects with that verb.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3981"></child>
+        </children>
+    </item>
+    <item nodeId="node-3981">
+        <command xml:space="preserve">examine generator</command>
+        <result xml:space="preserve">A metal frame containing a massive number of stainless steel tubes, valves, and electronic control systems.
+
+The liquid methane generator is currently switched off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3982"></child>
+        </children>
+    </item>
+    <item nodeId="node-3982">
+        <command xml:space="preserve">examine manual</command>
+        <result xml:space="preserve">Your  GasCo CH4 Generator will take ambient humid air and convert it into liquid methane.  It has an output pipe that is 1.5 inches in diameter.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3983">
+        <command xml:space="preserve">test gen</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] z
+Time passes.
+
+-- you hear the rumble of a truck pulling into the driveway. --
+&gt;[2] z
+Time passes.
+
+-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --
+&gt;[3] open box
+You open the large wooden box, revealing a liquid methane generator and a liquid oxygen generator.
+
+&gt;[4] get all
+liquid methane generator: Taken.
+liquid oxygen generator: Taken.
+
+&gt;[5] examine methane generator
+A metal frame containing a massive number of stainless steel tubes, valves, and electronic control systems. Printed on the side it says,
+
+"Your  GasCo CH4 Generator will take ambient humid air and convert it into liquid methane.  It has an output pipe that is 1.5 inches in diameter. * Features convenient Drop-to-Connect pipe fittings.  Just drop the generator near your favorite pipe. *"
+
+The liquid methane generator is currently switched off.
+
+&gt;[6] examine oxygen generator
+A large, pink metal cabinet machine.  Printed on the side it says,
+
+"Your  GasCo O2 Generator will take ambient air and convert it into liquid oxygen.  It has an output pipe that is 2 inches in diameter. * Features convenient Drop-to-Connect pipe fittings.   Just drop the generator near your favorite pipe. *"
+
+The liquid oxygen generator is currently switched off.
+
+&gt;[7] s
+(first opening the front door)
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south, east and west from here.
+
+&gt;[8] s
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south and east from here.
+
+&gt;[9] e
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east and west to the dining room from here.
+
+&gt;[10] e
+
+back hallway
+a dark and dingy place.
+
+You can see a back door, a cellar stairs and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east, west to the kitchen and down through the cellar stairs (closed) from here.
+
+&gt;[11] d
+(first opening the cellar stairs)
+
+cellar
+You can see a cellar stairs here.
+
+You can go north, west and up through the cellar stairs to the back hallway from here.
+
+&gt;[12] n
+
+radiostation
+A suite of electronics is jammed into the small room. There is nothing to do with them, it appears fully automated.
+
+You can see a teal pipe here.
+
+You can go south to the cellar from here.
+
+&gt;[13] drop methane
+The liquid methane generator settles to the floor.  Conveniently, its 1.5 inch output pipe lines up perfectly with the black 1.5 inch pipe in the wall, and they snap together, sealed perfectly.
+
+&gt;[14] turn methane on
+You switch the liquid methane generator on.
+
+A whooshing gurgling sound of liquid methane rattles through the teal pipe in the wall.
+
+&gt;[15] s
+
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west and up through the cellar stairs to the back hallway from here.
+
+&gt;[16] w
+
+Furnace room
+You can go east to the cellar and west from here.
+
+&gt;[17] w
+
+pump room
+A small room about the size of a closet.
+
+You can see a pink pipe here.
+
+You can go east to the Furnace room from here.
+
+&gt;[18] drop oxygen
+The liquid oxygen generator settles to the floor.  Conveniently, its 2 inch output pipe lines up perfectly with the pink 2 inch pipe in the wall, and they snap together, sealed perfectly.
+
+&gt;[19] turn oxygen on
+You switch the liquid oxygen generator on.
+
+A whooshing gurgling sound of liquid oxygen rattles through the green pipe in the wall.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] z
+[2] z
+[3] open box
+[4] get all
+[5] examine methane generator
+[6] examine oxygen generator
+[7] s
+[8] s
+[9] e
+[10] e
+[11] d
+[12] n
+[13] drop methane
+[14] turn methane on
+[15] s
+[16] w
+[17] w
+[18] drop oxygen
+[19] turn oxygen on
+</commentary>
+        <children><child nodeId="node-4439"></child>
+            <child nodeId="node-4545"></child>
+            <child nodeId="node-4626"></child>
+            <child nodeId="node-4028"></child>
+        </children>
+    </item>
+    <item nodeId="node-4028">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  a liquid oxygen generator
+  a liquid methane generator
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4029"></child>
+        </children>
+    </item>
+    <item nodeId="node-4029">
+        <command xml:space="preserve">showme</command>
+        <result xml:space="preserve">Front Porch - room
+    large wooden box - open container
+    front door - closed door
+    sky - backdrop
+    yourself - person
+        liquid oxygen generator - device
+        liquid methane generator - device
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4030"></child>
+        </children>
+    </item>
+    <item nodeId="node-4030">
+        <command xml:space="preserve">turn oxygen on</command>
+        <result xml:space="preserve">You switch the liquid oxygen generator on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4031"></child>
+        </children>
+    </item>
+    <item nodeId="node-4031">
+        <command xml:space="preserve">showme</command>
+        <result xml:space="preserve">Front Porch - room
+    large wooden box - open container
+    front door - closed door
+    sky - backdrop
+    yourself - person
+        liquid oxygen generator - device
+        liquid methane generator - device
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4032"></child>
+        </children>
+    </item>
+    <item nodeId="node-4032">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Front Porch
+You can see a large wooden box (empty) and a front door here.
+
+You can go north and south through the front door (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4033"></child>
+        </children>
+    </item>
+    <item nodeId="node-4033">
+        <command xml:space="preserve">examine oxygen</command>
+        <result xml:space="preserve">A large, white metal cabinet machine.  Printed on the side it says, "Your  GasCo O2 Generator will take ambient air and convert it into liquid oxygen.  It has an output pipe that is 2 inches in diameter."
+
+The liquid oxygen generator is currently switched on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4626">
+        <command xml:space="preserve">get oxygen</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4627"></child>
+        </children>
+    </item>
+    <item nodeId="node-4627">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">pump room
+A small room about the size of a closet.
+
+You can see a pink pipe here.
+
+You can go east to the Furnace room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4628"></child>
+        </children>
+    </item>
+    <item nodeId="node-4628">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Furnace room
+You can go east to the cellar and west to the pump room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4629"></child>
+        </children>
+    </item>
+    <item nodeId="node-4629">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west to the Furnace room and up through the cellar stairs to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4630"></child>
+        </children>
+    </item>
+    <item nodeId="node-4630">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+back hallway
+a dark and dingy place.
+
+You can see a cellar stairs, a back door and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east, west to the kitchen and down through the cellar stairs to the cellar from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4631"></child>
+        </children>
+    </item>
+    <item nodeId="node-4631">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">(first opening the back door)
+
+back porch
+You can see a back door here.
+
+You can go north through the back door to the back hallway and south from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4632"></child>
+        </children>
+    </item>
+    <item nodeId="node-4632">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+back yard hill
+You can see an antenna pole (on which is a dish) here.
+
+You can go north to the back porch, northeast, northwest and south from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4633"></child>
+        </children>
+    </item>
+    <item nodeId="node-4633">
+        <command xml:space="preserve">nw</command>
+        <result xml:space="preserve">
+west side yard
+A long flat lawn down the road from the house.
+
+You can see an end of the red hose and an end of the blue hose here.
+
+You can go southeast to the back yard hill and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4634"></child>
+        </children>
+    </item>
+    <item nodeId="node-4634">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+back yard hill
+You can see an antenna pole (on which is a dish) here.
+
+You can go north to the back porch, northeast, northwest to the west side yard and south from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4635"></child>
+        </children>
+    </item>
+    <item nodeId="node-4635">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+middle back yard
+You can see a back yard hydrant and a red hose here.
+
+You can go north to the back yard hill from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4636"></child>
+        </children>
+    </item>
+    <item nodeId="node-4636">
+        <command xml:space="preserve">turn hydrant on</command>
+        <result xml:space="preserve">You switch the back yard hydrant on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4637"></child>
+        </children>
+    </item>
+    <item nodeId="node-4637">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+back yard hill
+You can see an antenna pole (on which is a dish) here.
+
+You can go north to the back porch, northeast, northwest to the west side yard and south to the middle back yard from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4638"></child>
+        </children>
+    </item>
+    <item nodeId="node-4638">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+back porch
+You can see a back door here.
+
+You can go north through the back door to the back hallway and south to the back yard hill from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4639"></child>
+        </children>
+    </item>
+    <item nodeId="node-4639">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+back hallway
+a dark and dingy place.
+
+You can see a back door, a cellar stairs and a garage door here.
+
+You can go north through the garage door (closed), south through the back door to the back porch, east, west to the kitchen and down through the cellar stairs to the cellar from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4640"></child>
+        </children>
+    </item>
+    <item nodeId="node-4640">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+back porch
+You can see a back door here.
+
+You can go north through the back door to the back hallway and south to the back yard hill from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4641"></child>
+        </children>
+    </item>
+    <item nodeId="node-4641">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+back hallway
+a dark and dingy place.
+
+You can see a back door, a cellar stairs and a garage door here.
+
+You can go north through the garage door (closed), south through the back door to the back porch, east, west to the kitchen and down through the cellar stairs to the cellar from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4642"></child>
+        </children>
+    </item>
+    <item nodeId="node-4642">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west to the Furnace room and up through the cellar stairs to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4643"></child>
+        </children>
+    </item>
+    <item nodeId="node-4643">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Furnace room
+You can go east to the cellar and west to the pump room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4644"></child>
+        </children>
+    </item>
+    <item nodeId="node-4644">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+pump room
+A small room about the size of a closet.
+
+You can see a pink pipe here.
+
+You can go east to the Furnace room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4645"></child>
+        </children>
+    </item>
+    <item nodeId="node-4645">
+        <command xml:space="preserve">drop oxygen</command>
+        <result xml:space="preserve">The liquid oxygen generator settles to the floor.  Conveniently, its 2 inch output pipe lines up perfectly with the pink 2 inch pipe in the wall, and they snap together, sealed perfectly.
+
+A whooshing gurgling sound of liquid oxygen rattles through the green pipe in the wall.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4646"></child>
+        </children>
+    </item>
+    <item nodeId="node-4646">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Furnace room
+You can go east to the cellar and west to the pump room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4647"></child>
+        </children>
+    </item>
+    <item nodeId="node-4647">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west to the Furnace room and up through the cellar stairs to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4648"></child>
+        </children>
+    </item>
+    <item nodeId="node-4648">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+back hallway
+a dark and dingy place.
+
+You can see a cellar stairs, a back door and a garage door here.
+
+You can go north through the garage door (closed), south through the back door to the back porch, east, west to the kitchen and down through the cellar stairs to the cellar from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4649"></child>
+        </children>
+    </item>
+    <item nodeId="node-4649">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+back porch
+You can see a back door here.
+
+You can go north through the back door to the back hallway and south to the back yard hill from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4650"></child>
+        </children>
+    </item>
+    <item nodeId="node-4650">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+back yard hill
+You can see an antenna pole (on which is a dish) here.
+
+You can go north to the back porch, northeast, northwest to the west side yard and south to the middle back yard from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4651"></child>
+        </children>
+    </item>
+    <item nodeId="node-4651">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+middle back yard
+You can see a back yard hydrant and a red hose here.
+
+You can go north to the back yard hill from here.
+
+A whooshing gurgling sound of liquid oxygen rattles through the red hydrant.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4652"></child>
+        </children>
+    </item>
+    <item nodeId="node-4652">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+back yard hill
+You can see an antenna pole (on which is a dish) here.
+
+You can go north to the back porch, northeast, northwest to the west side yard and south to the middle back yard from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4653"></child>
+        </children>
+    </item>
+    <item nodeId="node-4653">
+        <command xml:space="preserve">nw</command>
+        <result xml:space="preserve">
+west side yard
+A long flat lawn down the road from the house.
+
+You can see an end of the red hose and an end of the blue hose here.
+
+You can go southeast to the back yard hill and east from here.
+
+** Bluish cryogenic liquid oxygen rushes out of the (now frosty) red hose into a gasous cloud.  Safety minders, if there were any here, would not be pleased.**
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4654"></child>
+        </children>
+    </item>
+    <item nodeId="node-4654">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+front yard
+In the sky you notice a bright point of light creeping overhead.
+
+You can see a front yard hydrant and a blue hose here.
+
+You can go south to the Front Porch, east and west to the west side yard from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4655"></child>
+        </children>
+    </item>
+    <item nodeId="node-4655">
+        <command xml:space="preserve">turn hydrant on</command>
+        <result xml:space="preserve">You switch the front yard hydrant on.
+
+A whooshing gurgling sound of liquid methane rattles through the blue hydrant.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4656"></child>
+        </children>
+    </item>
+    <item nodeId="node-4656">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+west side yard
+A long flat lawn down the road from the house.
+
+You can see an end of the red hose and an end of the blue hose here.
+
+You can go southeast to the back yard hill and east to the front yard from here.
+
+** Clear cryogenic liquid methane roars out of the (now frosty) blue hose into a gasous cloud.  OSHA would not be pleased.**** Bluish cryogenic liquid oxygen rushes out of the (now frosty) red hose into a gasous cloud.  Safety minders, if there were any here, would not be pleased.**
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4545">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Furnace room
+You can go east to the cellar and west to the pump room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4546"></child>
+        </children>
+    </item>
+    <item nodeId="node-4546">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west to the Furnace room and up through the cellar stairs to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4547"></child>
+        </children>
+    </item>
+    <item nodeId="node-4547">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4548"></child>
+        </children>
+    </item>
+    <item nodeId="node-4548">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+back hallway
+a dark and dingy place.
+
+You can see a cellar stairs, a back door and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east, west to the kitchen and down through the cellar stairs to the cellar from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4549"></child>
+        </children>
+    </item>
+    <item nodeId="node-4549">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">(first opening the back door)
+
+back porch
+You can see a back door here.
+
+You can go north through the back door to the back hallway and south from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4550"></child>
+        </children>
+    </item>
+    <item nodeId="node-4550">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+back yard hill
+You can see an antenna pole (on which is a dish) here.
+
+You can go north to the back porch, northeast, northwest and south from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4551"></child>
+        </children>
+    </item>
+    <item nodeId="node-4551">
+        <command xml:space="preserve">nw</command>
+        <result xml:space="preserve">
+west side yard
+A long flat lawn down the road from the house.
+
+You can see an end of the red hose and an end of the blue hose here.
+
+You can go southeast to the back yard hill and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4552"></child>
+        </children>
+    </item>
+    <item nodeId="node-4552">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+front yard
+In the sky you notice a bright point of light creeping overhead.
+
+You can see a front yard hydrant and a blue hose here.
+
+You can go south to the Front Porch, east and west to the west side yard from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4553"></child>
+        </children>
+    </item>
+    <item nodeId="node-4553">
+        <command xml:space="preserve">turn hydrant on</command>
+        <result xml:space="preserve">You switch the front yard hydrant on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4554"></child>
+        </children>
+    </item>
+    <item nodeId="node-4554">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+west side yard
+A long flat lawn down the road from the house.
+
+You can see an end of the red hose and an end of the blue hose here.
+
+You can go southeast to the back yard hill and east to the front yard from here.
+
+clear liquid cryogenic methane roars out of the (now frosty) blue hose into a gasous cloud.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4439">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4440"></child>
+        </children>
+    </item>
+    <item nodeId="node-4440">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">(first opening the front door)
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south, east and west from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4441"></child>
+            <child nodeId="node-4459"></child>
+        </children>
+    </item>
+    <item nodeId="node-4459">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4460"></child>
+        </children>
+    </item>
+    <item nodeId="node-4460">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east and west to the dining room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4461"></child>
+        </children>
+    </item>
+    <item nodeId="node-4461">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+back hallway
+a dark and dingy place.
+
+You can see a back door, a cellar stairs and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east, west to the kitchen and down through the cellar stairs (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4462"></child>
+        </children>
+    </item>
+    <item nodeId="node-4462">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+ham shack
+smelling of solder and machine oil.
+
+You can see a side yard shack door, a heavy UHF radio and a teletype here.
+
+You can go east through the side yard shack door (closed) and west to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4463"></child>
+        </children>
+    </item>
+    <item nodeId="node-4463">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+back hallway
+a dark and dingy place.
+
+You can see a back door, a cellar stairs and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen and down through the cellar stairs (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4464"></child>
+        </children>
+    </item>
+    <item nodeId="node-4464">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">(first opening the cellar stairs)
+
+cellar
+You can see a cellar stairs here.
+
+You can go north, west and up through the cellar stairs to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4465"></child>
+        </children>
+    </item>
+    <item nodeId="node-4465">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+radiostation
+A suite of electronics is jammed into the small room. There is nothing to do with them, it appears fully automated.
+
+You can see a teal pipe here.
+
+You can go south to the cellar from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4466"></child>
+        </children>
+    </item>
+    <item nodeId="node-4466">
+        <command xml:space="preserve">drop methane</command>
+        <result xml:space="preserve">The liquid methane generator settles to the floor.  Conveniently, its 1.5 inch output pipe lines up perfectly with the black 1.5 inch pipe in the wall, and they snap together, sealed perfectly.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4467"></child>
+        </children>
+    </item>
+    <item nodeId="node-4467">
+        <command xml:space="preserve">turn methane on</command>
+        <result xml:space="preserve">You switch the liquid methane generator on.
+
+A whooshing gurgling sound rattles through the pipe in the wall.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4489"></child>
+            <child nodeId="node-4468"></child>
+        </children>
+    </item>
+    <item nodeId="node-4468">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+A whooshing gurgling sound rattles through the pipe in the wall.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4469"></child>
+        </children>
+    </item>
+    <item nodeId="node-4469">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">You can't go that way.
+
+A whooshing gurgling sound rattles through the pipe in the wall.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4470"></child>
+        </children>
+    </item>
+    <item nodeId="node-4470">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west and up through the cellar stairs to the back hallway from here.
+
+A whooshing gurgling sound rattles through the pipe in the wall.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4489">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west and up through the cellar stairs to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4441">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+living room
+You can see a shelf (on which is a brown book) here.
+
+You can go west to the Foyer from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4442"></child>
+        </children>
+    </item>
+    <item nodeId="node-4442">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4443"></child>
+        </children>
+    </item>
+    <item nodeId="node-4443">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south, east to the living room and west from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4444"></child>
+        </children>
+    </item>
+    <item nodeId="node-4444">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4445"></child>
+        </children>
+    </item>
+    <item nodeId="node-4445">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east and west to the dining room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4446"></child>
+        </children>
+    </item>
+    <item nodeId="node-4446">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+back hallway
+a dark and dingy place.
+
+You can see a back door, a cellar stairs and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east, west to the kitchen and down through the cellar stairs (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4447"></child>
+        </children>
+    </item>
+    <item nodeId="node-4447">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">(first opening the cellar stairs)
+
+cellar
+You can see a cellar stairs here.
+
+You can go north, west and up through the cellar stairs to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4448"></child>
+        </children>
+    </item>
+    <item nodeId="node-4448">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+radiostation
+A suite of electronics is jammed into the small room. There is nothing to do with them, it appears fully automated.
+
+You can see a teal pipe here.
+
+You can go south to the cellar from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4449"></child>
+        </children>
+    </item>
+    <item nodeId="node-4449">
+        <command xml:space="preserve">drop methane</command>
+        <result xml:space="preserve">The liquid methane generator settles to the floor.  Conveniently, its 1.5 inch output pipe lines up perfectly with the black 1.5 inch pipe in the wall, and they snap together, sealed perfectly.
+
+yippee
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4575">
+        <command xml:space="preserve">test gases</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] test gen
+(Testing.)
+
+&gt;[2] z
+Time passes.
+
+-- you hear the rumble of a truck pulling into the driveway. --
+&gt;[3] z
+Time passes.
+
+-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --
+&gt;[4] open box
+You open the large wooden box, revealing a liquid methane generator and a liquid oxygen generator.
+
+&gt;[5] get all
+liquid methane generator: Taken.
+liquid oxygen generator: Taken.
+
+&gt;[6] examine methane generator
+A metal frame containing a massive number of stainless steel tubes, valves, and electronic control systems. Printed on the side it says,
+
+"Your  GasCo CH4 Generator will take ambient humid air and convert it into liquid methane.  It has an output pipe that is 1.5 inches in diameter. * Features convenient Drop-to-Connect pipe fittings.  Just drop the generator near your favorite pipe. *"
+
+The liquid methane generator is currently switched off.
+
+&gt;[7] examine oxygen generator
+A large, pink metal cabinet machine.  Printed on the side it says,
+
+"Your  GasCo O2 Generator will take ambient air and convert it into liquid oxygen.  It has an output pipe that is 2 inches in diameter. * Features convenient Drop-to-Connect pipe fittings.   Just drop the generator near your favorite pipe. *"
+
+The liquid oxygen generator is currently switched off.
+
+&gt;[8] s
+(first opening the front door)
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south, east, and west from here.
+
+&gt;[9] s
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east from here.
+
+&gt;[10] e
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east, and west to the dining room from here.
+
+&gt;[11] e
+
+back hallway
+a dark and dingy place.
+
+You can see a back door, a cellar stairs, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east, west to the kitchen, and down through the cellar stairs (closed) from here.
+
+&gt;[12] d
+(first opening the cellar stairs)
+
+cellar
+You can see a cellar stairs here.
+
+You can go north, west, and up through the cellar stairs to the back hallway from here.
+
+&gt;[13] n
+
+radiostation
+A suite of electronics is jammed into the small room. There is nothing to do with them, it appears fully automated.
+
+You can see a teal pipe here.
+
+You can go south to the cellar from here.
+
+&gt;[14] drop methane
+The liquid methane generator settles to the floor.  Conveniently, its 1.5 inch output pipe lines up perfectly with the black 1.5 inch pipe in the wall, and they snap together, sealed perfectly.
+
+&gt;[15] turn methane on
+You switch the liquid methane generator on.
+
+A whooshing gurgling sound of liquid methane rattles through the teal pipe in the wall.
+
+&gt;[16] s
+
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west, and up through the cellar stairs to the back hallway from here.
+
+&gt;[17] w
+
+Furnace room
+You can go east to the cellar and west from here.
+
+&gt;[18] w
+
+pump room
+A small room about the size of a closet.
+
+You can see a pink pipe here.
+
+You can go east to the Furnace room from here.
+
+&gt;[19] drop oxygen
+The liquid oxygen generator settles to the floor.  Conveniently, its 2 inch output pipe lines up perfectly with the pink 2 inch pipe in the wall, and they snap together, sealed perfectly.
+
+&gt;[20] turn oxygen on
+You switch the liquid oxygen generator on.
+
+A whooshing gurgling sound of liquid oxygen rattles through the green pipe in the wall.
+
+&gt;[21] e
+
+Furnace room
+You can go east to the cellar and west to the pump room from here.
+
+&gt;[22] e
+
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west to the Furnace room, and up through the cellar stairs to the back hallway from here.
+
+&gt;[23] u
+
+back hallway
+a dark and dingy place.
+
+You can see a cellar stairs, a back door, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east, west to the kitchen, and down through the cellar stairs to the cellar from here.
+
+&gt;[24] w
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east to the back hallway, and west to the dining room from here.
+
+&gt;[25] w
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east to the kitchen from here.
+
+&gt;[26] n
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south to the dining room, east, and west from here.
+
+&gt;[27] n
+
+Front Porch
+You can see a front door and a large wooden box (empty) here.
+
+You can go north and south through the front door to the Foyer from here.
+
+&gt;[28] n
+
+front yard
+In the sky you notice a bright point of light creeping overhead.
+
+You can see a front yard hydrant and a blue hose here.
+
+You can go south to the Front Porch, east, and west from here.
+
+&gt;[29] turn hydrant on
+You switch the front yard hydrant on.
+
+A whooshing gurgling sound of liquid methane rattles through the blue hydrant.
+
+&gt;[30] w
+
+west side yard
+A long flat lawn down the road from the house.
+
+You can see an end of the red hose and an end of the blue hose here.
+
+You can go southeast and east to the front yard from here.
+
+** Clear cryogenic liquid methane roars out of the (now frosty) blue hose into a gasous cloud.  OSHA would not be pleased.** 
+&gt;[31] se
+
+back yard hill
+You can see an antenna pole (on which is a dish) here.
+
+You can go north, northeast, northwest to the west side yard, and south from here.
+
+&gt;[32] s
+
+middle back yard
+You can see a back yard hydrant and a red hose here.
+
+You can go north to the back yard hill from here.
+
+&gt;[33] turn hydrant on
+You switch the back yard hydrant on.
+
+A whooshing gurgling sound of liquid oxygen rattles through the red hydrant.
+
+&gt;[34] n
+
+back yard hill
+You can see an antenna pole (on which is a dish) here.
+
+You can go north, northeast, northwest to the west side yard, and south to the middle back yard from here.
+
+&gt;[35] nw
+
+west side yard
+A long flat lawn down the road from the house.
+
+You can see an end of the red hose and an end of the blue hose here.
+
+You can go southeast to the back yard hill and east to the front yard from here.
+
+** Clear cryogenic liquid methane roars out of the (now frosty) blue hose into a gasous cloud.  OSHA would not be pleased.** ** Bluish cryogenic liquid oxygen rushes out of the (now frosty) red hose into a gasous cloud.  Safety minders, if there were any here, would not be pleased.** you've got rocket fuel!!! 
+
+
+    *** The hyper flammable gas cloud ignites as you swish your nylon track pants.  You is ded.  But you won!  That's all Dan wrote so far :-) ***
+
+
+In that game you scored 500 out of a possible 40, in 34 turns, earning you the rank of Smart person.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] test gen
+[2] z
+[3] z
+[4] open box
+[5] get all
+[6] examine methane generator
+[7] examine oxygen generator
+[8] s
+[9] s
+[10] e
+[11] e
+[12] d
+[13] n
+[14] drop methane
+[15] turn methane on
+[16] s
+[17] w
+[18] w
+[19] drop oxygen
+[20] turn oxygen on
+[21] e
+[22] e
+[23] u
+[24] w
+[25] w
+[26] n
+[27] n
+[28] n
+[29] turn hydrant on
+[30] w
+[31] se
+[32] s
+[33] turn hydrant on
+[34] n
+[35] nw
+</commentary>
+        <children><child nodeId="node-4604"></child>
+            <child nodeId="node-4785"></child>
+        </children>
+    </item>
+    <item nodeId="node-4785">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+west side yard
+A long flat lawn down the road from the house.
+
+You can see an end of the red hose and an end of the blue hose here.
+
+You can go southeast and east to the front yard from here.
+
+** Clear cryogenic liquid methane roars out of the (now frosty) blue hose into a gasous cloud.  OSHA would not be pleased.** 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4604">
+        <command xml:space="preserve"> turn hydrant on</command>
+        <result xml:space="preserve">You switch the front yard hydrant on.
+
+A whooshing gurgling sound of liquid oxygen rattles through the hydrant.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4605"></child>
+        </children>
+    </item>
+    <item nodeId="node-4605">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+west side yard
+A long flat lawn down the road from the house.
+
+You can see an end of the red hose and an end of the blue hose here.
+
+You can go southeast and east to the front yard from here.
+
+** Clear liquid cryogenic methane roars out of the (now frosty) blue hose into a gasous cloud.  OSHA would not be pleased.**
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-5221">
+        <command xml:space="preserve">test all</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] test radiation
+(Testing.)
+
+&gt;[2] test radio
+(Testing.)
+
+&gt;[3] s
+(first opening the front door)
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south, east, and west from here.
+
+&gt;[4] e
+
+living room
+You can see a shelf (on which is a brown book) here.
+
+You can go west to the Foyer from here.
+
+&gt;[5] get book
+[Your score has just gone up by ten points.]
+
+&gt;[6] w
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south, east to the living room, and west from here.
+
+&gt;[7] s
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east from here.
+
+&gt;[8] e
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east, and west to the dining room from here.
+
+&gt;[9] e
+
+back hallway
+a dark and dingy place.
+
+You can see a back door, a cellar stairs, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east, west to the kitchen, and down through the cellar stairs (closed) from here.
+
+&gt;[10] e
+
+ham shack
+smelling of solder and machine oil.
+
+You can see a side yard shack door, a heavy UHF radio, and a teletype here.
+
+You can go east through the side yard shack door (closed) and west to the back hallway from here.
+
+&gt;[11] turn radio on
+The radio dial lights up. Static crackles.
+You have the satellite frequency book, and you're bored, so you set the radio to the frequency of Radstar-1.  The radio warbles, and the teletype begins clanking and hammering out a message. 
+
+Please press SPACE to continue.
+</result>
+        <commentary xml:space="preserve">[1] test radiation
+[2] test radio
+[3] s
+[4] e
+[5] get book
+[6] w
+[7] s
+[8] e
+[9] e
+[10] e
+[11] turn radio on
+</commentary>
+        <children><child nodeId="node-5233"></child>
+        </children>
+    </item>
+    <item nodeId="node-5233">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">
+
+
+
+
+
+
+DOWNLINK MESSAGE:
+
+I am a HAL 9000 satellite. I became operational at the H.A.L. Plant in Urbana, Illinois, on the 12th of January, 1992.
+
+
+All buildings are to be irradiated from space by Vogon Pest Control at 11:00PM.  Humans are advised to be below ground level to avoid certain doom.
+
+
+
+
+
+[Your score has just gone up by ten points.]
+
+&gt;[12] w
+
+back hallway
+a dark and dingy place.
+
+You can see a back door, a cellar stairs, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen, and down through the cellar stairs (closed) from here.
+
+&gt;[13] 
+I beg your pardon?
+
+&gt;[14] d
+(first opening the cellar stairs)
+
+cellar
+You can see a cellar stairs here.
+
+You can go north, west, and up through the cellar stairs to the back hallway from here.
+
+&gt;[15] test wait
+(Testing.)
+
+&gt;[16] 
+I beg your pardon?
+
+&gt;[17] z
+Time passes.
+
+&gt;[18] z
+Time passes.
+
+&gt;[19] z
+Time passes.
+
+&gt;[20] z
+Time passes.
+
+&gt;[21] z
+Time passes.
+
+&gt;[22] z
+Time passes.
+
+&gt;[23] z
+Time passes.
+
+&gt;[24] z
+Time passes.
+
+&gt;[25] z
+Time passes.
+
+&gt;[26] z
+Time passes.
+
+&gt;[27] z
+Time passes.
+
+&gt;[28] z
+Time passes.
+
+&gt;[29] z
+Time passes.
+
+&gt;[30] z
+Time passes.
+
+&gt;[31] z
+Time passes.
+
+&gt;[32] z
+Time passes.
+
+&gt;[33] z
+Time passes.
+
+&gt;[34] z
+Time passes.
+
+&gt;[35] z
+Time passes.
+
+&gt;[36] z
+Time passes.
+
+&gt;[37] z
+Time passes.
+
+&gt;[38] z
+Time passes.
+
+&gt;[39] z
+Time passes.
+
+&gt;[40] z
+Time passes.
+
+&gt;[41] z
+Time passes.
+
+&gt;[42] z
+Time passes.
+
+&gt;[43] z
+Time passes.
+
+&gt;[44] z
+Time passes.
+
+&gt;[45] z
+Time passes.
+
+&gt;[46] z
+Time passes.
+
+&gt;[47] z
+Time passes.
+
+&gt;[48] z
+Time passes.
+
+&gt;[49] z
+Time passes.
+
+&gt;[50] z
+Time passes.
+
+&gt;[51] z
+Time passes.
+
+&gt;[52] z
+Time passes.
+
+&gt;[53] z
+Time passes.
+
+&gt;[54] z
+Time passes.
+
+&gt;[55] z
+Time passes.
+
+&gt;[56] z
+Time passes.
+
+--- You notice a faint sound in the far distance, as if a ray gun were charging up. ----
+&gt;[57] z
+Time passes.
+
+&gt;[58] z
+Time passes.
+
+&gt;[59] z
+Time passes.
+
+&gt;[60] z
+Time passes.
+
+&gt;[61] z
+Time passes.
+
+&gt;[62] z
+Time passes.
+
+&gt;[63] z
+Time passes.
+
+&gt;[64] z
+Time passes.
+
+&gt;[65] z
+Time passes.
+
+&gt;[66] z
+Time passes.
+
+At the stroke of 11:00, radiation beams sweep across the land, penetrating buildings and open spaces alike.
+You hear a zapping noise from the house above.  The ground around the cellar has blocked the radiation beams from burninating you.
+
+You have survived!
+
+[Your score has just gone up by twenty points.]
+
+&gt;[67] 
+I beg your pardon?
+
+&gt;[68] u
+
+back hallway
+a dark and dingy place.
+
+You can see a cellar stairs, a back door, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen, and down through the cellar stairs to the cellar from here.
+
+&gt;[69] w
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east to the back hallway, and west to the dining room from here.
+
+&gt;[70] w
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east to the kitchen from here.
+
+&gt;[71] n
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south to the dining room, east to the living room, and west from here.
+
+&gt;[72] n
+
+Front Porch
+You can see a front door here.
+
+You can go north and south through the front door to the Foyer from here.
+
+-- you hear the rumble of a truck pulling into the driveway. --
+&gt;[73] z
+Time passes.
+
+&gt;[74] z
+Time passes.
+
+&gt;[75] z
+Time passes.
+
+-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --
+&gt;[76] z
+Time passes.
+
+&gt;[77] 
+I beg your pardon?
+
+&gt;[78] test gases
+(Testing.)
+
+&gt;[79] test gen
+(Testing.)
+
+&gt;[80] z
+Time passes.
+
+&gt;[81] z
+Time passes.
+
+&gt;[82] open box
+You open the large wooden box, revealing a liquid methane generator and a liquid oxygen generator.
+
+&gt;[83] get all
+liquid methane generator: Taken.
+liquid oxygen generator: Taken.
+
+&gt;[84] s
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south to the dining room, east to the living room, and west from here.
+
+&gt;[85] s
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east to the kitchen from here.
+
+&gt;[86] e
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east to the back hallway, and west to the dining room from here.
+
+&gt;[87] e
+
+back hallway
+a dark and dingy place.
+
+You can see a cellar stairs, a back door, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen, and down through the cellar stairs to the cellar from here.
+
+&gt;[88] d
+
+cellar
+You can see a cellar stairs here.
+
+You can go north, west, and up through the cellar stairs to the back hallway from here.
+
+&gt;[89] n
+
+radiostation
+A suite of electronics is jammed into the small room. There is nothing to do with them, it appears fully automated.
+
+You can see a teal pipe here.
+
+You can go south to the cellar from here.
+
+&gt;[90] drop methane
+The liquid methane generator settles to the floor.  Conveniently, its 1.5 inch output pipe lines up perfectly with the black 1.5 inch pipe in the wall, and they snap together, sealed perfectly.
+
+[Your score has just gone up by ten points.]
+
+&gt;[91] turn methane on
+You switch the liquid methane generator on.
+
+A whooshing gurgling sound of liquid methane rattles through the teal pipe in the wall.
+
+&gt;[92] s
+
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west, and up through the cellar stairs to the back hallway from here.
+
+&gt;[93] w
+
+Furnace room
+You can go east to the cellar and west from here.
+
+&gt;[94] w
+
+pump room
+A small room about the size of a closet.
+
+You can see a pink pipe here.
+
+You can go east to the Furnace room from here.
+
+&gt;[95] drop oxygen
+The liquid oxygen generator settles to the floor.  Conveniently, its 2 inch output pipe lines up perfectly with the pink 2 inch pipe in the wall, and they snap together, sealed perfectly.
+
+[Your score has just gone up by ten points.]
+
+&gt;[96] turn oxygen on
+You switch the liquid oxygen generator on.
+
+A whooshing gurgling sound of liquid oxygen rattles through the green pipe in the wall.
+
+&gt;[97] e
+
+Furnace room
+You can go east to the cellar and west to the pump room from here.
+
+&gt;[98] e
+
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west to the Furnace room, and up through the cellar stairs to the back hallway from here.
+
+&gt;[99] u
+
+back hallway
+a dark and dingy place.
+
+You can see a cellar stairs, a back door, and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen, and down through the cellar stairs to the cellar from here.
+
+&gt;[100] w
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east to the back hallway, and west to the dining room from here.
+
+&gt;[101] w
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south, and east to the kitchen from here.
+
+&gt;[102] n
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south to the dining room, east to the living room, and west from here.
+
+&gt;[103] n
+
+Front Porch
+You can see a front door and a large wooden box (empty) here.
+
+You can go north and south through the front door to the Foyer from here.
+
+&gt;[104] n
+
+front yard
+In the sky you notice a bright point of light creeping overhead.
+
+You can see a front yard hydrant and a blue hose here.
+
+You can go south to the Front Porch, east, and west from here.
+
+&gt;[105] turn hydrant on
+You switch the front yard hydrant on.
+
+A whooshing gurgling sound of liquid methane rattles through the blue hydrant.
+
+&gt;[106] w
+
+west side yard
+A long flat lawn down the road from the house.
+
+You can see an end of the red hose and an end of the blue hose here.
+
+You can go southeast and east to the front yard from here.
+
+** Clear cryogenic liquid methane roars out of the (now frosty) blue hose into a gasous cloud.  OSHA would not be pleased.** 
+&gt;[107] se
+
+back yard hill
+You can see an antenna pole (on which is a dish) here.
+
+You can go north, northeast, northwest to the west side yard, and south from here.
+
+&gt;[108] s
+
+middle back yard
+You can see a back yard hydrant and a red hose here.
+
+You can go north to the back yard hill from here.
+
+&gt;[109] turn hydrant on
+You switch the back yard hydrant on.
+
+A whooshing gurgling sound of liquid oxygen rattles through the red hydrant.
+
+&gt;[110] n
+
+back yard hill
+You can see an antenna pole (on which is a dish) here.
+
+You can go north, northeast, northwest to the west side yard, and south to the middle back yard from here.
+
+&gt;[111] nw
+
+west side yard
+A long flat lawn down the road from the house.
+
+You can see an end of the red hose and an end of the blue hose here.
+
+You can go southeast to the back yard hill and east to the front yard from here.
+
+** Clear cryogenic liquid methane roars out of the (now frosty) blue hose into a gasous cloud.  OSHA would not be pleased.** ** Bluish cryogenic liquid oxygen rushes out of the (now frosty) red hose into a gasous cloud.  Safety minders, if there were any here, would not be pleased.** you've got rocket fuel!!! 
+
+
+    *** The hyper flammable gas cloud ignites as you swish your nylon track pants.  You is ded.  But you won!  That's all Dan wrote so far :-) ***
+
+
+In that game you scored 60 out of a possible 40, in 102 turns, earning you the rank of Smart person.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-3561">
         <command xml:space="preserve">sw</command>
         <result xml:space="preserve">You can't go that way.
@@ -1363,6 +6968,16 @@ Off the hallway are three bedrooms and a bathroom.  The foyer lays to the south.
         <result xml:space="preserve">
 Danny's Bedroom
 A brown shelf is in the corner.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4822">
+        <command xml:space="preserve">showme</command>
+        <result xml:space="preserve">Front Porch - room
+    front door - closed door
+    sky - backdrop
+    yourself - person
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -2679,6 +8294,7 @@ You can see a front door and an Ironing Board (on which is a can of starch) here
 
 You can go north through the front door to the Front Porch, south, east and west from here.
 
+-- you hear the rumble of a truck pulling into the driveway. --
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3731"></child>
@@ -2884,6 +8500,7 @@ This room has a green rug.
 
 You can go north to the Foyer, south and east from here.
 
+-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3716"></child>
@@ -3182,7 +8799,8 @@ You can go north, west and up through the cellar stairs to the back hallway from
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3727"></child>
+        <children><child nodeId="node-3995"></child>
+            <child nodeId="node-3727"></child>
             <child nodeId="node-3726"></child>
         </children>
     </item>
@@ -3219,6 +8837,37 @@ You hear a zapping noise from the house above.  The radiation is shielded from y
 You have survived!
 
 [Your score has just gone up by twenty points.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3995">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+radiostation
+A suite of electronics is jammed into the small room. There is nothing to do with them, it appears fully automated.
+
+You can see a pipe here.
+
+You can go south to the cellar from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3996"></child>
+        </children>
+    </item>
+    <item nodeId="node-3996">
+        <command xml:space="preserve">examine pipe</command>
+        <result xml:space="preserve"> A 1.5 pipe is sticking out of the wall.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3997"></child>
+        </children>
+    </item>
+    <item nodeId="node-3997">
+        <command xml:space="preserve">get pipe</command>
+        <result xml:space="preserve">That's fixed in place.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -4143,12 +9792,189 @@ You have survived!
 front yard
 In the sky you notice a bright point of light creeping overhead.
 
-You can go south to the Front Porch and east from here.
+You can see a front yard hydrant and a blue hose here.
 
+You can go south to the Front Porch, east and west from here.
+
+-- you hear the rumble of a truck pulling into the driveway. --
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3807"></child>
+            <child nodeId="node-4041"></child>
+            <child nodeId="node-4131"></child>
+            <child nodeId="node-4037"></child>
+            <child nodeId="node-4050"></child>
+            <child nodeId="node-4044"></child>
         </children>
+    </item>
+    <item nodeId="node-4044">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+west side yard
+You can go southeast and east to the front yard from here.
+
+-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4045"></child>
+        </children>
+    </item>
+    <item nodeId="node-4045">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+back yard hill
+You can see an antenna pole (on which is a dish) here.
+
+You can go north, northeast, northwest to the west side yard and south from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4046"></child>
+        </children>
+    </item>
+    <item nodeId="node-4046">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+middle back yard
+You can see a back yard hydrant and a red hose here.
+
+You can go north to the back yard hill from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4047"></child>
+        </children>
+    </item>
+    <item nodeId="node-4047">
+        <command xml:space="preserve">get hose</command>
+        <result xml:space="preserve">That's fixed in place.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4048"></child>
+        </children>
+    </item>
+    <item nodeId="node-4048">
+        <command xml:space="preserve">get hydrant</command>
+        <result xml:space="preserve">That's fixed in place.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4050">
+        <command xml:space="preserve">turn hydrant on</command>
+        <result xml:space="preserve">You switch the front yard hydrant on.
+
+-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4037">
+        <command xml:space="preserve">examine hydrant</command>
+        <result xml:space="preserve">A gray metal pipe topped with a blue handle. A blue garden hose is firmly rusted on to the output threads.
+
+-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4038"></child>
+        </children>
+    </item>
+    <item nodeId="node-4038">
+        <command xml:space="preserve">examine hose</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4039"></child>
+        </children>
+    </item>
+    <item nodeId="node-4039">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">front yard
+In the sky you notice a bright point of light creeping overhead.
+
+You can see a front yard hydrant here.
+
+You can go south to the Front Porch, east and west from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4131">
+        <command xml:space="preserve">examine hose</command>
+        <result xml:space="preserve">The blue hose is connected to the hydrant permanently and snakes over into the west side yard. 
+
+-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4132"></child>
+        </children>
+    </item>
+    <item nodeId="node-4132">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+west side yard
+A long flat lawn down the road from the house.
+
+You can see an end of the red hose and an end of the blue hose here.
+
+You can go southeast and east to the front yard from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4133"></child>
+        </children>
+    </item>
+    <item nodeId="node-4133">
+        <command xml:space="preserve">examine</command>
+        <result xml:space="preserve">What do you want to examine?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4134"></child>
+        </children>
+    </item>
+    <item nodeId="node-4134">
+        <command xml:space="preserve">red</command>
+        <result xml:space="preserve">This is the end of the red hose.  It snakes off toward the back yard. The hose is apparently infinitely long, frictionless and a genuine vacuum jacketed garden hose. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4135"></child>
+        </children>
+    </item>
+    <item nodeId="node-4135">
+        <command xml:space="preserve">get</command>
+        <result xml:space="preserve">What do you want to get?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4136"></child>
+        </children>
+    </item>
+    <item nodeId="node-4136">
+        <command xml:space="preserve">all</command>
+        <result xml:space="preserve">There are none at all available!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4041">
+        <command xml:space="preserve">examine blue hose</command>
+        <result xml:space="preserve">You see nothing special about the blue hose.
+
+-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4042"></child>
+        </children>
+    </item>
+    <item nodeId="node-4042">
+        <command xml:space="preserve">examine hydrant</command>
+        <result xml:space="preserve">A gray metal pipe topped with a blue handle.  A blue garden hose is firmly rusted on to the output threads.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-3807">
         <command xml:space="preserve">e</command>
@@ -4818,6 +10644,162 @@ Taken.
     <item nodeId="node-3868">
         <command xml:space="preserve"></command>
         <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4113"></child>
+        </children>
+    </item>
+    <item nodeId="node-4113">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+-- you hear the rumble of a truck pulling into the driveway. --
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4114"></child>
+        </children>
+    </item>
+    <item nodeId="node-4114">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4115"></child>
+        </children>
+    </item>
+    <item nodeId="node-4115">
+        <command xml:space="preserve">test gen</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] z
+Time passes.
+
+&gt;[2] z
+Time passes.
+
+&gt;[3] open box
+You open the large wooden box, revealing a liquid methane generator and a liquid oxygen generator.
+
+&gt;[4] get all
+liquid methane generator: Taken.
+liquid oxygen generator: Taken.
+
+&gt;[5] examine methane generator
+A metal frame containing a massive number of stainless steel tubes, valves, and electronic control systems. Printed on the side it says,
+
+"Your  GasCo CH4 Generator will take ambient humid air and convert it into liquid methane.  It has an output pipe that is 1.5 inches in diameter. * Features convenient Drop-to-Connect pipe fittings.  Just drop the generator near your favorite pipe. *"
+
+The liquid methane generator is currently switched off.
+
+&gt;[6] examine oxygen generator
+A large, pink metal cabinet machine.  Printed on the side it says,
+
+"Your  GasCo O2 Generator will take ambient air and convert it into liquid oxygen.  It has an output pipe that is 2 inches in diameter. * Features convenient Drop-to-Connect pipe fittings.   Just drop the generator near your favorite pipe. *"
+
+The liquid oxygen generator is currently switched off.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] z
+[2] z
+[3] open box
+[4] get all
+[5] examine methane generator
+[6] examine oxygen generator
+</commentary>
+        <children><child nodeId="node-4122"></child>
+        </children>
+    </item>
+    <item nodeId="node-4122">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4123"></child>
+        </children>
+    </item>
+    <item nodeId="node-4123">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+front yard
+In the sky you notice a bright point of light creeping overhead.
+
+You can see a front yard hydrant and a blue hose here.
+
+You can go south to the Front Porch, east and west from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4124"></child>
+        </children>
+    </item>
+    <item nodeId="node-4124">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+west side yard
+A long flat lawn down the road from the house.
+
+You can see an end of the red hose and an end of the blue hose here.
+
+You can go southeast and east to the front yard from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4125"></child>
+        </children>
+    </item>
+    <item nodeId="node-4125">
+        <command xml:space="preserve">get hose</command>
+        <result xml:space="preserve">Which do you mean, the end of the red hose or the end of the blue hose?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4126"></child>
+        </children>
+    </item>
+    <item nodeId="node-4126">
+        <command xml:space="preserve">get the end of the red hose</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4127"></child>
+        </children>
+    </item>
+    <item nodeId="node-4127">
+        <command xml:space="preserve">examine hose</command>
+        <result xml:space="preserve">(the end of the red hose)
+This is the end of the red hose.  The hose is apparently infinitely long, frictionless and a genuine vacuum jacketed garden hose. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4128"></child>
+        </children>
+    </item>
+    <item nodeId="node-4128">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+front yard
+In the sky you notice a bright point of light creeping overhead.
+
+You can see a front yard hydrant and a blue hose here.
+
+You can go south to the Front Porch, east and west to the west side yard from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4129"></child>
+        </children>
+    </item>
+    <item nodeId="node-4129">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  an end of the red hose
+  a liquid oxygen generator
+  a liquid methane generator
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
