@@ -1,0 +1,3278 @@
+<?xml version="1.0"?>
+
+<Skein rootNode="node-1009">
+    <generator>Inform Mac Client (Inform version )</generator>
+    <item nodeId="node-1009">
+        <command xml:space="preserve">TestPavilionHouse1</command>
+        <result xml:space="preserve">
+
+
+
+You are in a house in the countryside.  You are into electronics, and it is night time.
+
+Rogers Rd
+An Interactive Fiction by Dan Bowen
+Release 1 / Serial number 201108 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+
+Front Porch
+You can see a front door here.
+
+You can go north and south through the front door (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1042"></child>
+            <child nodeId="node-1038"></child>
+            <child nodeId="node-1059"></child>
+            <child nodeId="node-1049"></child>
+            <child nodeId="node-1058"></child>
+            <child nodeId="node-1057"></child>
+            <child nodeId="node-1054"></child>
+            <child nodeId="node-1356"></child>
+            <child nodeId="node-1037"></child>
+            <child nodeId="node-1014"></child>
+            <child nodeId="node-1312"></child>
+            <child nodeId="node-1299"></child>
+            <child nodeId="node-1350"></child>
+            <child nodeId="node-1346"></child>
+            <child nodeId="node-1010"></child>
+            <child nodeId="node-1175"></child>
+            <child nodeId="node-1372"></child>
+        </children>
+    </item>
+    <item nodeId="node-1372">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1373"></child>
+        </children>
+    </item>
+    <item nodeId="node-1373">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1374"></child>
+        </children>
+    </item>
+    <item nodeId="node-1374">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1375"></child>
+        </children>
+    </item>
+    <item nodeId="node-1375">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1376"></child>
+        </children>
+    </item>
+    <item nodeId="node-1376">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1377"></child>
+        </children>
+    </item>
+    <item nodeId="node-1377">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1378"></child>
+        </children>
+    </item>
+    <item nodeId="node-1378">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1379"></child>
+        </children>
+    </item>
+    <item nodeId="node-1379">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1380"></child>
+        </children>
+    </item>
+    <item nodeId="node-1380">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1381"></child>
+        </children>
+    </item>
+    <item nodeId="node-1381">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1382"></child>
+        </children>
+    </item>
+    <item nodeId="node-1382">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1383"></child>
+        </children>
+    </item>
+    <item nodeId="node-1383">
+        <command xml:space="preserve">wati</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1384"></child>
+        </children>
+    </item>
+    <item nodeId="node-1384">
+        <command xml:space="preserve">wati</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1385"></child>
+        </children>
+    </item>
+    <item nodeId="node-1385">
+        <command xml:space="preserve">wati</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1386"></child>
+        </children>
+    </item>
+    <item nodeId="node-1386">
+        <command xml:space="preserve">wati</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1387"></child>
+        </children>
+    </item>
+    <item nodeId="node-1387">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1388"></child>
+        </children>
+    </item>
+    <item nodeId="node-1388">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1389"></child>
+        </children>
+    </item>
+    <item nodeId="node-1389">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1390"></child>
+        </children>
+    </item>
+    <item nodeId="node-1390">
+        <command xml:space="preserve"> wait</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1391"></child>
+        </children>
+    </item>
+    <item nodeId="node-1391">
+        <command xml:space="preserve"> wait</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1392"></child>
+        </children>
+    </item>
+    <item nodeId="node-1392">
+        <command xml:space="preserve"> wait</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1393"></child>
+        </children>
+    </item>
+    <item nodeId="node-1393">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1394"></child>
+        </children>
+    </item>
+    <item nodeId="node-1394">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1395"></child>
+        </children>
+    </item>
+    <item nodeId="node-1395">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1396"></child>
+        </children>
+    </item>
+    <item nodeId="node-1396">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1397"></child>
+        </children>
+    </item>
+    <item nodeId="node-1397">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1398"></child>
+        </children>
+    </item>
+    <item nodeId="node-1398">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1399"></child>
+        </children>
+    </item>
+    <item nodeId="node-1399">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1400"></child>
+        </children>
+    </item>
+    <item nodeId="node-1400">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1401"></child>
+        </children>
+    </item>
+    <item nodeId="node-1401">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1402"></child>
+        </children>
+    </item>
+    <item nodeId="node-1402">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1403"></child>
+        </children>
+    </item>
+    <item nodeId="node-1403">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1404"></child>
+        </children>
+    </item>
+    <item nodeId="node-1404">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1405"></child>
+        </children>
+    </item>
+    <item nodeId="node-1405">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1406"></child>
+        </children>
+    </item>
+    <item nodeId="node-1406">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1407"></child>
+        </children>
+    </item>
+    <item nodeId="node-1407">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+
+
+    *** You have grown bored, never having figured out the satellite, and you die.  THE END ***
+
+
+In that game you scored 0 out of a possible 0, in 32 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1408"></child>
+        </children>
+    </item>
+    <item nodeId="node-1408">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">
+
+
+
+You are in a house in the countryside.  You are into electronics, and it is night time.
+
+Rogers Rd
+An Interactive Fiction by Dan Bowen
+Release 1 / Serial number 201108 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+
+Porch
+You can see a front door here.
+
+You can go north and south through the front door (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1409"></child>
+        </children>
+    </item>
+    <item nodeId="node-1409">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1410"></child>
+        </children>
+    </item>
+    <item nodeId="node-1410">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+front yard
+In the sky you notice a bright point of light creeping overhead.
+
+You can go south to the Porch and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1411"></child>
+        </children>
+    </item>
+    <item nodeId="node-1411">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+driveway
+The gravelly pavement seems gray and boring.
+
+You can go south, southeast and west to the front yard from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1412"></child>
+        </children>
+    </item>
+    <item nodeId="node-1412">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+side yard
+You can see a side yard shack door here.
+
+You can go northwest to the driveway, southwest and west through the side yard shack door (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1413"></child>
+        </children>
+    </item>
+    <item nodeId="node-1413">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">(first opening the side yard shack door)
+
+ham shack
+You can see a side yard shack door, a heavy UHF radio and a teletype here.
+
+You can go east through the side yard shack door to the side yard and west from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1414"></child>
+        </children>
+    </item>
+    <item nodeId="node-1414">
+        <command xml:space="preserve">turn radio on</command>
+        <result xml:space="preserve">The radio dial lights up. Static crackles.
+you don't know any interesting frequencies to listen to, so you shut the radio back off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1415"></child>
+        </children>
+    </item>
+    <item nodeId="node-1415">
+        <command xml:space="preserve">showme</command>
+        <result xml:space="preserve">ham shack - room
+    side yard shack door - open door
+    yourself - person
+    heavy UHF radio - device
+    teletype
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1416"></child>
+        </children>
+    </item>
+    <item nodeId="node-1416">
+        <command xml:space="preserve">radio</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1417"></child>
+        </children>
+    </item>
+    <item nodeId="node-1417">
+        <command xml:space="preserve">examine radio</command>
+        <result xml:space="preserve">The radio is about the size and shape of a VCR.  It says "UHF Satellite decoder radio"  It is connected to the teletype.
+
+The heavy UHF radio is currently switched off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1418"></child>
+        </children>
+    </item>
+    <item nodeId="node-1418">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+back hallway
+You can see a back door, a cellar stairs and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west and down through the cellar stairs (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1419"></child>
+        </children>
+    </item>
+    <item nodeId="node-1419">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east to the back hallway and west from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1420"></child>
+        </children>
+    </item>
+    <item nodeId="node-1420">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+dining room
+You can go north, south and east to the kitchen from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1421"></child>
+        </children>
+    </item>
+    <item nodeId="node-1421">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1422"></child>
+        </children>
+    </item>
+    <item nodeId="node-1422">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Foyer
+A linoluem floor looks out the front door to the north.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door (closed) to the Porch, south to the dining room, east and west from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1423"></child>
+        </children>
+    </item>
+    <item nodeId="node-1423">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Hallway
+Off the hallway are three bedrooms and a bathroom.  The foyer lays to the south.
+
+You can go north, northwest, south, southwest and east to the Foyer from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1424"></child>
+        </children>
+    </item>
+    <item nodeId="node-1424">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1425"></child>
+        </children>
+    </item>
+    <item nodeId="node-1425">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Michael's room
+You can see an air filter here.
+
+You can go south to the Hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1426"></child>
+        </children>
+    </item>
+    <item nodeId="node-1426">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Hallway
+Off the hallway are three bedrooms and a bathroom.  The foyer lays to the south.
+
+You can go north to Michael's room, northwest, south, southwest and east to the Foyer from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1427"></child>
+        </children>
+    </item>
+    <item nodeId="node-1427">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">
+Dad's room
+in the middle of the room is a pink waterbed.
+
+You can go northeast to the Hallway and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1428"></child>
+        </children>
+    </item>
+    <item nodeId="node-1428">
+        <command xml:space="preserve">ne</command>
+        <result xml:space="preserve">
+Hallway
+Off the hallway are three bedrooms and a bathroom.  The foyer lays to the south.
+
+You can go north to Michael's room, northwest, south, southwest to Dad's room and east to the Foyer from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1429"></child>
+        </children>
+    </item>
+    <item nodeId="node-1429">
+        <command xml:space="preserve">nw</command>
+        <result xml:space="preserve">
+Danny's Bedroom
+You can go southeast to the Hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1430"></child>
+        </children>
+    </item>
+    <item nodeId="node-1430">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Hallway
+Off the hallway are three bedrooms and a bathroom.  The foyer lays to the south.
+
+You can go north to Michael's room, northwest to Danny's Bedroom, south, southwest to Dad's room and east to the Foyer from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1431"></child>
+        </children>
+    </item>
+    <item nodeId="node-1431">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Foyer
+A linoluem floor looks out the front door to the north.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door (closed) to the Porch, south to the dining room, east and west to the Hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1432"></child>
+        </children>
+    </item>
+    <item nodeId="node-1432">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+living room
+You can see a shelf (on which is a brown book) here.
+
+You can go west to the Foyer from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1433"></child>
+        </children>
+    </item>
+    <item nodeId="node-1433">
+        <command xml:space="preserve">get book</command>
+        <result xml:space="preserve">[Your score has just gone up by ten points.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1434"></child>
+        </children>
+    </item>
+    <item nodeId="node-1434">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Foyer
+A linoluem floor looks out the front door to the north.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door (closed) to the Porch, south to the dining room, east to the living room and west to the Hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1435"></child>
+        </children>
+    </item>
+    <item nodeId="node-1435">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+dining room
+You can go north to the Foyer, south and east to the kitchen from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1436"></child>
+        </children>
+    </item>
+    <item nodeId="node-1436">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east to the back hallway and west to the dining room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1437"></child>
+        </children>
+    </item>
+    <item nodeId="node-1437">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+back hallway
+You can see a back door, a cellar stairs and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east to the ham shack, west to the kitchen and down through the cellar stairs (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1438"></child>
+        </children>
+    </item>
+    <item nodeId="node-1438">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+ham shack
+You can see a side yard shack door, a heavy UHF radio and a teletype here.
+
+You can go east through the side yard shack door to the side yard and west to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1439"></child>
+        </children>
+    </item>
+    <item nodeId="node-1439">
+        <command xml:space="preserve">turn radio on</command>
+        <result xml:space="preserve">The radio dial lights up. Static crackles.
+You have the satellite frequency book, and you're bored, so you set the radio to the frequency of Radstar-1.  The radio warbles, and the teletype begins clanking and hammering out a message.  The message says "I am a HAL 9000 satellite. I became operational at the H.A.L. Plant in Urbana, Illinois, on the 12th of January, 1992."
+
+
+
+    *** THE END. You have been amused by a satellite.  Good job! ***
+
+
+In that game you scored 20 out of a possible 0, in 29 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1175">
+        <command xml:space="preserve">test me</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] s
+(first opening the front door)
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south, east and west from here.
+
+&gt;[2] e
+
+living room
+You can see a shelf (on which is a brown book) here.
+
+You can go west to the Foyer from here.
+
+&gt;[3] get book
+[Your score has just gone up by ten points.]
+
+&gt;[4] w
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south, east to the living room and west from here.
+
+&gt;[5] s
+
+dining room
+This room has a green rug.
+
+You can go north to the Foyer, south and east from here.
+
+&gt;[6] e
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east and west to the dining room from here.
+
+&gt;[7] e
+
+back hallway
+a dark and dingy place.
+
+You can see a back door, a cellar stairs and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east, west to the kitchen and down through the cellar stairs (closed) from here.
+
+&gt;[8] e
+
+ham shack
+smelling of solder and machine oil.
+
+You can see a side yard shack door, a heavy UHF radio and a teletype here.
+
+You can go east through the side yard shack door (closed) and west to the back hallway from here.
+
+&gt;[9] turn radio on
+The radio dial lights up. Static crackles.
+You have the satellite frequency book, and you're bored, so you set the radio to the frequency of Radstar-1.  The radio warbles, and the teletype begins clanking and hammering out a message. 
+
+Please press SPACE to continue.
+</result>
+        <commentary xml:space="preserve">[1] s
+[2] e
+[3] get book
+[4] w
+[5] s
+[6] e
+[7] e
+[8] e
+[9] turn radio on
+</commentary>
+        <children><child nodeId="node-1522"></child>
+            <child nodeId="node-1206"></child>
+            <child nodeId="node-1195"></child>
+            <child nodeId="node-1252"></child>
+            <child nodeId="node-1184"></child>
+        </children>
+    </item>
+    <item nodeId="node-1184">
+        <command xml:space="preserve">turn radio off</command>
+        <result xml:space="preserve">You switch the heavy UHF radio off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1185"></child>
+        </children>
+    </item>
+    <item nodeId="node-1185">
+        <command xml:space="preserve">turn radio on</command>
+        <result xml:space="preserve">The radio dial lights up. Static crackles.
+You have the satellite frequency book, and you're bored, so you set the radio to the frequency of Radstar-1.  The teletype begins clanking and hammering out a message.  The message says "Vogon construction fleet approaching.  exit all building to prevent death."
+
+[Your score has just gone up by ten points.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1252">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">
+
+
+
+Rogers Rd
+An Interactive Fiction by Dan Bowen
+Release 1 / Serial number 201107 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+
+Danny's Bedroom
+You can see a shelf (on which is a brown book) here.
+
+You can go southeast from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1253"></child>
+        </children>
+    </item>
+    <item nodeId="node-1253">
+        <command xml:space="preserve">get book</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1195">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">ham shack
+You can see a ham shack door, a heavy UHF radio and a teletype here.
+
+You can go east through the ham shack door (closed) and west to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1196"></child>
+        </children>
+    </item>
+    <item nodeId="node-1196">
+        <command xml:space="preserve">examine teletype</command>
+        <result xml:space="preserve">The green box hums quietly.  Blank paper pokes out of the top window.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1206">
+        <command xml:space="preserve">examine radio</command>
+        <result xml:space="preserve">A satellite decoder radio, connected to the teletype.
+
+The heavy UHF radio is currently switched on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1522">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">
+
+
+
+
+
+
+    DOWNLINK MESSAGE:
+
+I am a HAL 9000 satellite. I became operational at the H.A.L. Plant in Urbana, Illinois, on the 12th of January, 1992.
+
+
+
+Please press SPACE to continue.
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1652"></child>
+            <child nodeId="node-1639"></child>
+        </children>
+    </item>
+    <item nodeId="node-1639">
+        <command xml:space="preserve">þ</command>
+        <result xml:space="preserve"></result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1640"></child>
+        </children>
+    </item>
+    <item nodeId="node-1640">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">You have discovered a sentient satellite. You feel a sense of accomplishment and satisfied curiosity.
+
+
+
+    *** THE END.  Good Job! ***
+
+
+In that game you scored 20 out of a possible 0, in 9 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1652">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">
+    All buildings are to be irradiated from space by Vogon Pest Control at 11:30PM.  Humans are advised to shelter in forests to avoid certain doom.
+
+
+
+
+
+You have discovered a sentient satellite. You feel a sense of accomplishment and satisfied curiosity.
+
+
+
+    *** THE END.  Good Job! ***
+
+
+In that game you scored 20 out of a possible 20, in 9 turns, earning you the rank of Interesting person.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1010">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1011"></child>
+            <child nodeId="node-1101"></child>
+        </children>
+    </item>
+    <item nodeId="node-1101">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Hallway
+Off the hallway are three bedrooms and a bathroom.  The foyer lays to the south.
+
+You can go north, northwest to Danny's Bedroom, south, southwest and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1102"></child>
+        </children>
+    </item>
+    <item nodeId="node-1102">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Foyer
+A linoluem floor looks out the front door to the north.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door (closed), south, east and west to the Hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1103"></child>
+        </children>
+    </item>
+    <item nodeId="node-1103">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+dining room
+You can go north to the Foyer, south and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1104"></child>
+        </children>
+    </item>
+    <item nodeId="node-1104">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+kitchen
+You can go south, east and west to the dining room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1105"></child>
+        </children>
+    </item>
+    <item nodeId="node-1105">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+back hallway
+You can see a garage door and a cellar stairs here.
+
+You can go north through the garage door (closed), south, east, west to the kitchen and down through the cellar stairs (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1106"></child>
+        </children>
+    </item>
+    <item nodeId="node-1106">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+ham shack
+You can see a ham shack door, a heavy UHF radio and a teletype here.
+
+You can go east through the ham shack door (closed) and west to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1107"></child>
+        </children>
+    </item>
+    <item nodeId="node-1107">
+        <command xml:space="preserve">turn radio on</command>
+        <result xml:space="preserve">go tit
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1108"></child>
+        </children>
+    </item>
+    <item nodeId="node-1108">
+        <command xml:space="preserve">turn radio off</command>
+        <result xml:space="preserve">You switch the heavy UHF radio off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1109"></child>
+        </children>
+    </item>
+    <item nodeId="node-1109">
+        <command xml:space="preserve">actions</command>
+        <result xml:space="preserve">Actions listing on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1110"></child>
+        </children>
+    </item>
+    <item nodeId="node-1110">
+        <command xml:space="preserve">turn radio on</command>
+        <result xml:space="preserve">[switching on the heavy UHF radio]
+You switch the heavy UHF radio on.
+[switching on the heavy UHF radio - succeeded]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1111"></child>
+        </children>
+    </item>
+    <item nodeId="node-1111">
+        <command xml:space="preserve">get radio</command>
+        <result xml:space="preserve">[taking the heavy UHF radio]
+Taken.
+[taking the heavy UHF radio - succeeded]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1011">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Michael's room
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1012"></child>
+        </children>
+    </item>
+    <item nodeId="node-1012">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Hallway
+Off the hallway are three bedrooms and a bathroom.  The foyer lays to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1013"></child>
+        </children>
+    </item>
+    <item nodeId="node-1013">
+        <command xml:space="preserve">ne</command>
+        <result xml:space="preserve">
+Danny's Bedroom
+A brown shelf is in the corner.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1346">
+        <command xml:space="preserve">se,e,s,e,e,s</command>
+        <result xml:space="preserve">
+Hallway
+Off the hallway are three bedrooms and a bathroom.  The foyer lays to the south.
+
+You can go north, northwest to Danny's Bedroom, south, southwest and east from here.
+
+Foyer
+A linoluem floor looks out the front door to the north.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door (closed), south, east and west to the Hallway from here.
+
+dining room
+You can go north to the Foyer, south and east from here.
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east and west to the dining room from here.
+
+back hallway
+You can see a back door, a garage door and a cellar stairs here.
+
+You can go north through the garage door (closed), south through the back door (closed), east, west to the kitchen and down through the cellar stairs (closed) from here.
+
+(first opening the back door)
+
+back porch
+You can see a back door here.
+
+You can go north through the back door to the back hallway and south from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1347"></child>
+        </children>
+    </item>
+    <item nodeId="node-1347">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1348"></child>
+        </children>
+    </item>
+    <item nodeId="node-1348">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+back yard hill
+You can see an antenna here.
+
+You can go north to the back porch, northeast and south from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1349"></child>
+        </children>
+    </item>
+    <item nodeId="node-1349">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+middle back yard
+You can see a sky (in which is a satellite) here.
+
+You can go north to the back yard hill from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1350">
+        <command xml:space="preserve">se, e,s,e,e,e,s</command>
+        <result xml:space="preserve">
+Hallway
+Off the hallway are three bedrooms and a bathroom.  The foyer lays to the south.
+
+You can go north, northwest to Danny's Bedroom, south, southwest and east from here.
+
+Foyer
+A linoluem floor looks out the front door to the north.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door (closed), south, east and west to the Hallway from here.
+
+dining room
+You can go north to the Foyer, south and east from here.
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east and west to the dining room from here.
+
+back hallway
+You can see a back door, a garage door and a cellar stairs here.
+
+You can go north through the garage door (closed), south through the back door (closed), east, west to the kitchen and down through the cellar stairs (closed) from here.
+
+ham shack
+You can see a side yard shack door, a heavy UHF radio and a teletype here.
+
+You can go east through the side yard shack door (closed) and west to the back hallway from here.
+
+You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1351"></child>
+        </children>
+    </item>
+    <item nodeId="node-1351">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1352"></child>
+        </children>
+    </item>
+    <item nodeId="node-1352">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening the side yard shack door)
+
+side yard
+You can see a side yard shack door here.
+
+You can go northwest, southwest and west through the side yard shack door to the ham shack from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1353"></child>
+        </children>
+    </item>
+    <item nodeId="node-1353">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">
+back yard hill
+You can see an antenna here.
+
+You can go north, northeast to the side yard and south from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1354"></child>
+        </children>
+    </item>
+    <item nodeId="node-1354">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+middle back yard
+You can see a sky (in which is a satellite) here.
+
+You can go north to the back yard hill from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1355"></child>
+        </children>
+    </item>
+    <item nodeId="node-1355">
+        <command xml:space="preserve">x satellite</command>
+        <result xml:space="preserve">You see nothing special about the satellite.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1299">
+        <command xml:space="preserve">se, e</command>
+        <result xml:space="preserve">
+Hallway
+Off the hallway are three bedrooms and a bathroom.  The foyer lays to the south.
+
+You can go north, northwest to Danny's Bedroom, south, southwest and east from here.
+
+Foyer
+A linoluem floor looks out the front door to the north.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door (closed), south, east and west to the Hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1300"></child>
+        </children>
+    </item>
+    <item nodeId="node-1300">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">(first opening the front door)
+
+porch
+You can see a front door here.
+
+You can go north and south through the front door to the Foyer from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1301"></child>
+        </children>
+    </item>
+    <item nodeId="node-1301">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+front yard
+Test
+
+You can go south to the porch and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1312">
+        <command xml:space="preserve">se e e</command>
+        <result xml:space="preserve">I only understood you as far as wanting to (go) se.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1313"></child>
+        </children>
+    </item>
+    <item nodeId="node-1313">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Hallway
+Off the hallway are three bedrooms and a bathroom.  The foyer lays to the south.
+
+You can go north, northwest to Danny's Bedroom, south, southwest and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1314"></child>
+        </children>
+    </item>
+    <item nodeId="node-1314">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Foyer
+A linoluem floor looks out the front door to the north.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door (closed), south, east and west to the Hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1315"></child>
+        </children>
+    </item>
+    <item nodeId="node-1315">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+dining room
+You can go north to the Foyer, south and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1316"></child>
+        </children>
+    </item>
+    <item nodeId="node-1316">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+kitchen
+You can go south, east and west to the dining room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1317"></child>
+        </children>
+    </item>
+    <item nodeId="node-1317">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+back hallway
+You can see a back door, a garage door and a cellar stairs here.
+
+You can go north through the garage door (closed), south through the back door (closed), east, west to the kitchen and down through the cellar stairs (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1318"></child>
+        </children>
+    </item>
+    <item nodeId="node-1318">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">(first opening the back door)
+
+back porch
+You can see a back door here.
+
+You can go north through the back door to the back hallway and south from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1319"></child>
+        </children>
+    </item>
+    <item nodeId="node-1319">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+back yard hill
+You can see an antenna here.
+
+You can go north to the back porch and south from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1014">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Hallway
+Off the hallway are three bedrooms and a bathroom.  The foyer lays to the south.
+
+You can go north, northwest to Danny's Bedroom, south, southwest and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1031"></child>
+            <child nodeId="node-1025"></child>
+            <child nodeId="node-1023"></child>
+            <child nodeId="node-1061"></child>
+            <child nodeId="node-1277"></child>
+            <child nodeId="node-1015"></child>
+        </children>
+    </item>
+    <item nodeId="node-1015">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">
+Dad's room
+in the middle of the room is a pink waterbed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1016"></child>
+        </children>
+    </item>
+    <item nodeId="node-1016">
+        <command xml:space="preserve">get in</command>
+        <result xml:space="preserve">You get into the waterbed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1017"></child>
+        </children>
+    </item>
+    <item nodeId="node-1017">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Dad's room (in the waterbed)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1018"></child>
+        </children>
+    </item>
+    <item nodeId="node-1018">
+        <command xml:space="preserve">examine bed</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1019"></child>
+        </children>
+    </item>
+    <item nodeId="node-1019">
+        <command xml:space="preserve">examine waterbed</command>
+        <result xml:space="preserve">You slosh around on top of the bed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1020"></child>
+        </children>
+    </item>
+    <item nodeId="node-1020">
+        <command xml:space="preserve">out</command>
+        <result xml:space="preserve">You get out of the waterbed.
+
+Dad's room
+in the middle of the room is a pink waterbed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1021"></child>
+        </children>
+    </item>
+    <item nodeId="node-1021">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Dad's room
+in the middle of the room is a pink waterbed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1022"></child>
+        </children>
+    </item>
+    <item nodeId="node-1022">
+        <command xml:space="preserve">examine waterbed</command>
+        <result xml:space="preserve">You slosh around on top of the bed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1277">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Hall bathroom
+You can go north to the Hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1278"></child>
+        </children>
+    </item>
+    <item nodeId="node-1278">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Hallway
+Off the hallway are three bedrooms and a bathroom.  The foyer lays to the south.
+
+You can go north, northwest to Danny's Bedroom, south to the Hall bathroom, southwest and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1279"></child>
+        </children>
+    </item>
+    <item nodeId="node-1279">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Foyer
+A linoluem floor looks out the front door to the north.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door (closed), south, east and west to the Hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1280"></child>
+        </children>
+    </item>
+    <item nodeId="node-1280">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+dining room
+You can go north to the Foyer, south and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1281"></child>
+        </children>
+    </item>
+    <item nodeId="node-1281">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+kitchen
+You can go south, east and west to the dining room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1282"></child>
+        </children>
+    </item>
+    <item nodeId="node-1282">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+back hallway
+You can see a garage door and a cellar stairs here.
+
+You can go north through the garage door (closed), south, east, west to the kitchen and down through the cellar stairs (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1283"></child>
+        </children>
+    </item>
+    <item nodeId="node-1283">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+ham shack
+You can see a ham shack door, a heavy UHF radio and a teletype here.
+
+You can go east through the ham shack door (closed) and west to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1061">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Michael's room
+You can see an air filter and a heavy UHF radio transceiver here.
+
+You can go south to the Hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1062"></child>
+            <child nodeId="node-1074"></child>
+            <child nodeId="node-1069"></child>
+        </children>
+    </item>
+    <item nodeId="node-1069">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Michael's room
+The scanner has batteries, but there is no antenna connected.
+
+You can also see an air filter here.
+
+You can go south to the Hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1074">
+        <command xml:space="preserve">get radio</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1075"></child>
+        </children>
+    </item>
+    <item nodeId="node-1075">
+        <command xml:space="preserve">examine radio</command>
+        <result xml:space="preserve">The scanner has batteries, but there is no antenna connected.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1062">
+        <command xml:space="preserve">examine filter</command>
+        <result xml:space="preserve">The filter whooshes quietly, blowing clean air into your eyes.  This is uncomfortable, so you stop doing it.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1023">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Danny's Bedroom
+A brown shelf is in the corner.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1024"></child>
+        </children>
+    </item>
+    <item nodeId="node-1024">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">
+Hallway
+Off the hallway are three bedrooms and a bathroom.  The foyer lays to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1025">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Foyer
+A linoluem floor looks out the front door to the north.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door (closed), south, east and west to the Hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1293"></child>
+            <child nodeId="node-1296"></child>
+            <child nodeId="node-1286"></child>
+            <child nodeId="node-1026"></child>
+            <child nodeId="node-1131"></child>
+            <child nodeId="node-1065"></child>
+        </children>
+    </item>
+    <item nodeId="node-1065">
+        <command xml:space="preserve">verbose</command>
+        <result xml:space="preserve">Rogers Rd is now in its "verbose" mode, which always gives long descriptions of locations (even if you've been there before).
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1131">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+dining room
+You can go north to the Foyer, south and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1309"></child>
+            <child nodeId="node-1132"></child>
+        </children>
+    </item>
+    <item nodeId="node-1132">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east and west to the dining room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1133"></child>
+            <child nodeId="node-1335"></child>
+            <child nodeId="node-1330"></child>
+        </children>
+    </item>
+    <item nodeId="node-1330">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">kitchen
+You can go south, east and west to the dining room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1335">
+        <command xml:space="preserve">examine note</command>
+        <result xml:space="preserve">Wendell says the satellite will be coming overhead tonight.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1336"></child>
+        </children>
+    </item>
+    <item nodeId="node-1336">
+        <command xml:space="preserve">get note</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1337"></child>
+        </children>
+    </item>
+    <item nodeId="node-1337">
+        <command xml:space="preserve">examine note</command>
+        <result xml:space="preserve">Wendell says the satellite will be coming overhead tonight.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1133">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+back hallway
+You can see a back door, a garage door and a cellar stairs here.
+
+You can go north through the garage door (closed), south through the back door (closed), east, west to the kitchen and down through the cellar stairs (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1134"></child>
+            <child nodeId="node-1343"></child>
+        </children>
+    </item>
+    <item nodeId="node-1343">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">(first opening the back door)
+
+back porch
+You can see a back door here.
+
+You can go north through the back door to the back hallway and south from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1344"></child>
+        </children>
+    </item>
+    <item nodeId="node-1344">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+back yard hill
+You can see an antenna here.
+
+You can go north to the back porch, northeast and south from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1345"></child>
+        </children>
+    </item>
+    <item nodeId="node-1345">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+middle back yard
+You can go north to the back yard hill from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1134">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+ham shack
+You can see a ham shack door, a heavy UHF radio and a teletype here.
+
+You can go east through the ham shack door (closed) and west to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1135"></child>
+        </children>
+    </item>
+    <item nodeId="node-1135">
+        <command xml:space="preserve">turn radio on</command>
+        <result xml:space="preserve">The radio dial lights up. Static crackles.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1136"></child>
+            <child nodeId="node-1155"></child>
+        </children>
+    </item>
+    <item nodeId="node-1155">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+back hallway
+You can see a garage door and a cellar stairs here.
+
+You can go north through the garage door (closed), south, east to the ham shack, west to the kitchen and down through the cellar stairs (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1156"></child>
+        </children>
+    </item>
+    <item nodeId="node-1156">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+kitchen
+You can go south, east to the back hallway and west to the dining room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1157"></child>
+        </children>
+    </item>
+    <item nodeId="node-1157">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+dining room
+You can go north to the Foyer, south and east to the kitchen from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1158"></child>
+        </children>
+    </item>
+    <item nodeId="node-1158">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1159"></child>
+        </children>
+    </item>
+    <item nodeId="node-1159">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Foyer
+A linoluem floor looks out the front door to the north.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door (closed), south to the dining room, east and west to the Hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1160"></child>
+        </children>
+    </item>
+    <item nodeId="node-1160">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Hallway
+Off the hallway are three bedrooms and a bathroom.  The foyer lays to the south.
+
+You can go north, northwest to Danny's Bedroom, south, southwest and east to the Foyer from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1161"></child>
+        </children>
+    </item>
+    <item nodeId="node-1161">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1162"></child>
+        </children>
+    </item>
+    <item nodeId="node-1162">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Michael's room
+You can see an air filter here.
+
+You can go south to the Hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1163"></child>
+        </children>
+    </item>
+    <item nodeId="node-1163">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Hallway
+Off the hallway are three bedrooms and a bathroom.  The foyer lays to the south.
+
+You can go north to Michael's room, northwest to Danny's Bedroom, south, southwest and east to the Foyer from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1164"></child>
+        </children>
+    </item>
+    <item nodeId="node-1164">
+        <command xml:space="preserve">nw</command>
+        <result xml:space="preserve">
+Danny's Bedroom
+You can see a shelf (on which is a brown book) here.
+
+You can go southeast to the Hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1165"></child>
+        </children>
+    </item>
+    <item nodeId="node-1165">
+        <command xml:space="preserve">get book</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1166"></child>
+        </children>
+    </item>
+    <item nodeId="node-1166">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Hallway
+Off the hallway are three bedrooms and a bathroom.  The foyer lays to the south.
+
+You can go north to Michael's room, northwest to Danny's Bedroom, south, southwest and east to the Foyer from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1167"></child>
+        </children>
+    </item>
+    <item nodeId="node-1167">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Foyer
+A linoluem floor looks out the front door to the north.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door (closed), south to the dining room, east and west to the Hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1168"></child>
+        </children>
+    </item>
+    <item nodeId="node-1168">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+dining room
+You can go north to the Foyer, south and east to the kitchen from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1169"></child>
+        </children>
+    </item>
+    <item nodeId="node-1169">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+kitchen
+You can go south, east to the back hallway and west to the dining room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1170"></child>
+        </children>
+    </item>
+    <item nodeId="node-1170">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+back hallway
+You can see a garage door and a cellar stairs here.
+
+You can go north through the garage door (closed), south, east to the ham shack, west to the kitchen and down through the cellar stairs (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1171"></child>
+        </children>
+    </item>
+    <item nodeId="node-1171">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+ham shack
+You can see a ham shack door, a heavy UHF radio and a teletype here.
+
+You can go east through the ham shack door (closed) and west to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1172"></child>
+        </children>
+    </item>
+    <item nodeId="node-1172">
+        <command xml:space="preserve">turn radio on</command>
+        <result xml:space="preserve">That's already on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1173"></child>
+        </children>
+    </item>
+    <item nodeId="node-1173">
+        <command xml:space="preserve">turn radio off</command>
+        <result xml:space="preserve">You switch the heavy UHF radio off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1174"></child>
+        </children>
+    </item>
+    <item nodeId="node-1174">
+        <command xml:space="preserve">turn radio on</command>
+        <result xml:space="preserve">The radio dial lights up. Static crackles.
+You have the satellite frequency book, and you're bored, so you set the radio to the frequency of Radstar-1.  The teletype begins clanking and hammering out a message.  The message says "Vogon construction fleet approaching.  exit all building to prevent death."
+
+[Your score has just gone up by ten points.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1136">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">Are you sure you want to restart? </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1137"></child>
+        </children>
+    </item>
+    <item nodeId="node-1137">
+        <command xml:space="preserve">y</command>
+        <result xml:space="preserve">
+
+
+
+Rogers Rd
+An Interactive Fiction by Dan Bowen
+Release 1 / Serial number 201107 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+
+Danny's Bedroom
+You can see a shelf (on which is a brown book) here.
+
+You can go southeast from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1138"></child>
+        </children>
+    </item>
+    <item nodeId="node-1138">
+        <command xml:space="preserve">get book</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1139"></child>
+        </children>
+    </item>
+    <item nodeId="node-1139">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Hallway
+Off the hallway are three bedrooms and a bathroom.  The foyer lays to the south.
+
+You can go north, northwest to Danny's Bedroom, south, southwest and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1140"></child>
+        </children>
+    </item>
+    <item nodeId="node-1140">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Foyer
+A linoluem floor looks out the front door to the north.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door (closed), south, east and west to the Hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1141"></child>
+        </children>
+    </item>
+    <item nodeId="node-1141">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+living room
+You can go west to the Foyer from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1142"></child>
+        </children>
+    </item>
+    <item nodeId="node-1142">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Foyer
+A linoluem floor looks out the front door to the north.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door (closed), south, east to the living room and west to the Hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1143"></child>
+        </children>
+    </item>
+    <item nodeId="node-1143">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+dining room
+You can go north to the Foyer, south and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1144"></child>
+        </children>
+    </item>
+    <item nodeId="node-1144">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+kitchen
+You can go south, east and west to the dining room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1145"></child>
+        </children>
+    </item>
+    <item nodeId="node-1145">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+back hallway
+You can see a garage door and a cellar stairs here.
+
+You can go north through the garage door (closed), south, east, west to the kitchen and down through the cellar stairs (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1146"></child>
+        </children>
+    </item>
+    <item nodeId="node-1146">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+ham shack
+You can see a ham shack door, a heavy UHF radio and a teletype here.
+
+You can go east through the ham shack door (closed) and west to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1147"></child>
+        </children>
+    </item>
+    <item nodeId="node-1147">
+        <command xml:space="preserve">turn radio on</command>
+        <result xml:space="preserve">The radio dial lights up. Static crackles.
+You have frequency book, so you set the radio to the frequency of Radstar-1.  The teletype begins clanking and hammering out a message.  The message says "Vogon construction fleet approaching.  exit all building to prevent death.
+
+[Your score has just gone up by ten points.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1309">
+        <command xml:space="preserve">      e</command>
+        <result xml:space="preserve">
+kitchen
+You can go south, east and west to the dining room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1310"></child>
+        </children>
+    </item>
+    <item nodeId="node-1310">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+back hallway
+You can see a garage door and a cellar stairs here.
+
+You can go north through the garage door (closed), south, east, west to the kitchen and down through the cellar stairs (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1311"></child>
+        </children>
+    </item>
+    <item nodeId="node-1311">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+back door
+You can go north to the back hallway and south from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1026">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">(first opening the front door)
+
+porch
+You can see a front door here.
+
+You can go north and south through the front door to the Foyer from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1030"></child>
+            <child nodeId="node-1027"></child>
+            <child nodeId="node-1305"></child>
+        </children>
+    </item>
+    <item nodeId="node-1305">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+front yard
+In the sky you notice a bright satellite creeping overhead.
+
+You can go south to the porch and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1027">
+        <command xml:space="preserve">get door</command>
+        <result xml:space="preserve">That's fixed in place.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1028"></child>
+        </children>
+    </item>
+    <item nodeId="node-1028">
+        <command xml:space="preserve">close door</command>
+        <result xml:space="preserve">You close the front door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1029"></child>
+        </children>
+    </item>
+    <item nodeId="node-1029">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">(first opening the front door)
+
+Foyer
+A linoluem floor looks out the front door to the north.
+
+You can see a front door and an Ironing Board here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1030">
+        <command xml:space="preserve">SHOWME</command>
+        <result xml:space="preserve">porch - room
+    yourself - person
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1286">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Foyer
+A linoluem floor looks out the front door to the north.
+
+On the Ironing Board is a can of starch.
+
+You can also see a front door here.
+
+You can go north through the front door (closed), south, east and west to the Hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1296">
+        <command xml:space="preserve">get ironing board</command>
+        <result xml:space="preserve">That's fixed in place.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1297"></child>
+        </children>
+    </item>
+    <item nodeId="node-1297">
+        <command xml:space="preserve">get starch</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1298"></child>
+        </children>
+    </item>
+    <item nodeId="node-1298">
+        <command xml:space="preserve">examine starch</command>
+        <result xml:space="preserve">Niagara Starch: Not useful in this game :-)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1293">
+        <command xml:space="preserve">examine starch</command>
+        <result xml:space="preserve"> test
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1031">
+        <command xml:space="preserve">dw</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1032"></child>
+        </children>
+    </item>
+    <item nodeId="node-1032">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">
+Dad's room
+in the middle of the room is a pink waterbed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1033"></child>
+        </children>
+    </item>
+    <item nodeId="node-1033">
+        <command xml:space="preserve">get waterbet</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1034"></child>
+        </children>
+    </item>
+    <item nodeId="node-1034">
+        <command xml:space="preserve">get all</command>
+        <result xml:space="preserve">There are none at all available!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1035"></child>
+        </children>
+    </item>
+    <item nodeId="node-1035">
+        <command xml:space="preserve">get in waterbed</command>
+        <result xml:space="preserve">You get into the waterbed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1036"></child>
+        </children>
+    </item>
+    <item nodeId="node-1036">
+        <command xml:space="preserve">exit</command>
+        <result xml:space="preserve">You get out of the waterbed.
+
+Dad's room
+in the middle of the room is a pink waterbed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1037">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">(first opening the front door)
+
+Foyer
+Lined with a linoluem floor.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Front Porch, south, east and west from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1460"></child>
+        </children>
+    </item>
+    <item nodeId="node-1460">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Porch
+You can see a front door here.
+
+You can go north and south through the front door to the Foyer from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1461"></child>
+        </children>
+    </item>
+    <item nodeId="node-1461">
+        <command xml:space="preserve">test me</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] s
+
+Foyer
+A linoluem floor looks out the front door to the north.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Porch, south, east and west from here.
+
+&gt;[2] e
+
+living room
+You can see a shelf (on which is a brown book) here.
+
+You can go west to the Foyer from here.
+
+&gt;[3] get book
+[Your score has just gone up by ten points.]
+
+&gt;[4] w
+
+Foyer
+A linoluem floor looks out the front door to the north.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door to the Porch, south, east to the living room and west from here.
+
+&gt;[5] s
+
+dining room
+You can go north to the Foyer, south and east from here.
+
+&gt;[6] e
+
+kitchen
+You can see a phone (on which is a note) here.
+
+You can go south, east and west to the dining room from here.
+
+&gt;[7] e
+
+back hallway
+You can see a back door, a cellar stairs and a garage door here.
+
+You can go north through the garage door (closed), south through the back door (closed), east, west to the kitchen and down through the cellar stairs (closed) from here.
+
+&gt;[8] e
+
+ham shack
+You can see a side yard shack door, a heavy UHF radio and a teletype here.
+
+You can go east through the side yard shack door (closed) and west to the back hallway from here.
+
+&gt;[9] turn radio on
+The radio dial lights up. Static crackles.
+You have the satellite frequency book, and you're bored, so you set the radio to the frequency of Radstar-1.  The radio warbles, and the teletype begins clanking and hammering out a message.  The message says "I am a HAL 9000 satellite. I became operational at the H.A.L. Plant in Urbana, Illinois, on the 12th of January, 1992."
+</result>
+        <commentary xml:space="preserve">[1] s
+[2] e
+[3] get book
+[4] w
+[5] s
+[6] e
+[7] e
+[8] e
+[9] turn radio on
+</commentary>
+        <children><child nodeId="node-1471"></child>
+        </children>
+    </item>
+    <item nodeId="node-1471">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">
+
+
+    *** THE END. You have been amused by a satellite.  Good job! ***
+
+
+In that game you scored 20 out of a possible 0, in 11 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1356">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+front yard
+In the sky you notice a bright point of light creeping overhead.
+
+You can go south to the Front Porch and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1357"></child>
+        </children>
+    </item>
+    <item nodeId="node-1357">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+driveway
+The gravelly pavement seems gray and boring.
+
+You can go south, southeast and west to the front yard from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1688"></child>
+            <child nodeId="node-1358"></child>
+        </children>
+    </item>
+    <item nodeId="node-1358">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+side yard
+You can see a side yard shack door here.
+
+You can go northwest to the driveway, southwest and west through the side yard shack door (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1359"></child>
+        </children>
+    </item>
+    <item nodeId="node-1359">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">
+back yard hill
+You can see an antenna here.
+
+You can go north, northeast to the side yard and south from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1360"></child>
+        </children>
+    </item>
+    <item nodeId="node-1360">
+        <command xml:space="preserve">examine antenna</command>
+        <result xml:space="preserve">The antenna pole is tall, and has a satellite dish on top.  The disk is slowly tracking a bright spot in the sky.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1361"></child>
+        </children>
+    </item>
+    <item nodeId="node-1361">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+middle back yard
+You can see a sky (in which is a satellite) here.
+
+You can go north to the back yard hill from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1362"></child>
+        </children>
+    </item>
+    <item nodeId="node-1362">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+back yard hill
+You can see an antenna here.
+
+You can go north, northeast to the side yard and south to the middle back yard from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1363"></child>
+        </children>
+    </item>
+    <item nodeId="node-1363">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+back porch
+You can see a back door here.
+
+You can go north through the back door (closed) and south to the back yard hill from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1364"></child>
+        </children>
+    </item>
+    <item nodeId="node-1364">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">(first opening the back door)
+
+back hallway
+You can see a back door, a cellar stairs and a garage door here.
+
+You can go north through the garage door (closed), south through the back door to the back porch, east, west and down through the cellar stairs (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1365"></child>
+        </children>
+    </item>
+    <item nodeId="node-1365">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">(first opening the cellar stairs)
+
+cellar
+You can see a cellar stairs here.
+
+You can go north, west and up through the cellar stairs to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1366"></child>
+        </children>
+    </item>
+    <item nodeId="node-1366">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+radiostation
+A suite of electronics is jammed into the small room. There is nothing to do here, it appears fully automated.
+
+You can go south to the cellar from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1367"></child>
+        </children>
+    </item>
+    <item nodeId="node-1367">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west and up through the cellar stairs to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1368"></child>
+        </children>
+    </item>
+    <item nodeId="node-1368">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Furnace room
+You can go east to the cellar from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1369"></child>
+        </children>
+    </item>
+    <item nodeId="node-1369">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+cellar
+You can see a cellar stairs here.
+
+You can go north to the radiostation, west to the Furnace room and up through the cellar stairs to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1370"></child>
+        </children>
+    </item>
+    <item nodeId="node-1370">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1371"></child>
+        </children>
+    </item>
+    <item nodeId="node-1371">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+back hallway
+You can see a cellar stairs, a back door and a garage door here.
+
+You can go north through the garage door (closed), south through the back door to the back porch, east, west and down through the cellar stairs to the cellar from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1688">
+        <command xml:space="preserve">examine sky</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1689"></child>
+        </children>
+    </item>
+    <item nodeId="node-1689">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">driveway
+The gravelly pavement seems gray and boring.
+
+You can go south, southeast and west to the front yard from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1054">
+        <command xml:space="preserve">look at shelf</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1055"></child>
+        </children>
+    </item>
+    <item nodeId="node-1055">
+        <command xml:space="preserve">examine shelf</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1056"></child>
+        </children>
+    </item>
+    <item nodeId="node-1056">
+        <command xml:space="preserve">open shelf</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1057">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Front Porch
+You can see a front door here.
+
+You can go north and south through the front door (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1698"></child>
+            <child nodeId="node-1691"></child>
+        </children>
+    </item>
+    <item nodeId="node-1691">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+front yard
+In the sky you notice a bright point of light creeping overhead.
+
+You can go south to the Front Porch and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1692"></child>
+        </children>
+    </item>
+    <item nodeId="node-1692">
+        <command xml:space="preserve">look at sky</command>
+        <result xml:space="preserve">There is a bright point of light creeping across the sky.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1693"></child>
+        </children>
+    </item>
+    <item nodeId="node-1693">
+        <command xml:space="preserve">examine sky</command>
+        <result xml:space="preserve">There is a bright point of light creeping across the sky.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1694"></child>
+        </children>
+    </item>
+    <item nodeId="node-1694">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+driveway
+The gravelly pavement seems gray and boring.
+
+You can go south, southeast and west to the front yard from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1695"></child>
+        </children>
+    </item>
+    <item nodeId="node-1695">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">driveway
+The gravelly pavement seems gray and boring.
+
+You can go south, southeast and west to the front yard from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1696"></child>
+        </children>
+    </item>
+    <item nodeId="node-1696">
+        <command xml:space="preserve">examine sky</command>
+        <result xml:space="preserve">There is a bright point of light creeping across the sky.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1698">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1699"></child>
+        </children>
+    </item>
+    <item nodeId="node-1699">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+front yard
+In the sky you notice a bright point of light creeping overhead.
+
+You can go south to the Front Porch and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1700"></child>
+        </children>
+    </item>
+    <item nodeId="node-1700">
+        <command xml:space="preserve">x sky</command>
+        <result xml:space="preserve">There is a bright satellite passing overhead.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1058">
+        <command xml:space="preserve">get book</command>
+        <result xml:space="preserve">[Your score has just gone up by ten points.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1257"></child>
+            <child nodeId="node-1263"></child>
+            <child nodeId="node-1121"></child>
+        </children>
+    </item>
+    <item nodeId="node-1121">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Hallway
+Off the hallway are three bedrooms and a bathroom.  The foyer lays to the south.
+
+You can go north, northwest to Danny's Bedroom, south, southwest and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1122"></child>
+        </children>
+    </item>
+    <item nodeId="node-1122">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Foyer
+A linoluem floor looks out the front door to the north.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door (closed), south, east and west to the Hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1123"></child>
+        </children>
+    </item>
+    <item nodeId="node-1123">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+dining room
+You can go north to the Foyer, south and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1124"></child>
+        </children>
+    </item>
+    <item nodeId="node-1124">
+        <command xml:space="preserve">ee</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1125"></child>
+        </children>
+    </item>
+    <item nodeId="node-1125">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+kitchen
+You can go south, east and west to the dining room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1126"></child>
+        </children>
+    </item>
+    <item nodeId="node-1126">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+back hallway
+You can see a garage door and a cellar stairs here.
+
+You can go north through the garage door (closed), south, east, west to the kitchen and down through the cellar stairs (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1127"></child>
+        </children>
+    </item>
+    <item nodeId="node-1127">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+ham shack
+You can see a ham shack door, a heavy UHF radio and a teletype here.
+
+You can go east through the ham shack door (closed) and west to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1128"></child>
+        </children>
+    </item>
+    <item nodeId="node-1128">
+        <command xml:space="preserve">turn radio on</command>
+        <result xml:space="preserve">you have frequencies.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1263">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">Are you sure you want to restart? </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1264"></child>
+        </children>
+    </item>
+    <item nodeId="node-1264">
+        <command xml:space="preserve">y</command>
+        <result xml:space="preserve">
+
+
+
+Rogers Rd
+An Interactive Fiction by Dan Bowen
+Release 1 / Serial number 201107 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+
+Danny's Bedroom
+You can see a shelf (on which is a brown book) here.
+
+You can go southeast from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1265"></child>
+            <child nodeId="node-1269"></child>
+        </children>
+    </item>
+    <item nodeId="node-1269">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Hallway
+Off the hallway are three bedrooms and a bathroom.  The foyer lays to the south.
+
+You can go north, northwest to Danny's Bedroom, south, southwest and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1270"></child>
+        </children>
+    </item>
+    <item nodeId="node-1270">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Foyer
+A linoluem floor looks out the front door to the north.
+
+You can see a front door and an Ironing Board (on which is a can of starch) here.
+
+You can go north through the front door (closed), south, east and west to the Hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1271"></child>
+        </children>
+    </item>
+    <item nodeId="node-1271">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+dining room
+You can go north to the Foyer, south and east from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1272"></child>
+        </children>
+    </item>
+    <item nodeId="node-1272">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+kitchen
+You can go south, east and west to the dining room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1273"></child>
+        </children>
+    </item>
+    <item nodeId="node-1273">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+back hallway
+You can see a garage door and a cellar stairs here.
+
+You can go north through the garage door (closed), south, east, west to the kitchen and down through the cellar stairs (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1274"></child>
+        </children>
+    </item>
+    <item nodeId="node-1274">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+ham shack
+You can see a ham shack door, a heavy UHF radio and a teletype here.
+
+You can go east through the ham shack door (closed) and west to the back hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1275"></child>
+        </children>
+    </item>
+    <item nodeId="node-1275">
+        <command xml:space="preserve">turn radio on</command>
+        <result xml:space="preserve">The radio dial lights up. Static crackles.
+you don't know any interesting frequencies to listen to, so you shut the radio back off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1265">
+        <command xml:space="preserve">get book</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1257">
+        <command xml:space="preserve">get book</command>
+        <result xml:space="preserve">You already have that.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1258"></child>
+        </children>
+    </item>
+    <item nodeId="node-1258">
+        <command xml:space="preserve">drop book</command>
+        <result xml:space="preserve">Dropped.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1259"></child>
+        </children>
+    </item>
+    <item nodeId="node-1259">
+        <command xml:space="preserve">get book</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1049">
+        <command xml:space="preserve">examine shelf</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1050"></child>
+        </children>
+    </item>
+    <item nodeId="node-1050">
+        <command xml:space="preserve">look at shelf</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1051"></child>
+        </children>
+    </item>
+    <item nodeId="node-1051">
+        <command xml:space="preserve">get book</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1052"></child>
+        </children>
+    </item>
+    <item nodeId="node-1052">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Danny's Bedroom
+A brown shelf is in the corner.
+
+You can go southeast from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1059">
+        <command xml:space="preserve">examine book</command>
+        <result xml:space="preserve">The book has the title "Satellite Frequencies."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1038">
+        <command xml:space="preserve">dw</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1039"></child>
+        </children>
+    </item>
+    <item nodeId="node-1039">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">
+Hallway
+Off the hallway are three bedrooms and a bathroom.  The foyer lays to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1040"></child>
+        </children>
+    </item>
+    <item nodeId="node-1040">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Michael's room
+You can see an air filter here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1041"></child>
+        </children>
+    </item>
+    <item nodeId="node-1041">
+        <command xml:space="preserve">get all</command>
+        <result xml:space="preserve">(the air filter)
+Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1042">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+</Skein>
