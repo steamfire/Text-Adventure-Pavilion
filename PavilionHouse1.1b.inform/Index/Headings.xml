@@ -11,91 +11,91 @@
     </dict>
     <key>1</key><dict>
         <key>Filename</key><string>/Users/admin/Dropbox/Frotz/WritingAdventures/Text-Adventure-Pavilion1/PavilionHouse1.1b.inform/Source/story.ni</string>
-        <key>Line</key><integer>30</integer>
+        <key>Line</key><integer>31</integer>
         <key>Title</key><string>Chapter 1 - Beginning</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>2</key><dict>
         <key>Filename</key><string>/Users/admin/Dropbox/Frotz/WritingAdventures/Text-Adventure-Pavilion1/PavilionHouse1.1b.inform/Source/story.ni</string>
-        <key>Line</key><integer>62</integer>
+        <key>Line</key><integer>63</integer>
         <key>Title</key><string>Part 2 - Outdoors</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>3</key><dict>
         <key>Filename</key><string>/Users/admin/Dropbox/Frotz/WritingAdventures/Text-Adventure-Pavilion1/PavilionHouse1.1b.inform/Source/story.ni</string>
-        <key>Line</key><integer>81</integer>
+        <key>Line</key><integer>82</integer>
         <key>Title</key><string>Part 3 - In the house</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>4</key><dict>
         <key>Filename</key><string>/Users/admin/Dropbox/Frotz/WritingAdventures/Text-Adventure-Pavilion1/PavilionHouse1.1b.inform/Source/story.ni</string>
-        <key>Line</key><integer>121</integer>
+        <key>Line</key><integer>122</integer>
         <key>Title</key><string>Part 4 - downstairs</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>5</key><dict>
         <key>Filename</key><string>/Users/admin/Dropbox/Frotz/WritingAdventures/Text-Adventure-Pavilion1/PavilionHouse1.1b.inform/Source/story.ni</string>
-        <key>Line</key><integer>133</integer>
+        <key>Line</key><integer>134</integer>
         <key>Title</key><string>Part 5 - Regions</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>6</key><dict>
         <key>Filename</key><string>/Users/admin/Dropbox/Frotz/WritingAdventures/Text-Adventure-Pavilion1/PavilionHouse1.1b.inform/Source/story.ni</string>
-        <key>Line</key><integer>144</integer>
+        <key>Line</key><integer>145</integer>
         <key>Title</key><string>Part 6 - External Doors</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>7</key><dict>
         <key>Filename</key><string>/Users/admin/Dropbox/Frotz/WritingAdventures/Text-Adventure-Pavilion1/PavilionHouse1.1b.inform/Source/story.ni</string>
-        <key>Line</key><integer>155</integer>
+        <key>Line</key><integer>156</integer>
         <key>Title</key><string>Part 7 - Stuff to do</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>8</key><dict>
         <key>Filename</key><string>/Users/admin/Dropbox/Frotz/WritingAdventures/Text-Adventure-Pavilion1/PavilionHouse1.1b.inform/Source/story.ni</string>
-        <key>Line</key><integer>159</integer>
+        <key>Line</key><integer>160</integer>
         <key>Title</key><string>Part 8 - Ham Radio Stuff</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>9</key><dict>
         <key>Filename</key><string>/Users/admin/Dropbox/Frotz/WritingAdventures/Text-Adventure-Pavilion1/PavilionHouse1.1b.inform/Source/story.ni</string>
-        <key>Line</key><integer>195</integer>
+        <key>Line</key><integer>196</integer>
         <key>Title</key><string>Chapter 2 - Spacing</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>10</key><dict>
         <key>Filename</key><string>/Users/admin/Dropbox/Frotz/WritingAdventures/Text-Adventure-Pavilion1/PavilionHouse1.1b.inform/Source/story.ni</string>
-        <key>Line</key><integer>199</integer>
+        <key>Line</key><integer>200</integer>
         <key>Title</key><string>Part 100 - Cleanup after beginning</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>11</key><dict>
         <key>Filename</key><string>/Users/admin/Dropbox/Frotz/WritingAdventures/Text-Adventure-Pavilion1/PavilionHouse1.1b.inform/Source/story.ni</string>
-        <key>Line</key><integer>201</integer>
+        <key>Line</key><integer>202</integer>
         <key>Title</key><string>Part 101 - Setup Next</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>12</key><dict>
         <key>Filename</key><string>/Users/admin/Dropbox/Frotz/WritingAdventures/Text-Adventure-Pavilion1/PavilionHouse1.1b.inform/Source/story.ni</string>
-        <key>Line</key><integer>246</integer>
+        <key>Line</key><integer>247</integer>
         <key>Title</key><string>Part 102 - Space starting</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>13</key><dict>
         <key>Filename</key><string>/Users/admin/Dropbox/Frotz/WritingAdventures/Text-Adventure-Pavilion1/PavilionHouse1.1b.inform/Source/story.ni</string>
-        <key>Line</key><integer>269</integer>
+        <key>Line</key><integer>270</integer>
         <key>Title</key><string>Chapter 3 - Tests</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
