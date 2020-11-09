@@ -131,9 +131,9 @@ You can go up and down to West side yard from here.
         <command xml:space="preserve">u</command>
         <result xml:space="preserve">
 Top of ladder
-You are in a small chamber with controls on the walls. 
+You can see a shiny hatch here.
 
-You can go west through the airlock outer door (closed) and down to the ladder from here.
+You can go down to the ladder from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -142,29 +142,338 @@ You can go west through the airlock outer door (closed) and down to the ladder f
     </item>
     <item nodeId="node-1015">
         <command xml:space="preserve">w</command>
-        <result xml:space="preserve">(first opening the airlock outer door)
+        <result xml:space="preserve">You open the shiny hatch.
 
 airlock
-You are in a small chamber with controls on the walls. 
+You are in a small chamber with controls on the walls.   The outer hatch is to the east, and the inner hatch is to the west.
 
-You can also see an airlock inner door and an egress interlock here.
+You can also see an airlock inner hatch and an egress interlock here.
 
-You can go east through the airlock outer door to Top of ladder and west through the airlock inner door (closed) from here.
+You can see no obvious exits.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1124"></child>
+        <children><child nodeId="node-1238"></child>
+            <child nodeId="node-1229"></child>
+            <child nodeId="node-1276"></child>
+            <child nodeId="node-1124"></child>
         </children>
     </item>
     <item nodeId="node-1124">
         <command xml:space="preserve">w</command>
-        <result xml:space="preserve">(first opening the airlock inner door)
-It seems to be locked.
+        <result xml:space="preserve">It seems to be locked.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1125"></child>
+        <children><child nodeId="node-1251"></child>
+            <child nodeId="node-1125"></child>
+            <child nodeId="node-1288"></child>
         </children>
+    </item>
+    <item nodeId="node-1288">
+        <command xml:space="preserve">unlock inner hatch</command>
+        <result xml:space="preserve">What do you want to unlock the airlock inner hatch with?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1289"></child>
+        </children>
+    </item>
+    <item nodeId="node-1289">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1290"></child>
+        </children>
+    </item>
+    <item nodeId="node-1290">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">airlock
+You are in a small chamber with controls on the walls.   The outer hatch is to the east, and the inner hatch is to the west.
+
+You can also see an airlock inner hatch and an egress interlock here.
+
+You can see no obvious exits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1291"></child>
+        </children>
+    </item>
+    <item nodeId="node-1291">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You open the airlock outer hatch.
+
+Top of ladder
+You can see a shiny hatch here.
+
+You can go down to the ladder from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1292"></child>
+        </children>
+    </item>
+    <item nodeId="node-1292">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">airlock
+You are in a small chamber with controls on the walls.   The outer hatch is to the east, and the inner hatch is to the west.
+
+You can also see an airlock inner hatch and an egress interlock here.
+
+You can see no obvious exits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1293"></child>
+        </children>
+    </item>
+    <item nodeId="node-1293">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1294"></child>
+        </children>
+    </item>
+    <item nodeId="node-1294">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1295"></child>
+        </children>
+    </item>
+    <item nodeId="node-1295">
+        <command xml:space="preserve">turn interlock on</command>
+        <result xml:space="preserve">you hear a hiss, and then both hatches emit a loud KERCHUNK.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1296"></child>
+        </children>
+    </item>
+    <item nodeId="node-1296">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You open the airlock inner hatch.
+
+main hallway
+You can see an airlock hall hatch here.
+
+You can go up from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1297"></child>
+        </children>
+    </item>
+    <item nodeId="node-1297">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You open the airlock hall hatch.
+
+airlock
+You are in a small chamber with controls on the walls.   The outer hatch is to the east, and the inner hatch is to the west.
+
+You can also see an airlock inner hatch and an egress interlock here.
+
+You can see no obvious exits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1298"></child>
+        </children>
+    </item>
+    <item nodeId="node-1298">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">main hallway
+You can see an airlock hall hatch here.
+
+You can go up from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1299"></child>
+        </children>
+    </item>
+    <item nodeId="node-1299">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">airlock
+You are in a small chamber with controls on the walls.   The outer hatch is to the east, and the inner hatch is to the west.
+
+You can also see an airlock inner hatch and an egress interlock here.
+
+You can see no obvious exits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1300"></child>
+        </children>
+    </item>
+    <item nodeId="node-1300">
+        <command xml:space="preserve">turn inerlock off</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1301"></child>
+        </children>
+    </item>
+    <item nodeId="node-1301">
+        <command xml:space="preserve">turn interlock off</command>
+        <result xml:space="preserve">you hear a hiss, and then both hatches emit a loud KERCHUNK.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1302"></child>
+        </children>
+    </item>
+    <item nodeId="node-1302">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1303"></child>
+        </children>
+    </item>
+    <item nodeId="node-1303">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You open the airlock outer hatch.
+
+Top of ladder
+You can see a shiny hatch here.
+
+You can go down to the ladder from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1304"></child>
+        </children>
+    </item>
+    <item nodeId="node-1304">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">airlock
+You are in a small chamber with controls on the walls.   The outer hatch is to the east, and the inner hatch is to the west.
+
+You can also see an airlock inner hatch and an egress interlock here.
+
+You can see no obvious exits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1305"></child>
+        </children>
+    </item>
+    <item nodeId="node-1305">
+        <command xml:space="preserve">turn interlock on</command>
+        <result xml:space="preserve">you hear a hiss, and then both hatches emit a loud KERCHUNK.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1306"></child>
+        </children>
+    </item>
+    <item nodeId="node-1306">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1307"></child>
+        </children>
+    </item>
+    <item nodeId="node-1307">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You open the airlock inner hatch.
+
+main hallway
+You can see an airlock hall hatch here.
+
+You can go up from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1308"></child>
+        </children>
+    </item>
+    <item nodeId="node-1308">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+control room
+You can see an abort system here.
+
+You can go down to the main hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1309"></child>
+        </children>
+    </item>
+    <item nodeId="node-1309">
+        <command xml:space="preserve">turn abort on</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1310"></child>
+        </children>
+    </item>
+    <item nodeId="node-1310">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1311"></child>
+        </children>
+    </item>
+    <item nodeId="node-1311">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+main hallway
+You can see an airlock hall hatch here.
+
+You can go up to the control room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1312"></child>
+        </children>
+    </item>
+    <item nodeId="node-1312">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">airlock
+You are in a small chamber with controls on the walls.   The outer hatch is to the east, and the inner hatch is to the west.
+
+You can also see an airlock inner hatch and an egress interlock here.
+
+You can see no obvious exits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1313"></child>
+        </children>
+    </item>
+    <item nodeId="node-1313">
+        <command xml:space="preserve">turn interlock off</command>
+        <result xml:space="preserve">you hear a hiss, and then both hatches emit a loud KERCHUNK.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1314"></child>
+        </children>
+    </item>
+    <item nodeId="node-1314">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You open the airlock outer hatch.
+
+Mars
+You can see no obvious exits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1125">
         <command xml:space="preserve">turn interlock on</command>
@@ -298,6 +607,265 @@ You can go east through the airlock inner door to the airlock from here.
     <item nodeId="node-1148">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1251">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You open the airlock outer hatch.
+
+Top of ladder
+You can see a shiny hatch here.
+
+You can go down to the ladder from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1252"></child>
+        </children>
+    </item>
+    <item nodeId="node-1252">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">airlock
+You are in a small chamber with controls on the walls.   The outer hatch is to the east, and the inner hatch is to the west.
+
+You can also see an airlock inner hatch and an egress interlock here.
+
+You can see no obvious exits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1253"></child>
+            <child nodeId="node-1263"></child>
+        </children>
+    </item>
+    <item nodeId="node-1263">
+        <command xml:space="preserve">turn interlock on</command>
+        <result xml:space="preserve">you hear a hiss, and then both hatches emit a loud KERCHUNK.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1264"></child>
+        </children>
+    </item>
+    <item nodeId="node-1264">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You open the airlock inner hatch.
+
+main hallway
+You can go up from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1253">
+        <command xml:space="preserve">examine inner hatch</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1254"></child>
+        </children>
+    </item>
+    <item nodeId="node-1254">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">airlock
+You are in a small chamber with controls on the walls.   The outer hatch is to the east, and the inner hatch is to the west.
+
+You can also see an egress interlock here.
+
+You can see no obvious exits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1255"></child>
+        </children>
+    </item>
+    <item nodeId="node-1255">
+        <command xml:space="preserve">enter inner door</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1256"></child>
+        </children>
+    </item>
+    <item nodeId="node-1256">
+        <command xml:space="preserve">enter outer door</command>
+        <result xml:space="preserve">Top of ladder
+You can see a shiny hatch here.
+
+You can go down to the ladder from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1276">
+        <command xml:space="preserve">turn interlock on</command>
+        <result xml:space="preserve">you hear a hiss, and then both hatches emit a loud KERCHUNK.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1277"></child>
+        </children>
+    </item>
+    <item nodeId="node-1277">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You open the airlock inner hatch.
+
+main hallway
+You can go up from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1278"></child>
+        </children>
+    </item>
+    <item nodeId="node-1278">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+control room
+You can see an abort system here.
+
+You can go down to the main hallway from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1279"></child>
+        </children>
+    </item>
+    <item nodeId="node-1279">
+        <command xml:space="preserve">turn abort on</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1280"></child>
+        </children>
+    </item>
+    <item nodeId="node-1280">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+main hallway
+You can go up to the control room from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1281"></child>
+        </children>
+    </item>
+    <item nodeId="node-1281">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1282"></child>
+        </children>
+    </item>
+    <item nodeId="node-1282">
+        <command xml:space="preserve">enter</command>
+        <result xml:space="preserve">You must supply a noun.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1283"></child>
+        </children>
+    </item>
+    <item nodeId="node-1283">
+        <command xml:space="preserve">enter door</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1229">
+        <command xml:space="preserve">open hatch</command>
+        <result xml:space="preserve">You open the shiny hatch.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1230"></child>
+        </children>
+    </item>
+    <item nodeId="node-1230">
+        <command xml:space="preserve">enter hatch</command>
+        <result xml:space="preserve">airlock
+You are in a small chamber with controls on the walls. 
+
+You can also see an airlock inner door and an egress interlock here.
+
+You can go west through the airlock inner door (closed) from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1231"></child>
+        </children>
+    </item>
+    <item nodeId="node-1231">
+        <command xml:space="preserve">enter outer</command>
+        <result xml:space="preserve">You open the airlock outer door.
+
+Top of ladder
+You can see a shiny hatch here.
+
+You can go down to the ladder from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1238">
+        <command xml:space="preserve">enter hatch</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1239"></child>
+        </children>
+    </item>
+    <item nodeId="node-1239">
+        <command xml:space="preserve">out</command>
+        <result xml:space="preserve">But you aren't in anything at the moment.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1240"></child>
+        </children>
+    </item>
+    <item nodeId="node-1240">
+        <command xml:space="preserve">in</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1241"></child>
+        </children>
+    </item>
+    <item nodeId="node-1241">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You open the airlock outer door.
+
+Top of ladder
+You can see a shiny hatch here.
+
+You can go down to the ladder from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1242"></child>
+        </children>
+    </item>
+    <item nodeId="node-1242">
+        <command xml:space="preserve">get door</command>
+        <result xml:space="preserve">That's fixed in place.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1243"></child>
+        </children>
+    </item>
+    <item nodeId="node-1243">
+        <command xml:space="preserve">get hatch</command>
+        <result xml:space="preserve">That's fixed in place.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

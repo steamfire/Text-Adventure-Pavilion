@@ -16,34 +16,46 @@ There is a red hose end in the west yard.  There is a blue hose end in the west 
 There is a ladder above the west yard. 
 
 Top of ladder is above the ladder.
-The airlock outer door is west of the top of ladder and east of the airlock. The airlock outer door is a door. The airlock outer door is lockable and unlocked. "You are in a small chamber with controls on the walls. "  
 
-The airlock inner door is west of the airlock and east of the main hallway.  The airlock inner door is a door.  The airlock inner door is lockable and locked.
+[OUTER DOOR IS EASYDOOR]
+
+The shiny hatch is an easydoor in the top of ladder. The shiny hatch leads to the airlock.
+Instead of going west in the top of ladder: try entering hatch.
+
+ The airlock outer hatch is an easydoor in the airlock. The airlock outer hatch is lockable and unlocked. The outer hatch leads to  the top of ladder. "You are in a small chamber with controls on the walls.   The outer hatch is to the east, and the inner hatch is to the west."  
+
+The airlock inner hatch is an easydoor in the airlock.  The airlock inner hatch is lockable and locked.  The inner hatch leads to the main hallway.
+
+The airlock hall hatch is an easydoor in the main hallway. The airlock hall hatch leads to the airlock.
+
+Instead of going east in the airlock: try entering the outer hatch.  Instead of going west in the airlock: try entering the inner hatch.
+Instead of going east in the main hallway: try entering the airlock hall hatch.
 
 The egress interlock is in the airlock.  The interlock is fixed in place. The interlock is a device.  The interlock is switched off.   The description of the interlock is "Hello".
 
 After switching on the interlock:
-	now the airlock inner door is unlocked;
-	now airlock outer door is closed;
-	now the airlock outer door is locked;
-	Say "you hear a hiss, and then both doors emit a loud KERCHUNK."
+	now the airlock inner hatch is unlocked;
+	now airlock outer hatch is closed;
+	now the airlock outer hatch is locked;
+	Say "you hear a hiss, and then both hatches emit a loud KERCHUNK."
 	
 After switching off the interlock:
-	now the airlock inner door is closed;
-	now the inner door is locked;
-	now the airlock outer door is unlocked;
-	Say "you hear a hiss, and then both doors emit a loud KERCHUNK."
+	now the airlock inner hatch is closed;
+	now the inner hatch is locked;
+	now the airlock outer hatch is unlocked;
+	Say "you hear a hiss, and then both hatches emit a loud KERCHUNK."
 	
 the control room is above the main hallway.
 
-There is an abort system in the control room.  The abort system is fixed in place.  The abort system is a device.  
+There is an abort system is in the control room.  The abort system is fixed in place.  The abort system is a device.  
 
 Chapter 2 - Moving the ship
 
-After switching on the abort system:
-	Say "abort!";
-	now the airlock outer door is east of the airlock and west of the front yard. The airlock outer door is a door.
+Mars is a room.
 
+After switching on the abort system:
+	Now the outer hatch leads to Mars;
+	
 
 
 
