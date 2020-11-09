@@ -5,7 +5,7 @@
     <key>0</key><dict>
         <key>Filename</key><string>/Users/admin/Dropbox/Frotz/WritingAdventures/Text-Adventure-Pavilion1/StarshipTesting1.inform/Source/story.ni</string>
         <key>Line</key><integer>1</integer>
-        <key>Title</key><string>"Starship Testing" by Dan Bowen, Version 1</string>
+        <key>Title</key><string>"Starship Testing" by Dan Bowen, Version 1.1</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
@@ -32,29 +32,29 @@
     </dict>
     <key>4</key><dict>
         <key>Filename</key><string>/Users/admin/Dropbox/Frotz/WritingAdventures/Text-Adventure-Pavilion1/StarshipTesting1.inform/Source/story.ni</string>
-        <key>Line</key><integer>70</integer>
+        <key>Line</key><integer>76</integer>
         <key>Title</key><string>Section 2 - Fueling the rocket</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>5</key><dict>
         <key>Filename</key><string>/Users/admin/Dropbox/Frotz/WritingAdventures/Text-Adventure-Pavilion1/StarshipTesting1.inform/Source/story.ni</string>
-        <key>Line</key><integer>118</integer>
+        <key>Line</key><integer>116</integer>
         <key>Title</key><string>Chapter 3 - Moving the ship</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>6</key><dict>
         <key>Filename</key><string>/Users/admin/Dropbox/Frotz/WritingAdventures/Text-Adventure-Pavilion1/StarshipTesting1.inform/Source/story.ni</string>
-        <key>Line</key><integer>120</integer>
+        <key>Line</key><integer>118</integer>
         <key>Title</key><string>Section 1 - Stuff</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>7</key><dict>
         <key>Filename</key><string>/Users/admin/Dropbox/Frotz/WritingAdventures/Text-Adventure-Pavilion1/StarshipTesting1.inform/Source/story.ni</string>
-        <key>Line</key><integer>136</integer>
-        <key>Title</key><string>section 2 - Nav computer</string>
+        <key>Line</key><integer>146</integer>
+        <key>Title</key><string>Section 2 - Autopilot</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
