@@ -13,21 +13,26 @@ An Interactive Fiction by Dan Bowen, Version 1
 Release 1 / Serial number 201109 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
 
 West side yard
-You can see a starship, a red hose end and a blue hose end here.
+You can see an end of the red hose, an end of the blue hose and a starship here.
 
 You can go up from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1035"></child>
+            <child nodeId="node-1315"></child>
+            <child nodeId="node-2289"></child>
+            <child nodeId="node-2282"></child>
             <child nodeId="node-1034"></child>
             <child nodeId="node-1178"></child>
+            <child nodeId="node-1319"></child>
             <child nodeId="node-1029"></child>
             <child nodeId="node-1027"></child>
             <child nodeId="node-1026"></child>
             <child nodeId="node-1020"></child>
             <child nodeId="node-1016"></child>
             <child nodeId="node-1013"></child>
+            <child nodeId="node-2274"></child>
             <child nodeId="node-1011"></child>
             <child nodeId="node-1008"></child>
             <child nodeId="node-1003"></child>
@@ -112,6 +117,17 @@ You can go up from here.
     <item nodeId="node-1012">
         <command xml:space="preserve">x red</command>
         <result xml:space="preserve">You see nothing special about the red hose port.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2274">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 5%
+ CH4 tank level 99%
+
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1459,6 +1475,14 @@ Stainless steel ladder
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-1319">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  a printout
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-1178">
         <command xml:space="preserve">gonear interlock</command>
         <result xml:space="preserve">airlock
@@ -1474,6 +1498,2153 @@ You can go east through the airlock outer door (closed) and west through the air
     <item nodeId="node-1034">
         <command xml:space="preserve">get starship</command>
         <result xml:space="preserve">This is too big.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2282">
+        <command xml:space="preserve">get all</command>
+        <result xml:space="preserve">end of the red hose: Taken.
+end of the blue hose: Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2489"></child>
+            <child nodeId="node-2434"></child>
+            <child nodeId="node-2293"></child>
+            <child nodeId="node-2283"></child>
+            <child nodeId="node-2288"></child>
+        </children>
+    </item>
+    <item nodeId="node-2288">
+        <command xml:space="preserve">put red in o2</command>
+        <result xml:space="preserve">You put the end of the red hose into the O2 fill port.
+
+fuelling O2
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2458"></child>
+            <child nodeId="node-2382"></child>
+            <child nodeId="node-2308"></child>
+        </children>
+    </item>
+    <item nodeId="node-2308">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 5%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2309"></child>
+        </children>
+    </item>
+    <item nodeId="node-2309">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 10%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2310"></child>
+        </children>
+    </item>
+    <item nodeId="node-2310">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 15%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2311"></child>
+        </children>
+    </item>
+    <item nodeId="node-2311">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 20%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2312"></child>
+        </children>
+    </item>
+    <item nodeId="node-2312">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 25%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2313"></child>
+        </children>
+    </item>
+    <item nodeId="node-2313">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 30%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2362"></child>
+            <child nodeId="node-2314"></child>
+        </children>
+    </item>
+    <item nodeId="node-2314">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 35%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2315"></child>
+        </children>
+    </item>
+    <item nodeId="node-2315">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 40%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2316"></child>
+        </children>
+    </item>
+    <item nodeId="node-2316">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 45%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2317"></child>
+        </children>
+    </item>
+    <item nodeId="node-2317">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 50%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2318"></child>
+        </children>
+    </item>
+    <item nodeId="node-2318">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 55%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2319"></child>
+        </children>
+    </item>
+    <item nodeId="node-2319">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 60%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2320"></child>
+        </children>
+    </item>
+    <item nodeId="node-2320">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 65%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2321"></child>
+        </children>
+    </item>
+    <item nodeId="node-2321">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 70%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2322"></child>
+        </children>
+    </item>
+    <item nodeId="node-2322">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 75%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2323"></child>
+        </children>
+    </item>
+    <item nodeId="node-2323">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 80%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2324"></child>
+        </children>
+    </item>
+    <item nodeId="node-2324">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 85%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2325"></child>
+        </children>
+    </item>
+    <item nodeId="node-2325">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 90%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2326"></child>
+        </children>
+    </item>
+    <item nodeId="node-2326">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 95%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2327"></child>
+        </children>
+    </item>
+    <item nodeId="node-2327">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 100%
+ CH4 tank level 0%
+
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2328"></child>
+        </children>
+    </item>
+    <item nodeId="node-2328">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 100%
+ CH4 tank level 0%
+
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2329"></child>
+        </children>
+    </item>
+    <item nodeId="node-2329">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 105%
+ CH4 tank level 0%
+
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2330"></child>
+        </children>
+    </item>
+    <item nodeId="node-2330">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 105%
+ CH4 tank level 0%
+
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2362">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2363"></child>
+        </children>
+    </item>
+    <item nodeId="node-2363">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 35%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2364"></child>
+        </children>
+    </item>
+    <item nodeId="node-2364">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 40%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2365"></child>
+        </children>
+    </item>
+    <item nodeId="node-2365">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 45%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2366"></child>
+        </children>
+    </item>
+    <item nodeId="node-2366">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 50%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2367"></child>
+        </children>
+    </item>
+    <item nodeId="node-2367">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 55%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2368"></child>
+        </children>
+    </item>
+    <item nodeId="node-2368">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 60%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2369"></child>
+        </children>
+    </item>
+    <item nodeId="node-2369">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 65%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2370"></child>
+        </children>
+    </item>
+    <item nodeId="node-2370">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 70%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2371"></child>
+        </children>
+    </item>
+    <item nodeId="node-2371">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 75%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2372"></child>
+        </children>
+    </item>
+    <item nodeId="node-2372">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 80%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2373"></child>
+        </children>
+    </item>
+    <item nodeId="node-2373">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 85%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2374"></child>
+        </children>
+    </item>
+    <item nodeId="node-2374">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 90%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2375"></child>
+        </children>
+    </item>
+    <item nodeId="node-2375">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 95%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2376"></child>
+        </children>
+    </item>
+    <item nodeId="node-2376">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 100%
+ CH4 tank level 0%
+
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2377"></child>
+        </children>
+    </item>
+    <item nodeId="node-2377">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 100%
+ CH4 tank level 0%
+
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2378"></child>
+        </children>
+    </item>
+    <item nodeId="node-2378">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 100%
+ CH4 tank level 0%
+
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2379"></child>
+        </children>
+    </item>
+    <item nodeId="node-2379">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 100%
+ CH4 tank level 0%
+
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2382">
+        <command xml:space="preserve">x displau</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2383"></child>
+        </children>
+    </item>
+    <item nodeId="node-2383">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 5%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2384"></child>
+        </children>
+    </item>
+    <item nodeId="node-2384">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 10%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2385"></child>
+        </children>
+    </item>
+    <item nodeId="node-2385">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 15%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2386"></child>
+        </children>
+    </item>
+    <item nodeId="node-2386">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 20%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2387"></child>
+        </children>
+    </item>
+    <item nodeId="node-2387">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 25%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2413"></child>
+            <child nodeId="node-2388"></child>
+        </children>
+    </item>
+    <item nodeId="node-2388">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 30%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2389"></child>
+        </children>
+    </item>
+    <item nodeId="node-2389">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 35%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2390"></child>
+        </children>
+    </item>
+    <item nodeId="node-2390">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 40%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2391"></child>
+        </children>
+    </item>
+    <item nodeId="node-2391">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 45%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2392"></child>
+        </children>
+    </item>
+    <item nodeId="node-2392">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 50%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2393"></child>
+        </children>
+    </item>
+    <item nodeId="node-2393">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 55%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2394"></child>
+        </children>
+    </item>
+    <item nodeId="node-2394">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 60%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2395"></child>
+        </children>
+    </item>
+    <item nodeId="node-2395">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 65%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2396"></child>
+        </children>
+    </item>
+    <item nodeId="node-2396">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 70%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2397"></child>
+        </children>
+    </item>
+    <item nodeId="node-2397">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 75%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2398"></child>
+        </children>
+    </item>
+    <item nodeId="node-2398">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2399"></child>
+        </children>
+    </item>
+    <item nodeId="node-2399">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 80%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2400"></child>
+        </children>
+    </item>
+    <item nodeId="node-2400">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 85%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2401"></child>
+        </children>
+    </item>
+    <item nodeId="node-2401">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 90%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2402"></child>
+        </children>
+    </item>
+    <item nodeId="node-2402">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 95%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2403"></child>
+        </children>
+    </item>
+    <item nodeId="node-2403">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 100%
+ CH4 tank level 0%
+
+
+You hear a loud clunk back toward the house, and the red hose pops out of the port onto the ground, having shut off automatically.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2404"></child>
+        </children>
+    </item>
+    <item nodeId="node-2404">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">West side yard
+You can see an end of the red hose end and a starship here.
+
+You can go up from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2413">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2414"></child>
+        </children>
+    </item>
+    <item nodeId="node-2414">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+ladder
+You can go up and down to West side yard from here.
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2415"></child>
+        </children>
+    </item>
+    <item nodeId="node-2415">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2416"></child>
+        </children>
+    </item>
+    <item nodeId="node-2416">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2417"></child>
+        </children>
+    </item>
+    <item nodeId="node-2417">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2418"></child>
+        </children>
+    </item>
+    <item nodeId="node-2418">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2419"></child>
+        </children>
+    </item>
+    <item nodeId="node-2419">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2420"></child>
+        </children>
+    </item>
+    <item nodeId="node-2420">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2421"></child>
+        </children>
+    </item>
+    <item nodeId="node-2421">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2422"></child>
+        </children>
+    </item>
+    <item nodeId="node-2422">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2423"></child>
+        </children>
+    </item>
+    <item nodeId="node-2423">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2424"></child>
+        </children>
+    </item>
+    <item nodeId="node-2424">
+        <command xml:space="preserve">zz</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2425"></child>
+        </children>
+    </item>
+    <item nodeId="node-2425">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2426"></child>
+        </children>
+    </item>
+    <item nodeId="node-2426">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2427"></child>
+        </children>
+    </item>
+    <item nodeId="node-2427">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2428"></child>
+        </children>
+    </item>
+    <item nodeId="node-2428">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2429"></child>
+        </children>
+    </item>
+    <item nodeId="node-2429">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+West side yard
+You can see a starship here.
+
+You can go up to the ladder from here.
+
+You hear a loud clunk back toward the house, and the red hose pops out of the port onto the ground, having shut off automatically.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2430"></child>
+        </children>
+    </item>
+    <item nodeId="node-2430">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">West side yard
+You can see an end of the red hose end and a starship here.
+
+You can go up to the ladder from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2431"></child>
+        </children>
+    </item>
+    <item nodeId="node-2431">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+ladder
+You can go up and down to West side yard from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2432"></child>
+        </children>
+    </item>
+    <item nodeId="node-2432">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+West side yard
+You can see an end of the red hose end and a starship here.
+
+You can go up to the ladder from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2458">
+        <command xml:space="preserve">put blue in ch4</command>
+        <result xml:space="preserve">You put the end of the blue hose into the CH4 fill port.
+
+fuelling O2
+fuelling CH4
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2459"></child>
+        </children>
+    </item>
+    <item nodeId="node-2459">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 10%
+ CH4 tank level 10%
+
+
+fuelling O2
+fuelling CH4
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2460"></child>
+        </children>
+    </item>
+    <item nodeId="node-2460">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 15%
+ CH4 tank level 20%
+
+
+fuelling O2
+fuelling CH4
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2461"></child>
+        </children>
+    </item>
+    <item nodeId="node-2461">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 20%
+ CH4 tank level 30%
+
+
+fuelling O2
+fuelling CH4
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2462"></child>
+        </children>
+    </item>
+    <item nodeId="node-2462">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 25%
+ CH4 tank level 40%
+
+
+fuelling O2
+fuelling CH4
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2463"></child>
+        </children>
+    </item>
+    <item nodeId="node-2463">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 30%
+ CH4 tank level 50%
+
+
+fuelling O2
+fuelling CH4
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2464"></child>
+        </children>
+    </item>
+    <item nodeId="node-2464">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 35%
+ CH4 tank level 60%
+
+
+fuelling O2
+fuelling CH4
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2465"></child>
+        </children>
+    </item>
+    <item nodeId="node-2465">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 40%
+ CH4 tank level 70%
+
+
+fuelling O2
+fuelling CH4
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2466"></child>
+        </children>
+    </item>
+    <item nodeId="node-2466">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 45%
+ CH4 tank level 80%
+
+
+fuelling O2
+fuelling CH4
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2467"></child>
+        </children>
+    </item>
+    <item nodeId="node-2467">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 50%
+ CH4 tank level 90%
+
+
+fuelling O2
+fuelling CH4
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2468"></child>
+        </children>
+    </item>
+    <item nodeId="node-2468">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 55%
+ CH4 tank level 100%
+
+
+fuelling O2
+You hear a loud clunk back toward the house, and the blue hose pops out of the port onto the ground, having shut off automatically.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2469"></child>
+        </children>
+    </item>
+    <item nodeId="node-2469">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 60%
+ CH4 tank level 100%
+
+
+fuelling O2
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2470"></child>
+        </children>
+    </item>
+    <item nodeId="node-2470">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 65%
+ CH4 tank level 100%
+
+
+fuelling O2
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2471"></child>
+        </children>
+    </item>
+    <item nodeId="node-2471">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 70%
+ CH4 tank level 100%
+
+
+fuelling O2
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2472"></child>
+        </children>
+    </item>
+    <item nodeId="node-2472">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 75%
+ CH4 tank level 100%
+
+
+fuelling O2
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2473"></child>
+        </children>
+    </item>
+    <item nodeId="node-2473">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 80%
+ CH4 tank level 100%
+
+
+fuelling O2
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2474"></child>
+        </children>
+    </item>
+    <item nodeId="node-2474">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 85%
+ CH4 tank level 100%
+
+
+fuelling O2
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2475"></child>
+        </children>
+    </item>
+    <item nodeId="node-2475">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 90%
+ CH4 tank level 100%
+
+
+fuelling O2
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2476"></child>
+        </children>
+    </item>
+    <item nodeId="node-2476">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 95%
+ CH4 tank level 100%
+
+
+fuelling O2
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2477"></child>
+        </children>
+    </item>
+    <item nodeId="node-2477">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 100%
+ CH4 tank level 100%
+
+
+You hear a loud clunk back toward the house, and the red hose pops out of the port onto the ground, having shut off automatically.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2478"></child>
+        </children>
+    </item>
+    <item nodeId="node-2478">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">West side yard
+You can see an end of the red hose, an end of the blue hose and a starship here.
+
+You can go up from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2479"></child>
+        </children>
+    </item>
+    <item nodeId="node-2479">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+ladder
+You can go up and down to West side yard from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2480"></child>
+        </children>
+    </item>
+    <item nodeId="node-2480">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+West side yard
+You can see an end of the red hose, an end of the blue hose and a starship here.
+
+You can go up to the ladder from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2481"></child>
+        </children>
+    </item>
+    <item nodeId="node-2481">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">Are you sure you want to restart? </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2482"></child>
+        </children>
+    </item>
+    <item nodeId="node-2482">
+        <command xml:space="preserve">y</command>
+        <result xml:space="preserve">
+
+
+
+Starship Testing
+An Interactive Fiction by Dan Bowen, Version 1
+Release 1 / Serial number 201109 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+
+West side yard
+You can see an end of the red hose, an end of the blue hose and a starship here.
+
+You can go up from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2483"></child>
+        </children>
+    </item>
+    <item nodeId="node-2483">
+        <command xml:space="preserve">get all</command>
+        <result xml:space="preserve">end of the red hose: Taken.
+end of the blue hose: Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2484"></child>
+        </children>
+    </item>
+    <item nodeId="node-2484">
+        <command xml:space="preserve">put blue hose in o2</command>
+        <result xml:space="preserve">You put the end of the blue hose into the O2 fill port.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2485"></child>
+        </children>
+    </item>
+    <item nodeId="node-2485">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 0%
+ CH4 tank level 0%
+
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2486"></child>
+        </children>
+    </item>
+    <item nodeId="node-2486">
+        <command xml:space="preserve">put red in o2</command>
+        <result xml:space="preserve">You put the end of the red hose into the O2 fill port.
+
+fuelling O2
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2487"></child>
+        </children>
+    </item>
+    <item nodeId="node-2487">
+        <command xml:space="preserve">get blue</command>
+        <result xml:space="preserve">Taken.
+
+fuelling O2
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2283">
+        <command xml:space="preserve">put red in O2 port</command>
+        <result xml:space="preserve">You put the end of the red hose end into the O2 fill port.
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2284"></child>
+        </children>
+    </item>
+    <item nodeId="node-2284">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2285"></child>
+        </children>
+    </item>
+    <item nodeId="node-2285">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2286"></child>
+        </children>
+    </item>
+    <item nodeId="node-2286">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2293">
+        <command xml:space="preserve">put red in O2</command>
+        <result xml:space="preserve">You put the end of the red hose end into the O2 fill port.
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2294"></child>
+        </children>
+    </item>
+    <item nodeId="node-2294">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 5%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2295"></child>
+        </children>
+    </item>
+    <item nodeId="node-2295">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 10%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2296"></child>
+        </children>
+    </item>
+    <item nodeId="node-2296">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 15%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2297"></child>
+        </children>
+    </item>
+    <item nodeId="node-2297">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 20%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2298"></child>
+        </children>
+    </item>
+    <item nodeId="node-2298">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 25%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2299"></child>
+        </children>
+    </item>
+    <item nodeId="node-2299">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 30%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2300"></child>
+        </children>
+    </item>
+    <item nodeId="node-2300">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 35%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2301"></child>
+        </children>
+    </item>
+    <item nodeId="node-2301">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 40%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2302"></child>
+        </children>
+    </item>
+    <item nodeId="node-2302">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 45%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2303"></child>
+        </children>
+    </item>
+    <item nodeId="node-2303">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 50%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2304"></child>
+        </children>
+    </item>
+    <item nodeId="node-2304">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 55%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2305"></child>
+        </children>
+    </item>
+    <item nodeId="node-2305">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 60%
+ CH4 tank level 0%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2434">
+        <command xml:space="preserve">put red hose in o2</command>
+        <result xml:space="preserve">You put the end of the red hose into the O2 fill port.
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2435"></child>
+        </children>
+    </item>
+    <item nodeId="node-2435">
+        <command xml:space="preserve">put blue hose in ch4</command>
+        <result xml:space="preserve">You put the end of the blue hose into the CH4 fill port.
+
+fuelling O2fuelling CH4
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2436"></child>
+        </children>
+    </item>
+    <item nodeId="node-2436">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 10%
+ CH4 tank level 10%
+
+
+fuelling O2fuelling CH4
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2437"></child>
+        </children>
+    </item>
+    <item nodeId="node-2437">
+        <command xml:space="preserve">x displau</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2438"></child>
+        </children>
+    </item>
+    <item nodeId="node-2438">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 15%
+ CH4 tank level 20%
+
+
+fuelling O2fuelling CH4
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2439"></child>
+        </children>
+    </item>
+    <item nodeId="node-2439">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 20%
+ CH4 tank level 30%
+
+
+fuelling O2fuelling CH4
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2440"></child>
+        </children>
+    </item>
+    <item nodeId="node-2440">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 25%
+ CH4 tank level 40%
+
+
+fuelling O2fuelling CH4
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2441"></child>
+        </children>
+    </item>
+    <item nodeId="node-2441">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 30%
+ CH4 tank level 50%
+
+
+fuelling O2fuelling CH4
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2442"></child>
+        </children>
+    </item>
+    <item nodeId="node-2442">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 35%
+ CH4 tank level 60%
+
+
+fuelling O2fuelling CH4
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2443"></child>
+        </children>
+    </item>
+    <item nodeId="node-2443">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 40%
+ CH4 tank level 70%
+
+
+fuelling O2fuelling CH4
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2444"></child>
+        </children>
+    </item>
+    <item nodeId="node-2444">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 45%
+ CH4 tank level 80%
+
+
+fuelling O2fuelling CH4
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2445"></child>
+        </children>
+    </item>
+    <item nodeId="node-2445">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 50%
+ CH4 tank level 90%
+
+
+fuelling O2fuelling CH4
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2446"></child>
+        </children>
+    </item>
+    <item nodeId="node-2446">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 55%
+ CH4 tank level 100%
+
+
+fuelling O2You hear a loud clunk back toward the house, and the blue hose pops out of the port onto the ground, having shut off automatically.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2447"></child>
+        </children>
+    </item>
+    <item nodeId="node-2447">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 60%
+ CH4 tank level 100%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2448"></child>
+        </children>
+    </item>
+    <item nodeId="node-2448">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 65%
+ CH4 tank level 100%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2449"></child>
+        </children>
+    </item>
+    <item nodeId="node-2449">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 70%
+ CH4 tank level 100%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2450"></child>
+        </children>
+    </item>
+    <item nodeId="node-2450">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 75%
+ CH4 tank level 100%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2451"></child>
+        </children>
+    </item>
+    <item nodeId="node-2451">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 80%
+ CH4 tank level 100%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2452"></child>
+        </children>
+    </item>
+    <item nodeId="node-2452">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 85%
+ CH4 tank level 100%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2453"></child>
+        </children>
+    </item>
+    <item nodeId="node-2453">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 90%
+ CH4 tank level 100%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2454"></child>
+        </children>
+    </item>
+    <item nodeId="node-2454">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 95%
+ CH4 tank level 100%
+
+
+fuelling O2
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2455"></child>
+        </children>
+    </item>
+    <item nodeId="node-2455">
+        <command xml:space="preserve">x display</command>
+        <result xml:space="preserve"> 
+ Fuel Quantities: 
+ O2 Tank Level 100%
+ CH4 tank level 100%
+
+
+You hear a loud clunk back toward the house, and the red hose pops out of the port onto the ground, having shut off automatically.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2489">
+        <command xml:space="preserve">put blue in o2</command>
+        <result xml:space="preserve">You put the end of the blue hose into the O2 fill port.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2490"></child>
+        </children>
+    </item>
+    <item nodeId="node-2490">
+        <command xml:space="preserve">put red in o2</command>
+        <result xml:space="preserve">There is no more room in the O2 fill port.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2289">
+        <command xml:space="preserve">get</command>
+        <result xml:space="preserve">What do you want to get?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2290"></child>
+        </children>
+    </item>
+    <item nodeId="node-2290">
+        <command xml:space="preserve">all</command>
+        <result xml:space="preserve">end of the red hose end: Taken.
+end of the blue hose end: Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2291"></child>
+        </children>
+    </item>
+    <item nodeId="node-2291">
+        <command xml:space="preserve">put red in o2</command>
+        <result xml:space="preserve">You put the end of the red hose end into the O2 fill port.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1315">
+        <command xml:space="preserve"> test shipin</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] u
+
+ladder
+You can go up and down to West side yard from here.
+
+&gt;[2] u
+
+Top of ladder
+You can see a shiny hatch here.
+
+You can go down to the ladder from here.
+
+&gt;[3] w
+You open the shiny hatch.
+
+airlock
+You are in a small chamber with controls on the walls.   The outer hatch is to the east, and the inner hatch is to the west.
+
+You can also see an airlock inner hatch and an egress interlock here.
+
+You can see no obvious exits.
+
+&gt;[4] turn interlock on
+you hear a hiss, and then both hatches emit a loud KERCHUNK.
+
+&gt;[5] w
+You open the airlock inner hatch.
+
+main hallway
+You can see an airlock hall hatch here.
+
+You can go up from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1316"></child>
+        </children>
+    </item>
+    <item nodeId="node-1316">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1317"></child>
+        </children>
+    </item>
+    <item nodeId="node-1317">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1318"></child>
+        </children>
+    </item>
+    <item nodeId="node-1318">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+control room
+You can see an abort system, a navigation computer and an autopilot here.
+
+You can go down to the main hallway from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

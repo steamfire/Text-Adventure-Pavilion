@@ -5,13 +5,32 @@ Include Basic Screen Effects by Emily Short.
 Include Easy Doors by Hanon Ondricek.
 
 
-West side yard is a room. A starship is in the west side yard. the starship is fixed in place.  The description of the starship is "A great silvery rocket, 30m tall, it has a set of ports at the bottom". 
+
+
+Chapter 1 - backstory
+
+West side yard is a room. 
+Player is holding a printout.
+
+
+The oxygen flow is initially 1.
+The methane flow is initially 1. 
+
+The end of the red hose is in the west yard.  
+The end of the blue hose is in the west yard.
+	
+
+Chapter 2 - Rocket at home
+
+
+
+
+Section 1 - walkin around the rocket
+
+A starship is in the west side yard. the starship is fixed in place.  The description of the starship is "A great silvery rocket, 30m tall, it has a set of ports at the bottom". 
 
 Instead of taking the starship, say "very funny.  You are not a crane."
 
-A set of ports is part of the starship. The description of the set of ports is "there is an 02 fill port and a CH4 fill port."  A CH4 fill port is part of the set of ports. The CH4 fill port is a container.  A O2 fill port is part of the set of ports.  The O2 fill port is a container.
-
-There is a red hose end in the west yard.  There is a blue hose end in the west yard.
 
 There is a ladder above the west yard. 
 
@@ -44,18 +63,80 @@ After switching off the interlock:
 	now the inner hatch is locked;
 	now the airlock outer hatch is unlocked;
 	Say "you hear a hiss, and then both hatches emit a loud KERCHUNK."
-	
+
+
 the control room is above the main hallway.
 
-There is an abort system is in the control room.  The abort system is fixed in place.  The abort system is a device.  
+Section 2 - Fueling the rocket
 
-Chapter 2 - Moving the ship
+A fuel display is part of the starship.  The description of the fuel display is " [line break]
+  Fuel Quantities: [line break]
+O2 Tank Level [O2 tank level]%[line break]
+CH4 tank level [CH4 tank level]%[line break]".
 
-Mars is a room.
+
+A set of ports is part of the starship. The description of the set of ports is "there is an 02 fill port and a CH4 fill port."  A CH4 fill port is part of the set of ports. The CH4 fill port is a container.  A O2 fill port is part of the set of ports.  The O2 fill port is a container. 
+
+The carrying capacity of the CH4 port is 1.
+The carrying capacity of the O2 port is 1.
+
+
+The O2 tank level is initially 0.
+The CH4 tank level is initially 0. 
+
+Every turn:
+	if the end of the red hose is in the O2 fill port:
+		if oxygen flow is 1:
+		 	if O2 tank level is less than 100:
+				say "fuelling O2[line break]";
+				increase O2 tank level by 4;
+			otherwise if the player is in the west side yard:
+				now oxygen flow is 0;
+				say "You hear a loud clunk back toward the house, and the red hose pops out of the port onto the ground, having shut off automatically.";
+				move red hose to west side yard;
+	if the end of the blue hose is in the CH4 fill port:
+		if methane flow is 1:
+		 	if CH4 tank level is less than 100:
+				say "fueling CH4[line break]";
+				increase CH4 tank level by 16;
+			otherwise if the player is in the west side yard:
+				now methane flow is 0;
+				say "You hear a loud clunk back toward the house, and the blue hose pops out of the port onto the ground, having shut off automatically.";
+				move the blue hose to west side yard.
+		
+			
+
+A fuel display is part of the starship.  The description of the fuel display is " [line break]
+  Fuel Quantities: [line break]
+O2 Tank Level [O2 tank level]%[line break]
+CH4 tank level [CH4 tank level]%[line break]".
+
+
+A set of ports is part of the starship. The description of the set of ports is "there is an 02 fill port and a CH4 fill port."  A CH4 fill port is part of the set of ports. The CH4 fill port is a container.  A O2 fill port is part of the set of ports.  The O2 fill port is a container. 
+
+
+Chapter 3 - Moving the ship
+
+Section 1 -  Stuff
+
+Low earth orbit is a room.
+
+There is an abort system is in the control room.  It is fixed in place.  It is a device.  
 
 After switching on the abort system:
-	Now the outer hatch leads to Mars;
+	Now the outer hatch leads to low earth orbit;
+	Now the abort system is switched off;
 	
+There is a navigation computer in the control room.   It is fixed in place. It is a device.  
+[user needs the orbit printout]
+
+There is an autopilot in the control room.  It is fixed in place. It is a device.
+
+	
+section 2 - Nav computer
+ 
+
+
 
 
 
