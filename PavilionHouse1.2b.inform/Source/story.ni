@@ -113,21 +113,29 @@ Part 3 - In the house
 
 Danny's Bedroom is a room.  There is a dot matrix printout in danny's bedroom. The description of the printout is "This appears to be a list of satellite orbits,  showing the times that a satellite RDS-1 passes over this location.  Tonight's date is in the list."
 
-The Hallway is southeast of Danny's Bedroom.
+The End of the Hallway is south of Danny's Bedroom and west of Mid Hallway.
 
-Michael's room is north of The Hallway. "[if Day is happening]The sun streams cheerily through the window."
-An air filter is in Michael's room.
+Michael's Bedroom is north of Mid Hallway. "[if Day is happening]The sun streams cheerily through the window."
+An air filter is in Michael's Bedroom.
 The description of the air filter is "The filter whooshes quietly, blowing clean air into your eyes.  This is uncomfortable, so you stop peeking into it."
 
-Dad's room is southwest of The Hallway.
+Dad's Bedroom is south of The End of the Hallway.
 
-A waterbed is in Dad's room. "in the middle of the room is a pink waterbed." It is an enterable vehicle.  The description of the waterbed is "It is a sloshy thing."
+A waterbed is in Dad's Bedroom. "in the middle of the room is a pink waterbed." It is an enterable vehicle.  The description of the waterbed is "It is a sloshy thing."
 
-Dad's bathroom is east of Dad's room.
+Dad's bathroom is east of Dad's Bedroom.  The Panasonic Radio is a device in Dad's bathroom. The panasonic radio is switched off. The description of the panasonic radio is "[if switched on]The radio dial glows, and you see it is set to 1070kHz[otherwise]The Panasonic multiband radio is dark and silent[end if]." 
 
-The Hall bathroom is south of The Hallway.
 
-The Foyer is east of the hallway.  "Lined with a linoluem floor." An Ironing Board is in the foyer. The ironing board is fixed in place.  A can of starch is on the ironing board.  The description of the starch is "Niagara Starch: Not useful in this game :-)"
+Every turn when the panasonic radio is switched on: 
+	if (the player is in Dad's Bedroom) or (the player is in Dad's bathroom) or (the player is in the End of the Hallway):
+		if the audio equipment is switched on:
+			say "[one of]..AST AM, PAVILION NEW YORK! (a monty python song jangles)[or]This is a recorded broadcast...[or]The radio broadcast continues[stopping]: [one of]'1070 ON YOUR DIAL!'[or]'Well that was In the mood by Glenn Miller, up next is Johnny B goode.'[or]'Umm, (chunks, clatter, and clunks are heard in the bathroom.'[or]'Who knows what evil lurks...'[or]'(dead air)'[or]'You're listing to WAST in PAVILION NEW YORK!'[cycling]";
+		otherwise:
+			Say "you hear faint radio static..."
+
+The Main Bathroom is south of Mid Hallway.
+
+The Foyer is east of the Mid Hallway.  "Lined with a linoluem floor." An Ironing Board is in the foyer. The ironing board is fixed in place.  A can of starch is on the ironing board.  The description of the starch is "Niagara Starch: Not useful in this game :-)"
 
 
 The living room is east of the foyer. A shelf is in the Living Room.  A brown book is on the shelf. The description of the book is "The book has the title 'Satellite Frequencies.'" After taking the book:
@@ -151,9 +159,16 @@ The garage door is north of the back hallway and south of the garage. The garage
 
 Part 4 - downstairs
 
-The cellar stairs are below the back hallway and above the cellar.  The cellar stairs is a door.
+Cellar stairs are below the back hallway and above the cellar.  Cellar stairs is a door. Cellar stairs is open.   "[if audio equipment is switched on][bold type][red letters][Fixed letter spacing]ON AIR[variable letter spacing][roman type][default letters]"
 
-The radiostation is north of the cellar. "A suite of electronics is jammed into the small room. There is nothing to do with them, it appears fully automated."  There is a teal pipe in the radiostation.  The teal pipe is fixed in place.  The description of the teal pipe is " A 1.5 inch teal pipe is sticking out of the wall.  You notice that it ends in a Tee.  One branch of the Tee is open and available to connect.  The other branch returns into the wall, with a tag stating, 'To Front Yard Hydrant ^'"
+The Radiostation is north of the cellar. "The size of a closet, there is about 2x4 feet of space to move around next to the table."  
+There is a suite of audio equipment in the Radiostation. The audio equipment is a device. The audio equipment is switched off. The description of the audio equipment is "[if audio equipment is switched on]The various boxes have glowing dials and humming motors[otherwise]There are various boxes that have dark dials and do not hum[end if]."
+After switching on the audio equipment:
+	Say "The equipment starts humming and bits of them start glowing.";	
+
+	
+ 
+ There is a teal pipe in the radiostation.  The teal pipe is fixed in place.  The description of the teal pipe is "A 1.5 inch teal pipe is sticking out of the wall.  You notice that it ends in a Tee.  One branch of the Tee is open and available to connect.  The other branch returns into the wall, with a tag stating, 'To Front Yard Hydrant ^'"
 
 The Furnace room is west of the cellar. 
 
@@ -163,11 +178,11 @@ The pump room is west of the furnace room.  "A small room about the size of a cl
 
 Part 5 - Regions
 
-Upstairs is a region.   The garage, The ham shack, The back hallway, The New room east, The New room west, the kitchen, The dining room, The living room, The Foyer, The Hall bathroom, Dad's bathroom,  Dad's room, Michael's room, The Hallway, and Danny's Bedroom are in the upstairs.
+[Upstairs is a region.   The garage, The ham shack, The back hallway, The New room east, The New room west, the kitchen, The dining room, The living room, The Foyer, The Hall bathroom, Dad's bathroom,  Dad's room, Michael's Bedroom, The Hallway, and Danny's Bedroom are in the upstairs.]
 
 Downstairs is a region. The cellar, furnace room, pump room and the radiostation are in the downstairs.
 
-Outdoors is a region.  The front porch, Front yard, driveway, side yard, back porch, middle back yard, and back yard hill are in the outdoors.
+Outdoors is a region.  The front porch, Front yard, driveway, side yard, back porch, middle back yard, West side yard, and back yard hill are in the outdoors.
 
 The sky is a backdrop. the sky is in the outdoors. Instead of doing something to the sky, say "[if Night is happening]There is a bright satellite passing overhead.[otherwise]The sky is pretty blue."
 
@@ -190,7 +205,7 @@ Part 7 - Stuff to do
 Part 8 - Ham Radio Stuff
 
 A heavy UHF radio and a teletype are in the ham shack. The radio is a device. The radio is switched off.   the radio is fixed in place.
-The description of the radio is "The radio is about the size and shape of a VCR.  It says 'UHF Satellite decoder radio'  It is connected to the teletype."
+The description of the UHF radio is "The radio is about the size and shape of a VCR.  It says 'UHF Satellite decoder radio'  It is connected to the teletype."
 
 The teletype is fixed in place. The description of the teletype is "The green box hums quietly.  Blank paper pokes out of the top window."
 
@@ -278,11 +293,13 @@ Part 102 - Space starting
 
 [   FIX THE TIME HERE FOR RELEASE  ]
 At 11:05 PM:
-	Say "** You grow tired, and you decide to go back to your bedroom and sleep till morning... **";
+	Say "
+	
+	[bold type]** You grow tired, and you decide to go back to your bedroom and sleep till morning... **[default letters]";
 	pause the game;
 	Now the time of day is 8:00 AM;
 	say "** Good morning ** The time is now [time of day]!";
-	Now the player is in Michael's room.
+	Now the player is in Michael's Bedroom.
 
 
 At 8:05 AM:
@@ -309,15 +326,20 @@ Chapter 3 - Tests
 
 The skipVogons is initially 0.
 
-Test radio with "s / e / get book / w / s / e / e / e / turn radio on / w / ".
+Test UHF with "s / e / get book / w / s / e / e / e / turn radio on / w / ".
 
-test wait with "/ z / z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /"
+test wait20 with "z/z/z/z/z/z/z/z/z/z/z/z/z/z/z/z/z/z/z/z"
 
-Test radiation with " test radio / d / test wait / u / w / w / n / n / z / z / z / z / "
+test wait50 with "z / z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z /z / z /z /z /z "
+
+Test radiation with " test UHF / d / test wait50 / u / w / w / n / n / z / z / z / z / "
 
 Test gen with " z / z/ open box / get all / s / s / e / e / d / n / drop methane / turn methane on / s / w / w / drop oxygen / turn oxygen on "
 
 Test gases with "test gen / e / e / u / w / w / n / n / n / turn hydrant on / w / se / s / turn hydrant on / n / nw "
+
+test station with "s / s / e / e / d / n / turn equipment on / s"
+
 
 test all with "test radiation / test gases "
 
