@@ -1,4 +1,4 @@
-"Starship Testing" by Dan Bowen, Version 1.1
+"Starship Testing" by Dan Bowen, Version 1.2
 
 Include Exit Lister by Gavin Lambert.
 Include Basic Screen Effects by Emily Short.
@@ -36,6 +36,11 @@ There is a Ladder above the west yard.
 
 Top of ladder is above the ladder.
 
+Section 2 - Airlock
+
+Interdimensional space is a room.  "You're floating in a gray nothing.  Not dead somehow, but this is a dead end.  "
+
+
 The Airlock is a room. "You are in a small chamber with controls on the walls.   The outer hatch is to the east, and the inner hatch is to the west."
 
 The shiny hatch is an easydoor in the top of ladder. The shiny hatch leads to the airlock.
@@ -71,11 +76,10 @@ After switching off the interlock:
 	Say "you hear a hiss, and then both hatches emit a loud KERCHUNK."
 
 
-The Control Room is above the Main hallway.
 
-Section 2 - Fueling the rocket
+Section 3 - Fueling the rocket
 
-A fuel display is part of the starship.  The description of the fuel display is " [line break]
+A fuel display is part of the starship.  Understand "screen" as display.  The description of the fuel display is " [line break]
   Fuel Quantities: [line break]
 O2 Tank Level [O2 tank level]%[line break]
 CH4 tank level [CH4 tank level]%[line break]".
@@ -115,10 +119,9 @@ Every turn:
 
 Chapter 3 - Moving the ship
 
-Section 1 -  Stuff
+Section 1 -  Control Room
 
-Interdimensional space is a room.  "You're floating in a gray nothing.  Not dead somehow, but this is a dead end.  "
-
+The Control Room is above the Main hallway.
 
 There is an abort system is in the control room.  It is fixed in place.  It is a device.  it is switched off.  The description of the abort system is "Out of Order.  operation is not guaranteed."
 
@@ -127,20 +130,20 @@ After switching on the abort system:
 	Now the outer hatch leads to interdimensional space;
 	Now the abort system is switched off;
 	
-There is a navigation computer in the control room.   It is fixed in place. It is a device.  it is switched off.  The description of the navigation computer is "This Nav-O-Co computer appears to be out of order. "
+There is a navigation computer in the control room.   It is fixed in place. It is a device.  it is switched off.  Understand "nav" as navigation computer.  The description of the navigation computer is "This Nav-O-Co computer appears to be out of order. " 
 [user needs the orbit printout]
 
 After switching on the navigation computer:
 	say "The navigation computer emits a fail sound. ";
 	Now the navigation computer is switched off;
 
-There is a control display in the control room.  The display is fixed in place.  The description of the control display is " [line break]
+There is a control display in the control room.  The display is fixed in place.  Understand "screen" as display.  The description of the control display is " [line break]
 ~ Starship Status Console ~[line break]
   Fuel Quantities: [line break]
 Oxygen Tank Level [O2 tank level]%[line break]
 Methane Tank level [CH4 tank level]%[line break]".
 
-There is an autopilot in the control room.  It is fixed in place. It is a device.  it is switched off. The description of the autopilot is "The shiny black autopilot looks brand new, and very auto."	
+There is an autopilot in the control room.  It is fixed in place. It is a device.  it is switched off. Understand "auto" as autopilot. The description of the autopilot is "The shiny black autopilot looks brand new, and very auto."	
 
 
 Section 2 - Autopilot

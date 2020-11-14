@@ -22,7 +22,7 @@ placeholder [IFID] = "99D29B94-FE25-4BC4-9679-D79304CB0C95"
 placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2020"
 placeholder [TITLE] = "Starship Testing"
-placeholder [AUTHOR] = "Dan Bowen, Version 1.1"
+placeholder [AUTHOR] = "Dan Bowen, Version 1.2"
 placeholder [BLURB] = "A work of interactive fiction."
 
 ! Other material to release
