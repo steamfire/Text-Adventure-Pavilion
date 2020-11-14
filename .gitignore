@@ -1,2 +1,30 @@
-
-.DS_Store
+*Debug log.txt
+*~
+*.blurb
+*Build
+*.DS_Store
+*.glk*
+*.iFiction
+*Index
+*manifest.plist
+*Release
+*Reserved
+*.rtf
+*.skein
+*.tiff
+*Settings.plist
+*Inform\ Map.eps
+tools/diff.txt
+tools/transcript.txt
+tools/git
+tools/glulxe
+tools/regtest/git-remglk
+tools/comparison\ transcripts/*
+tools/profiling/profile-raw
+tools/profiling/*.txt
+PavilionHouse1.2b.inform/Build/auto.inf
+PavilionHouse1.2b.inform/Build/gameinfo.dbg
+PavilionHouse1.2b.inform/Build/output.z8
+PavilionHouse1.2b.inform/Build/Problems.html
+PavilionHouse1.2b.inform/Skein.skein
+PavilionHouse1.2b.inform/Build/Debug log.txt
