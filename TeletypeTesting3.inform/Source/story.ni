@@ -9,7 +9,7 @@ Ham Shack is a room.
  
 Part 1 - Teletype
 
-[Interaction begins when player examines Teletype]
+[Interaction begins when player examines Teletype ]
 
 OSBroken is initially true.
 
@@ -26,7 +26,7 @@ After switching on the teletype:
 	Try examining teletype;
 
 Carry out examining the Teletype:
-	say "[if the teletype is switched off][description of the Teletype][paragraph break][otherwise]The machine clatters as it types out: [paragraph break]CONNECTED> WELCOME, I AM HAL.";
+	say "[if the teletype is switched off][description of the Teletype][paragraph break][otherwise]The machine clatters as it types out: [paragraph break]REMOTE COMMAND INTERFACE: OPERATIONAL SATELLITE HAL-SAT-9000.";
 	rule succeeds.
 	
 
