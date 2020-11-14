@@ -38132,7 +38132,7 @@ Array TableOfVerbs --> ConjugateVerb_0 ConjugateVerb_2 ConjugateVerb_3 Conjugate
 
 #IFDEF DEBUG;
 Array TestText_0 ->
-    "s/e/get book/w/s/e/e/e/turn radio on/w/ ||||";
+    "s/e/get book/w/s/e/e/e/turn radio on/w||||";
 Array TestReq_0 -->
     0 0;
 Array TestText_1 ->
@@ -38622,7 +38622,7 @@ if (t_0 ofclass K8_person) {if (na > 0) { na = 0; print "^"; }
 
 [ TestScriptSub;
 	switch(special_word) {
-'UHF//': TestStart(TestText_0, TestReq_0, 40);
+'UHF//': TestStart(TestText_0, TestReq_0, 38);
 'wait20//': TestStart(TestText_1, TestReq_1, 39);
 'wait50//': TestStart(TestText_2, TestReq_2, 99);
 'radiation//': TestStart(TestText_3, TestReq_3, 42);

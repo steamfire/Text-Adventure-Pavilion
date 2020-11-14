@@ -48,6 +48,7 @@ You can go north and south through the front door (closed) from here.
             <child nodeId="node-3167"></child>
             <child nodeId="node-3164"></child>
             <child nodeId="node-4749"></child>
+            <child nodeId="node-5742"></child>
             <child nodeId="node-4205"></child>
             <child nodeId="node-4761"></child>
             <child nodeId="node-3096"></child>
@@ -2892,6 +2893,11 @@ You grow tired, and you decide to go back to bed and sleep till morning.
 ** Good morning ** The time is now 8:00 am!
 
 &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-5742">
+        <command xml:space="preserve">test uhf</command>
+        <result xml:space="preserve"></result>
         <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-4749">

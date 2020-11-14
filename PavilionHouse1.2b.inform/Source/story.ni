@@ -326,7 +326,7 @@ Chapter 3 - Tests
 
 The skipVogons is initially 0.
 
-Test UHF with "s / e / get book / w / s / e / e / e / turn radio on / w / ".
+Test UHF with "s / e / get book / w / s / e / e / e / turn radio on / w ".
 
 test wait20 with "z/z/z/z/z/z/z/z/z/z/z/z/z/z/z/z/z/z/z/z"
 
