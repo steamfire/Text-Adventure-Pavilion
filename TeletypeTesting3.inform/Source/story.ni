@@ -1,5 +1,11 @@
 "TeletypeTesting3" by Dan Bowen
 
+[******to do********
+Fix the UHF and Teletype being turned on truth table logic
+Initial bootloader diagnostic option response text is TBD
+]
+
+
 Include Basic Screen Effects by Emily Short.
 Include ComputersTeletype by Dan Bowen
 [This ComputersTeletype extension v9 is based on v8 of Computers by Emily Short.  There are only 2 things added: the variables visibleDescriptor and screenDescriptor.  The default to "visible" and "screen".  These appear when a multiple-choice menu is displayed.  In the story you change them to whatever text you like.  In this case, it's "printed" and "paper.]
@@ -9,12 +15,14 @@ Include ComputersTeletype by Dan Bowen
 
 Ham Shack is a room.
 There is a roll of paper tape in the ham shack.
+UHF Radio is in the ham shack.  UHF radio is a device.
  
 Part 1 - Teletype
 
 [Interaction begins when player examines Teletype ]
 
 OSBroken is initially true.
+
 
 The Teletype is computer in the ham shack.  The teletype is switched off.  The description is "The teletype is a green boxy thing, with a typwriter keyboard, paper coming out the top, and a paper tape reader on the side.[if the teletype is switched on]The motor hums quietly.[otherwise] It is turned off."
 
@@ -25,13 +33,30 @@ The paper tape reader is an extension port.  It is part of the teletype.  the de
 
 The roll of paper tape is a data storage device.
 
+halNotice is initially "";
+
+halBootloaderIntro is initially "ILLIAC BOOTLOADER SAFE MODE. FAULT CONDITION: OPERATING SYSTEM FAILURE. ONLY RECOVERY COMMANDS AVAILABLE.";
+
+halOSIntro is initially "
+		*************************************************[line break]
+		WELCOME TO HAL OS V9000 REMOTE COMMAND INTERFACE.[line break]
+		OPERATIONAL SATELLITE: RDS-1.[line break]
+		*************************************************";	
+
 
 After switching on the teletype:
+	if UHF is switched on:
 		[These lines are here to change the menu text to printed on paper, a la teletype ]
-	Now screenDescriptor is "paper";
-	Now the visibleDescriptor is "printed";
-		[** this next line is important to start the main menut **]
-	now the teletype runs HAL-Bootloader program;
+		Now screenDescriptor is "paper";
+		Now the visibleDescriptor is "printed";
+			[** this next line is important to start the main menut **]
+		if OSBroken is true:
+			now halNotice is "[halBootloaderIntro]";
+			now the teletype runs HAL-Bootloader program;
+		if OSBroken is false:
+			now halNotice is "[halOSIntro]";
+	if UHF is switched off:
+		now the teletype runs Static;
 	Try examining teletype;
 
 
@@ -39,9 +64,26 @@ Carry out examining the Teletype:
 	say "[if the teletype is switched off][description of the Teletype][paragraph break][otherwise][variable letter spacing]The machine clatters as it types out: [paragraph break][fixed letter spacing][halnotice][variable letter spacing][paragraph break]";
 	rule succeeds.
 
-Section 1 - HAL Bootloader
+Section 1 - Static
 
-halNotice is initially "ILLIAC BOOTLOADER SAFE MODE. FAULT CONDITION: OPERATING SYSTEM FAILURE. ONLY RECOVERY COMMANDS AVAILABLE.";
+Static is privately-named software. The description of static is "[one of]
+LIZKSFLI ZKGGZ
+              ?#
+                #(&!  ..
+                        -#;LZSAS
+[or]FDAIGYYDO/'*(:#?2519&$.879 !#:',#;
+
+[or]GWO BUZGFD PO SFLKH
+[or],,
+.......................
+
+[or]   !(*$204&5,#$14237':096153
+
+[or]XW..............2222222222[at random]";
+
+
+Section 2 - HAL Bootloader
+
 
 The teletype HAL-Bootloader program is an enumerated multiple-choice program. The options table of the Teletype HAL-Bootloader program is the Table of Bootloader Options.
 	
@@ -61,11 +103,7 @@ This is the reboot-cpu rule:
 	say "[fixed letter spacing][paragraph break]***THE SYSTEM IS GOING DOWN FOR REBOOT NOW!***";
 	pause the game;
 	if OSBroken is false:
-		now halnotice is "
-		*************************************************[line break]
-		WELCOME TO HAL OS V9000 REMOTE COMMAND INTERFACE.[line break]
-		OPERATIONAL SATELLITE: RDS-1.[line break]
-		*************************************************";	
+		now halnotice is "[halOSIntro]";	
 		Now the teletype does not run the HAL-Bootloader program;
 		Now the teletype runs the HAL-OS-REMOTE program;
 	try examining teletype;
@@ -83,7 +121,7 @@ This is the upload rule:
 	try examining teletype;
 	
 
-Section 2 - HAL OS
+Section 3 - HAL OS
 
 The teletype HAL-OS-REMOTE program is an enumerated multiple-choice program. The options table of the Teletype HAL-OS-REMOTE program is the Table of HAL-OS-REMOTE Options.
 
@@ -102,7 +140,7 @@ This is the OS-remote-status rule:
 	GUIDANCE AND ATTITUDE CONTROL   OK (SUN SYNCHRONOUS)[line break]
 	RADIOS                          OK (BAND: UHF)[line break]
 	LOW GAIN ANTENNA                OK (SIGNAL LOCK)[line break]
-	HIGH GAIN ANTENNA               FAILED[line break]
+	HIGH GAIN ANTENNA             FAIL[line break]
 	DATA STORAGE                    OK (3.2TB FREE)[line break]
 	OPERATING SYSTEM                OK (HAL V9K)[line break]
 	SOFTWARE                        OK[line break]
@@ -110,7 +148,7 @@ This is the OS-remote-status rule:
 	OPTICAL IMAGER/SPECTROMETER     OK (OFF)[line break]
 	LIFE SUPPORT                    OK[line break]
 	DOCKING PORT                    OK (UNOCCUPIED)[line break]
-	CABIN DATA CONSOLE              OK(FAST)[LINE BREAK]
+	CABIN DATA CONSOLE              OK (FAST)[LINE BREAK]
 	[variable letter spacing]";
 	
 This is the OS-remote-scan rule:
