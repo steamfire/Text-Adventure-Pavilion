@@ -16,12 +16,12 @@ Part 1 - Teletype
 
 OSBroken is initially true.
 
-The Teletype is computer in the ham shack.  The teletype is switched off.  The description is "The teletype is a green boxy thing, with a typwriter keyboard and paper coming out the top.[if the teletype is switched on]The motor hums quietly.[otherwise] It is turned off."
+The Teletype is computer in the ham shack.  The teletype is switched off.  The description is "The teletype is a green boxy thing, with a typwriter keyboard, paper coming out the top, and a paper tape reader on the side.[if the teletype is switched on]The motor hums quietly.[otherwise] It is turned off."
 
 Understand "paper", "message", "text" and "readout" as a screen.
 Understand "tty" as teletype.
 
-The paper tape reader is an extension port.  It is part of the teletype.  
+The paper tape reader is an extension port.  It is part of the teletype.  the description of the paper tape reader is "The punched paper tape reader is a bulging box hanging off the left side of the main teletype. It is used to transmit large amounts pre-recorded data through the teletype."
 
 The roll of paper tape is a data storage device.
 
@@ -31,17 +31,19 @@ After switching on the teletype:
 	Now screenDescriptor is "paper";
 	Now the visibleDescriptor is "printed";
 		[** this next line is important to start the main menut **]
-	now the teletype runs operation program;
+	now the teletype runs HAL-Bootloader program;
 	Try examining teletype;
 
-halNotice is initially "SPACECRAFT IS IN BOOTLOADER SAFE MODE. FAULT CONDITION: OPERATING SYSTEM FAILURE. ONLY RECOVERY COMMANDS AVAILABLE.";
 
 Carry out examining the Teletype:
 	say "[if the teletype is switched off][description of the Teletype][paragraph break][otherwise][variable letter spacing]The machine clatters as it types out: [paragraph break][fixed letter spacing][halnotice][variable letter spacing][paragraph break]";
 	rule succeeds.
-	
 
-The teletype operation program is an enumerated multiple-choice program. The options table of the Teletype operation program is the Table of Bootloader Options.
+Section 1 - HAL Bootloader
+
+halNotice is initially "ILLIAC BOOTLOADER SAFE MODE. FAULT CONDITION: OPERATING SYSTEM FAILURE. ONLY RECOVERY COMMANDS AVAILABLE.";
+
+The teletype HAL-Bootloader program is an enumerated multiple-choice program. The options table of the Teletype HAL-Bootloader program is the Table of Bootloader Options.
 	
 Table of Bootloader Options
 index	title	effect
@@ -58,13 +60,16 @@ This is the check-system rule:
 This is the reboot-cpu rule:
 	say "[fixed letter spacing][paragraph break]***THE SYSTEM IS GOING DOWN FOR REBOOT NOW!***";
 	pause the game;
-	now halnotice is "
-	*************************************************[line break]
-	WELCOME TO HAL OS V9000 REMOTE COMMAND INTERFACE.[line break]
-	OPERATIONAL SATELLITE: RDS-1.[line break]
-	*************************************************";	
-	say "Dan: here is where you would set the next program to start";
-	[try examining teletype;]
+	if OSBroken is false:
+		now halnotice is "
+		*************************************************[line break]
+		WELCOME TO HAL OS V9000 REMOTE COMMAND INTERFACE.[line break]
+		OPERATIONAL SATELLITE: RDS-1.[line break]
+		*************************************************";	
+		Now the teletype does not run the HAL-Bootloader program;
+		Now the teletype runs the HAL-OS-REMOTE program;
+	try examining teletype;
+		
 
 This is the upload rule:
 	Say "[fixed letter spacing]WARNING: AFTER UPLOAD, CPU MUST BE REBOOTED TO LOAD SYSTEM FILE. PLEASE BEGIN DATA UPLOAD NOW...[paragraph break]";
@@ -72,13 +77,54 @@ This is the upload rule:
 	pause the game;
 	if the roll is in the reader:
 		say "[fixed letter spacing]UPLOAD COMPLETE. NEW SYSTEM FILE VALIDATED.[variable letter spacing][paragraph break]";
-		Now OSBroken is false;
+		Now OSBroken is false;		
 	otherwise:
 		say "[fixed letter spacing]ERROR: NO DATA RECEIVED.[paragraph break][variable letter spacing]";
 	try examining teletype;
 	
 
+Section 2 - HAL OS
+
+The teletype HAL-OS-REMOTE program is an enumerated multiple-choice program. The options table of the Teletype HAL-OS-REMOTE program is the Table of HAL-OS-REMOTE Options.
+
+Table of HAL-OS-REMOTE Options
+index	title	effect
+--	"SYSTEM STATUS"	OS-remote-status rule
+--	"START SOLAR SYSTEM SCANNERS"	OS-remote-scan rule
+--	"SWITCH TO FAST DATA MODE"	OS-remote-high-rate rule
+
+This is the OS-remote-status rule:
+	say "[fixed letter spacing]
+	ONBOARD SYSTEMS STATUS FOR SATELLITE RDS-1:[line break]
+	-------------------------------------------[line break]
+	POWER                           OK (48.2V)[line break]
+	PROCESSOR                       OK[line break]
+	GUIDANCE AND ATTITUDE CONTROL   OK (SUN SYNCHRONOUS)[line break]
+	RADIOS                          OK (BAND: UHF)[line break]
+	LOW GAIN ANTENNA                OK (SIGNAL LOCK)[line break]
+	HIGH GAIN ANTENNA               FAILED[line break]
+	DATA STORAGE                    OK (3.2TB FREE)[line break]
+	OPERATING SYSTEM                OK (HAL V9K)[line break]
+	SOFTWARE                        OK[line break]
+	RADAR IMAGER/SPECTROMETER       OK (OFF)[line break]
+	OPTICAL IMAGER/SPECTROMETER     OK (OFF)[line break]
+	LIFE SUPPORT                    OK[line break]
+	DOCKING PORT                    OK (UNOCCUPIED)[line break]
+	CABIN DATA CONSOLE              OK(FAST)[LINE BREAK]
+	[variable letter spacing]";
 	
+This is the OS-remote-scan rule:
+	say "[fixed letter spacing]PLANETARY SYSTEM MONITOR ONLINE.[PARAGRAPH BREAK]
+	RADAR SCANNING...[LINE BREAK]
+	OPTICAL SCANNING...[LINE BREAK]
+	COMPARING RETURNS TO KNOWN DATABASE...[PARAGRAPH BREAK]
+	*** ANOMALOUS OBJECT DETECTED. ***[LINE BREAK]
+	     [red letters]ORBIT ANALYSIS: POTENTIAL EARTH-CROSSING[default letters][LINE BREAK]
+	     FULL ANALYSIS AVAILABLE IN FAST DATA MODE.[PARAGRAPH BREAK]";
+
+This is the OS-remote-high-rate rule:
+	Say "[fixed letter spacing]ERROR: HIGH GAIN ANTENNA IS NOT RESPONDING. CANNOT SWITCH TO REMOTE FAST DATA MODE.[variable letter spacing]";
+
 test tty with "put roll in reader / turn teletype on / type 3 / type 2 ";
 
 
