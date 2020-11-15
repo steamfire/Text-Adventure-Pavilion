@@ -1,7 +1,7 @@
 "TeletypeTesting3" by Dan Bowen
 
 [******to do********
-Fix the UHF and Teletype being turned on truth table logic
+Fix the UHF and Teletype being turned on truth table logic.  THIS SHOULD PRODUCE NO TTY OUTPUT WHEN UHF IS OFF.  ONLY PUT STATIC OUTPUT WHEN UHF IS ON, TTY IS ON, AND USER ISN"T HOLDING THE FREQ BOOK.
 Initial bootloader diagnostic option response text is TBD
 ]
 
