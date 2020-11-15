@@ -186,8 +186,9 @@ This is the OS-remote-login-starship rule:
 
 chapter 4 - Starship OS Remote
 
-section 1 - Main starship menu
-The STARSHIP-OS-REMOTE program is an enumerated multiple-choice program. The options table of the STARSHIP-OS-REMOTE program is the Table of Starship Options. 
+section 1 - Main starship remote menu
+
+The STARSHIP-OS-REMOTE program is an enumerated multiple-choice program. The options table of the STARSHIP-OS-REMOTE program is the Table of StarshipOSRemote Options. 
 
 
 Carry out examining the STARSHIP-OS-REMOTE program for the first time:
@@ -216,9 +217,9 @@ Carry out examining the STARSHIP-OS-REMOTE program for the first time:
 	
 Carry out examining the STARSHIP-OS-REMOTE program for more than one time:
 	Say "[fixed letter spacing]<<<STARSHIP REMOTE COMMAND LINK>>>[variable letter spacing]";
-	
 
-Table of Starship Options
+
+Table of StarshipOSRemote Options
 index	title	effect
 --	"SHIP STATUS"	Starship-remote-status rule
 --	"NAVIGATION"	Starship-remote-nav rule
@@ -229,20 +230,62 @@ This is the Starship-remote-status rule:
 	say "starship status here"
 	
 This is the Starship-remote-nav rule:
-	Say "starship nav here"
+	Say "starship nav here";
+	[bring nav computer to the front]
+	Now the teletype is not running STARSHIP-OS-REMOTE program;
+	Now the teletype is running STARSHIP-NAV-REMOTE program;
+	try examining teletype;
+	
 	
 This is the Starship-remote-ap rule:
 	Say "starship autopilot here"
 	
 This is the Starship-remote-logout rule:
-	say "LOGGING OUT OF STARSHIP...";
+	say "[fixed letter spacing]LOGGING OUT OF STARSHIP...[variable letter spacing]";
 	Now the teletype is not running STARSHIP-OS-REMOTE program;
+	now halnotice is "[halOSIntro]";	
 	Now the teletype is running HAL-OS-REMOTE program;
+	try examining teletype;
 	
 
 section 2 - Navigation Computer
 
+The STARSHIP-NAV-REMOTE program is an enumerated multiple-choice program. The options table of the STARSHIP-NAV-REMOTE program is the Table of StarshipNavRemote Options.
 
+Carry out examining the STARSHIP-NAV-REMOTE program:
+	Say "[fixed letter spacing]<<<STARSHIP REMOTE COMMAND LINK>>> NAVIGATION MODES[variable letter spacing]";
+
+Table of StarshipNavRemote Options
+index	title	effect
+--	"SPACE OBJECT RENDEZVOUS"	starship-nav-remote-name rule
+--	"SPACE BEACON RENDEZVOUS"	starship-nav-remote-space-beacon rule
+--	"LAND AT PLANETARY COORDINATES"	starship-nav-remote-coords rule
+--	"LAND AT PLANETARY RADIO TRANSMITTER"	starship-nav-remote-landing-beacon rule
+--	"SET DESIRED ORBIT PARAMETERS"	starship-nav-remote-orbit rule
+--	"EXIT NAV COMPUTER"	starship-nav-remote-exit rule
+
+
+This is the starship-nav-remote-name rule:
+	say "Set object name to rendezvous with";
+
+This is the starship-nav-remote-space-beacon rule:
+	say "Set space beacon frequency to rendezvous with";
+
+This is the starship-nav-remote-coords rule:
+	say "set planetary landing coordinates";
+
+This is the starship-nav-remote-landing-beacon rule:
+	say "set planetary landing beacon frequency (AM band)";
+
+This is the starship-nav-remote-orbit rule:
+	say "set next orbit parameters";
+
+This is the starship-nav-remote-exit rule:
+	Now the teletype is not running STARSHIP-NAV-REMOTE program;
+	Now the teletype is running STARSHIP-OS-REMOTE program;
+	try examining teletype;
+	
+	
 
 
 
