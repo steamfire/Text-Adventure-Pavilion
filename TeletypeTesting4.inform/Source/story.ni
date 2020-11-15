@@ -189,8 +189,8 @@ The STARSHIP-OS-REMOTE program is an enumerated multiple-choice program. The opt
 Carry out examining the STARSHIP-OS-REMOTE program for the first time:
 	[https://en.rakko.tools/tools/68/]
 	say "[fixed letter spacing]   WELCOME TO [line break]";
-	say "                                  .:----:::...   [line break]  ";
-	say "                            :-=**+=-.       [line break]";
+	say "                                   .:----:::...   [line break]  ";
+	say "                           :-=**+=-.       [line break]";
 	say "                       :=*#%*=:        [line break]";
 	say "                   :+#X%*=.            [line break]";
 	say " .+XXXX*:      .=#XX%+:             [line break]";
