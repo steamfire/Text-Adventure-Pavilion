@@ -3,7 +3,6 @@
 
 [******to do********
 Fix the UHF and Teletype being turned on truth table logic.  THIS SHOULD PRODUCE NO TTY OUTPUT WHEN UHF IS OFF.  ONLY PUT STATIC OUTPUT WHEN UHF IS ON, TTY IS ON, AND USER ISN"T HOLDING THE FREQ BOOK.
-Initial bootloader diagnostic option response text is TBD
 ]
 
 
@@ -67,7 +66,7 @@ Carry out examining the Teletype:
 	say "[if the teletype is switched off][description of the Teletype][paragraph break][otherwise][variable letter spacing]The machine clatters as it types out: [paragraph break][fixed letter spacing][halnotice][variable letter spacing][paragraph break]";
 	rule succeeds.
 
-Section 1 - Static
+chapter 1 - Static
 
 Static is privately-named software. The description of static is "[one of]
 LIZKSFLI ZKGGZ
@@ -85,7 +84,7 @@ LIZKSFLI ZKGGZ
 [or]XW..............2222222222[at random]";
 
 
-Section 2 - HAL Bootloader
+chapter 2 - HAL Bootloader
 
 
 The teletype HAL-Bootloader program is an enumerated multiple-choice program. The options table of the Teletype HAL-Bootloader program is the Table of Bootloader Options.
@@ -98,9 +97,11 @@ index	title	effect
 
 This is the check-system rule:
 	if OSBroken is true:
-		Say "OS File corruption detected";
+		Say "[fixed letter spacing] BASIC HARDWARE CHECK: PASS[line break]
+		FILE SYSTEM CONSISTENCY CHECK: FAIL[variable letter spacing]";
 	Otherwise:
-		say "hardware ok";
+		say "[fixed letter spacing]MINIMAL HARDWARE TEST: PASS[line break]
+		FILE SYSTEM CONSISTENCY CHECK: PASS[variable letter spacing]";
 	
 This is the reboot-cpu rule:
 	say "[fixed letter spacing][paragraph break]***THE SYSTEM IS GOING DOWN FOR REBOOT NOW!***";
@@ -114,17 +115,17 @@ This is the reboot-cpu rule:
 
 This is the upload rule:
 	Say "[fixed letter spacing]WARNING: AFTER UPLOAD, CPU MUST BE REBOOTED TO LOAD SYSTEM FILE. PLEASE BEGIN DATA UPLOAD NOW...[paragraph break]";
-	say "[variable letter spacing]You hear the paper tape reader buzzing and clicking for a long while...[fixed letter spacing]";
+	say "[variable letter spacing]You hear the paper tape reader buzzing and clicking for a long while...";
 	pause the game;
 	if the roll is in the reader:
 		say "[fixed letter spacing]UPLOAD COMPLETE. NEW SYSTEM FILE VALIDATED.[variable letter spacing][paragraph break]";
 		Now OSBroken is false;		
 	otherwise:
-		say "[fixed letter spacing]ERROR: NO DATA RECEIVED.[paragraph break][variable letter spacing]";
+		say "[fixed letter spacing]ERROR: UPLOAD TIMED OUT, NO DATA RECEIVED.[paragraph break][variable letter spacing]";
 	try examining teletype;
 	
 
-Section 3 - HAL OS
+chapter 3 - HAL OS
 
 The teletype HAL-OS-REMOTE program is an enumerated multiple-choice program. The options table of the Teletype HAL-OS-REMOTE program is the Table of HAL-OS-REMOTE Options.
 
@@ -183,6 +184,9 @@ This is the OS-remote-login-starship rule:
 	try examining teletype;
 
 
+chapter 4 - Starship OS Remote
+
+section 1 - Main starship menu
 The STARSHIP-OS-REMOTE program is an enumerated multiple-choice program. The options table of the STARSHIP-OS-REMOTE program is the Table of Starship Options. 
 
 
@@ -235,6 +239,10 @@ This is the Starship-remote-logout rule:
 	Now the teletype is not running STARSHIP-OS-REMOTE program;
 	Now the teletype is running HAL-OS-REMOTE program;
 	
+
+section 2 - Navigation Computer
+
+
 
 
 
