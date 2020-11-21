@@ -12,10 +12,15 @@ Include ComputersTeletype by Dan Bowen
 [v10 by dan adds fixed spacing font for printing the choices of the menu inside the extension]
  
 
+Book 1 - The Program itself
 
 Ham Shack is a room.
 There is a roll of paper tape in the ham shack.
 UHF Radio is in the ham shack.  UHF radio is a device.  UHF radio is switched on.
+
+The Radiostation is below the Ham Shack.
+The AM Transmitter is a device in the Radiostation.  AM Transmitter is switched on.
+The AM Transmitter Frequency is initially 1070.
  
 Part 1 - Teletype
 
@@ -37,9 +42,10 @@ The roll of paper tape is a data storage device.
 
 halNotice is initially "";
 
-StarshipLandingFreq is initially 0;
-
+StarshipLandingFreq is initially 0.
 StarshipRemoteNavMode is initially "STANDBY".
+StarshipAPMode is initially "STANDBY".
+StarshipAutopilotEngaged is initially false.
 [
 StarshipRemoteNavMode is a kind of value.  The StarshipRemoteNavModes are SpaceObject, SpaceBeacon, PlanetaryBeacon, TargetOrbit, Standby.  StarshipRemoteNavMode is Standby.]
 
@@ -247,7 +253,9 @@ This is the Starship-remote-nav rule:
 	
 	
 This is the Starship-remote-ap rule:
-	Say "starship autopilot here"
+	Now the teletype is not running STARSHIP-OS-REMOTE program;
+	Now the teletype is running STARSHIP-AUTOPILOT-REMOTE program;
+	try examining teletype;
 	
 This is the Starship-remote-logout rule:
 	say "[fixed letter spacing]LOGGING OUT OF STARSHIP...[variable letter spacing]";
@@ -298,7 +306,6 @@ This is the starship-nav-remote-orbit rule:
 	say "[fixed letter spacing]ORBIT SPECIFICATION NOT AVAILABLE[variable letter spacing]";
 	
 This is the starship-nav-remote-standby rule:
-	[say "[fixed letter spacing]NAVIGATION MODE SET TO STANDBY.[variable letter spacing]";]
 	Now StarshipRemoteNavMode is "STANDBY";
 	try examining teletype;
 
@@ -308,9 +315,7 @@ This is the starship-nav-remote-exit rule:
 	try examining teletype;
 	
 
-	
-Section 3 - Nav Beacon Freq
-
+Section 3 - Starship Nav mode- Land at Beacon
 
 The STARSHIP-LAND-BEACON-REMOTE program is an enumerated multiple-choice program. The options table of the STARSHIP-LAND-BEACON-REMOTE program is the Table of StarshipLandBeacon Options.
 
@@ -320,32 +325,42 @@ Carry out examining the STARSHIP-LAND-BEACON-REMOTE program:
 		
 Table of StarshipLandBeacon Options
 index	title	effect
---	"Set to 1700 kHz"	starship-land-beacon-1700 rule
---	"Set to 1710 kHz"	starship-land-beacon-1710 rule
---	"Set to 1720 kHz"	starship-land-beacon-1720 rule
---	"Set to 1730 kHz"	starship-land-beacon-1730 rule
---	"Set to 1740 kHz"	starship-land-beacon-1740 rule
+--	"Set to 1000 kHz"	starship-land-beacon-1000 rule
+--	"Set to 1030 kHz"	starship-land-beacon-1030 rule
+--	"Set to 1050 kHz"	starship-land-beacon-1050 rule
+--	"Set to 1070 kHz"	starship-land-beacon-1070 rule
+--	"Set to 1090 kHz"	starship-land-beacon-1090 rule
 --	"EXIT"	starship-nav-mode-exit rule
 
 
-This is the starship-land-beacon-1700 rule:
-	Now StarshipLandingFreq is 1700;
+This is the starship-land-beacon-1000 rule:
+	Now StarshipLandingFreq is 1000;
+	Now the teletype is not running STARSHIP-LAND-BEACON-REMOTE program;
+	Now the teletype is running STARSHIP-NAV-REMOTE program;
 	try examining teletype;
 	
-This is the starship-land-beacon-1710 rule:
-	Now StarshipLandingFreq is 1710;
+This is the starship-land-beacon-1030 rule:
+	Now StarshipLandingFreq is 1030;
+	Now the teletype is not running STARSHIP-LAND-BEACON-REMOTE program;
+	Now the teletype is running STARSHIP-NAV-REMOTE program;
 	try examining teletype;
 	
-This is the starship-land-beacon-1720 rule:
-	Now StarshipLandingFreq is 1720;
+This is the starship-land-beacon-1050 rule:
+	Now StarshipLandingFreq is 1050;
+	Now the teletype is not running STARSHIP-LAND-BEACON-REMOTE program;
+	Now the teletype is running STARSHIP-NAV-REMOTE program;
 	try examining teletype;
 	
-This is the starship-land-beacon-1730 rule:
-	Now StarshipLandingFreq is 1730;
+This is the starship-land-beacon-1070 rule:
+	Now StarshipLandingFreq is 1070;
+	Now the teletype is not running STARSHIP-LAND-BEACON-REMOTE program;
+	Now the teletype is running STARSHIP-NAV-REMOTE program;
 	try examining teletype;
 	
-This is the starship-land-beacon-1740 rule:
-	Now StarshipLandingFreq is 1740;
+This is the starship-land-beacon-1090 rule:
+	Now StarshipLandingFreq is 1090;
+	Now the teletype is not running STARSHIP-LAND-BEACON-REMOTE program;
+	Now the teletype is running STARSHIP-NAV-REMOTE program;
 	try examining teletype;
 	
 This is the starship-nav-mode-exit rule:
@@ -355,8 +370,86 @@ This is the starship-nav-mode-exit rule:
 	
 
 
+Section 4 - Starship Remote Autopilot Computer menu
 
-test tty with "put roll in reader / turn teletype on / type 3 / type 2 / type 4 / type 2 / type 3 / type 1 ";
+
+
+The STARSHIP-AUTOPILOT-REMOTE program is an enumerated multiple-choice program. The options table of the STARSHIP-AUTOPILOT-REMOTE program is the Table of StarshipAutopilotRemote Options.
+
+Carry out examining the STARSHIP-AUTOPILOT-REMOTE program:
+	Say "[fixed letter spacing]<<<STARSHIP REMOTE COMMAND LINK>>> [line break]            AUTOPILOT[paragraph break]
+			AUTOPILOT MODE: [StarshipAPMode][LINE BREAK]
+			AUTOPILOT STATE: [if StarshipAutopilotEngaged is true]ENGAGED[otherwise]DISENGAGED[end if][line break]
+			NAV MODE: [StarshipRemoteNavMode]";
+	if StarshipRemoteNavMode is "LAND AT BEACON":
+		say " [StarshipLandingFreq] KHZ.";
+	say "[paragraph BREAK][variable letter spacing]";
+
+Table of StarshipAutopilotRemote Options
+index	title	effect
+--	"MODE SELECT: AUTO-LAUNCH"	starship-ap-mode-auto-launch rule
+--	"MODE SELECT: AUTO-LAND"	starship-ap-mode-auto-land rule
+--	"MODE SELECT: AUTO-MANEUVER"	starship-ap-mode-auto-maneuver rule
+--	"MODE SELECT: AUTO-DOCK"	starship-ap-mode-auto-dock rule
+--	"MODE SELECT: STANDBY"	starship-ap-mode-standby rule
+--	"ENGAGE"	starship-ap-mode-engage rule
+--	"DISENGAGE"	starship-ap-mode-disengage rule
+--	"EXIT AUTOPILOT"	starship-ap-mode-exit rule
+
+This is the starship-ap-mode-auto-launch rule:
+	Say "[fixed letter spacing]AUTO-LAUNCH IS NOT AVAILABLE[variable letter spacing]";
+	[Now StarshipAPMode is "AUTO-LAUNCH";]
+	
+This is the starship-ap-mode-auto-land rule:
+	Now StarshipAPMode is "AUTO-LAND";
+	Say "[fixed letter spacing]AUTO-LAND MODE:";
+	if StarshipRemoteNavMode is "LAND AT BEACON":
+		If the AM Transmitter is switched on:
+			say " GUIDANCE ACTIVE.  NAVIGATION COMPUTER REPORTS GOOD BEACON SIGNAL AT [StarshipLandingFreq] KHZ. [variable letter spacing]";
+			[ask if the user wants to engage autopilot]
+		otherwise:
+			say "GUIDANCE INVALID.  NAVIGATION COMPUTER REPORTS NO SIGNAL. AUTO-LAND ABORTED[variable letter spacing].";
+	if StarshipRemoteNavMode is "STANDBY":
+		say " NO RESPONSE FROM NAVIGATION COMPUTER, AUTO-LAND ABORTED.[variable letter spacing]";
+		
+
+This is the starship-ap-mode-auto-maneuver rule:
+	Say "[fixed letter spacing]AUTO-MANEUVER IS NOT AVAILABLE[variable letter spacing]";
+	[Now StarshipAPMode is "AUTO-MANEUVER";]
+
+This is the starship-ap-mode-auto-dock rule:
+	say "[fixed letter spacing]SHIP IS ALREADY DOCKED.[variable letter spacing]";
+	[Now StarshipAPMode is "AUTO-DOCK";]
+
+This is the starship-ap-mode-standby rule:
+	say "[fixed letter spacing]AUTOPILOT IN STANDBY MODE.[variable letter spacing]";
+	Now StarshipAutopilotEngaged is false;
+	Now StarshipAPMode is "STANDBY";
+	
+This is the starship-ap-mode-engage rule:
+	[Ask user if they really want to engage autopilot]
+	say "aure you want to engage AP?";
+	Now StarshipAutopilotEngaged is true;
+	
+This is the starship-ap-mode-disengage rule:
+	if StarshipAutopilotEngaged is false:
+		say "[fixed letter spacing]AUTOPILOT ALREADY DISENGAGED.[variable letter spacing]";
+	otherwise:
+		say "[fixed letter spacing]AUTOPILOT DISENGAGING...[variable letter spacing]";
+		Now StarshipAutopilotEngaged is false;
+		
+This is the starship-ap-mode-exit rule:
+	Now the teletype is not running STARSHIP-AUTOPILOT-REMOTE program;
+	Now the teletype is running STARSHIP-OS-REMOTE program;
+	try examining teletype;
+
+
+
+
+Book 2 - Testing
+
+
+test tty with "put roll in reader / turn teletype on / type 3 / type 2 / type 4 / type 2 ";
 
 
 
