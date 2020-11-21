@@ -37,6 +37,15 @@ The roll of paper tape is a data storage device.
 
 halNotice is initially "";
 
+StarshipLandingFreq is initially 0;
+
+StarshipRemoteNavMode is initially "STANDBY".
+[
+StarshipRemoteNavMode is a kind of value.  The StarshipRemoteNavModes are SpaceObject, SpaceBeacon, PlanetaryBeacon, TargetOrbit, Standby.  StarshipRemoteNavMode is Standby.]
+
+
+StarshipDockedStatus is initially true;
+
 halBootloaderIntro is initially "ILLIAC BOOTLOADER SAFE MODE. FAULT CONDITION: OPERATING SYSTEM FAILURE. ONLY RECOVERY COMMANDS AVAILABLE.";
 
 halOSIntro is initially "
@@ -253,43 +262,101 @@ section 2 - Navigation Computer
 The STARSHIP-NAV-REMOTE program is an enumerated multiple-choice program. The options table of the STARSHIP-NAV-REMOTE program is the Table of StarshipNavRemote Options.
 
 Carry out examining the STARSHIP-NAV-REMOTE program:
-	Say "[fixed letter spacing]<<<STARSHIP REMOTE COMMAND LINK>>> NAVIGATION MODES[variable letter spacing]";
+	Say "[fixed letter spacing]<<<STARSHIP REMOTE COMMAND LINK>>> [line break]       NAVIGATION COMPUTER[paragraph break]
+	NAV MODE: [StarshipRemoteNavMode]";
+	if StarshipRemoteNavMode is "LAND AT BEACON":
+		say " [StarshipLandingFreq] KHZ";
+	Say "[line break][variable letter spacing]";
+	
 
 Table of StarshipNavRemote Options
 index	title	effect
 --	"SPACE OBJECT RENDEZVOUS"	starship-nav-remote-name rule
 --	"SPACE BEACON RENDEZVOUS"	starship-nav-remote-space-beacon rule
---	"LAND AT PLANETARY COORDINATES"	starship-nav-remote-coords rule
---	"LAND AT PLANETARY RADIO TRANSMITTER"	starship-nav-remote-landing-beacon rule
---	"SET DESIRED ORBIT PARAMETERS"	starship-nav-remote-orbit rule
+--	"LAND AT RADIO BEACON"	starship-nav-remote-landing-beacon rule
+--	"SET NEW ORBIT"	starship-nav-remote-orbit rule
+--	"STANDBY (OFF)"	starship-nav-remote-standby rule
 --	"EXIT NAV COMPUTER"	starship-nav-remote-exit rule
 
 
 This is the starship-nav-remote-name rule:
-	say "Set object name to rendezvous with";
+	say "[fixed letter spacing] SPACE OBJECT RENDEZVOUS NOT AVAILABLE[variable letter spacing]";
 
 This is the starship-nav-remote-space-beacon rule:
-	say "Set space beacon frequency to rendezvous with";
+	say "[fixed letter spacing] SPACE BEACON RENDEZVOUS MODE NOT AVAILABLE[variable letter spacing]";
 
-This is the starship-nav-remote-coords rule:
-	say "set planetary landing coordinates";
 
 This is the starship-nav-remote-landing-beacon rule:
-	say "set planetary landing beacon frequency (AM band)";
+	[say "[fixed letter spacing] NAVIGATION MODE SET TO TARGET LANDING TO CARRIER WAVE AMPLITUDE MODULATED SIGNAL SOURCE:[line break]";]
+	Now StarshipRemoteNavMode is "LAND AT BEACON";
+	Now the teletype is not running STARSHIP-NAV-REMOTE program;
+	Now the teletype is running the STARSHIP-LAND-BEACON-REMOTE program;
+	try examining the teletype;
+	
 
 This is the starship-nav-remote-orbit rule:
-	say "set next orbit parameters";
+	say "[fixed letter spacing]ORBIT SPECIFICATION NOT AVAILABLE[variable letter spacing]";
+	
+This is the starship-nav-remote-standby rule:
+	[say "[fixed letter spacing]NAVIGATION MODE SET TO STANDBY.[variable letter spacing]";]
+	Now StarshipRemoteNavMode is "STANDBY";
+	try examining teletype;
 
 This is the starship-nav-remote-exit rule:
 	Now the teletype is not running STARSHIP-NAV-REMOTE program;
 	Now the teletype is running STARSHIP-OS-REMOTE program;
 	try examining teletype;
 	
+
+	
+Section 3 - Nav Beacon Freq
+
+
+The STARSHIP-LAND-BEACON-REMOTE program is an enumerated multiple-choice program. The options table of the STARSHIP-LAND-BEACON-REMOTE program is the Table of StarshipLandBeacon Options.
+
+Carry out examining the STARSHIP-LAND-BEACON-REMOTE program:
+		Say "[fixed letter spacing]<<<STARSHIP REMOTE COMMAND LINK>>> [line break]       NAVIGATION COMPUTER[paragraph break]
+		NAV MODE: LAND AT BEACON.  TRACK CARRIER WAVE MODULATED SIGNAL.  LAND SHIP AT SOURCE.[paragraph break] CURRENT TRACKING FREQUENCY: [StarshipLandingFreq] kHz[Line BREAK][variable letter spacing]";
+		
+Table of StarshipLandBeacon Options
+index	title	effect
+--	"Set to 1700 kHz"	starship-land-beacon-1700 rule
+--	"Set to 1710 kHz"	starship-land-beacon-1710 rule
+--	"Set to 1720 kHz"	starship-land-beacon-1720 rule
+--	"Set to 1730 kHz"	starship-land-beacon-1730 rule
+--	"Set to 1740 kHz"	starship-land-beacon-1740 rule
+--	"EXIT"	starship-nav-mode-exit rule
+
+
+This is the starship-land-beacon-1700 rule:
+	Now StarshipLandingFreq is 1700;
+	try examining teletype;
+	
+This is the starship-land-beacon-1710 rule:
+	Now StarshipLandingFreq is 1710;
+	try examining teletype;
+	
+This is the starship-land-beacon-1720 rule:
+	Now StarshipLandingFreq is 1720;
+	try examining teletype;
+	
+This is the starship-land-beacon-1730 rule:
+	Now StarshipLandingFreq is 1730;
+	try examining teletype;
+	
+This is the starship-land-beacon-1740 rule:
+	Now StarshipLandingFreq is 1740;
+	try examining teletype;
+	
+This is the starship-nav-mode-exit rule:
+	Now the teletype is not running STARSHIP-LAND-BEACON-REMOTE program;
+	Now the teletype is running STARSHIP-NAV-REMOTE program;
+	try examining teletype;
 	
 
 
 
-test tty with "put roll in reader / turn teletype on / type 3 / type 2 / type 4 / x tty ";
+test tty with "put roll in reader / turn teletype on / type 3 / type 2 / type 4 / type 2 / type 3 / type 1 ";
 
 
 
