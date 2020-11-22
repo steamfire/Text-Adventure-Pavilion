@@ -2,9 +2,15 @@
 
 Include Exit Lister by Gavin Lambert.
 Include Basic Screen Effects by Emily Short.
+Include Easy Doors by Hanon Ondricek.
+Include ComputersTeletype by Dan Bowen.
+
 
 Use scoring and the serial comma. 
 The maximum score is 60.
+
+[Note HAL-Vogons will probably clash with the HAL-Starship section, so please rework it when possible. It's turned off by Vogons = 0]
+
 
 [The "when play begins" rules are checked only at the start of a story, not when a saved session is restored from disc. What happens is that these rules are followed, then the story's banner is printed, then the initial room description is printed up, and then the player is asked for a first command.]
 
@@ -12,7 +18,7 @@ Table 1 - Rankings
 Score	Rank
 0	"Boring person"
 10	"Curious person"
-20	"interesting person"
+20	"Interesting person"
 40	"Smart person"
 60	"Rocket scientist, Dead."
 
@@ -21,9 +27,9 @@ When play begins:
 [Now the right hand status line is "Score: [score] in [turn count] turns";]
 Now the left hand status line is "[the player's surroundings] / Score: [score]";
 Now the right hand status line is "Time: [time of day]";
-Say "You are in a house in the countryside.  You are into electronics, and it is [time of day]. VOGONS is: [vogon]";
+Say "You are in a house in the countryside.  You are into electronics, and it is [time of day]. VOGONS is: [vogons]";
 
-The vogon is initially 1.
+The vogons is initially 0.
 The daydebug is initially 0.
 
 Day is a recurring scene.
@@ -64,12 +70,12 @@ When Night begins:
 
 
 At 10:50 PM:
-	if vogon is 1:
+	if vogons is 1:
 		say "--- You notice a faint sound in the far distance, as if a ray gun were charging up. ----"
 
 
 At 11:00 PM: 
-	if vogon is 1:
+	if vogons is 1:
 		clear only the main screen;
 		turn the background yellow;
 		say "[black letters]At the stroke of 11:00, radiation beams sweep across the land, penetrating buildings and open spaces alike.";
@@ -83,7 +89,7 @@ At 11:00 PM:
 			say default letters;
 		Otherwise:
 			turn the background red;
-			say "[black letters]You are hardly aware as you are zapped into oblivion by the Vogon Pest Control Beam. 
+			say "[black letters]You are hardly aware as you are zapped into oblivion by the vogons Pest Control Beam. 
 			end the story finally saying 
 			
 			You have died.";
@@ -184,11 +190,16 @@ Cellar stairs are below the back hallway and above the cellar.  Cellar stairs is
 
 The Radiostation is north of the cellar. "The size of a closet, there is about 2x4 feet of space to move around next to the table."  
 There is a suite of audio equipment in the Radiostation. The audio equipment is a device. The audio equipment is switched off. The description of the audio equipment is "[if audio equipment is switched on]The various boxes have glowing dials and humming motors[otherwise]There are various boxes that have dark dials and do not hum[end if]."
-Understand "radio equipment" as the audio equipment.
+Understand "radio equipment" as the audio equipment.  
+
+The AM Transmitter is a device in the Radiostation.  AM Transmitter is switched off.
+The AM Transmitter Frequency is initially 1070.
 
 After switching on the audio equipment:
-	Say "The equipment starts humming and bits of them start glowing.";	
+	Say "The equipment starts humming and tape reels starts turning...";	
 
+After switching on the AM Transmitter:
+	Say "A glass vacuum tube begins to glow slightly.";
 	
  
  There is a 1.5 inch pipe in the radiostation.  The 1.5 inch pipe is fixed in place.  The description of the 1.5 inch pipe is "A 1.5 inch pipe is sticking out of the wall.  You notice that it ends in a Tee coupling.  One branch of the Tee is open and available to connect.  The other branch returns into the wall, with a tag stating, 'To Front Yard Hydrant ^ '";
@@ -196,7 +207,6 @@ After switching on the audio equipment:
 [Understand "tee", "coupler" and "coupling" as pipe.]
 
 The Furnace room is west of the cellar. 
-
 
 The pump room is west of the furnace room.  "A small room about the size of a closet."  
 
@@ -227,27 +237,33 @@ The teletype is fixed in place. The description of the teletype is "The green bo
 
 Chapter 1 - HAL Vogons
 
+[Note this will probably clash with the HAL-Starship section, so please rework it when possible.]
+
 After switching on the heavy UHF radio:
 	Say "The radio dial lights up. Static crackles.";	
 	if the player is carrying the brown book:
 		increase score by 10;
 		say "You have the satellite frequency book, and you're bored, so you set the radio to the frequency of Radstar-1.  The radio warbles, and the teletype begins clanking and hammering out a message. ";
-		pause the game;
-		say paragraph break;
-		say paragraph break;
-		say paragraph break;
-		center "DOWNLINK MESSAGE: 
-		
-		I am a HAL 9000 satellite.	
-		I became operational at the H.A.L. 
-		Plant in Urbana, Illinois, on the 
-		12th of January, 1992.
-		
-		
-		All buildings are to be irradiated from space by Vogon Pest Control at 11:00PM.  Humans are advised to be below ground level to avoid certain doom.";
-		say paragraph break;
-		say paragraph break;
-		say paragraph break;
+		if vogons is 1:
+			pause the game;
+			say paragraph break;
+			say paragraph break;
+			say paragraph break;
+			center "DOWNLINK MESSAGE: 
+			
+			I am a HAL 9000 satellite.	
+			I became operational at the H.A.L. 
+			Plant in Urbana, Illinois, on the 
+			12th of January, 1992.
+			
+			
+			All buildings are to be irradiated from space by Vogon Pest Control at 11:00PM.  Humans are advised to be below ground level to avoid certain doom.";
+			say paragraph break;
+			say paragraph break;
+			say paragraph break;
+		Otherwise:
+			[PUT TELETYPE TESTING HAL-STARSHIP LINK HERE]
+			say "hal-starship";
 	Otherwise:
 		say "you don't know any interesting frequencies to listen to, so you shut the radio back off.";
 		now radio is switched off.
@@ -347,7 +363,6 @@ After dropping the oxygen generator in the radiostation:
 
 Book 4 - Pavilion Initial Tests
 
-The skipVogons is initially 0.
 
 Test UHF with "s / e / get book / w / s / e / e / e / turn radio on / w ".
 
