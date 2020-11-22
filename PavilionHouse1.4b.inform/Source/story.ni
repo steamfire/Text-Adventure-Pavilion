@@ -23,13 +23,8 @@ Now the left hand status line is "[the player's surroundings] / Score: [score]";
 Now the right hand status line is "Time: [time of day]";
 Say "You are in a house in the countryside.  You are into electronics, and it is [time of day]. VOGONS is: [vogon]";
 
-The oxygen flow is initially 0.
-The methane flow is initially 0. 
 The vogon is initially 1.
 The daydebug is initially 0.
-
-Chapter 1 - Beginning
-
 
 Day is a recurring scene.
 Night is a recurring scene.  Night begins when Day ends. Night ends when the time of day is 8:01 am.
@@ -95,11 +90,11 @@ At 11:00 PM:
 			say default letters;
 			end the story finally.
 		
+Book 1 - Initial House/Yard exploration
 
+Part 1 - Places Setup
 
-
-
-Part 2 - Outdoors
+Chapter 1 - Outdoors 
 
 The Front Porch is a room.
 
@@ -124,8 +119,15 @@ Instead of going from the west yard when the player carries the end of the yello
 	
 The end of the yellow hose is in the west side yard. The description of the end of the yellow hose is "This is the end of the yellow hose.  It snakes off toward the front yard. The hose is apparently a genuine vacuum jacketed garden hose. "
 
+The front door is north of the foyer and south of the Front porch. The front door is a door.
 
-Part 3 - In the house
+The back door is south of the back hallway and north of the back porch. The back door is a door.
+
+The side yard shack door is east of the ham shack and west of the side yard.  The side yard door is a door.
+
+Chapter 2 - In the house
+
+Section 1 - Upstairs
 
 Danny's Bedroom is a room.  There is a dot matrix printout in danny's bedroom. The description of the printout is "This appears to be a list of satellite orbits,  showing the times that a satellite RDS-1 passes over this location.  Tonight's date is in the list."
 
@@ -176,7 +178,7 @@ The ham shack is east of the back hallway. "smelling of solder and machine oil."
 
 The garage door is north of the back hallway and south of the garage. The garage door is a door.
 
-Part 4 - downstairs
+Section 3 - Downstairs
 
 Cellar stairs are below the back hallway and above the cellar.  Cellar stairs is a door. Cellar stairs is open.   "[if audio equipment is switched on][bold type][red letters][Fixed letter spacing]ON AIR[variable letter spacing][roman type][default letters]"
 
@@ -204,7 +206,7 @@ There is a 2 inch pipe in the pump room.  The 2 inch pipe is fixed in place.  Th
 
 
 
-Part 5 - Regions
+Chapter 3 - Regions
 
 [Upstairs is a region.   The garage, The ham shack, The back hallway, The New room east, The New room west, the kitchen, The dining room, The living room, The Foyer, The Hall bathroom, Dad's bathroom,  Dad's room, Michael's Bedroom, The Hallway, and Danny's Bedroom are in the upstairs.]
 
@@ -215,28 +217,15 @@ Outdoors is a region.  The front porch, Front yard, driveway, side yard, back po
 The sky is a backdrop. the sky is in the outdoors. Instead of doing something to the sky, say "[if Night is happening]There is a bright satellite passing overhead.[otherwise]The sky is pretty blue."
 
 
-Part 6 - External Doors
 
-The front door is north of the foyer and south of the Front porch. The front door is a door.
-
-The back door is south of the back hallway and north of the back porch. The back door is a door.
-
-The side yard shack door is east of the ham shack and west of the side yard.  The side yard door is a door.
-
-
-
-
-Part 7 - Stuff to do
-
-
-
-Part 8 - Ham Radio Stuff
+Part 2 - Doing Ham Radio Stuff
 
 A heavy UHF radio and a teletype are in the ham shack. The UHF radio is a device. The radio is switched off.   the radio is fixed in place.
 The description of the UHF radio is "The radio is about the size and shape of a VCR.  It says 'UHF Satellite decoder radio'  It is connected to the teletype."
 
 The teletype is fixed in place. The description of the teletype is "The green box hums quietly.  Blank paper pokes out of the top window."
 
+Chapter 1 - HAL Vogons
 
 After switching on the heavy UHF radio:
 	Say "The radio dial lights up. Static crackles.";	
@@ -264,16 +253,36 @@ After switching on the heavy UHF radio:
 		now radio is switched off.
 		
 
-		
 
-Chapter 2 - Spacing
-
+Book 2 - Starship Fueling Puzzle
 
 
-Part 100 - Cleanup after beginning
+Part 1 - Backend Setup
 
-Part 101 - Setup Next 
+The oxygen flow is initially 0.
+The methane flow is initially 0. 
 
+Chapter 1 - Time events
+
+[   FIX THE TIME HERE FOR RELEASE  ]
+At 11:05 PM:
+	Say "
+	
+	[bold type]** You grow tired, and you decide to go back to your bedroom and sleep till morning... **[default letters]";
+	pause the game;
+	Now the time of day is 8:00 AM;
+	say "** Good morning ** The time is now [time of day]!";
+	Now the player is in Michael's Bedroom.
+
+
+At 8:05 AM:
+	Say "-- you hear the rumble of a truck pulling into the driveway. --";
+
+At 8:10 AM:
+	Say "-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --";
+	move large wooden box to front porch.
+
+Chapter 2 - Fueling Parts
 
 The staging area is a room.  
 A large wooden box is in the staging area.  
@@ -289,6 +298,9 @@ A liquid oxygen generator is in the box. The liquid oxygen generator is a device
 
  'Your  GasCo O2 Generator will take ambient air and convert it into liquid oxygen.  It has an output coupling that is 2 inches in diameter.
 * Features convenient Drop-to-Connect coupler.   Just drop the generator near your favorite pipe coupling. *'"
+
+
+Chapter 3 - Rules to make things happen when solving
 
 Every turn:
 	if the methane generator is in the radiostation: 
@@ -319,28 +331,7 @@ Every turn:
 		if ( oxygen flow is 1 ) and ( methane flow is 1 ): 
 			say "
 			you've got rocket fuel!!! ";
-			end the story finally saying "The hyper flammable gas cloud ignites as you swish your nylon track pants.  You is ded.  But you won!  That's all Dan wrote so far :-)"
-
-Part 102 - Space starting
-
-[   FIX THE TIME HERE FOR RELEASE  ]
-At 11:05 PM:
-	Say "
-	
-	[bold type]** You grow tired, and you decide to go back to your bedroom and sleep till morning... **[default letters]";
-	pause the game;
-	Now the time of day is 8:00 AM;
-	say "** Good morning ** The time is now [time of day]!";
-	Now the player is in Michael's Bedroom.
-
-
-At 8:05 AM:
-	Say "-- you hear the rumble of a truck pulling into the driveway. --";
-
-At 8:10 AM:
-	Say "-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --";
-	move large wooden box to front porch.
-	
+			end the story finally saying "The hyper flammable gas cloud ignites as you swish your nylon track pants.  You is ded.  But you won!  That's all Dan wrote so far :-)"	
 
 After dropping the methane generator in the radiostation:
 	say "The liquid methane generator settles to the floor.  Conveniently, its 1.5 inch output coupling lines up with the 1.5 inch pipe in the wall, and they snap together, sealed perfectly.";
@@ -354,7 +345,7 @@ After dropping the oxygen generator in the pump room:
 After dropping the oxygen generator in the radiostation:
 	say "The liquid oxygen generator clunks to the floor.  It's output coupling doesn't fit with the 1.5 inch pipe in the wall."
 
-Chapter 3 - Tests
+Book 4 - Pavilion Initial Tests
 
 The skipVogons is initially 0.
 
@@ -377,7 +368,7 @@ test all with "test radiation / test gases "
 
 
 
-Part 103 - Misc functions
+Book 10 - Misc General Helper functions
 
 Section 1 - Hinting setup
 
@@ -390,15 +381,4 @@ Report hinting:
 say "[localhint of the location]".
 
 
-[example:
-	if x is 1:
-   say "x is 1.";
-otherwise if ( x is 2 ) and ( z is not 143 ):  
-   say "x is 2";
-   increment x;
-   let y be x + 10;
-   say "y is [y].";
-otherwise:
-   say "x is not 1 or 2";
-]
 
