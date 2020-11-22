@@ -17,8 +17,8 @@ Player is holding a printout.
 The oxygen flow is initially 1.
 The methane flow is initially 1. 
 
-The end of the red hose is in the west yard.  
-The end of the blue hose is in the west yard.
+The end of the green hose is in the west yard.  
+The end of the yellow hose is in the west yard.
 	
 
 Chapter 2 - Rocket at home
@@ -103,33 +103,33 @@ The carrying capacity of the CH4 port is 1.
 The carrying capacity of the O2 port is 1.
 
 
-Instead of inserting an end of the red hose into a CH4 fill port:
+Instead of inserting an end of the green hose into a CH4 fill port:
 	say "The hose end doesn't fit in this port."
-Instead of inserting an end of the blue hose into a O2 fill port:
+Instead of inserting an end of the yellow hose into a O2 fill port:
 	say "The hose end doesn't fit in this port."
 
 The O2 tank level is initially 0.
 The CH4 tank level is initially 0. 
 
 Every turn:
-	if the end of the red hose is in the O2 fill port:
+	if the end of the green hose is in the O2 fill port:
 		if oxygen flow is 1:
 		 	if O2 tank level is less than 100:
 				say "fuelling O2[line break]";
 				increase O2 tank level by 5;
 			otherwise if the player is in the west side yard:
 				now oxygen flow is 0;
-				say "You hear a loud clunk back toward the house, and the red hose pops out of the port onto the ground, having shut off automatically.";
-				move red hose to west side yard;
-	if the end of the blue hose is in the CH4 fill port:
+				say "You hear a loud clunk back toward the house, and the green hose pops out of the port onto the ground, having shut off automatically.";
+				move green hose to west side yard;
+	if the end of the yellow hose is in the CH4 fill port:
 		if methane flow is 1:
 		 	if CH4 tank level is less than 100:
 				say "fueling CH4[line break]";
 				increase CH4 tank level by 10;
 			otherwise if the player is in the west side yard:
 				now methane flow is 0;
-				say "You hear a faint thunk from the back yard, and the blue hose pops out of the port onto the ground, having shut off automatically.";
-				move the blue hose to west side yard.
+				say "You hear a faint thunk from the back yard, and the yellow hose pops out of the port onto the ground, having shut off automatically.";
+				move the yellow hose to west side yard.
 
 Chapter 3 - Moving the ship
 
@@ -168,7 +168,7 @@ After switching on the autopilot:
 	if the CH4 tank level is not 100:
 		say "Insufficient methane. ";
 	if (O2 tank level is 100) and (CH4 tank level is 100):
-		if (red hose is in O2 port) or (blue hose is in ch4 port):
+		if (green hose is in O2 port) or (yellow hose is in ch4 port):
 			say "The engines roar, the rocket rises away from the ground.  A hose, still connected to a fill port, tears the fuel manifold out of the bottom of the ship.  A large explosion consumes the rocket instantly. ";
 			end the story saying "You have died.";
 		otherwise:
