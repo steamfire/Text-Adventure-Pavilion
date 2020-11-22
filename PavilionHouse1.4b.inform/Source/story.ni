@@ -42,7 +42,7 @@ Day begins when play begins.
 ]
 The time of day is 10:00 PM.
 Night begins when play begins.
-	
+
 
 When Day begins: 
 	Say "The sun is up outside.";
@@ -182,7 +182,9 @@ The New room east is south of the kitchen and east of the New room west. "This r
 The back hallway is east of the kitchen. "a dark and dingy place."
 The ham shack is east of the back hallway. "smelling of solder and machine oil."
 
-The garage door is north of the back hallway and south of the garage. The garage door is a door.
+The garage door is north of the back hallway and south of the garage. The garage door is a door.  
+
+There is a roll of paper tape in the garage. The description of the tape is "A large roll of inch-wide paper, about 10 inches in diameter.  Hundreds of rows of holes are punched along it in a seemingly random pattern in a grid 6 holes wide.";
 
 Section 3 - Downstairs
 
@@ -230,10 +232,17 @@ The sky is a backdrop. the sky is in the outdoors. Instead of doing something to
 
 Part 2 - Doing Ham Radio Stuff
 
-A heavy UHF radio and a teletype are in the ham shack. The UHF radio is a device. The radio is switched off.   the radio is fixed in place.
+A heavy UHF radio is in the ham shack. The UHF radio is a device. The radio is switched off.   the radio is fixed in place.
 The description of the UHF radio is "The radio is about the size and shape of a VCR.  It says 'UHF Satellite decoder radio'  It is connected to the teletype."
 
-The teletype is fixed in place. The description of the teletype is "The green box hums quietly.  Blank paper pokes out of the top window."
+The Teletype is computer in the ham shack.  The teletype is switched off.  The description is "The teletype is a green boxy thing, with a typwriter keyboard, paper coming out the top, and a paper tape reader on the side.[if the teletype is switched on]A motor deep inside hums quietly.[otherwise] It is turned off."
+
+Understand "paper", "message", "text" and "readout" as a screen.
+Understand "tty" as teletype.
+
+The paper tape reader is an extension port.  It is part of the teletype.  the description of the paper tape reader is "The punched paper tape reader is a bulging box hanging off the left side of the main teletype. It is used to transmit large amounts pre-recorded data through the teletype."
+
+The roll of paper tape is a data storage device.
 
 Chapter 1 - HAL Vogons
 
@@ -243,7 +252,7 @@ After switching on the heavy UHF radio:
 	Say "The radio dial lights up. Static crackles.";	
 	if the player is carrying the brown book:
 		increase score by 10;
-		say "You have the satellite frequency book, and you're bored, so you set the radio to the frequency of Radstar-1.  The radio warbles, and the teletype begins clanking and hammering out a message. ";
+		say "You have the satellite frequency book, and you're bored, so you set the radio to the frequency of Radstar-1.  The radio warbles with tones of data.";
 		if vogons is 1:
 			pause the game;
 			say paragraph break;
@@ -261,16 +270,450 @@ After switching on the heavy UHF radio:
 			say paragraph break;
 			say paragraph break;
 			say paragraph break;
-		Otherwise:
-			[PUT TELETYPE TESTING HAL-STARSHIP LINK HERE]
-			say "hal-starship";
 	Otherwise:
 		say "you don't know any interesting frequencies to listen to, so you shut the radio back off.";
 		now radio is switched off.
+	
+Book 2 - HAL-Starship
+
+
+Part 2 - Teletype Startup
+
+After switching on the teletype:
+	if UHF is switched on:
+		[These lines are here to change the menu text to printed on paper, a la teletype ]
+		Now screenDescriptor is "paper";
+		Now the visibleDescriptor is "printed";
+			[** this next line is important to start the main menut **]
+		if OSBroken is true:
+			now halNotice is "[halBootloaderIntro]";
+			now the teletype runs HAL-Bootloader program;
+		if OSBroken is false:
+			now halNotice is "[halOSIntro]";
+	if UHF is switched off:
+		now the teletype runs Static;
+	Try examining teletype;	
+
+Carry out examining the Teletype:	
+	say "[if the teletype is switched off][description of the Teletype][paragraph break][otherwise][variable letter spacing]The machine clatters as it types out: [paragraph break][fixed letter spacing][halnotice][variable letter spacing][paragraph break]";
+	rule succeeds.
+
+chapter 1 - TTY Static
+
+Static is privately-named software. The description of static is "[one of]
+LIZKSFLI ZKGGZ
+              ?#
+                #(&!  ..
+                        -#;LZSAS
+[or]FDAIGYYDO/'*(:#?2519&$.879 !#:',#;
+
+[or]GWO BUZGFD PO SFLKH
+[or],,
+.......................
+
+[or]   !(*$204&5,#$14237':096153
+
+[or]XW..............2222222222[at random]";
+
+
+chapter 2 - HAL Bootloader
+
+OSBroken is initially true.
+
+halNotice is initially "";
+
+halBootloaderIntro is initially "ILLIAC BOOTLOADER SAFE MODE. FAULT CONDITION: OPERATING SYSTEM FAILURE. ONLY RECOVERY COMMANDS AVAILABLE.";
+
+halOSIntro is initially "
+		*************************************************[line break]
+		WELCOME TO HAL OS V9000 REMOTE COMMAND INTERFACE.[line break]
+		OPERATIONAL SATELLITE: RDS-1.[line break]
+		*************************************************";	
+
+The teletype HAL-Bootloader program is an enumerated multiple-choice program. The options table of the Teletype HAL-Bootloader program is the Table of Bootloader Options.
+	
+Table of Bootloader Options
+index	title	effect
+--	"RUN DIAGNOSTICS"	check-system rule
+--	"REBOOT PROCESSOR"	reboot-cpu rule
+--	"UPLOAD NEW SYSTEM FILE"	upload rule
+
+This is the check-system rule:
+	if OSBroken is true:
+		Say "[fixed letter spacing] BASIC HARDWARE CHECK: PASS[line break]
+		FILE SYSTEM CONSISTENCY CHECK: FAIL[variable letter spacing]";
+	Otherwise:
+		say "[fixed letter spacing]MINIMAL HARDWARE TEST: PASS[line break]
+		FILE SYSTEM CONSISTENCY CHECK: PASS[variable letter spacing]";
+	
+This is the reboot-cpu rule:
+	say "[fixed letter spacing][paragraph break]***THE SYSTEM IS GOING DOWN FOR REBOOT NOW!***";
+	pause the game;
+	if OSBroken is false:
+		now halnotice is "[halOSIntro]";	
+		Now the teletype does not run the HAL-Bootloader program;
+		Now the teletype runs the HAL-OS-REMOTE program;
+	try examining teletype;
 		
 
+This is the upload rule:
+	Say "[fixed letter spacing]WARNING: AFTER UPLOAD, CPU MUST BE REBOOTED TO LOAD SYSTEM FILE. PLEASE BEGIN DATA UPLOAD NOW...[paragraph break]";
+	say "[variable letter spacing]You hear the paper tape reader buzzing and clicking for a long while...";
+	pause the game;
+	if the roll is in the reader:
+		say "[fixed letter spacing]UPLOAD COMPLETE. NEW SYSTEM FILE VALIDATED.[variable letter spacing][paragraph break]";
+		Now OSBroken is false;		
+	otherwise:
+		say "[fixed letter spacing]ERROR: UPLOAD TIMED OUT, NO DATA RECEIVED.[paragraph break][variable letter spacing]";
+	try examining teletype;
+	
 
-Book 2 - Starship Fueling Puzzle
+chapter 3 - HAL OS
+
+The teletype HAL-OS-REMOTE program is an enumerated multiple-choice program. The options table of the Teletype HAL-OS-REMOTE program is the Table of HAL-OS-REMOTE Options.
+
+Table of HAL-OS-REMOTE Options
+index	title	effect
+--	"SYSTEM STATUS"	OS-remote-status rule
+--	"SWITCH TO FAST DATA MODE"	OS-remote-high-rate rule
+--	"SOLAR SYSTEM SCANNER"	OS-remote-scan rule
+--	"DOCK LINK"	OS-remote-login-starship rule
+
+This is the OS-remote-status rule:
+	say "[fixed letter spacing]
+	ONBOARD SYSTEMS STATUS FOR SATELLITE RDS-1:[line break]
+	-------------------------------------------[line break]
+	POWER                           OK (48.2V)[line break]
+	PROCESSOR                       OK[line break]
+	GUIDANCE AND ATTITUDE CONTROL   OK (SUN SYNCHRONOUS)[line break]
+	RADIOS                          OK (BAND: UHF)[line break]
+	LOW GAIN ANTENNA                OK (SIGNAL LOCK)[line break]
+	HIGH GAIN ANTENNA             FAIL[line break]
+	DATA STORAGE                    OK (3.2TB FREE)[line break]
+	OPERATING SYSTEM                OK (HAL V9K)[line break]
+	SOFTWARE                        OK[line break]
+	RADAR IMAGER/SPECTROMETER       OK (OFF)[line break]
+	OPTICAL IMAGER/SPECTROMETER     OK (OFF)[line break]
+	LIFE SUPPORT                    OK[line break]
+	DOCKING PORT                    OK (UNOCCUPIED)[line break]
+	CABIN DATA CONSOLE              OK (FAST)[LINE BREAK]
+	[variable letter spacing]";
+	
+This is the OS-remote-scan rule:
+	say "[fixed letter spacing]PLANETARY SYSTEM MONITOR ONLINE.[PARAGRAPH BREAK]
+	RADAR SCANNING...[LINE BREAK]
+	OPTICAL SCANNING...[LINE BREAK]
+	COMPARING RETURNS TO KNOWN DATABASE...[PARAGRAPH BREAK]
+	*** ANOMALOUS OBJECT DETECTED. ***[LINE BREAK]
+	     [red letters]ORBIT ANALYSIS: POTENTIAL EARTH-CROSSING[default letters][LINE BREAK]
+	     FULL ANALYSIS AVAILABLE IN FAST DATA MODE.[PARAGRAPH BREAK]";
+
+This is the OS-remote-high-rate rule:
+	Say "[fixed letter spacing]ERROR: HIGH GAIN ANTENNA IS NOT RESPONDING. CANNOT SWITCH TO REMOTE FAST DATA MODE.[variable letter spacing]";
+	
+This is the OS-remote-login-starship rule:
+	say "[fixed letter spacing][paragraph break]
+	* SHIP-COMM v1.2 *[paragraph break]
+	QUERYING DOCKING PORT FOR CONNECTED SHIP...";
+	wait for any key;
+	say "[LINE BREAK] DOCKING PORT REPORTS SHIP IS PRESENT.[paragraph BREAK]
+	INITIALIZING INTERSHIP DATALINK:[LINE BREAK]
+	TRYING 45.45 BAUD...[variable letter spacing]";
+	wait for any key;
+	clear only the main screen;
+	Now the teletype is not running HAL-OS-REMOTE program;
+	Now halNotice is "";
+	Now the teletype is running STARSHIP-OS-REMOTE program;
+	try examining teletype;
+
+
+Chapter 4 - Starship OS Remote
+
+[Set up remote starship variables]
+StarshipLandingFreq is initially 0.
+StarshipRemoteNavMode is initially "STANDBY".
+StarshipAPMode is initially "STANDBY".
+StarshipAutopilotEngaged is initially false.
+StarshipDockedStatus is initially true;
+
+Section 1 - Starship Remote Main Menu
+
+The STARSHIP-OS-REMOTE program is an enumerated multiple-choice program. The options table of the STARSHIP-OS-REMOTE program is the Table of StarshipOSRemote Options. 
+
+
+Carry out examining the STARSHIP-OS-REMOTE program for the first time:
+	[https://en.rakko.tools/tools/68/]
+	say "[fixed letter spacing]   WELCOME TO [line break]";
+	say "                                   .:----:::...   [line break]  ";
+	say "                           :-=**+=-.       [line break]";
+	say "                       :=*#%*=:        [line break]";
+	say "                   :+#X%*=.            [line break]";
+	say " .+XXXX*:      .=#XX%+:             [line break]";
+	say "   .=%XXX#: .+#XX%+:             [line break]";
+	say "      =%*-=#XXX*-                [line break]";
+	say "       :*XXX%+-                      [line break]";
+	say "     -#XXX%=-#X%=.                   [line break]";
+	say "   -#XXX%=  :*XXXX+.                [line break]";
+	say " :#XXXX+.     :*XXXX*:                  [paragraph break]";
+	say "	#####      [line break]";                                       
+	say "#     # #####   ##   #####   ####  #    # # #####  [line break]";
+	say "#         #    #  #  #    # #      #    # # #    # [line break]";
+	say " #####    #   #    # #    #  ####  ###### # #    # [line break]";
+	say "      #   #   ###### #####       # #    # # #####  [line break]";
+	say "#     #   #   #    # #   #  #    # #    # # #      [line break]";
+	say " #####    #   #    # #    #  ####  #    # # #      [line break]";
+	say "[variable letter spacing]";
+	[http://www.network-science.de/ascii/]
+	
+Carry out examining the STARSHIP-OS-REMOTE program for more than one time:
+	Say "[fixed letter spacing]<<<STARSHIP REMOTE COMMAND LINK>>>[variable letter spacing]";
+
+
+Table of StarshipOSRemote Options
+index	title	effect
+--	"SHIP STATUS"	Starship-remote-status rule
+--	"NAVIGATION"	Starship-remote-nav rule
+--	"AUTOPILOT"	Starship-remote-ap rule
+--	"LOG OUT"	Starship-remote-logout rule
+
+This is the Starship-remote-status rule:
+	say "[fixed letter spacing]";
+	say "[LINE BREAK]  ***STARSHIP ROCKET SYSTEMS STATUS***[LINE BREAK]";
+	say "  NAV MODE:       [StarshipRemoteNavMode]";
+	if StarshipRemoteNavMode is "GO TO BEACON":
+		say " [StarshipLandingFreq] KHZ[LINE BREAK]";
+	say "  AP MODE:        [StarshipAPMode][LINE BREAK]";
+	say "  AP ENGAGED:     [IF StarshipAutopilotEngaged is true]ENGAGED[otherwise]DISENGAGED[end if][line break]";
+	say "  AP GUIDANCE:    NAV COMPUTER";
+	say "[variable letter spacing]";
+	
+This is the Starship-remote-nav rule:
+	[bring nav computer to the front]
+	Now the teletype is not running STARSHIP-OS-REMOTE program;
+	Now the teletype is running STARSHIP-NAV-REMOTE program;
+	try examining teletype;
+	
+	
+This is the Starship-remote-ap rule:
+	Now the teletype is not running STARSHIP-OS-REMOTE program;
+	Now the teletype is running STARSHIP-AUTOPILOT-REMOTE program;
+	try examining teletype;
+	
+This is the Starship-remote-logout rule:
+	say "[fixed letter spacing]LOGGING OUT OF STARSHIP...[variable letter spacing]";
+	Now the teletype is not running STARSHIP-OS-REMOTE program;
+	now halnotice is "[halOSIntro]";	
+	Now the teletype is running HAL-OS-REMOTE program;
+	try examining teletype;
+	
+
+Section 2 - Starship Remote Navigation Computer
+
+The STARSHIP-NAV-REMOTE program is an enumerated multiple-choice program. The options table of the STARSHIP-NAV-REMOTE program is the Table of StarshipNavRemote Options.
+
+Carry out examining the STARSHIP-NAV-REMOTE program:
+	Say "[fixed letter spacing]<<<STARSHIP REMOTE COMMAND LINK>>> [line break]       NAVIGATION COMPUTER[paragraph break]
+	NAV MODE: [StarshipRemoteNavMode]";
+	if StarshipRemoteNavMode is "GO TO BEACON":
+		say " [StarshipLandingFreq] KHZ";
+	Say "[PARAGRAPH break]";
+	Say "SELECT METHOD OF NAVIGATION.  GO TO:";
+	Say "[LINE BREAK][variable letter spacing]";
+	
+
+Table of StarshipNavRemote Options
+index	title	effect
+--	"KNOWN SPACE OBJECT"	starship-nav-remote-name rule
+--	"RADIO BEACON"	starship-nav-remote-go-to-beacon rule
+--	"SPECIFIC ORBIT"	starship-nav-remote-orbit rule
+--	"STANDBY"	starship-nav-remote-standby rule
+--	"EXIT NAV COMPUTER"	starship-nav-remote-exit rule
+
+
+This is the starship-nav-remote-name rule:
+	say "[fixed letter spacing] SPACE OBJECT DATABASE NOT AVAILABLE[variable letter spacing]";
+
+
+This is the starship-nav-remote-go-to-beacon rule:
+	Now StarshipRemoteNavMode is "GO TO BEACON";
+	Now the teletype is not running STARSHIP-NAV-REMOTE program;
+	Now the teletype is running the STARSHIP-LAND-BEACON-REMOTE program;
+	try examining the teletype;
+	
+
+This is the starship-nav-remote-orbit rule:
+	say "[fixed letter spacing]ORBITAL NAVIGATION IS NOT AVAILABLE AT THIS TIME.[variable letter spacing]";
+	
+This is the starship-nav-remote-standby rule:
+	Now StarshipRemoteNavMode is "STANDBY";
+	try examining teletype;
+
+This is the starship-nav-remote-exit rule:
+	Now the teletype is not running STARSHIP-NAV-REMOTE program;
+	Now the teletype is running STARSHIP-OS-REMOTE program;
+	try examining teletype;
+	
+
+Section 3 - Starship Remote Nav Beacon Frequency Menu
+
+The STARSHIP-LAND-BEACON-REMOTE program is an enumerated multiple-choice program. The options table of the STARSHIP-LAND-BEACON-REMOTE program is the Table of StarshipLandBeacon Options.
+
+Carry out examining the STARSHIP-LAND-BEACON-REMOTE program:
+		Say "[fixed letter spacing]<<<STARSHIP REMOTE COMMAND LINK>>> [line break]       NAVIGATION COMPUTER
+		[line break]    BEACON FREQUENCY SELECTION[PARAGRAPH break] 
+		THIS MODE WILL PROVIDE GUIDANCE TO THE [line break] SOURCE OF A CARRIER WAVE MODULATED[line break] SIGNAL.[paragraph break] 
+		TRACKING FREQUENCY: [StarshipLandingFreq] kHz[paragraph BREAK]
+		[variable letter spacing]";
+		
+Table of StarshipLandBeacon Options
+index	title	effect
+--	"Set to 1000 kHz"	starship-land-beacon-1000 rule
+--	"Set to 1030 kHz"	starship-land-beacon-1030 rule
+--	"Set to 1050 kHz"	starship-land-beacon-1050 rule
+--	"Set to 1070 kHz"	starship-land-beacon-1070 rule
+--	"Set to 1090 kHz"	starship-land-beacon-1090 rule
+
+
+This is the starship-land-beacon-1000 rule:
+	Now StarshipLandingFreq is 1000;
+	Now the teletype is not running STARSHIP-LAND-BEACON-REMOTE program;
+	Now the teletype is running STARSHIP-NAV-REMOTE program;
+	try examining teletype;
+	
+This is the starship-land-beacon-1030 rule:
+	Now StarshipLandingFreq is 1030;
+	Now the teletype is not running STARSHIP-LAND-BEACON-REMOTE program;
+	Now the teletype is running STARSHIP-NAV-REMOTE program;
+	try examining teletype;
+	
+This is the starship-land-beacon-1050 rule:
+	Now StarshipLandingFreq is 1050;
+	Now the teletype is not running STARSHIP-LAND-BEACON-REMOTE program;
+	Now the teletype is running STARSHIP-NAV-REMOTE program;
+	try examining teletype;
+	
+This is the starship-land-beacon-1070 rule:
+	Now StarshipLandingFreq is 1070;
+	Now the teletype is not running STARSHIP-LAND-BEACON-REMOTE program;
+	Now the teletype is running STARSHIP-NAV-REMOTE program;
+	try examining teletype;
+	
+This is the starship-land-beacon-1090 rule:
+	Now StarshipLandingFreq is 1090;
+	Now the teletype is not running STARSHIP-LAND-BEACON-REMOTE program;
+	Now the teletype is running STARSHIP-NAV-REMOTE program;
+	try examining teletype;
+	
+This is the starship-nav-mode-exit rule:
+	Now the teletype is not running STARSHIP-LAND-BEACON-REMOTE program;
+	Now the teletype is running STARSHIP-NAV-REMOTE program;
+	try examining teletype;
+	
+
+
+Section 4 - Starship Remote Autopilot Menu
+
+
+
+The STARSHIP-AUTOPILOT-REMOTE program is an enumerated multiple-choice program. The options table of the STARSHIP-AUTOPILOT-REMOTE program is the Table of StarshipAutopilotRemote Options.
+
+Carry out examining the STARSHIP-AUTOPILOT-REMOTE program:
+	Say "[fixed letter spacing]<<<STARSHIP REMOTE COMMAND LINK>>> [line break]            AUTOPILOT[paragraph break]
+			AUTOPILOT MODE: [StarshipAPMode][LINE BREAK]
+			AUTOPILOT ENGAGED: [IF StarshipAutopilotEngaged is true]ENGAGED[otherwise]DISENGAGED[end if][line break]
+			AUTOPILOT GUIDANCE: NAV COMPUTER";
+	say "[paragraph BREAK][variable letter spacing]";
+
+[			NAV MODE: [StarshipRemoteNavMode]";
+	if StarshipRemoteNavMode is "GO TO BEACON":
+		say " [StarshipLandingFreq] KHZ.";]
+		
+Table of StarshipAutopilotRemote Options
+index	title	effect
+--	"MODE SELECT: AUTO-LAUNCH"	starship-ap-mode-auto-launch rule
+--	"MODE SELECT: AUTO-LAND"	starship-ap-mode-auto-land rule
+--	"MODE SELECT: AUTO-MANEUVER"	starship-ap-mode-auto-maneuver rule
+--	"MODE SELECT: AUTO-DOCK"	starship-ap-mode-auto-dock rule
+--	"MODE SELECT: STANDBY"	starship-ap-mode-standby rule
+--	"ENGAGE"	starship-ap-mode-engage rule
+--	"DISENGAGE"	starship-ap-mode-disengage rule
+--	"EXIT AUTOPILOT"	starship-ap-mode-exit rule
+
+This is the starship-ap-mode-auto-launch rule:
+	Say "[fixed letter spacing]AUTO-LAUNCH IS NOT AVAILABLE[variable letter spacing]";
+	[Now StarshipAPMode is "AUTO-LAUNCH";]
+	
+This is the starship-ap-mode-auto-land rule:
+	Now StarshipAPMode is "AUTO-LAND";
+	Say "[fixed letter spacing]AUTO-LAND MODE:";
+	if StarshipRemoteNavMode is "GO TO BEACON":
+		If the AM Transmitter is switched on:
+			say " GUIDANCE ACTIVE.  NAVIGATION COMPUTER REPORTS GOOD BEACON SIGNAL AT [StarshipLandingFreq] KHZ. [variable letter spacing]";
+			[ask if the user wants to engage autopilot]
+		otherwise:
+			say "GUIDANCE INVALID.  NAVIGATION COMPUTER REPORTS NO SIGNAL. AUTO-LAND ABORTED[variable letter spacing].";
+	if StarshipRemoteNavMode is "STANDBY":
+		say " NO RESPONSE FROM NAVIGATION COMPUTER, AUTO-LAND ABORTED.[variable letter spacing]";
+		
+
+This is the starship-ap-mode-auto-maneuver rule:
+	Say "[fixed letter spacing]AUTO-MANEUVER IS NOT AVAILABLE[variable letter spacing]";
+	[Now StarshipAPMode is "AUTO-MANEUVER";]
+
+This is the starship-ap-mode-auto-dock rule:
+	say "[fixed letter spacing]SHIP IS ALREADY DOCKED.[variable letter spacing]";
+	[Now StarshipAPMode is "AUTO-DOCK";]
+
+This is the starship-ap-mode-standby rule:
+	say "[fixed letter spacing]AUTOPILOT IN STANDBY MODE.[variable letter spacing]";
+	Now StarshipAutopilotEngaged is false;
+	Now StarshipAPMode is "STANDBY";
+	
+This is the starship-ap-mode-engage rule:
+	[Ask user if they really want to engage autopilot]
+	say "[fixed letter spacing]ARE YOU SURE YOU WANT TO ENGAGE AP? [bracket]Y/N[close bracket] [variable letter spacing]";
+	[ask the user a yes/no question]
+	if the player consents:
+		now StarshipAutopilotEngaged is TRUE;
+	otherwise:
+		now StarshipAutopilotEngaged is FALSE;
+	if ((StarshipAPMode is "AUTO-LAND")	 and (StarshipRemoteNavMode is "GO TO BEACON")) and ((AM Transmitter is switched on) and (StarshipLandingFreq is AM Transmitter Frequency)):
+		say "[fixed letter spacing]GO FOR LANDING![paragraph break]
+		**** STARSHIP AUTO-UNDOCK IN PROGRESS ****[paragraph break]";
+		wait for any key;
+		say "[paragraph break]**** STARSHIP REMOTE LOGIN SESSION IS TERMINATED ****[paragraph break][variable letter spacing]";
+		wait for any key;
+		now halnotice is "[halOSIntro]";	
+		Now the teletype is not running STARSHIP-AUTOPILOT-REMOTE program;
+		Now the teletype is running HAL-OS-REMOTE program;
+		try looking;
+		say "You sat here in a daze, contemplating what you had just done.  After a while you hear a sonic boom that shakes the house, followed by a cracking roar that is a fair emulation of a hurricane carrying an earthquake.  The house becomes silent again.";
+		Now the starship is in the west side yard;
+		Now the Bottom of the Ladder is in the West side yard;	
+	Otherwise:
+		say "AUTOPILOT GUIDANCE ERROR.  PLEASE CHECK NAV AND AUTOPILOT SETUP.";
+		now StarshipAutopilotEngaged is FALSE;
+
+This is the starship-ap-mode-disengage rule:
+	if StarshipAutopilotEngaged is false:
+		say "[fixed letter spacing]AUTOPILOT ALREADY DISENGAGED.[variable letter spacing]";
+	otherwise:
+		say "[fixed letter spacing]AUTOPILOT DISENGAGING...[variable letter spacing]";
+		Now StarshipAutopilotEngaged is false;
+		
+This is the starship-ap-mode-exit rule:
+	Now the teletype is not running STARSHIP-AUTOPILOT-REMOTE program;
+	Now the teletype is running STARSHIP-OS-REMOTE program;
+	try examining teletype;
+
+
+Chapter 5 - Testing TTY & Starship
+
+test tty with "put roll in reader / turn teletype on / type 3 / type 2 / type 4 / type 2 / type 2 / type 4 / type 5 / type 3 / type 2 / type 6 ";
+
+
+
+Book 3 - Starship Fueling Puzzle
 
 
 Part 1 - Backend Setup
@@ -281,7 +724,7 @@ The methane flow is initially 0.
 Chapter 1 - Time events
 
 [   FIX THE TIME HERE FOR RELEASE  ]
-At 11:05 PM:
+At 10:35 PM:
 	Say "
 	
 	[bold type]** You grow tired, and you decide to go back to your bedroom and sleep till morning... **[default letters]";
@@ -359,9 +802,175 @@ After dropping the oxygen generator in the pump room:
 	say "The liquid oxygen generator settles to the floor.  Conveniently, its 2 inch output coupling lines up with the 2 inch pipe in the wall, and they snap together, sealed perfectly.";
 	increase score by 10;
 After dropping the oxygen generator in the radiostation:
-	say "The liquid oxygen generator clunks to the floor.  It's output coupling doesn't fit with the 1.5 inch pipe in the wall."
+	say "The liquid oxygen generator clunks to the floor.  It's output coupling doesn't fit with the 1.5 inch pipe in the wall."	
+	
+Book 4 - Starship Landed
 
-Book 4 - Pavilion Initial Tests
+
+
+Chapter 2 - Rocket at home
+	
+
+
+Section 1 - Offstage Starship Pre-Landing
+
+A Starship is in the staging area. The starship is fixed in place.  The description of the starship is "A great silvery rocket, 30m tall, it has a set of hose ports at the bottom, and next to the ports is a small display screen.".
+
+[There is a Ladder above the staging area. ]
+Docking Port is a room.
+
+Instead of taking the starship, say "very funny.  You are not a crane."
+
+The Bottom of the Ladder is an easydoor in the staging area.  The Bottom of the Ladder leads to the Docking Port. Instead of going up in the West Side Yard: try entering The Bottom of the Ladder.  "A ladder leads up the side of the starship here."
+
+The top of the Ladder is an easydoor in the Docking Port.  The Top of the Ladder leads to the West Side Yard.  Instead of going down in the Docking Port: try entering The Top of the Ladder.  "A ladder leads down the side of the starship here."
+
+Section 2 - Starship in Yard After landing
+
+StarshipLanded is a scene.
+
+[StarshipLanded begins when play begins.]
+
+When StarshipLanded begins:
+	Now the starship is in the west side yard;
+	Now the Bottom of the Ladder is in the West side yard;	
+
+Section 3 - Airlock
+
+Interdimensional space is a room.  "You're floating in a gray nothing.  Not dead somehow, but this is a dead end.  "
+
+
+The Airlock is a room. "You are in a small chamber with controls on the walls.   The outer hatch is to the east, and the inner hatch is to the west."
+
+The shiny hatch is an easydoor in the Docking Port. The shiny hatch leads to the airlock.
+Instead of going west in the Docking Port: try entering hatch.   "A shiny hatch is here, to the west."
+
+The airlock outer hatch is an easydoor in the airlock. The airlock outer hatch is lockable and unlocked. The outer hatch leads to the Docking Port.
+
+The main hallway is a room.  "A sparkly white corridor.  There is an airlock to the east, and a control room above."
+
+The airlock inner hatch is an easydoor in the airlock.  The airlock inner hatch is lockable and locked.  The inner hatch leads to the main hallway.  
+
+The airlock hall hatch is an easydoor in the main hallway. The airlock hall hatch leads to the airlock.
+
+Instead of going east in the airlock: try entering the outer hatch.  Instead of going west in the airlock: try entering the inner hatch.
+Instead of going east in the main hallway: try entering the airlock hall hatch.
+
+The egress interlock is in the airlock.  The interlock is fixed in place. The interlock is a device.  The interlock is switched off.   The description of the interlock is "The interlock is a protection device that allows only one airlock hatch to be open at once.".
+
+The airlock controls are in the airlock.  The airlock controls are scenery.  
+
+Instead of examining controls: try examining interlock.  
+
+After switching on the interlock:
+	now the airlock inner hatch is unlocked;
+	now airlock outer hatch is closed;
+	now the airlock outer hatch is locked;
+	Say "you hear a hiss, and then both hatches emit a loud KERCHUNK."
+	
+After switching off the interlock:
+	now the airlock inner hatch is closed;
+	now the inner hatch is locked;
+	now the airlock outer hatch is unlocked;
+	Say "you hear a hiss, and then both hatches emit a loud KERCHUNK."
+
+
+
+Section 4 - Fueling the rocket
+
+A fuel display is part of the starship.  Understand "screen" as display.  The description of the fuel display is " [line break]
+  Fuel Quantities: [line break]
+O2 Tank Level [O2 tank level]%[line break]
+CH4 tank level [CH4 tank level]%[line break]".
+
+
+A set of ports is part of the starship. The description of the set of ports is "there is an 02 fill port and a CH4 fill port."  A CH4 fill port is part of the set of ports. The CH4 fill port is a container.  A O2 fill port is part of the set of ports.  The O2 fill port is a container. 
+
+The carrying capacity of the CH4 port is 1.
+The carrying capacity of the O2 port is 1.
+
+
+Instead of inserting an end of the green hose into a CH4 fill port:
+	say "The hose end doesn't fit in this port."
+Instead of inserting an end of the yellow hose into a O2 fill port:
+	say "The hose end doesn't fit in this port."
+
+The O2 tank level is initially 0.
+The CH4 tank level is initially 0. 
+
+Every turn:
+	if the end of the green hose is in the O2 fill port:
+		if oxygen flow is 1:
+		 	if O2 tank level is less than 100:
+				say "fuelling O2[line break]";
+				increase O2 tank level by 5;
+			otherwise if the player is in the west side yard:
+				now oxygen flow is 0;
+				say "You hear a loud clunk back toward the house, and the green hose pops out of the port onto the ground, having shut off automatically.";
+				move green hose to west side yard;
+	if the end of the yellow hose is in the CH4 fill port:
+		if methane flow is 1:
+		 	if CH4 tank level is less than 100:
+				say "fueling CH4[line break]";
+				increase CH4 tank level by 10;
+			otherwise if the player is in the west side yard:
+				now methane flow is 0;
+				say "You hear a faint thunk from the back yard, and the yellow hose pops out of the port onto the ground, having shut off automatically.";
+				move the yellow hose to west side yard.
+
+Chapter 3 - Moving the ship
+
+Section 1 -  Control Room
+
+The Control Room is above the Main hallway.
+
+There is an abort system is in the control room.  It is fixed in place.  It is a device.  it is switched off.  The description of the abort system is "Out of Order.  operation is not guaranteed."
+
+After switching on the abort system:
+	say "The faulty abort system just made something unpredictable happen to space and time.  There may be no fixing this.";
+	Now the outer hatch leads to interdimensional space;
+	Now the abort system is switched off;
+	
+There is a navigation computer in the control room.   It is fixed in place. It is a device.  it is switched off.  Understand "nav" as navigation computer.  The description of the navigation computer is "This Nav-O-Co computer appears to be out of order. " 
+[user needs the orbit printout]
+
+After switching on the navigation computer:
+	say "The navigation computer emits a fail sound. ";
+	Now the navigation computer is switched off;
+
+There is a control display in the control room.  The display is fixed in place.  Understand "screen" as display.  The description of the control display is " [line break]
+~ Starship Status Console ~[line break]
+  Fuel Quantities: [line break]
+Oxygen Tank Level [O2 tank level]%[line break]
+Methane Tank level [CH4 tank level]%[line break]".
+
+There is an autopilot in the control room.  It is fixed in place. It is a device.  it is switched off. Understand "auto" as autopilot. The description of the autopilot is "The shiny black autopilot looks brand new, and very auto."	
+
+
+Section 2 - Autopilot
+
+After switching on the autopilot:
+	if the O2 tank level is not 100:
+		say "Insufficient Oxygen. ";
+	if the CH4 tank level is not 100:
+		say "Insufficient methane. ";
+	if (O2 tank level is 100) and (CH4 tank level is 100):
+		if (green hose is in O2 port) or (yellow hose is in ch4 port):
+			say "The engines roar, the rocket rises away from the ground.  A hose, still connected to a fill port, tears the fuel manifold out of the bottom of the ship.  A large explosion consumes the rocket instantly. ";
+			end the story saying "You have died.";
+		otherwise:
+			say "[line break] Blastoff!  You have gone to space today.  Good jeorb.";
+			end the story;
+	otherwise:
+		say "autopilot turns off.";
+		now autopilot is switched off;
+			
+Chapter 4 - Landed tests
+
+test shipin with "u / u / w / turn interlock on/ w  "
+
+
+Book 5 - Pavilion Initial Tests
 
 
 Test UHF with "s / e / get book / w / s / e / e / e / turn radio on / w ".
@@ -383,7 +992,7 @@ test all with "test radiation / test gases "
 
 
 
-Book 10 - Misc General Helper functions
+Book 6 - Misc General Helper functions
 
 Section 1 - Hinting setup
 
