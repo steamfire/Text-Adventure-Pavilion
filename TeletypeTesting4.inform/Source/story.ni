@@ -46,10 +46,6 @@ StarshipLandingFreq is initially 0.
 StarshipRemoteNavMode is initially "STANDBY".
 StarshipAPMode is initially "STANDBY".
 StarshipAutopilotEngaged is initially false.
-[
-StarshipRemoteNavMode is a kind of value.  The StarshipRemoteNavModes are SpaceObject, SpaceBeacon, PlanetaryBeacon, TargetOrbit, Standby.  StarshipRemoteNavMode is Standby.]
-
-
 StarshipDockedStatus is initially true;
 
 halBootloaderIntro is initially "ILLIAC BOOTLOADER SAFE MODE. FAULT CONDITION: OPERATING SYSTEM FAILURE. ONLY RECOVERY COMMANDS AVAILABLE.";
@@ -242,10 +238,17 @@ index	title	effect
 --	"LOG OUT"	Starship-remote-logout rule
 
 This is the Starship-remote-status rule:
-	say "starship status here"
+	say "[fixed letter spacing]";
+	say "[LINE BREAK]  ***STARSHIP ROCKET SYSTEMS STATUS***[LINE BREAK]";
+	say "  NAV MODE:       [StarshipRemoteNavMode]";
+	if StarshipRemoteNavMode is "GO TO BEACON":
+		say " [StarshipLandingFreq] KHZ[LINE BREAK]";
+	say "  AP MODE:        [StarshipAPMode][LINE BREAK]";
+	say "  AP ENGAGED:     [IF StarshipAutopilotEngaged is true]ENGAGED[otherwise]DISENGAGED[end if][line break]";
+	say "  AP GUIDANCE:    NAV COMPUTER";
+	say "[variable letter spacing]";
 	
 This is the Starship-remote-nav rule:
-	Say "starship nav here";
 	[bring nav computer to the front]
 	Now the teletype is not running STARSHIP-OS-REMOTE program;
 	Now the teletype is running STARSHIP-NAV-REMOTE program;
@@ -272,38 +275,35 @@ The STARSHIP-NAV-REMOTE program is an enumerated multiple-choice program. The op
 Carry out examining the STARSHIP-NAV-REMOTE program:
 	Say "[fixed letter spacing]<<<STARSHIP REMOTE COMMAND LINK>>> [line break]       NAVIGATION COMPUTER[paragraph break]
 	NAV MODE: [StarshipRemoteNavMode]";
-	if StarshipRemoteNavMode is "LAND AT BEACON":
+	if StarshipRemoteNavMode is "GO TO BEACON":
 		say " [StarshipLandingFreq] KHZ";
-	Say "[line break][variable letter spacing]";
+	Say "[PARAGRAPH break]";
+	Say "SELECT METHOD OF NAVIGATION.  GO TO:";
+	Say "[LINE BREAK][variable letter spacing]";
 	
 
 Table of StarshipNavRemote Options
 index	title	effect
---	"SPACE OBJECT RENDEZVOUS"	starship-nav-remote-name rule
---	"SPACE BEACON RENDEZVOUS"	starship-nav-remote-space-beacon rule
---	"LAND AT RADIO BEACON"	starship-nav-remote-landing-beacon rule
---	"SET NEW ORBIT"	starship-nav-remote-orbit rule
---	"STANDBY (OFF)"	starship-nav-remote-standby rule
+--	"KNOWN SPACE OBJECT"	starship-nav-remote-name rule
+--	"RADIO BEACON"	starship-nav-remote-go-to-beacon rule
+--	"SPECIFIC ORBIT"	starship-nav-remote-orbit rule
+--	"STANDBY"	starship-nav-remote-standby rule
 --	"EXIT NAV COMPUTER"	starship-nav-remote-exit rule
 
 
 This is the starship-nav-remote-name rule:
-	say "[fixed letter spacing] SPACE OBJECT RENDEZVOUS NOT AVAILABLE[variable letter spacing]";
-
-This is the starship-nav-remote-space-beacon rule:
-	say "[fixed letter spacing] SPACE BEACON RENDEZVOUS MODE NOT AVAILABLE[variable letter spacing]";
+	say "[fixed letter spacing] SPACE OBJECT DATABASE NOT AVAILABLE[variable letter spacing]";
 
 
-This is the starship-nav-remote-landing-beacon rule:
-	[say "[fixed letter spacing] NAVIGATION MODE SET TO TARGET LANDING TO CARRIER WAVE AMPLITUDE MODULATED SIGNAL SOURCE:[line break]";]
-	Now StarshipRemoteNavMode is "LAND AT BEACON";
+This is the starship-nav-remote-go-to-beacon rule:
+	Now StarshipRemoteNavMode is "GO TO BEACON";
 	Now the teletype is not running STARSHIP-NAV-REMOTE program;
 	Now the teletype is running the STARSHIP-LAND-BEACON-REMOTE program;
 	try examining the teletype;
 	
 
 This is the starship-nav-remote-orbit rule:
-	say "[fixed letter spacing]ORBIT SPECIFICATION NOT AVAILABLE[variable letter spacing]";
+	say "[fixed letter spacing]ORBITAL NAVIGATION IS NOT AVAILABLE AT THIS TIME.[variable letter spacing]";
 	
 This is the starship-nav-remote-standby rule:
 	Now StarshipRemoteNavMode is "STANDBY";
@@ -315,13 +315,16 @@ This is the starship-nav-remote-exit rule:
 	try examining teletype;
 	
 
-Section 3 - Starship Nav mode- Land at Beacon
+Section 3 - Starship Nav mode- GO TO BEACON
 
 The STARSHIP-LAND-BEACON-REMOTE program is an enumerated multiple-choice program. The options table of the STARSHIP-LAND-BEACON-REMOTE program is the Table of StarshipLandBeacon Options.
 
 Carry out examining the STARSHIP-LAND-BEACON-REMOTE program:
-		Say "[fixed letter spacing]<<<STARSHIP REMOTE COMMAND LINK>>> [line break]       NAVIGATION COMPUTER[paragraph break]
-		NAV MODE: LAND AT BEACON.  TRACK CARRIER WAVE MODULATED SIGNAL.  LAND SHIP AT SOURCE.[paragraph break] CURRENT TRACKING FREQUENCY: [StarshipLandingFreq] kHz[Line BREAK][variable letter spacing]";
+		Say "[fixed letter spacing]<<<STARSHIP REMOTE COMMAND LINK>>> [line break]       NAVIGATION COMPUTER
+		[line break]    BEACON FREQUENCY SELECTION[PARAGRAPH break] 
+		THIS MODE WILL PROVIDE GUIDANCE TO THE [line break] SOURCE OF A CARRIER WAVE MODULATED[line break] SIGNAL.[paragraph break] 
+		TRACKING FREQUENCY: [StarshipLandingFreq] kHz[paragraph BREAK]
+		[variable letter spacing]";
 		
 Table of StarshipLandBeacon Options
 index	title	effect
@@ -330,7 +333,6 @@ index	title	effect
 --	"Set to 1050 kHz"	starship-land-beacon-1050 rule
 --	"Set to 1070 kHz"	starship-land-beacon-1070 rule
 --	"Set to 1090 kHz"	starship-land-beacon-1090 rule
---	"EXIT"	starship-nav-mode-exit rule
 
 
 This is the starship-land-beacon-1000 rule:
@@ -379,12 +381,14 @@ The STARSHIP-AUTOPILOT-REMOTE program is an enumerated multiple-choice program. 
 Carry out examining the STARSHIP-AUTOPILOT-REMOTE program:
 	Say "[fixed letter spacing]<<<STARSHIP REMOTE COMMAND LINK>>> [line break]            AUTOPILOT[paragraph break]
 			AUTOPILOT MODE: [StarshipAPMode][LINE BREAK]
-			AUTOPILOT STATE: [if StarshipAutopilotEngaged is true]ENGAGED[otherwise]DISENGAGED[end if][line break]
-			NAV MODE: [StarshipRemoteNavMode]";
-	if StarshipRemoteNavMode is "LAND AT BEACON":
-		say " [StarshipLandingFreq] KHZ.";
+			AUTOPILOT ENGAGED: [IF StarshipAutopilotEngaged is true]ENGAGED[otherwise]DISENGAGED[end if][line break]
+			AUTOPILOT GUIDANCE: NAV COMPUTER";
 	say "[paragraph BREAK][variable letter spacing]";
 
+[			NAV MODE: [StarshipRemoteNavMode]";
+	if StarshipRemoteNavMode is "GO TO BEACON":
+		say " [StarshipLandingFreq] KHZ.";]
+		
 Table of StarshipAutopilotRemote Options
 index	title	effect
 --	"MODE SELECT: AUTO-LAUNCH"	starship-ap-mode-auto-launch rule
@@ -403,7 +407,7 @@ This is the starship-ap-mode-auto-launch rule:
 This is the starship-ap-mode-auto-land rule:
 	Now StarshipAPMode is "AUTO-LAND";
 	Say "[fixed letter spacing]AUTO-LAND MODE:";
-	if StarshipRemoteNavMode is "LAND AT BEACON":
+	if StarshipRemoteNavMode is "GO TO BEACON":
 		If the AM Transmitter is switched on:
 			say " GUIDANCE ACTIVE.  NAVIGATION COMPUTER REPORTS GOOD BEACON SIGNAL AT [StarshipLandingFreq] KHZ. [variable letter spacing]";
 			[ask if the user wants to engage autopilot]
@@ -428,9 +432,14 @@ This is the starship-ap-mode-standby rule:
 	
 This is the starship-ap-mode-engage rule:
 	[Ask user if they really want to engage autopilot]
-	say "aure you want to engage AP?";
-	Now StarshipAutopilotEngaged is true;
-	
+	say "[fixed letter spacing]ARE YOU SURE YOU WANT TO ENGAGE AP? [bracket]Y/N[close bracket] [variable letter spacing]";
+	[ask the user a yes/no question]
+	if the player consents:
+		now StarshipAutopilotEngaged is TRUE;
+	otherwise:
+		now StarshipAutopilotEngaged is FALSE;
+	[if (StarshipAPMode is "AUTO-LAND") and (StarshipRemoteNavMode is "GO TO BEACON") and (AM Transmitter is switched on) and (AM Transmitter Frequency is] 
+
 This is the starship-ap-mode-disengage rule:
 	if StarshipAutopilotEngaged is false:
 		say "[fixed letter spacing]AUTOPILOT ALREADY DISENGAGED.[variable letter spacing]";
@@ -449,7 +458,7 @@ This is the starship-ap-mode-exit rule:
 Book 2 - Testing
 
 
-test tty with "put roll in reader / turn teletype on / type 3 / type 2 / type 4 / type 2 ";
+test tty with "put roll in reader / turn teletype on / type 3 / type 2 / type 4 / type 2 / type 2 / type 4 / type 5 / type 3 / type 8 / type 1";
 
 
 
