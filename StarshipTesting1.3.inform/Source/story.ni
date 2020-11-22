@@ -5,9 +5,9 @@ Include Basic Screen Effects by Emily Short.
 Include Easy Doors by Hanon Ondricek.
 
 
+Book 1 - Starship Landing
 
-
-Chapter 1 - backstory
+Part 1 - Variables duplicated in main program Setup
 
 West side yard is a room.  "the ground here is blackened."
 
@@ -21,22 +21,26 @@ The end of the blue hose is in the west yard.
 	
 
 Chapter 2 - Rocket at home
+	
 
 
+Section 1 - Offstage Starship Pre-Landing
 
+A Starship is in the staging area. The starship is fixed in place.  The description of the starship is "A great silvery rocket, 30m tall, it has a set of hose ports at the bottom, and next to the ports is a small display screen.".
 
-Section 1 - walkin around the rocket
-
-A Starship is in the west side yard. the starship is fixed in place.  The description of the starship is "A great silvery rocket, 30m tall, it has a set of hose ports at the bottom, and next to the ports is a small display screen.".
+There is a Ladder above the staging area. 
+Top of ladder is above the ladder.
 
 Instead of taking the starship, say "very funny.  You are not a crane."
 
+Section 2 - Starship in Yard After landing
 
-There is a Ladder above the west yard. 
+StarshipLanded is a scene.
 
-Top of ladder is above the ladder.
+When StarshipLanded begins:
+	Now the starship is in the west side yard.
 
-Section 2 - Airlock
+Section 3 - Airlock
 
 Interdimensional space is a room.  "You're floating in a gray nothing.  Not dead somehow, but this is a dead end.  "
 
@@ -77,7 +81,7 @@ After switching off the interlock:
 
 
 
-Section 3 - Fueling the rocket
+Section 4 - Fueling the rocket
 
 A fuel display is part of the starship.  Understand "screen" as display.  The description of the fuel display is " [line break]
   Fuel Quantities: [line break]
@@ -118,9 +122,6 @@ Every turn:
 				now methane flow is 0;
 				say "You hear a faint thunk from the back yard, and the blue hose pops out of the port onto the ground, having shut off automatically.";
 				move the blue hose to west side yard.
-	
-
-
 
 Chapter 3 - Moving the ship
 
