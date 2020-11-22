@@ -12,7 +12,9 @@ Include ComputersTeletype by Dan Bowen
 [v10 by dan adds fixed spacing font for printing the choices of the menu inside the extension]
  
 
-Book 1 - The Program itself
+Book 1 - Hamshack - HAL-Starship
+
+Part 1 - External Variables Setup [duplicated from main program]
 
 Ham Shack is a room.
 There is a roll of paper tape in the ham shack.
@@ -22,15 +24,12 @@ The Radiostation is below the Ham Shack.
 The AM Transmitter is a device in the Radiostation.  AM Transmitter is switched on.
 The AM Transmitter Frequency is initially 1070.
  
-Part 1 - Teletype
+Part 2 - Teletype
 
 [Interaction begins when player examines Teletype ]
 
-OSBroken is initially true.
-
 
 The Teletype is computer in the ham shack.  The teletype is switched off.  The description is "The teletype is a green boxy thing, with a typwriter keyboard, paper coming out the top, and a paper tape reader on the side.[if the teletype is switched on]The motor hums quietly.[otherwise] It is turned off."
-
 
 Understand "paper", "message", "text" and "readout" as a screen.
 Understand "tty" as teletype.
@@ -39,23 +38,6 @@ Understand "tty" as teletype.
 The paper tape reader is an extension port.  It is part of the teletype.  the description of the paper tape reader is "The punched paper tape reader is a bulging box hanging off the left side of the main teletype. It is used to transmit large amounts pre-recorded data through the teletype."
 
 The roll of paper tape is a data storage device.
-
-halNotice is initially "";
-
-StarshipLandingFreq is initially 0.
-StarshipRemoteNavMode is initially "STANDBY".
-StarshipAPMode is initially "STANDBY".
-StarshipAutopilotEngaged is initially false.
-StarshipDockedStatus is initially true;
-
-halBootloaderIntro is initially "ILLIAC BOOTLOADER SAFE MODE. FAULT CONDITION: OPERATING SYSTEM FAILURE. ONLY RECOVERY COMMANDS AVAILABLE.";
-
-halOSIntro is initially "
-		*************************************************[line break]
-		WELCOME TO HAL OS V9000 REMOTE COMMAND INTERFACE.[line break]
-		OPERATIONAL SATELLITE: RDS-1.[line break]
-		*************************************************";	
-
 
 After switching on the teletype:
 	if UHF is switched on:
@@ -77,7 +59,7 @@ Carry out examining the Teletype:
 	say "[if the teletype is switched off][description of the Teletype][paragraph break][otherwise][variable letter spacing]The machine clatters as it types out: [paragraph break][fixed letter spacing][halnotice][variable letter spacing][paragraph break]";
 	rule succeeds.
 
-chapter 1 - Static
+chapter 1 - TTY Static
 
 Static is privately-named software. The description of static is "[one of]
 LIZKSFLI ZKGGZ
@@ -97,6 +79,17 @@ LIZKSFLI ZKGGZ
 
 chapter 2 - HAL Bootloader
 
+OSBroken is initially true.
+
+halNotice is initially "";
+
+halBootloaderIntro is initially "ILLIAC BOOTLOADER SAFE MODE. FAULT CONDITION: OPERATING SYSTEM FAILURE. ONLY RECOVERY COMMANDS AVAILABLE.";
+
+halOSIntro is initially "
+		*************************************************[line break]
+		WELCOME TO HAL OS V9000 REMOTE COMMAND INTERFACE.[line break]
+		OPERATIONAL SATELLITE: RDS-1.[line break]
+		*************************************************";	
 
 The teletype HAL-Bootloader program is an enumerated multiple-choice program. The options table of the Teletype HAL-Bootloader program is the Table of Bootloader Options.
 	
@@ -195,9 +188,16 @@ This is the OS-remote-login-starship rule:
 	try examining teletype;
 
 
-chapter 4 - Starship OS Remote
+Chapter 4 - Starship OS Remote
 
-section 1 - Main starship remote menu
+[Set up remote starship variables]
+StarshipLandingFreq is initially 0.
+StarshipRemoteNavMode is initially "STANDBY".
+StarshipAPMode is initially "STANDBY".
+StarshipAutopilotEngaged is initially false.
+StarshipDockedStatus is initially true;
+
+Section 1 - Starship Remote Main Menu
 
 The STARSHIP-OS-REMOTE program is an enumerated multiple-choice program. The options table of the STARSHIP-OS-REMOTE program is the Table of StarshipOSRemote Options. 
 
@@ -268,7 +268,7 @@ This is the Starship-remote-logout rule:
 	try examining teletype;
 	
 
-section 2 - Navigation Computer
+Section 2 - Starship Remote Navigation Computer
 
 The STARSHIP-NAV-REMOTE program is an enumerated multiple-choice program. The options table of the STARSHIP-NAV-REMOTE program is the Table of StarshipNavRemote Options.
 
@@ -315,7 +315,7 @@ This is the starship-nav-remote-exit rule:
 	try examining teletype;
 	
 
-Section 3 - Starship Nav mode- GO TO BEACON
+Section 3 - Starship Remote Nav Beacon Frequency Menu
 
 The STARSHIP-LAND-BEACON-REMOTE program is an enumerated multiple-choice program. The options table of the STARSHIP-LAND-BEACON-REMOTE program is the Table of StarshipLandBeacon Options.
 
@@ -372,7 +372,7 @@ This is the starship-nav-mode-exit rule:
 	
 
 
-Section 4 - Starship Remote Autopilot Computer menu
+Section 4 - Starship Remote Autopilot Menu
 
 
 
@@ -438,6 +438,7 @@ This is the starship-ap-mode-engage rule:
 		now StarshipAutopilotEngaged is TRUE;
 	otherwise:
 		now StarshipAutopilotEngaged is FALSE;
+	end the story saying "GOOD JOB".
 	[if (StarshipAPMode is "AUTO-LAND") and (StarshipRemoteNavMode is "GO TO BEACON") and (AM Transmitter is switched on) and (AM Transmitter Frequency is] 
 
 This is the starship-ap-mode-disengage rule:
@@ -453,10 +454,7 @@ This is the starship-ap-mode-exit rule:
 	try examining teletype;
 
 
-
-
-Book 2 - Testing
-
+Chapter 5 - Testing TTY & Starship
 
 test tty with "put roll in reader / turn teletype on / type 3 / type 2 / type 4 / type 2 / type 2 / type 4 / type 5 / type 3 / type 8 / type 1";
 
