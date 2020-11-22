@@ -5,6 +5,7 @@ Include Basic Screen Effects by Emily Short.
 Include Easy Doors by Hanon Ondricek.
 
 
+
 Book 1 - Starship Landing
 
 Part 1 - Variables duplicated in main program Setup
@@ -28,17 +29,24 @@ Section 1 - Offstage Starship Pre-Landing
 
 A Starship is in the staging area. The starship is fixed in place.  The description of the starship is "A great silvery rocket, 30m tall, it has a set of hose ports at the bottom, and next to the ports is a small display screen.".
 
-There is a Ladder above the staging area. 
-Top of ladder is above the ladder.
+[There is a Ladder above the staging area. ]
+Docking Port is a room.
 
 Instead of taking the starship, say "very funny.  You are not a crane."
+
+The Bottom of the Ladder is an easydoor in the staging area.  The Bottom of the Ladder leads to the Docking Port. Instead of going up in the West Side Yard: try entering The Bottom of the Ladder.  "A ladder leads up the side of the starship here."
+
+The top of the Ladder is an easydoor in the Docking Port.  The Top of the Ladder leads to the West Side Yard.  Instead of going down in the Docking Port: try entering The Top of the Ladder.  "A ladder leads down the side of the starship here."
 
 Section 2 - Starship in Yard After landing
 
 StarshipLanded is a scene.
 
+StarshipLanded begins when play begins.
+
 When StarshipLanded begins:
-	Now the starship is in the west side yard.
+	Now the starship is in the west side yard;
+	Now the Bottom of the Ladder is in the West side yard;	
 
 Section 3 - Airlock
 
@@ -47,10 +55,10 @@ Interdimensional space is a room.  "You're floating in a gray nothing.  Not dead
 
 The Airlock is a room. "You are in a small chamber with controls on the walls.   The outer hatch is to the east, and the inner hatch is to the west."
 
-The shiny hatch is an easydoor in the top of ladder. The shiny hatch leads to the airlock.
-Instead of going west in the top of ladder: try entering hatch.   "A shiny hatch is here, to the west."
+The shiny hatch is an easydoor in the Docking Port. The shiny hatch leads to the airlock.
+Instead of going west in the Docking Port: try entering hatch.   "A shiny hatch is here, to the west."
 
-The airlock outer hatch is an easydoor in the airlock. The airlock outer hatch is lockable and unlocked. The outer hatch leads to the top of ladder.
+The airlock outer hatch is an easydoor in the airlock. The airlock outer hatch is lockable and unlocked. The outer hatch leads to the Docking Port.
 
 The main hallway is a room.  "A sparkly white corridor.  There is an airlock to the east, and a control room above."
 
@@ -170,13 +178,6 @@ After switching on the autopilot:
 		say "autopilot turns off.";
 		now autopilot is switched off;
 			
-	
-	
-
- 
-
-
-
-
+Chapter 4 - Landed tests
 
 test shipin with "u / u / w / turn interlock on/ w  "
