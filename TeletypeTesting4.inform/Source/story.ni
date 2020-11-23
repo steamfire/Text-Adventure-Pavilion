@@ -24,7 +24,7 @@ The Radiostation is below the Ham Shack.
 The AM Transmitter is a device in the Radiostation.  AM Transmitter is switched on.
 The AM Transmitter Frequency is initially 1070.
  
-Part 2 - Teletype
+StarshipLanding is a scene.
 
 [Interaction begins when player examines Teletype ]
 
@@ -39,6 +39,8 @@ The paper tape reader is an extension port.  It is part of the teletype.  the de
 
 The roll of paper tape is a data storage device.
 
+Part 2 - Teletype Startup
+
 After switching on the teletype:
 	if UHF is switched on:
 		[These lines are here to change the menu text to printed on paper, a la teletype ]
@@ -52,10 +54,9 @@ After switching on the teletype:
 			now halNotice is "[halOSIntro]";
 	if UHF is switched off:
 		now the teletype runs Static;
-	Try examining teletype;
+	Try examining teletype;	
 
-
-Carry out examining the Teletype:
+Carry out examining the Teletype:	
 	say "[if the teletype is switched off][description of the Teletype][paragraph break][otherwise][variable letter spacing]The machine clatters as it types out: [paragraph break][fixed letter spacing][halnotice][variable letter spacing][paragraph break]";
 	rule succeeds.
 
@@ -438,8 +439,20 @@ This is the starship-ap-mode-engage rule:
 		now StarshipAutopilotEngaged is TRUE;
 	otherwise:
 		now StarshipAutopilotEngaged is FALSE;
-	end the story saying "GOOD JOB".
-	[if (StarshipAPMode is "AUTO-LAND") and (StarshipRemoteNavMode is "GO TO BEACON") and (AM Transmitter is switched on) and (AM Transmitter Frequency is] 
+	if ((StarshipAPMode is "AUTO-LAND")	 and (StarshipRemoteNavMode is "GO TO BEACON")) and ((AM Transmitter is switched on) and (StarshipLandingFreq is AM Transmitter Frequency)):
+		say "[fixed letter spacing]GO FOR LANDING![paragraph break]
+		**** STARSHIP AUTO-UNDOCK IN PROGRESS ****[paragraph break]";
+		wait for any key;
+		say "[paragraph break]**** STARSHIP REMOTE LOGIN SESSION IS TERMINATED ****[paragraph break][variable letter spacing]";
+		wait for any key;
+		now halnotice is "[halOSIntro]";	
+		Now the teletype is not running STARSHIP-AUTOPILOT-REMOTE program;
+		Now the teletype is running HAL-OS-REMOTE program;
+		try looking;
+		say "You sat here in a daze, contemplating what you had just done.  After a while you hear a sonic boom that shakes the house, followed by a cracking roar that is a fair emulation of a hurricane carrying an earthquake.  The house becomes silent again.";
+	Otherwise:
+		say "AUTOPILOT GUIDANCE ERROR.  PLEASE CHECK NAV AND AUTOPILOT SETUP.";
+		now StarshipAutopilotEngaged is FALSE;
 
 This is the starship-ap-mode-disengage rule:
 	if StarshipAutopilotEngaged is false:
@@ -456,7 +469,7 @@ This is the starship-ap-mode-exit rule:
 
 Chapter 5 - Testing TTY & Starship
 
-test tty with "put roll in reader / turn teletype on / type 3 / type 2 / type 4 / type 2 / type 2 / type 4 / type 5 / type 3 / type 8 / type 1";
+test tty with "put roll in reader / turn teletype on / type 3 / type 2 / type 4 / type 2 / type 2 / type 4 / type 5 / type 3 / type 2 / type 6 ";
 
 
 
