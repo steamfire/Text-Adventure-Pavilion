@@ -31,6 +31,8 @@ Say "You are in a house in the countryside.  You are into electronics, and it is
 
 The vogons is initially 0.
 The daydebug is initially 0.
+satPassword is initially "riker".
+playerFirstName is initially "Jane Doe".
 
 Day is a recurring scene.
 Night is a recurring scene.  Night begins when Day ends. Night ends when the time of day is 8:01 am.
@@ -149,6 +151,14 @@ A waterbed is in Dad's Bedroom. "in the middle of the room is a pink waterbed." 
 Understand "bed", "water bed" and "waterbed" as the waterbed.
 Understand "get out of bed" as exiting.
 
+There is an answering machine in Dad's bedroom. The description of the answering machine is "A fine product from the Tel-O-Matic corporation.  The features were once written on the worn woodgrain finish, but you can only make out every few letters.  Now it looks like  'With Garble-Tone erase-yo-calls'.  There is a worn out button on the machine."
+
+A button is a kind of thing. The play button is a part of the answering machine. The play button is a button.  The description is "A rubbery thing, tiredly awaiting its fate.".
+
+After pushing the play button:
+	say "Hey [playerFirstName], it's Wendell.  I finally hacked into that old asteroid scanner satellite!  The password was so simple- '[satPassword]'.  It took me like a week of trying though. I was definitely disappointed that it didn't offer me any nuclear-themed games to play hahaha.  The behavior was a little glitchy once I got in, hopefully it doesn't crap out before you get to play with it.  later.";
+
+
 
 Dad's bathroom is east of Dad's Bedroom.  The Panasonic Radio is a device in Dad's bathroom. The panasonic radio is switched off. The description of the panasonic radio is "[if switched on]The radio dial glows, and you see it is set to 1070kHz[otherwise]The Panasonic multiband radio is dark and silent[end if]." 
 
@@ -226,8 +236,7 @@ Downstairs is a region. The cellar, furnace room, pump room and the radiostation
 
 Outdoors is a region.  The front porch, Front yard, driveway, side yard, back porch, middle back yard, West side yard, and back yard hill are in the outdoors.
 
-The sky is a backdrop. the sky is in the outdoors. Instead of doing something to the sky, say "[if Night is happening]There is a bright satellite passing overhead.[otherwise]The sky is pretty blue."
-
+The sky is a backdrop. the sky is in the outdoors. Instead of doing something to the sky, say "[if Night is happening]There is a bright satellite passing overhead.[otherwise]The sky is pretty blue." 
 
 
 Part 2 - Doing Ham Radio Stuff
