@@ -388,7 +388,7 @@ This is the OS-remote-status rule:
 	GUIDANCE AND ATTITUDE CONTROL   OK (SUN SYNCHRONOUS)[line break]
 	RADIOS                          OK (BAND: UHF)[line break]
 	LOW GAIN ANTENNA                OK (SIGNAL LOCK)[line break]
-	HIGH GAIN ANTENNA             FAIL[line break]
+	HIGH GAIN ANTENNA               FAIL[line break]
 	DATA STORAGE                    OK (3.2TB FREE)[line break]
 	OPERATING SYSTEM                OK (HAL V9K)[line break]
 	SOFTWARE                        OK[line break]
@@ -406,10 +406,10 @@ This is the OS-remote-scan rule:
 	COMPARING RETURNS TO KNOWN DATABASE...[PARAGRAPH BREAK]
 	*** ANOMALOUS OBJECT DETECTED. ***[LINE BREAK]
 	     [red letters]ORBIT ANALYSIS: POTENTIAL EARTH-CROSSING[default letters][LINE BREAK]
-	     FULL ANALYSIS AVAILABLE IN FAST DATA MODE.[PARAGRAPH BREAK]";
+	     FULL ANALYSIS AVAILABLE REMOTELY IN FAST DATA MODE, OR VIA ONBOARD CABIN INTERNAL COMPUTER INTERFACE.[PARAGRAPH BREAK]";
 
 This is the OS-remote-high-rate rule:
-	Say "[fixed letter spacing]ERROR: HIGH GAIN ANTENNA IS NOT RESPONDING. CANNOT SWITCH TO REMOTE FAST DATA MODE.[variable letter spacing]";
+	Say "[fixed letter spacing]ERROR: ONBOARD HIGH GAIN ANTENNA IS NOT RESPONDING. CANNOT SWITCH TO REMOTE FAST DATA MODE.[variable letter spacing]";
 	
 This is the OS-remote-login-starship rule:
 	say "[fixed letter spacing][paragraph break]
