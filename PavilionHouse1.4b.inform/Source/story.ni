@@ -28,7 +28,9 @@ The player's firstName is a text that varies. The player's full name is a text t
 
 The vogons is initially 0.
 The daydebug is initially 0.
-satPassword is initially "riker".
+
+[Set satellite password to a random one of this list.  It will remain the same word throughout this iteration of the game using the sticky random option.  Preserved in save game files!]
+satPassword is initially "[one of]marvinm[or]buckrogers[or]superman[or]duckdodgers[or]corbomite[or]gyrodyne[or]nomad[sticky random]";
 
 When play begins:	
 Now the command prompt is "What is your name? > ";
