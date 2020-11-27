@@ -1,14 +1,16 @@
-"Rogers Rd" by Dan Bowen,  Version 1.4beta
+"Rogers Rd" by Dan Bowen,  Version 1.4.1 Beta
 
 Include Exit Lister by Gavin Lambert.
 Include Basic Screen Effects by Emily Short.
 Include Easy Doors by Hanon Ondricek.
 Include ComputersTeletype by Dan Bowen.
 
+Book 1 - Setting up the game
 
 Use scoring and the serial comma. 
 The maximum score is 60.
 
+Part 1 - Variables, Scenes, Times
 [Note HAL-Vogons will probably clash with the HAL-Starship section, so please rework it when possible. It's turned off by Vogons = 0]
 
 
@@ -22,17 +24,18 @@ Score	Rank
 40	"Smart person"
 60	"Rocket scientist, Dead."
 
-
-When play begins:	
-[Now the right hand status line is "Score: [score] in [turn count] turns";]
-Now the left hand status line is "[the player's surroundings] / Score: [score]";
-Now the right hand status line is "Time: [time of day]";
-Say "You are in a house in the countryside.  You are into electronics, and it is [time of day]. VOGONS is: [vogons]";
+The player's firstName is a text that varies. The player's full name is a text that varies.
 
 The vogons is initially 0.
 The daydebug is initially 0.
 satPassword is initially "riker".
-playerFirstName is initially "Jane Doe".
+
+When play begins:	
+Now the command prompt is "What is your name? > ";
+Now the left hand status line is "[the player's surroundings] / Score: [score]";
+Now the right hand status line is "Time: [time of day]";
+Say "You are in a house in the countryside.  You are into electronics, and it is [time of day]. VOGONS is: [vogons]";
+
 
 Day is a recurring scene.
 Night is a recurring scene.  Night begins when Day ends. Night ends when the time of day is 8:01 am.
@@ -97,8 +100,32 @@ At 11:00 PM:
 			You have died.";
 			say default letters;
 			end the story finally.
+			
+Part 2 - Initial Player Name Collecting
+
+To decide whether collecting names:
+	if the command prompt is "What is your name? > ", yes;
+	no.
+	
+After reading a command when collecting names:
+	now the player's full name is the substituted form of "[the player's command in title case]";
+	now the player's firstName is word number 1 in the player's full name;
+	now the command prompt is ">";
+	say "Hi, [player's firstName]![paragraph break]";
+	say "[banner text]";
+	move the player to the location;
+	reject the player's command.
+
+[We also want to postpone the proper beginning of the game until we've gotten the name:]
+
+Instead of looking when collecting names: do nothing.
+
+Rule for printing the banner text when collecting names: do nothing.
+
+Rule for constructing the status line when collecting names: do nothing.
+
 		
-Book 1 - Initial House/Yard exploration
+Book 2 - Initial House/Yard exploration
 
 Part 1 - Places Setup
 
@@ -141,8 +168,8 @@ Danny's Bedroom is a room.  There is a dot matrix printout in danny's bedroom. T
 
 The End of the Hallway is south of Danny's Bedroom and west of Mid Hallway.
 
-Michael's Bedroom is north of Mid Hallway. "[if Day is happening]The sun streams cheerily through the window."
-An air filter is in Michael's Bedroom.
+Your Bedroom is north of Mid Hallway. "[if Day is happening]The sun streams cheerily through the window."
+An air filter is in Your Bedroom.
 The description of the air filter is "The filter whooshes quietly, blowing clean air into your eyes.  This is uncomfortable, so you stop peeking into it."
 
 Dad's Bedroom is south of The End of the Hallway.
@@ -156,7 +183,7 @@ There is an answering machine in Dad's bedroom. The description of the answering
 A button is a kind of thing. The play button is a part of the answering machine. The play button is a button.  The description is "A rubbery thing, tiredly awaiting its fate.".
 
 After pushing the play button:
-	say "Hey [playerFirstName], it's Wendell.  I finally hacked into that old asteroid scanner satellite!  The password was so simple- '[satPassword]'.  It took me like a week of trying though. I was definitely disappointed that it didn't offer me any nuclear-themed games to play hahaha.  The behavior was a little glitchy once I got in, hopefully it doesn't crap out before you get to play with it.  later.";
+	say "Hey [player's FirstName], it's Wendell.  I finally hacked into that old asteroid scanner satellite!  The password was so simple- '[satPassword]'.  It took me like a week of trying though. I was definitely disappointed that it didn't offer me any nuclear-themed games to play hahaha.  The behavior was a little glitchy once I got in, hopefully it doesn't crap out before you get to play with it.  later.";
 
 
 
@@ -230,7 +257,7 @@ There is a 2 inch pipe in the pump room.  The 2 inch pipe is fixed in place.  Th
 
 Chapter 3 - Regions
 
-[Upstairs is a region.   The garage, The ham shack, The back hallway, The New room east, The New room west, the kitchen, The dining room, The living room, The Foyer, The Hall bathroom, Dad's bathroom,  Dad's room, Michael's Bedroom, The Hallway, and Danny's Bedroom are in the upstairs.]
+[Upstairs is a region.   The garage, The ham shack, The back hallway, The New room east, The New room west, the kitchen, The dining room, The living room, The Foyer, The Hall bathroom, Dad's bathroom,  Dad's room, Your Bedroom, The Hallway, and Danny's Bedroom are in the upstairs.]
 
 Downstairs is a region. The cellar, furnace room, pump room and the radiostation are in the downstairs.
 
@@ -283,7 +310,7 @@ After switching on the heavy UHF radio:
 		say "you don't know any interesting frequencies to listen to, so you shut the radio back off.";
 		now radio is switched off.
 	
-Book 2 - HAL-Starship
+Book 3 - HAL-Starship
 
 
 Part 2 - Teletype Startup
@@ -722,7 +749,7 @@ test tty with "put roll in reader / turn teletype on / type 3 / type 2 / type 4 
 
 
 
-Book 3 - Starship Fueling Puzzle
+Book 4 - Starship Fueling Puzzle
 
 
 Part 1 - Backend Setup
@@ -740,7 +767,7 @@ At 10:35 PM:
 	pause the game;
 	Now the time of day is 8:00 AM;
 	say "** Good morning ** The time is now [time of day]!";
-	Now the player is in Michael's Bedroom.
+	Now the player is in Your Bedroom.
 
 
 At 8:05 AM:
@@ -813,7 +840,7 @@ After dropping the oxygen generator in the pump room:
 After dropping the oxygen generator in the radiostation:
 	say "The liquid oxygen generator clunks to the floor.  It's output coupling doesn't fit with the 1.5 inch pipe in the wall."	
 	
-Book 4 - Starship Landed
+Book 5 - Starship Landed
 
 
 
@@ -979,7 +1006,7 @@ Chapter 4 - Landed tests
 test shipin with "u / u / w / turn interlock on/ w  "
 
 
-Book 5 - Pavilion Initial Tests
+Book 6 - Pavilion Initial Tests
 
 
 Test UHF with "s / e / get book / w / s / e / e / e / turn radio on / w ".
@@ -1001,7 +1028,7 @@ test all with "test radiation / test gases "
 
 
 
-Book 6 - Misc General Helper functions
+Book 7 - Misc General Helper functions
 
 Section 1 - Hinting setup
 
