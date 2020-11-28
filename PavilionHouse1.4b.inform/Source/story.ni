@@ -24,13 +24,11 @@ Score	Rank
 40	"Smart person"
 60	"Rocket scientist, Dead."
 
-The player's firstName is a text that varies. The player's full name is a text that varies.
-
 The vogons is initially 0.
 The daydebug is initially 0.
-
-[Set satellite password to a random one of this list.  It will remain the same word throughout this iteration of the game using the sticky random option.  Preserved in save game files!]
-satPassword is initially "[one of]marvinm[or]buckrogers[or]superman[or]duckdodgers[or]corbomite[or]gyrodyne[or]nomad[sticky random]";
+The player's firstName is a text that varies. The player's full name is a text that varies.
+satPassword is initially "".
+satPasswordIndex is a number that varies.
 
 When play begins:	
 let satPasswordIndex be a random number between 1 and 7;
@@ -44,7 +42,7 @@ if satPasswordIndex is 7, now satPassword is "defiant";
 Now the command prompt is "What is your name? > ";
 Now the left hand status line is "[the player's surroundings] / Score: [score]";
 Now the right hand status line is "Time: [time of day]";
-Say "You are in a house in the countryside.  You are into electronics, and it is [time of day]. VOGONS is: [vogons]";
+Say "You are in your rural home in the countryside, and it is [time of day]".
 
 
 Day is a recurring scene.
