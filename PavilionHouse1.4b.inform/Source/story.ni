@@ -207,25 +207,24 @@ Every turn when the panasonic radio is switched on:
 
 The Main Bathroom is south of Mid Hallway.
 
-The Foyer is east of the Mid Hallway.  "Lined with a linoluem floor." An Ironing Board is in the foyer. The ironing board is fixed in place.  A can of starch is on the ironing board.  The description of the starch is "Niagara Starch: Not useful in this game :-)"
+The Foyer is east of the Mid Hallway.  "Lined with a linoluem floor." An Ironing Board is in the foyer. The ironing board is fixed in place.  A can of starch is on the ironing board.  The description of the starch is "The spray can, shiny green, coyly proclaims 'Niagara Starch:  Now your life has meaning!™'"
 
-
-The living room is east of the foyer. A shelf is in the Living Room.  A brown book is on the shelf. The description of the book is "The book has the title 'Satellite Frequencies.'" After taking the book:
+The Living room is east of the foyer. A shelf is in the Living Room.  A brown book is on the shelf. The description of the book is "The book has the title 'Satellite Frequencies.'" After taking the book:
 	increase the score by 10.
 	[the  when the book is not handled thing doesn't work to assign score for some reason!]
 
 
-The dining room is south of the foyer. "This room has a green rug." 
+The Dining room is south of the foyer. "This room has a green rug." A green rug is scenery in the dining room.  "The rug is green and shaggy, as a grassy lawn in the springtime isn't.".
 
-the kitchen is east of the dining room. There is a phone in the kitchen.  The phone is fixed in place. There is a note on the phone.
+The Kitchen is east of the dining room. There is a phone in the kitchen.  The phone is fixed in place. There is a note on the phone.
 The description of the note is "Wendell called - he said that the satellite will be coming overhead tonight."
 
-The New room west is south of the dining room. "this room is big."
+The New room West is south of the dining room. "this room is big."
 
-The New room east is south of the kitchen and east of the New room west. "This room is more big."
+The New room East is south of the kitchen and east of the New room west. "This room is more big."
 
-The back hallway is east of the kitchen. "a dark and dingy place."
-The ham shack is east of the back hallway. "smelling of solder and machine oil."
+The Back hallway is east of the kitchen. "a dark and dingy place."
+The Ham shack is east of the back hallway. "A room of radios and gadgets, smelling of solder and machine oil."
 
 The garage door is north of the back hallway and south of the garage. The garage door is a door.  
 
@@ -255,7 +254,7 @@ After switching on the AM Transmitter:
 
 The Furnace room is west of the cellar. 
 
-The pump room is west of the furnace room.  "A small room about the size of a closet."  
+The Pump room is west of the furnace room.  "A small room about the size of a closet."  
 
 There is a 2 inch pipe in the pump room.  The 2 inch pipe is fixed in place.  The description of the 2 inch pipe is " A 2 inch pipe is sticking out of the wall.  You notice that it ends in a Tee.  One branch of the Tee is open and available to connect.  The other branch returns into the wall, with a tag stating, 'To Back Yard Hydrant ^'  ";
 
@@ -413,6 +412,7 @@ This is the upload rule:
 	pause the game;
 	if the roll is in the reader:
 		say "[fixed letter spacing]UPLOAD COMPLETE. NEW SYSTEM FILE VALIDATED.[variable letter spacing][paragraph break]";
+		increase score by 10;
 		Now OSBroken is false;		
 	otherwise:
 		say "[fixed letter spacing]ERROR: UPLOAD TIMED OUT, NO DATA RECEIVED.[paragraph break][variable letter spacing]";
@@ -422,25 +422,35 @@ Chapter 3 - HAL Password Security variants
 
 [The "password" property in the Computers by Emily Short (and the ComputersTeletype by Dan Bowen) has to be static, can't be changed at runtime.  The compiler won't like if we feed a variable to the "password" property here.  Yuck brute force.]
 
-The HALsecureA program is a password-lock program. The password of HALsecureA is "marvinm". The description is "The screen now reads, PLEASE INPUT YOUR PASSWORD." The rejection of HALsecureA is "PASSCODE ERROR. TRY AGAIN."
+The HALPasswordPrompt is initially "[fixed letter spacing]THIS MECHANISM IS PROTECTED BY A SYSTEM ENTRY CODE.  PLEASE SUBMIT:".
+
+The HALPasswordOKResponse is initially "[fixed letter spacing]PASSCODE LOOKUP VALIDATED.  WELCOME, HUMAN.[variable letter spacing]".
+
+The HALPasswordFAILResponse is initially "[fixed letter spacing]INPUT MISMATCH.  RETRY:[variable letter spacing]"
+
+The HALsecureA program is a password-lock program. The password of HALsecureA is "marvinm". The description is "[HALPasswordPrompt]". The rejection of HALsecureA is "[HALPasswordFAILResponse]".  The success of HALsecureA is "[HALPasswordOKResponse]".
 			
-The HALsecureB program is a password-lock program. The password of HALsecureB is "duckdodgers". The description is "The screen now reads, PLEASE INPUT YOUR PASSWORD." The rejection of HALsecureB is "PASSCODE ERROR. TRY AGAIN."
+The HALsecureB program is a password-lock program. The password of HALsecureB is "duckdodgers". The description is "[HALPasswordPrompt]". The rejection of HALsecureB is "[HALPasswordFAILResponse]". The success of HALsecureB is "[HALPasswordOKResponse]".
 	
-The HALsecureC program is a password-lock program. The password of HALsecureC is "buckrogers". The description is "The screen now reads, PLEASE INPUT YOUR PASSWORD." The rejection of HALsecureC is "PASSCODE ERROR. TRY AGAIN."
+The HALsecureC program is a password-lock program. The password of HALsecureC is "buckrogers". The description is "[HALPasswordPrompt]". The rejection of HALsecureC is "[HALPasswordFAILResponse]". The success of HALsecureC is "[HALPasswordOKResponse]".
 	
-The HALsecureD program is a password-lock program. The password of HALsecureD is "corbomite". The description is "The screen now reads, PLEASE INPUT YOUR PASSWORD." The rejection of HALsecureD is "PASSCODE ERROR. TRY AGAIN."
+The HALsecureD program is a password-lock program. The password of HALsecureD is "corbomite". The description is "[HALPasswordPrompt]". The rejection of HALsecureD is "[HALPasswordFAILResponse]". The success of HALsecureD is "[HALPasswordOKResponse]".
 
-The HALsecureE program is a password-lock program. The password of HALsecureE is "nomad". The description is "The screen now reads, PLEASE INPUT YOUR PASSWORD." The rejection of HALsecureE is "PASSCODE ERROR. TRY AGAIN."
+The HALsecureE program is a password-lock program. The password of HALsecureE is "nomad". The description is "[HALPasswordPrompt]". The rejection of HALsecureE is "[HALPasswordFAILResponse]". The success of HALsecureE is "[HALPasswordOKResponse]".
 
-The HALsecureF program is a password-lock program. The password of HALsecureF is "dilithium". The description is "The screen now reads, PLEASE INPUT YOUR PASSWORD." The rejection of HALsecureF is "PASSCODE ERROR. TRY AGAIN."
+The HALsecureF program is a password-lock program. The password of HALsecureF is "dilithium". The description is "[HALPasswordPrompt]". The rejection of HALsecureF is "[HALPasswordFAILResponse]". The success of HALsecureF is "[HALPasswordOKResponse]".
 
-The HALsecureG program is a password-lock program. The password of HALsecureG is "defiant". The description is "The screen now reads, PLEASE INPUT YOUR PASSWORD." The rejection of HALsecureG is "PASSCODE ERROR. TRY AGAIN."
+The HALsecureG program is a password-lock program. The password of HALsecureG is "defiant". The description is "[HALPasswordPrompt]". The rejection of HALsecureG is "[HALPasswordFAILResponse]". The success of HALsecureG is "[HALPasswordOKResponse]".
 
 
 			
 chapter 4 - HAL OS
 
 The teletype HAL-OS-REMOTE program is an enumerated multiple-choice program. The options table of the Teletype HAL-OS-REMOTE program is the Table of HAL-OS-REMOTE Options.
+
+Instead of examining the HAL-OS-REMOTE program for the first time:
+	increase score by 20;
+	try examining the teletype;
 
 Table of HAL-OS-REMOTE Options
 index	title	effect
@@ -465,7 +475,7 @@ This is the OS-remote-status rule:
 	RADAR IMAGER/SPECTROMETER       OK (OFF)[line break]
 	OPTICAL IMAGER/SPECTROMETER     OK (OFF)[line break]
 	LIFE SUPPORT                    OK[line break]
-	DOCKING PORT                    OK (UNOCCUPIED)[line break]
+	DOCKING PORT                    OK (OCCUPIED)[line break]
 	CABIN DATA CONSOLE              OK (FAST)[LINE BREAK]
 	[variable letter spacing]";
 	
@@ -758,6 +768,7 @@ This is the starship-ap-mode-engage rule:
 		Now the teletype is running HAL-OS-REMOTE program;
 		try looking;
 		say "You sat here in a daze, contemplating what you had just done.  After a while you hear a sonic boom that shakes the house, followed by a cracking roar that is a fair emulation of a hurricane carrying an earthquake.  The house becomes silent again.";
+		increase score by 50;
 		Now the starship is in the west side yard;
 		Now the Bottom of the Ladder is in the West side yard;	
 	Otherwise:
