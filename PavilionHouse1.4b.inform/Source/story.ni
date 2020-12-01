@@ -288,6 +288,8 @@ After switching on the teletype:
 
 Carry out examining the Teletype:	
 	say "[if the teletype is switched off][description of the Teletype][paragraph break][otherwise][variable letter spacing]The machine clatters as it types out: [paragraph break][fixed letter spacing][halnotice][variable letter spacing][paragraph break]";
+	if teletype is running HALpass:
+		now the command prompt is "ENTER PASSWORD (OR TYPE ABORT) >";
 	rule succeeds.
 
 chapter 1 - TTY Static
@@ -344,16 +346,8 @@ This is the reboot-cpu rule:
 	if OSBroken is false:
 		now halnotice is "[halOSIntro]";	
 		Now the teletype does not run the HAL-Bootloader program;
-		if satPassword is "marvinm", now the teletype runs the HALsecureA program;
-		if satPassword is "duckdodgers", now the teletype runs the HALsecureB program;
-		if satPassword is "buckrogers", now the teletype runs the HALsecureC program;
-		if satPassword is "corbomite", now the teletype runs the HALsecureD program;
-		if satPassword is "nomad", now the teletype runs the HALsecureE program;
-		if satPassword is "dilithium", now the teletype runs the HALsecureF program;
-		if satPassword is "defiant", now the teletype runs the HALsecureG program;
-		Now the teletype runs the HAL-OS-REMOTE program;
+		Now the teletype runs HALpass;
 	try examining teletype;
-		
 
 This is the upload rule:
 	Say "[fixed letter spacing]WARNING: AFTER UPLOAD, CPU MUST BE REBOOTED TO LOAD SYSTEM FILE. PLEASE BEGIN DATA UPLOAD NOW...[paragraph break]";
@@ -366,32 +360,25 @@ This is the upload rule:
 	otherwise:
 		say "[fixed letter spacing]ERROR: UPLOAD TIMED OUT, NO DATA RECEIVED.[paragraph break][variable letter spacing]";
 	try examining teletype;
+
+Chapter 3 - HAL Password
+
+[There's another part of this that's inside the "Carry out examining Teletype" command, which sets the command prompt to the ENTER PASSWORD when the tty program HALpass is running.  This allows the password prompt to pop back up when the user re-examines the tty after aborting]
+
+After reading a command when the command prompt is "ENTER PASSWORD (OR TYPE ABORT) >":
+	if the player's command matches the text "abort":
+		now the command prompt is ">";
+		try looking;
+	otherwise if the player's command matches the text "[satPassword]":
+		now the teletype does not run HALpass;
+		Now the teletype runs the HAL-OS-REMOTE program;
+		now the command prompt is ">";
+		try examining HAL-OS-REMOTE;
+	otherwise:
+		say "[fixed letter spacing]PASSWORD MISMATCH[variable letter spacing]";
+	reject the player's command.
 	
-Chapter 3 - HAL Password Security variants
-
-[The "password" property in the Computers by Emily Short (and the ComputersTeletype by Dan Bowen) has to be static, can't be changed at runtime.  The compiler won't like if we feed a variable to the "password" property here.  Yuck brute force.]
-
-The HALPasswordPrompt is initially "[fixed letter spacing]THIS MECHANISM IS PROTECTED BY A SYSTEM ENTRY CODE.  PLEASE SUBMIT:".
-
-The HALPasswordOKResponse is initially "[fixed letter spacing]PASSCODE LOOKUP VALIDATED.  WELCOME, HUMAN.[variable letter spacing]".
-
-The HALPasswordFAILResponse is initially "[fixed letter spacing]INPUT MISMATCH.  RETRY:[variable letter spacing]"
-
-The HALsecureA program is a password-lock program. The password of HALsecureA is "marvinm". The description is "[HALPasswordPrompt]". The rejection of HALsecureA is "[HALPasswordFAILResponse]".  The success of HALsecureA is "[HALPasswordOKResponse]".
-			
-The HALsecureB program is a password-lock program. The password of HALsecureB is "duckdodgers". The description is "[HALPasswordPrompt]". The rejection of HALsecureB is "[HALPasswordFAILResponse]". The success of HALsecureB is "[HALPasswordOKResponse]".
-	
-The HALsecureC program is a password-lock program. The password of HALsecureC is "buckrogers". The description is "[HALPasswordPrompt]". The rejection of HALsecureC is "[HALPasswordFAILResponse]". The success of HALsecureC is "[HALPasswordOKResponse]".
-	
-The HALsecureD program is a password-lock program. The password of HALsecureD is "corbomite". The description is "[HALPasswordPrompt]". The rejection of HALsecureD is "[HALPasswordFAILResponse]". The success of HALsecureD is "[HALPasswordOKResponse]".
-
-The HALsecureE program is a password-lock program. The password of HALsecureE is "nomad". The description is "[HALPasswordPrompt]". The rejection of HALsecureE is "[HALPasswordFAILResponse]". The success of HALsecureE is "[HALPasswordOKResponse]".
-
-The HALsecureF program is a password-lock program. The password of HALsecureF is "dilithium". The description is "[HALPasswordPrompt]". The rejection of HALsecureF is "[HALPasswordFAILResponse]". The success of HALsecureF is "[HALPasswordOKResponse]".
-
-The HALsecureG program is a password-lock program. The password of HALsecureG is "defiant". The description is "[HALPasswordPrompt]". The rejection of HALsecureG is "[HALPasswordFAILResponse]". The success of HALsecureG is "[HALPasswordOKResponse]".
-
-
+HALpass is privately-named software.  The description of HALpass is "[fixed letter spacing]THIS IS A CONTROLLED ACCESS SYSTEM.  AUTHORIZATION IS REQUIRED.".
 			
 chapter 4 - HAL OS
 
