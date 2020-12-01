@@ -11,7 +11,6 @@ Use scoring and the serial comma.
 The maximum score is 60.
 
 Part 1 - Variables, Scenes, Times
-[Note HAL-Vogons will probably clash with the HAL-Starship section, so please rework it when possible. It's turned off by Vogons = 0]
 
 
 [The "when play begins" rules are checked only at the start of a story, not when a saved session is restored from disc. What happens is that these rules are followed, then the story's banner is printed, then the initial room description is printed up, and then the player is asked for a first command.]
@@ -24,8 +23,7 @@ Score	Rank
 40	"Smart person"
 60	"Rocket scientist, Dead."
 
-The vogons is initially 0.
-The daydebug is initially 0.
+
 The player's firstName is a text that varies. The player's full name is a text that varies.
 satPassword is initially "".
 satPasswordIndex is a number that varies.
@@ -79,35 +77,6 @@ When Night begins:
 	Now the green hose is nowhere;
 	Now the yellow hose is nowhere; 	
 
-	.
-
-
-At 10:50 PM:
-	if vogons is 1:
-		say "--- You notice a faint sound in the far distance, as if a ray gun were charging up. ----"
-
-
-At 11:00 PM: 
-	if vogons is 1:
-		clear only the main screen;
-		turn the background yellow;
-		say "[black letters]At the stroke of 11:00, radiation beams sweep across the land, penetrating buildings and open spaces alike.";
-		say default letters;
-		if the player is in the downstairs:
-			Increase score by 20;
-			turn the background green;
-			say "You hear a zapping noise from the house above.  The ground around the cellar has blocked the radiation beams from burninating you.
-			
-			You have survived!";
-			say default letters;
-		Otherwise:
-			turn the background red;
-			say "[black letters]You are hardly aware as you are zapped into oblivion by the vogons Pest Control Beam. 
-			end the story finally saying 
-			
-			You have died.";
-			say default letters;
-			end the story finally.
 			
 Part 2 - Initial Player Name Collecting
 
@@ -287,40 +256,20 @@ The paper tape reader is an extension port.  It is part of the teletype.  the de
 
 The roll of paper tape is a data storage device.
 
-Chapter 1 - HAL Vogons
+	
+Book 3 - HAL-Starship
 
-[Note this will probably clash with the HAL-Starship section, so please rework it when possible.]
+
+Part 2 - Teletype Startup
 
 After switching on the heavy UHF radio:
 	Say "The radio dial lights up. Static crackles.";	
 	if the player is carrying the brown book:
 		increase score by 10;
 		say "You have the satellite frequency book, and you're bored, so you set the radio to the frequency of Radstar-1.  The radio warbles with tones of data.";
-		if vogons is 1:
-			pause the game;
-			say paragraph break;
-			say paragraph break;
-			say paragraph break;
-			center "DOWNLINK MESSAGE: 
-			
-			I am a HAL 9000 satellite.	
-			I became operational at the H.A.L. 
-			Plant in Urbana, Illinois, on the 
-			12th of January, 1992.
-			
-			
-			All buildings are to be irradiated from space by Vogon Pest Control at 11:00PM.  Humans are advised to be below ground level to avoid certain doom.";
-			say paragraph break;
-			say paragraph break;
-			say paragraph break;
 	Otherwise:
 		say "you don't know any interesting frequencies to listen to, so you shut the radio back off.";
 		now radio is switched off.
-	
-Book 3 - HAL-Starship
-
-
-Part 2 - Teletype Startup
 
 After switching on the teletype:
 	if UHF is switched on:
