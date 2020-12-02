@@ -278,8 +278,6 @@ After switching on the teletype:
 
 Carry out examining the Teletype:	
 	say "[if the teletype is switched off][description of the Teletype][paragraph break][otherwise][variable letter spacing]The machine clatters as it types out: [paragraph break][fixed letter spacing][halnotice][variable letter spacing][paragraph break]";
-	if teletype is running HALpass and the player is in the Ham Shack:
-		now the command prompt is "[fixed letter spacing]ENTER PASSWORD (OR TYPE ABORT) >[variable letter spacing]";
 	rule succeeds.
 
 chapter 1 - TTY Static
@@ -427,7 +425,7 @@ This is the OS-remote-login-starship rule:
 	
 This is the OS-remote-logout rule:
 	Now the teletype does not run the HAL-OS-REMOTE program;
-	Now the teletype run HALpass;
+	Now the teletype runs HALsecureA;
 	try looking;
 
 
