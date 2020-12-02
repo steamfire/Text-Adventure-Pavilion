@@ -31,14 +31,6 @@ satPassword is initially "".
 satPasswordIndex is a number that varies.
 
 When play begins:	
-let satPasswordIndex be a random number between 1 and 7;
-if satPasswordIndex is 1, now satPassword is "marvinm";
-if satPasswordIndex is 2, now satPassword is "duckdodgers";
-if satPasswordIndex is 3, now satPassword is "buckrogers";
-if satPasswordIndex is 4, now satPassword is "corbomite";
-if satPasswordIndex is 5, now satPassword is "nomad";
-if satPasswordIndex is 6, now satPassword is "dilithium";
-if satPasswordIndex is 7, now satPassword is "defiant";
 Now the command prompt is "What is your name? > ";
 Now the left hand status line is "[the player's surroundings] / Score: [score]";
 Now the right hand status line is "Time: [time of day]";
@@ -191,7 +183,7 @@ There is an answering machine in Dad's bedroom. The description of the answering
 A button is a kind of thing. The play button is a part of the answering machine. The play button is a button.  The description is "A rubbery thing, tiredly awaiting its fate.".
 
 After pushing the play button:
-	say "Hey [player's FirstName], it's Wendell.  I finally hacked into that old asteroid scanner satellite!  The password was so simple- '[satPassword]'.  It took me like a week of trying though. I was definitely disappointed that it didn't offer me any nuclear-themed games to play hahaha.  The behavior was a little glitchy once I got in, hopefully it doesn't crap out before you get to play with it.  later.";
+	say "Hey [player's FirstName], it's Wendell.  I finally hacked into that old asteroid scanner satellite!  The password was so simple- '[password of HALsecureA]'.  It took me like a week of trying though. I was definitely disappointed that it didn't offer me any nuclear-themed games to play hahaha.  The behavior was a little glitchy once I got in, hopefully it doesn't crap out before you get to play with it.  later.";
 
 
 
@@ -396,13 +388,7 @@ This is the reboot-cpu rule:
 	if OSBroken is false:
 		now halnotice is "[halOSIntro]";	
 		Now the teletype does not run the HAL-Bootloader program;
-		if satPassword is "marvinm", now the teletype runs the HALsecureA program;
-		if satPassword is "duckdodgers", now the teletype runs the HALsecureB program;
-		if satPassword is "buckrogers", now the teletype runs the HALsecureC program;
-		if satPassword is "corbomite", now the teletype runs the HALsecureD program;
-		if satPassword is "nomad", now the teletype runs the HALsecureE program;
-		if satPassword is "dilithium", now the teletype runs the HALsecureF program;
-		if satPassword is "defiant", now the teletype runs the HALsecureG program;
+		now the teletype runs the HALsecureA program;
 		Now the teletype runs the HAL-OS-REMOTE program;
 	try examining teletype;
 		
@@ -419,25 +405,14 @@ This is the upload rule:
 	try examining teletype;
 	
 Chapter 3 - HAL Password Security variants
+ 
+The HALsecureA program is a password-lock program. The password of HALsecureA is "marvinm". The description is "The screen now reads, PLEASE INPUT YOUR PASSWORD." The rejection of HALsecureA is "PASSCODE ERROR. TRY AGAIN." 
 
-[The "password" property in the Computers by Emily Short (and the ComputersTeletype by Dan Bowen) has to be static, can't be changed at runtime.  The compiler won't like if we feed a variable to the "password" property here.  Yuck brute force.]
-
-The HALsecureA program is a password-lock program. The password of HALsecureA is "marvinm". The description is "The screen now reads, PLEASE INPUT YOUR PASSWORD." The rejection of HALsecureA is "PASSCODE ERROR. TRY AGAIN."
-			
-The HALsecureB program is a password-lock program. The password of HALsecureB is "duckdodgers". The description is "The screen now reads, PLEASE INPUT YOUR PASSWORD." The rejection of HALsecureB is "PASSCODE ERROR. TRY AGAIN."
+When play begins (this is the choosing a randomly selected password on startup rule):
+	let the passphrases be { "marvinm", "duckdodgers", "buckrogers", "corbomite", "nomad", "dilithium", "defiant" };
+	sort passphrases in random order;
+	now the password of HALsecureA is entry 1 of passphrases.	
 	
-The HALsecureC program is a password-lock program. The password of HALsecureC is "buckrogers". The description is "The screen now reads, PLEASE INPUT YOUR PASSWORD." The rejection of HALsecureC is "PASSCODE ERROR. TRY AGAIN."
-	
-The HALsecureD program is a password-lock program. The password of HALsecureD is "corbomite". The description is "The screen now reads, PLEASE INPUT YOUR PASSWORD." The rejection of HALsecureD is "PASSCODE ERROR. TRY AGAIN."
-
-The HALsecureE program is a password-lock program. The password of HALsecureE is "nomad". The description is "The screen now reads, PLEASE INPUT YOUR PASSWORD." The rejection of HALsecureE is "PASSCODE ERROR. TRY AGAIN."
-
-The HALsecureF program is a password-lock program. The password of HALsecureF is "dilithium". The description is "The screen now reads, PLEASE INPUT YOUR PASSWORD." The rejection of HALsecureF is "PASSCODE ERROR. TRY AGAIN."
-
-The HALsecureG program is a password-lock program. The password of HALsecureG is "defiant". The description is "The screen now reads, PLEASE INPUT YOUR PASSWORD." The rejection of HALsecureG is "PASSCODE ERROR. TRY AGAIN."
-
-
-			
 chapter 4 - HAL OS
 
 The teletype HAL-OS-REMOTE program is an enumerated multiple-choice program. The options table of the Teletype HAL-OS-REMOTE program is the Table of HAL-OS-REMOTE Options.
