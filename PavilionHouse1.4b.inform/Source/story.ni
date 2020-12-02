@@ -25,18 +25,8 @@ Score	Rank
 
 
 The player's firstName is a text that varies. The player's full name is a text that varies.
-satPassword is initially "".
-satPasswordIndex is a number that varies.
 
 When play begins:	
-let satPasswordIndex be a random number between 1 and 7;
-if satPasswordIndex is 1, now satPassword is "marvinm";
-if satPasswordIndex is 2, now satPassword is "duckdodgers";
-if satPasswordIndex is 3, now satPassword is "buckrogers";
-if satPasswordIndex is 4, now satPassword is "corbomite";
-if satPasswordIndex is 5, now satPassword is "nomad";
-if satPasswordIndex is 6, now satPassword is "dilithium";
-if satPasswordIndex is 7, now satPassword is "defiant";
 Now the command prompt is "What is your name? > ";
 Now the left hand status line is "[the player's surroundings] / Score: [score]";
 Now the right hand status line is "Time: [time of day]";
@@ -160,7 +150,7 @@ There is an answering machine in Dad's bedroom. The description of the answering
 A button is a kind of thing. The play button is a part of the answering machine. The play button is a button.  The description is "A rubbery thing, tiredly awaiting its fate.".
 
 After pushing the play button:
-	say "Hey [player's FirstName], it's Wendell.  I finally hacked into that old asteroid scanner satellite!  The password was so simple- '[satPassword]'.  It took me like a week of trying though. I was definitely disappointed that it didn't offer me any nuclear-themed games to play hahaha.  The behavior was a little glitchy once I got in, hopefully it doesn't crap out before you get to play with it.  later.";
+	say "Hey [player's FirstName], it's Wendell.  I finally hacked into that old asteroid scanner satellite!  The password was so simple- '[password of HALsecureA]'.  It took me like a week of trying though. I was definitely disappointed that it didn't offer me any nuclear-themed games to play hahaha.  The behavior was a little glitchy once I got in, hopefully it doesn't crap out before you get to play with it.  later.";
 
 
 
@@ -288,8 +278,6 @@ After switching on the teletype:
 
 Carry out examining the Teletype:	
 	say "[if the teletype is switched off][description of the Teletype][paragraph break][otherwise][variable letter spacing]The machine clatters as it types out: [paragraph break][fixed letter spacing][halnotice][variable letter spacing][paragraph break]";
-	if teletype is running HALpass and the player is in the Ham Shack:
-		now the command prompt is "[fixed letter spacing]ENTER PASSWORD (OR TYPE ABORT) >[variable letter spacing]";
 	rule succeeds.
 
 chapter 1 - TTY Static
@@ -346,7 +334,8 @@ This is the reboot-cpu rule:
 	if OSBroken is false:
 		now halnotice is "[halOSIntro]";	
 		Now the teletype does not run the HAL-Bootloader program;
-		Now the teletype runs HALpass;
+		now the teletype runs the HALsecureA program;
+		Now the teletype runs the HAL-OS-REMOTE program;
 	try examining teletype;
 
 This is the upload rule:
@@ -361,25 +350,16 @@ This is the upload rule:
 		say "[fixed letter spacing]ERROR: UPLOAD TIMED OUT, NO DATA RECEIVED.[paragraph break][variable letter spacing]";
 	try examining teletype;
 
-Chapter 3 - HAL Password
-
-[There's another part of this that's inside the "Carry out examining Teletype" command, which sets the command prompt to the ENTER PASSWORD when the tty program HALpass is running.  This allows the password prompt to pop back up when the user re-examines the tty after aborting]
-
-After reading a command when the command prompt is "ENTER PASSWORD (OR TYPE ABORT) >":
-	if the player's command matches the text "abort":
-		now the command prompt is ">";
-		try looking;
-	otherwise if the player's command matches the text "[satPassword]":
-		now the teletype does not run HALpass;
-		Now the teletype runs the HAL-OS-REMOTE program;
-		now the command prompt is ">";
-		try examining HAL-OS-REMOTE;
-	otherwise:
-		say "[fixed letter spacing]PASSWORD MISMATCH[variable letter spacing]";
-	reject the player's command.
 	
-HALpass is privately-named software.  The description of HALpass is "[fixed letter spacing]THIS IS A CONTROLLED ACCESS SYSTEM.  AUTHORIZATION IS REQUIRED.".
-			
+Chapter 3 - HAL Password Security
+ 
+The HALsecureA program is a password-lock program. The description is "[fixed letter spacing]PLEASE INPUT YOUR PASSWORD.[variable letter spacing]". The rejection of HALsecureA is "[fixed letter spacing]PASSCODE ERROR. TRY AGAIN.[variable letter spacing]".  The success of HALSecureA is "[fixed letter spacing]CONFIRMED[variable letter spacing]";
+
+When play begins (this is the choosing a randomly selected password on startup rule):
+	let the passphrases be { "marvinm", "duckdodgers", "buckrogers", "corbomite", "nomad", "dilithium", "defiant" };
+	sort passphrases in random order;
+	now the password of HALsecureA is entry 1 of passphrases.	
+	
 chapter 4 - HAL OS
 
 The teletype HAL-OS-REMOTE program is an enumerated multiple-choice program. The options table of the Teletype HAL-OS-REMOTE program is the Table of HAL-OS-REMOTE Options.
@@ -445,7 +425,7 @@ This is the OS-remote-login-starship rule:
 	
 This is the OS-remote-logout rule:
 	Now the teletype does not run the HAL-OS-REMOTE program;
-	Now the teletype run HALpass;
+	Now the teletype runs HALsecureA;
 	try looking;
 
 
