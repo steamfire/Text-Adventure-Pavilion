@@ -25,6 +25,7 @@ Score	Rank
 
 
 The player's firstName is a text that varies. The player's full name is a text that varies.
+SleepyMoveToBed is initially false.
 
 When play begins:	
 Now the command prompt is "What is your name? > ";
@@ -746,11 +747,12 @@ Chapter 1 - Time events
 At 10:35 PM:
 	Say "
 	
-	[bold type]** You grow tired, and you decide to go back to your bedroom and sleep till morning... **[default letters]";
+	[bold type]** You grow tired, and you decide to [if SleepyMoveToBed is true]go back to your bedroom[otherwise]lay down in the [location of the player][end if], and sleep till morning... **[default letters]";
 	pause the game;
 	Now the time of day is 8:00 AM;
 	say "** Good morning ** The time is now [time of day]!";
-	Now the player is in Your Bedroom.
+	if SleepyMoveToBed is true, Now the player is in Your Bedroom;
+	try looking;
 
 
 At 8:05 AM:
