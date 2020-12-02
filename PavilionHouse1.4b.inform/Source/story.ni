@@ -30,7 +30,7 @@ When play begins:
 Now the command prompt is "What is your name? > ";
 Now the left hand status line is "[the player's surroundings] / Score: [score]";
 Now the right hand status line is "Time: [time of day]";
-Say "You are in your rural home in the countryside, and it is [time of day]".
+Say "You are in your rural home in the countryside, and it is [time of day].[if SleepyMoveToBed is false] DEBUG: NO AUTO-MOVE TO BEDROOM WHEN ADVANCING TO MORNING".
 
 
 Day is a recurring scene.
@@ -237,14 +237,13 @@ Part 2 - Doing Ham Radio Stuff
 A heavy UHF radio is in the ham shack. The UHF radio is a device. The radio is switched off.   the radio is fixed in place.
 The description of the UHF radio is "The radio is about the size and shape of a VCR.  It says 'UHF Satellite decoder radio'  It is connected to the teletype."
 
-The Teletype is computer in the ham shack.  The teletype is switched off.  The description is "The teletype is a green boxy thing, with a typwriter keyboard, paper coming out the top, and a paper tape reader on the side.[if the teletype is switched on]A motor deep inside hums quietly.[otherwise] It is turned off."
+The Teletype is computer in the ham shack.  The teletype is switched off.  The description is "The teletype is a green boxy thing, with a typwriter keyboard, paper coming out the top, and a paper tape reader on the side.[if the teletype is switched on]A motor deep inside hums quietly.[otherwise] It is turned off."  The description of the keyboard is "An array of rods sticking out of the lower front of the boxy teletype.  The end of each rod is bent upward, and sports a round, cylindrical, black cap, each marked with a letter or number, like the keys of an old fashioned typewriter".  The paper tape reader is an extension port.  It is part of the teletype.  the description of the paper tape reader is "The punched paper tape reader is a bulging box hanging off the left side of the main teletype. It is used to transmit large amounts pre-recorded data through the teletype."
 
-Understand "paper", "message", "text" and "readout" as a screen.
+Understand "paper", "message", "text", "slot", "glass", "window" and "readout" as a screen.
 Understand "tty" as teletype.
 
-The paper tape reader is an extension port.  It is part of the teletype.  the description of the paper tape reader is "The punched paper tape reader is a bulging box hanging off the left side of the main teletype. It is used to transmit large amounts pre-recorded data through the teletype."
-
 The roll of paper tape is a data storage device.
+Does the player mean examining the paper tape roll: it is unlikely.
 
 	
 Book 3 - HAL-Starship
@@ -252,33 +251,49 @@ Book 3 - HAL-Starship
 
 Part 2 - Teletype Startup
 
+TeletypeStatic is initially true.
+
+Every turn when the player is in the Ham Shack:
+	if (teletypeStatic is true) and (the teletype is switched on):
+		repeat with item running through software run by the teletype:
+			now the teletype is not running item;
+		now the teletype runs static;				
+
+After switching off the heavy UHF radio:
+	now TeletypeStatic is true;
+	now halnotice is "";
+
 After switching on the heavy UHF radio:
 	Say "The radio dial lights up. Static crackles.";	
 	if the player is carrying the brown book:
+		now TeletypeStatic is false;
 		increase score by 10;
 		say "You have the satellite frequency book, and you're bored, so you set the radio to the frequency of Radstar-1.  The radio warbles with tones of data.";
+		now the teletype runs HAL-Bootloader;
 	Otherwise:
 		say "you don't know any interesting frequencies to listen to, so you shut the radio back off.";
 		now radio is switched off.
 
 After switching on the teletype:
-	if UHF is switched on:
-		[These lines are here to change the menu text to printed on paper, a la teletype ]
-		Now screenDescriptor is "paper";
-		Now the visibleDescriptor is "printed";
-			[** this next line is important to start the main menut **]
+	[These lines are here to change the menu text to printed on paper, a la teletype ]
+	Now screenDescriptor is "paper";
+	Now the visibleDescriptor is "printed";
+		[** this next line is important to start the main menut **]
+	if teletypeStatic is false:
 		if OSBroken is true:
 			now halNotice is "[halBootloaderIntro]";
 			now the teletype runs HAL-Bootloader program;
 		if OSBroken is false:
 			now halNotice is "[halOSIntro]";
-	if UHF is switched off:
-		now the teletype runs Static;
-	Try examining teletype;	
+		try examining the teletype;
 
 Carry out examining the Teletype:	
 	say "[if the teletype is switched off][description of the Teletype][paragraph break][otherwise][variable letter spacing]The machine clatters as it types out: [paragraph break][fixed letter spacing][halnotice][variable letter spacing][paragraph break]";
 	rule succeeds.
+	
+[This is necessary because for some reason the descripton of the paper (screen), while the teletype is off, says 'screen' despite it replacing it properly with paper everywhere else.]
+instead of examining screen when teletype is switched off:
+	say "The paper is blank.";
 
 chapter 1 - TTY Static
 
@@ -336,7 +351,7 @@ This is the reboot-cpu rule:
 		Now the teletype does not run the HAL-Bootloader program;
 		now the teletype runs the HALsecureA program;
 		Now the teletype runs the HAL-OS-REMOTE program;
-	try examining teletype;
+	try examining a random screen that is part of the teletype;
 
 This is the upload rule:
 	Say "[fixed letter spacing]WARNING: AFTER UPLOAD, CPU MUST BE REBOOTED TO LOAD SYSTEM FILE. PLEASE BEGIN DATA UPLOAD NOW...[paragraph break]";
