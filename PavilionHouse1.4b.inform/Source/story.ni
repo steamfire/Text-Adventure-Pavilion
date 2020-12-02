@@ -11,7 +11,6 @@ Use scoring and the serial comma.
 The maximum score is 60.
 
 Part 1 - Variables, Scenes, Times
-[Note HAL-Vogons will probably clash with the HAL-Starship section, so please rework it when possible. It's turned off by Vogons = 0]
 
 
 [The "when play begins" rules are checked only at the start of a story, not when a saved session is restored from disc. What happens is that these rules are followed, then the story's banner is printed, then the initial room description is printed up, and then the player is asked for a first command.]
@@ -24,8 +23,7 @@ Score	Rank
 40	"Smart person"
 60	"Rocket scientist, Dead."
 
-The vogons is initially 0.
-The daydebug is initially 0.
+
 The player's firstName is a text that varies. The player's full name is a text that varies.
 satPassword is initially "".
 satPasswordIndex is a number that varies.
@@ -71,35 +69,6 @@ When Night begins:
 	Now the green hose is nowhere;
 	Now the yellow hose is nowhere; 	
 
-	.
-
-
-At 10:50 PM:
-	if vogons is 1:
-		say "--- You notice a faint sound in the far distance, as if a ray gun were charging up. ----"
-
-
-At 11:00 PM: 
-	if vogons is 1:
-		clear only the main screen;
-		turn the background yellow;
-		say "[black letters]At the stroke of 11:00, radiation beams sweep across the land, penetrating buildings and open spaces alike.";
-		say default letters;
-		if the player is in the downstairs:
-			Increase score by 20;
-			turn the background green;
-			say "You hear a zapping noise from the house above.  The ground around the cellar has blocked the radiation beams from burninating you.
-			
-			You have survived!";
-			say default letters;
-		Otherwise:
-			turn the background red;
-			say "[black letters]You are hardly aware as you are zapped into oblivion by the vogons Pest Control Beam. 
-			end the story finally saying 
-			
-			You have died.";
-			say default letters;
-			end the story finally.
 			
 Part 2 - Initial Player Name Collecting
 
@@ -199,25 +168,24 @@ Every turn when the panasonic radio is switched on:
 
 The Main Bathroom is south of Mid Hallway.
 
-The Foyer is east of the Mid Hallway.  "Lined with a linoluem floor." An Ironing Board is in the foyer. The ironing board is fixed in place.  A can of starch is on the ironing board.  The description of the starch is "Niagara Starch: Not useful in this game :-)"
+The Foyer is east of the Mid Hallway.  "Lined with a linoluem floor." An Ironing Board is in the foyer. The ironing board is fixed in place.  A can of starch is on the ironing board.  The description of the starch is "The spray can, shiny green, coyly proclaims 'Niagara Starch:  Now your life has meaning!™'"
 
-
-The living room is east of the foyer. A shelf is in the Living Room.  A brown book is on the shelf. The description of the book is "The book has the title 'Satellite Frequencies.'" After taking the book:
+The Living room is east of the foyer. A shelf is in the Living Room.  A brown book is on the shelf. The description of the book is "The book has the title 'Satellite Frequencies.'" After taking the book:
 	increase the score by 10.
 	[the  when the book is not handled thing doesn't work to assign score for some reason!]
 
 
-The dining room is south of the foyer. "This room has a green rug." 
+The Dining room is south of the foyer. "This room has a green rug." A green rug is scenery in the dining room.  "The rug is green and shaggy, as a grassy lawn in the springtime isn't.".
 
-the kitchen is east of the dining room. There is a phone in the kitchen.  The phone is fixed in place. There is a note on the phone.
+The Kitchen is east of the dining room. There is a phone in the kitchen.  The phone is fixed in place. There is a note on the phone.
 The description of the note is "Wendell called - he said that the satellite will be coming overhead tonight."
 
-The New room west is south of the dining room. "this room is big."
+The New room West is south of the dining room. "this room is big."
 
-The New room east is south of the kitchen and east of the New room west. "This room is more big."
+The New room East is south of the kitchen and east of the New room west. "This room is more big."
 
-The back hallway is east of the kitchen. "a dark and dingy place."
-The ham shack is east of the back hallway. "smelling of solder and machine oil."
+The Back hallway is east of the kitchen. "a dark and dingy place."
+The Ham shack is east of the back hallway. "A room of radios and gadgets, smelling of solder and machine oil."
 
 The garage door is north of the back hallway and south of the garage. The garage door is a door.  
 
@@ -247,7 +215,7 @@ After switching on the AM Transmitter:
 
 The Furnace room is west of the cellar. 
 
-The pump room is west of the furnace room.  "A small room about the size of a closet."  
+The Pump room is west of the furnace room.  "A small room about the size of a closet."  
 
 There is a 2 inch pipe in the pump room.  The 2 inch pipe is fixed in place.  The description of the 2 inch pipe is " A 2 inch pipe is sticking out of the wall.  You notice that it ends in a Tee.  One branch of the Tee is open and available to connect.  The other branch returns into the wall, with a tag stating, 'To Back Yard Hydrant ^'  ";
 
@@ -280,40 +248,20 @@ The paper tape reader is an extension port.  It is part of the teletype.  the de
 
 The roll of paper tape is a data storage device.
 
-Chapter 1 - HAL Vogons
+	
+Book 3 - HAL-Starship
 
-[Note this will probably clash with the HAL-Starship section, so please rework it when possible.]
+
+Part 2 - Teletype Startup
 
 After switching on the heavy UHF radio:
 	Say "The radio dial lights up. Static crackles.";	
 	if the player is carrying the brown book:
 		increase score by 10;
 		say "You have the satellite frequency book, and you're bored, so you set the radio to the frequency of Radstar-1.  The radio warbles with tones of data.";
-		if vogons is 1:
-			pause the game;
-			say paragraph break;
-			say paragraph break;
-			say paragraph break;
-			center "DOWNLINK MESSAGE: 
-			
-			I am a HAL 9000 satellite.	
-			I became operational at the H.A.L. 
-			Plant in Urbana, Illinois, on the 
-			12th of January, 1992.
-			
-			
-			All buildings are to be irradiated from space by Vogon Pest Control at 11:00PM.  Humans are advised to be below ground level to avoid certain doom.";
-			say paragraph break;
-			say paragraph break;
-			say paragraph break;
 	Otherwise:
 		say "you don't know any interesting frequencies to listen to, so you shut the radio back off.";
 		now radio is switched off.
-	
-Book 3 - HAL-Starship
-
-
-Part 2 - Teletype Startup
 
 After switching on the teletype:
 	if UHF is switched on:
@@ -332,6 +280,8 @@ After switching on the teletype:
 
 Carry out examining the Teletype:	
 	say "[if the teletype is switched off][description of the Teletype][paragraph break][otherwise][variable letter spacing]The machine clatters as it types out: [paragraph break][fixed letter spacing][halnotice][variable letter spacing][paragraph break]";
+	if teletype is running HALpass and the player is in the Ham Shack:
+		now the command prompt is "[fixed letter spacing]ENTER PASSWORD (OR TYPE ABORT) >[variable letter spacing]";
 	rule succeeds.
 
 chapter 1 - TTY Static
@@ -391,7 +341,6 @@ This is the reboot-cpu rule:
 		now the teletype runs the HALsecureA program;
 		Now the teletype runs the HAL-OS-REMOTE program;
 	try examining teletype;
-		
 
 This is the upload rule:
 	Say "[fixed letter spacing]WARNING: AFTER UPLOAD, CPU MUST BE REBOOTED TO LOAD SYSTEM FILE. PLEASE BEGIN DATA UPLOAD NOW...[paragraph break]";
@@ -399,10 +348,12 @@ This is the upload rule:
 	pause the game;
 	if the roll is in the reader:
 		say "[fixed letter spacing]UPLOAD COMPLETE. NEW SYSTEM FILE VALIDATED.[variable letter spacing][paragraph break]";
+		increase score by 10;
 		Now OSBroken is false;		
 	otherwise:
 		say "[fixed letter spacing]ERROR: UPLOAD TIMED OUT, NO DATA RECEIVED.[paragraph break][variable letter spacing]";
 	try examining teletype;
+
 	
 Chapter 3 - HAL Password Security variants
  
@@ -417,12 +368,17 @@ chapter 4 - HAL OS
 
 The teletype HAL-OS-REMOTE program is an enumerated multiple-choice program. The options table of the Teletype HAL-OS-REMOTE program is the Table of HAL-OS-REMOTE Options.
 
+Instead of examining the HAL-OS-REMOTE program for the first time:
+	increase score by 20;
+	try examining the teletype;
+
 Table of HAL-OS-REMOTE Options
 index	title	effect
 --	"SYSTEM STATUS"	OS-remote-status rule
 --	"SWITCH TO FAST DATA MODE"	OS-remote-high-rate rule
 --	"SOLAR SYSTEM SCANNER"	OS-remote-scan rule
 --	"DOCK LINK"	OS-remote-login-starship rule
+--	"LOG OUT OF HAL SATELLITE"	OS-remote-logout rule
 
 This is the OS-remote-status rule:
 	say "[fixed letter spacing]
@@ -440,7 +396,7 @@ This is the OS-remote-status rule:
 	RADAR IMAGER/SPECTROMETER       OK (OFF)[line break]
 	OPTICAL IMAGER/SPECTROMETER     OK (OFF)[line break]
 	LIFE SUPPORT                    OK[line break]
-	DOCKING PORT                    OK (UNOCCUPIED)[line break]
+	DOCKING PORT                    OK (OCCUPIED)[line break]
 	CABIN DATA CONSOLE              OK (FAST)[LINE BREAK]
 	[variable letter spacing]";
 	
@@ -470,6 +426,12 @@ This is the OS-remote-login-starship rule:
 	Now halNotice is "";
 	Now the teletype is running STARSHIP-OS-REMOTE program;
 	try examining teletype;
+	
+This is the OS-remote-logout rule:
+	Now the teletype does not run the HAL-OS-REMOTE program;
+	Now the teletype run HALpass;
+	try looking;
+
 
 
 Chapter 5 - Starship OS Remote
@@ -519,7 +481,7 @@ index	title	effect
 --	"SHIP STATUS"	Starship-remote-status rule
 --	"NAVIGATION"	Starship-remote-nav rule
 --	"AUTOPILOT"	Starship-remote-ap rule
---	"LOG OUT"	Starship-remote-logout rule
+--	"LOG OUT OF STARSHIP"	Starship-remote-logout rule
 
 This is the Starship-remote-status rule:
 	say "[fixed letter spacing]";
@@ -733,6 +695,7 @@ This is the starship-ap-mode-engage rule:
 		Now the teletype is running HAL-OS-REMOTE program;
 		try looking;
 		say "You sat here in a daze, contemplating what you had just done.  After a while you hear a sonic boom that shakes the house, followed by a cracking roar that is a fair emulation of a hurricane carrying an earthquake.  The house becomes silent again.";
+		increase score by 50;
 		Now the starship is in the west side yard;
 		Now the Bottom of the Ladder is in the West side yard;	
 	Otherwise:
