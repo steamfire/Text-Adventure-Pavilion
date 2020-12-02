@@ -424,8 +424,8 @@ This is the OS-remote-login-starship rule:
 	try examining teletype;
 	
 This is the OS-remote-logout rule:
-	Now the teletype does not run the HAL-OS-REMOTE program;
 	Now the teletype runs HALsecureA;
+	Now the teletype runs HAL-OS-REMOTE program;
 	try looking;
 
 
