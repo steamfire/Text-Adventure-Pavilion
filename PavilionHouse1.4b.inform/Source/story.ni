@@ -288,8 +288,8 @@ After switching on the teletype:
 
 Carry out examining the Teletype:	
 	say "[if the teletype is switched off][description of the Teletype][paragraph break][otherwise][variable letter spacing]The machine clatters as it types out: [paragraph break][fixed letter spacing][halnotice][variable letter spacing][paragraph break]";
-	if teletype is running HALpass:
-		now the command prompt is "ENTER PASSWORD (OR TYPE ABORT) >";
+	if teletype is running HALpass and the player is in the Ham Shack:
+		now the command prompt is "[fixed letter spacing]ENTER PASSWORD (OR TYPE ABORT) >[variable letter spacing]";
 	rule succeeds.
 
 chapter 1 - TTY Static
@@ -394,6 +394,7 @@ index	title	effect
 --	"SWITCH TO FAST DATA MODE"	OS-remote-high-rate rule
 --	"SOLAR SYSTEM SCANNER"	OS-remote-scan rule
 --	"DOCK LINK"	OS-remote-login-starship rule
+--	"LOG OUT OF HAL SATELLITE"	OS-remote-logout rule
 
 This is the OS-remote-status rule:
 	say "[fixed letter spacing]
@@ -441,6 +442,12 @@ This is the OS-remote-login-starship rule:
 	Now halNotice is "";
 	Now the teletype is running STARSHIP-OS-REMOTE program;
 	try examining teletype;
+	
+This is the OS-remote-logout rule:
+	Now the teletype does not run the HAL-OS-REMOTE program;
+	Now the teletype run HALpass;
+	try looking;
+
 
 
 Chapter 5 - Starship OS Remote
@@ -490,7 +497,7 @@ index	title	effect
 --	"SHIP STATUS"	Starship-remote-status rule
 --	"NAVIGATION"	Starship-remote-nav rule
 --	"AUTOPILOT"	Starship-remote-ap rule
---	"LOG OUT"	Starship-remote-logout rule
+--	"LOG OUT OF STARSHIP"	Starship-remote-logout rule
 
 This is the Starship-remote-status rule:
 	say "[fixed letter spacing]";
