@@ -27,8 +27,6 @@ Score	Rank
 The vogons is initially 0.
 The daydebug is initially 0.
 The player's firstName is a text that varies. The player's full name is a text that varies.
-satPassword is initially "".
-satPasswordIndex is a number that varies.
 
 When play begins:	
 Now the command prompt is "What is your name? > ";
@@ -404,9 +402,9 @@ This is the upload rule:
 		say "[fixed letter spacing]ERROR: UPLOAD TIMED OUT, NO DATA RECEIVED.[paragraph break][variable letter spacing]";
 	try examining teletype;
 	
-Chapter 3 - HAL Password Security variants
+Chapter 3 - HAL Password Security
  
-The HALsecureA program is a password-lock program. The password of HALsecureA is "marvinm". The description is "The screen now reads, PLEASE INPUT YOUR PASSWORD." The rejection of HALsecureA is "PASSCODE ERROR. TRY AGAIN." 
+The HALsecureA program is a password-lock program. The description is "[fixed letter spacing]PLEASE INPUT YOUR PASSWORD.[variable letter spacing]". The rejection of HALsecureA is "[fixed letter spacing]PASSCODE ERROR. TRY AGAIN.[variable letter spacing]".  The success of HALSecureA is "[fixed letter spacing]CONFIRMED[variable letter spacing]";
 
 When play begins (this is the choosing a randomly selected password on startup rule):
 	let the passphrases be { "marvinm", "duckdodgers", "buckrogers", "corbomite", "nomad", "dilithium", "defiant" };
