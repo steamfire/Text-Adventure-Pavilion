@@ -25,12 +25,13 @@ Score	Rank
 
 
 The player's firstName is a text that varies. The player's full name is a text that varies.
+SleepyMoveToBed is initially false.
 
 When play begins:	
 Now the command prompt is "What is your name? > ";
 Now the left hand status line is "[the player's surroundings] / Score: [score]";
 Now the right hand status line is "Time: [time of day]";
-Say "You are in your rural home in the countryside, and it is [time of day]".
+Say "You are in your rural home in the countryside, and it is [time of day].[if SleepyMoveToBed is false] DEBUG: NO AUTO-MOVE TO BEDROOM WHEN ADVANCING TO MORNING".
 
 
 Day is a recurring scene.
@@ -136,8 +137,10 @@ Danny's Bedroom is a room.  There is a dot matrix printout in danny's bedroom. T
 The End of the Hallway is south of Danny's Bedroom and west of Mid Hallway.
 
 Your Bedroom is north of Mid Hallway. "[if Day is happening]The sun streams cheerily through the window."
-An air filter is in Your Bedroom.
-The description of the air filter is "The filter whooshes quietly, blowing clean air into your eyes.  This is uncomfortable, so you stop peeking into it."
+An air filter is in Your Bedroom. The description of the air filter is "The filter whooshes quietly, blowing clean air into your eyes.  This is uncomfortable, so you stop peeking into it.".
+after taking the filter:
+	say "Well, now you have an air filter.";
+	now the description of the air filter is "The filter is mutely silent, contemplating its lost glory and gusto."
 
 Dad's Bedroom is south of The End of the Hallway.
 
@@ -145,7 +148,8 @@ A waterbed is in Dad's Bedroom. "in the middle of the room is a pink waterbed." 
 Understand "bed", "water bed" and "waterbed" as the waterbed.
 Understand "get out of bed" as exiting.
 
-There is an answering machine in Dad's bedroom. The description of the answering machine is "A fine product from the Tel-O-Matic corporation.  The features were once written on the worn woodgrain finish, but you can only make out every few letters.  Now it looks like  'With Garble-Tone erase-yo-calls'.  There is a worn out button on the machine."
+There is an answering machine in Dad's bedroom. The description of the answering machine is "A fine product from the Tel-O-Matic corporation.  The features were once written on the worn woodgrain finish, but you can only make out every few letters.  Now it looks like  'With Garble-Tone erase-yo-calls'.  There is a worn out button on the machine.".
+Instead of taking the answering machine, say "The answering machine emits a little plastic objecting noise, so you put it back nicely and give it a pat on the tape head. It will be happier here.".
 
 A button is a kind of thing. The play button is a part of the answering machine. The play button is a button.  The description is "A rubbery thing, tiredly awaiting its fate.".
 
@@ -272,13 +276,15 @@ After switching on the teletype:
 			now the teletype runs HAL-Bootloader program;
 		if OSBroken is false:
 			now halNotice is "[halOSIntro]";
-	if UHF is switched off:
-		now the teletype runs Static;
-	Try examining teletype;	
+		try examining the teletype;
 
 Carry out examining the Teletype:	
 	say "[if the teletype is switched off][description of the Teletype][paragraph break][otherwise][variable letter spacing]The machine clatters as it types out: [paragraph break][fixed letter spacing][halnotice][variable letter spacing][paragraph break]";
 	rule succeeds.
+	
+[This is necessary because for some reason the descripton of the paper (screen), while the teletype is off, says 'screen' despite it replacing it properly with paper everywhere else.]
+instead of examining screen when teletype is switched off:
+	say "The paper is blank.";
 
 chapter 1 - TTY Static
 
@@ -731,19 +737,31 @@ Chapter 1 - Time events
 At 10:35 PM:
 	Say "
 	
-	[bold type]** You grow tired, and you decide to go back to your bedroom and sleep till morning... **[default letters]";
+	[bold type]** You grow tired, and you decide to [if SleepyMoveToBed is true]go back to your bedroom[otherwise]lay down in the [location of the player][end if], and sleep till morning... **[default letters]";
 	pause the game;
 	Now the time of day is 8:00 AM;
 	say "** Good morning ** The time is now [time of day]!";
-	Now the player is in Your Bedroom.
+	if SleepyMoveToBed is true, Now the player is in Your Bedroom;
+	try looking;
 
+The UPS truck is a vehicle. "There is a UPS truck parked here.". The description of the truck is "A large brown truck, with the door open and engine running".
 
 At 8:05 AM:
 	Say "-- you hear the rumble of a truck pulling into the driveway. --";
+	Move the truck to the driveway;
 
 At 8:10 AM:
-	Say "-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --";
-	move large wooden box to front porch.
+	move large wooden box to front porch;
+	move the UPS truck to the staging area; 
+	Say "-- you hear a loud thump from the area of the front porch, ";
+	if the player is inside the UPS truck:
+		say "and the truck roars away with you inside! --[line break]";
+		say "After a long, bumpy ride amongst the cardboard parcels, you arrive at the UPS depot.  A man about the size of a refrigerator opens the back doors, looking at you.  'A stowaway!' he yells as he politely drags you out by the arm.   'The united parcel service has a zero-tolerance policy for unpaid self-shipping.  Sorry mate.'  He shoves you across the tarmac into a big brown airplane.[paragraph break]You are given modest sleeping quarters on the plane, really just a refrigerator box, and you are pressed into tossing packages in and out of the hold every time the plane lands.  You live out your days never knowing what exotic land the vast cargo door will show you next.";
+		pause the game;
+		say "However, something destroyed the earth a few days later, so you didn't get to see many exotic lands.";
+		end the story saying "You have died.";
+	otherwise:
+		say "and then a truck roaring away. --";
 
 Chapter 2 - Fueling Parts
 
