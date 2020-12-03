@@ -199,7 +199,19 @@ Check eating something for the third time:
 	say "ok fine.  There's food in the kitchen.";
 	rule succeeds;
 
-The New room West is south of the dining room. "this room is big."
+The New room West is south of the dining room. "this room is big."  
+The Sliding Glass Door is an easydoor in the New Room West. "A sliding glass door is to the south, and looks to lead out the back of the house.". It leads to the Middle Back yard.  It is closed.  The description of the sliding glass door is "You see [if the middle back yard is dark]darkness[otherwise]a dropoff of about 4 feet down to the back yard[end if] through the door.".
+ Instead of going south in the New Room West, try entering the sliding glass door.  
+instead of entering the sliding glass door for the first time:
+	say "Hmm.  It looks like there's no porch, just a 4 foot dropoff to the yard.";
+Instead of jumping when the sliding glass door is open:
+	say "You sail out of the doorway, tucking and rolling as the grass meets you.";
+	move player to middle back yard;
+Carry out entering sliding glass door:
+	say "You tumble off the 4 foot ledge into the back yard.  That didn't feel good.";
+	decrease the score by 1;
+
+Understand "jump out" as jumping.
 
 The New room East is south of the kitchen and east of the New room west. "This room is more big."
 
