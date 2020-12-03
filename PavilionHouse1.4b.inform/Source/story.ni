@@ -107,7 +107,7 @@ The front yard is north of the Front porch.  "[if Night is happening]In the sky 
 The driveway is east of the front yard and north of the garage and northwest of the side yard.  "The gravelly pavement seems gray and boring."
 
 The back yard hill is south of the back porch. the back yard hill is southwest of the side yard. An antenna pole is in the back yard. The antenna pole is fixed in place.  The description of the pole is "The antenna pole is tall."  
-There is a dish on the antenna pole. The dish is fixed in place. the description of the dish is "The dish is slowly tracking[if Night is happening] a bright spot in the sky.[otherwise]the blue sky." The dish is fixed in place.
+There is a dish on the antenna pole. The dish is fixed in place. the description of the dish is "The dish is slowly tracking[if Night is happening] a bright spot in the sky.[otherwise] the blue sky." The dish is fixed in place.
 
 The middle back yard is south of the back yard hill.   The back yard hydrant is a device. The back yard hydrant is fixed in place. the description of the back yard hydrant is "A gray metal pole topped with a green handle.  A green garden hose is firmly rusted on to the output threads."   The green hose is fixed in place.  The description of the green hose is "The green hose is connected to the hydrant permanently and snakes over into the west side yard."
 
@@ -138,16 +138,25 @@ Danny's Bedroom is a room.  There is a dot matrix printout in danny's bedroom. T
 The End of the Hallway is south of Danny's Bedroom and west of Mid Hallway.
 
 Your Bedroom is north of Mid Hallway. "[if Day is happening]The sun streams cheerily through the window."
-An air filter is in Your Bedroom.
-The description of the air filter is "The filter whooshes quietly, blowing clean air into your eyes.  This is uncomfortable, so you stop peeking into it."
+An air filter is in Your Bedroom. The description of the air filter is "The filter whooshes quietly, blowing clean air into your eyes.  This is uncomfortable, so you stop peeking into it.".
+after taking the filter:
+	say "Well, now you have an air filter.";
+	now the description of the air filter is "The filter is mutely silent, contemplating its lost glory and gusto."
 
 Dad's Bedroom is south of The End of the Hallway.
 
-A waterbed is in Dad's Bedroom. "in the middle of the room is a pink waterbed." It is an enterable vehicle.  The description of the waterbed is "It is a sloshy thing." Instead of going from Dad's bedroom by the waterbed, say "you'll have to get out of the bed before you go anywhere." 
+A waterbed is in Dad's Bedroom. "in the middle of the room is a pink waterbed." It is an enterable supporter.  The description of the waterbed is "It is a sloshy thing." 
+After entering the waterbed:
+	say "Ahhh, this is comfy.  You stretch out, and can't resist taking a 10 minute nap.";
+	Increase the time of day by 10 minutes;
+	Say "It's now [time of day].  That was nice.";
+	
+Instead of going from Dad's bedroom by the waterbed, say "you'll have to get out of the bed before you go anywhere." 
 Understand "bed", "water bed" and "waterbed" as the waterbed.
 Understand "get out of bed" as exiting.
 
-There is an answering machine in Dad's bedroom. The description of the answering machine is "A fine product from the Tel-O-Matic corporation.  The features were once written on the worn woodgrain finish, but you can only make out every few letters.  Now it looks like  'With Garble-Tone erase-yo-calls'.  There is a worn out button on the machine."
+There is an answering machine in Dad's bedroom. The description of the answering machine is "A fine product from the Tel-O-Matic corporation.  The features were once written on the worn woodgrain finish, but you can only make out every few letters.  Now it looks like  'With Garble-Tone erase-yo-calls'.  There is a worn out button on the machine.".
+Instead of taking the answering machine, say "The answering machine emits a little plastic objecting noise, so you put it back nicely and give it a pat on the tape head. It will be happier here.".
 
 A button is a kind of thing. The play button is a part of the answering machine. The play button is a button.  The description is "A rubbery thing, tiredly awaiting its fate.".
 
@@ -180,7 +189,30 @@ The Dining room is south of the foyer. "This room has a green rug." A green rug 
 The Kitchen is east of the dining room. There is a phone in the kitchen.  The phone is fixed in place. There is a note on the phone.
 The description of the note is "Wendell called - he said that the satellite will be coming overhead tonight."
 
-The New room West is south of the dining room. "this room is big."
+There is a hot dog in the staging area. The hot dog is edible.
+
+Check eating something for the second time:
+	say "If you don't be careful you're going to break your teeth.";
+	rule succeeds;
+	
+Check eating something for the third time:
+	move the hot dog to the kitchen;
+	say "ok fine.  There's food in the kitchen.";
+	rule succeeds;
+
+The New room West is south of the dining room. "this room is big."  
+The Sliding Glass Door is an easydoor in the New Room West. "A sliding glass door is to the south, and looks to lead out the back of the house.". It leads to the Middle Back yard.  It is closed.  The description of the sliding glass door is "You see [if the middle back yard is dark]darkness[otherwise]a dropoff of about 4 feet down to the back yard[end if] through the door.".
+ Instead of going south in the New Room West, try entering the sliding glass door.  
+instead of entering the sliding glass door for the first time:
+	say "Hmm.  It looks like there's no porch, just a 4 foot dropoff to the yard.";
+Instead of jumping when the sliding glass door is open:
+	say "You sail out of the doorway, tucking and rolling as the grass meets you.";
+	move player to middle back yard;
+Carry out entering sliding glass door:
+	say "You tumble off the 4 foot ledge into the back yard.  That didn't feel good.";
+	decrease the score by 1;
+
+Understand "jump out" as jumping.
 
 The New room East is south of the kitchen and east of the New room west. "This room is more big."
 
@@ -196,10 +228,10 @@ Section 3 - Downstairs
 Cellar stairs are below the back hallway and above the cellar.  Cellar stairs is a door. Cellar stairs is open.   "[if audio equipment is switched on][bold type][red letters][Fixed letter spacing]ON AIR[variable letter spacing][roman type][default letters]"
 
 The Radiostation is north of the cellar. "The size of a closet, there is about 2x4 feet of space to move around next to the table."  
-There is a suite of audio equipment in the Radiostation. The audio equipment is a device. The audio equipment is switched off. The description of the audio equipment is "[if audio equipment is switched on]The various boxes have glowing dials and humming motors[otherwise]There are various boxes that have dark dials and do not hum[end if]."
+There is a suite of audio equipment in the Radiostation. The audio equipment is a device. The audio equipment is switched off. The audio equipment is fixed in place. The description of the audio equipment is "[if audio equipment is switched on]The various boxes have glowing dials and humming motors[otherwise]There are various boxes that have dark dials and do not hum[end if]."
 Understand "radio equipment" as the audio equipment.  
 
-The AM Transmitter is a device in the Radiostation.  AM Transmitter is switched off.
+The AM Transmitter is a device in the Radiostation.  AM Transmitter is switched off. The AM transmitter is fixed in place.
 The AM Transmitter Frequency is initially 1070.
 
 After switching on the audio equipment:
@@ -215,7 +247,8 @@ After switching on the AM Transmitter:
 
 The Furnace room is west of the cellar. 
 
-The Pump room is west of the furnace room.  "A small room about the size of a closet."  
+The Pump room is west of the furnace room.  "A small room about the size of a closet.".  There is an abandoned well pump in the pump room.  The well pump is fixed in place. The description of the well pump is "A black motor on a tall metal tank.  It seems disconnected from everything else.".
+Does the player mean doing something to the well pump: it is likely.
 
 There is a 2 inch pipe in the pump room.  The 2 inch pipe is fixed in place.  The description of the 2 inch pipe is " A 2 inch pipe is sticking out of the wall.  You notice that it ends in a Tee.  One branch of the Tee is open and available to connect.  The other branch returns into the wall, with a tag stating, 'To Back Yard Hydrant ^'  ";
 
@@ -755,13 +788,24 @@ At 10:35 PM:
 	if SleepyMoveToBed is true, Now the player is in Your Bedroom;
 	try looking;
 
+The UPS truck is a vehicle. "There is a UPS truck parked here.". The description of the truck is "A large brown truck, with the door open and engine running".
 
 At 8:05 AM:
 	Say "-- you hear the rumble of a truck pulling into the driveway. --";
+	Move the truck to the driveway;
 
 At 8:10 AM:
-	Say "-- you hear a loud thump from the area of the front porch, and then a truck roaring away. --";
-	move large wooden box to front porch.
+	move large wooden box to front porch;
+	move the UPS truck to the staging area; 
+	Say "-- you hear a loud thump from the area of the front porch, ";
+	if the player is inside the UPS truck:
+		say "and the truck roars away with you inside! --[line break]";
+		say "After a long, bumpy ride amongst the cardboard parcels, you arrive at the UPS depot.  A man about the size of a refrigerator opens the back doors, looking at you.  'A stowaway!' he yells as he politely drags you out by the arm.   'The united parcel service has a zero-tolerance policy for unpaid self-shipping.  Sorry mate.'  He shoves you across the tarmac into a big brown airplane.[paragraph break]You are given modest sleeping quarters on the plane, really just a refrigerator box, and you are pressed into tossing packages in and out of the hold every time the plane lands.  You live out your days never knowing what exotic land the vast cargo door will show you next.";
+		pause the game;
+		say "However, something destroyed the earth a few days later, so you didn't get to see many exotic lands.";
+		end the story saying "You have died.";
+	otherwise:
+		say "and then a truck roaring away. --";
 
 Chapter 2 - Fueling Parts
 
