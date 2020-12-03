@@ -1,4 +1,4 @@
-"Rogers Rd" by Dan Bowen,  Version 1.4.1 Beta
+"Rogers Rd" by Dan Bowen,  Version 1.4.2 Beta
 
 Include Exit Lister by Gavin Lambert.
 Include Basic Screen Effects by Emily Short.
@@ -12,6 +12,7 @@ The maximum score is 60.
 
 Part 1 - Variables, Scenes, Times
 
+[Fix the halNotice when UHF/teletype go off/on]
 
 [The "when play begins" rules are checked only at the start of a story, not when a saved session is restored from disc. What happens is that these rules are followed, then the story's banner is printed, then the initial room description is printed up, and then the player is asked for a first command.]
 
