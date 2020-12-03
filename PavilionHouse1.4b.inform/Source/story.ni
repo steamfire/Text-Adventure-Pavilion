@@ -106,7 +106,7 @@ The front yard is north of the Front porch.  "[if Night is happening]In the sky 
 The driveway is east of the front yard and north of the garage and northwest of the side yard.  "The gravelly pavement seems gray and boring."
 
 The back yard hill is south of the back porch. the back yard hill is southwest of the side yard. An antenna pole is in the back yard. The antenna pole is fixed in place.  The description of the pole is "The antenna pole is tall."  
-There is a dish on the antenna pole. The dish is fixed in place. the description of the dish is "The dish is slowly tracking[if Night is happening] a bright spot in the sky.[otherwise]the blue sky." The dish is fixed in place.
+There is a dish on the antenna pole. The dish is fixed in place. the description of the dish is "The dish is slowly tracking[if Night is happening] a bright spot in the sky.[otherwise] the blue sky." The dish is fixed in place.
 
 The middle back yard is south of the back yard hill.   The back yard hydrant is a device. The back yard hydrant is fixed in place. the description of the back yard hydrant is "A gray metal pole topped with a green handle.  A green garden hose is firmly rusted on to the output threads."   The green hose is fixed in place.  The description of the green hose is "The green hose is connected to the hydrant permanently and snakes over into the west side yard."
 
@@ -144,7 +144,13 @@ after taking the filter:
 
 Dad's Bedroom is south of The End of the Hallway.
 
-A waterbed is in Dad's Bedroom. "in the middle of the room is a pink waterbed." It is an enterable vehicle.  The description of the waterbed is "It is a sloshy thing." Instead of going from Dad's bedroom by the waterbed, say "you'll have to get out of the bed before you go anywhere." 
+A waterbed is in Dad's Bedroom. "in the middle of the room is a pink waterbed." It is an enterable supporter.  The description of the waterbed is "It is a sloshy thing." 
+After entering the waterbed:
+	say "Ahhh, this is comfy.  You stretch out, and can't resist taking a 10 minute nap.";
+	Increase the time of day by 10 minutes;
+	Say "It's now [time of day].  That was nice.";
+	
+Instead of going from Dad's bedroom by the waterbed, say "you'll have to get out of the bed before you go anywhere." 
 Understand "bed", "water bed" and "waterbed" as the waterbed.
 Understand "get out of bed" as exiting.
 
@@ -182,6 +188,17 @@ The Dining room is south of the foyer. "This room has a green rug." A green rug 
 The Kitchen is east of the dining room. There is a phone in the kitchen.  The phone is fixed in place. There is a note on the phone.
 The description of the note is "Wendell called - he said that the satellite will be coming overhead tonight."
 
+There is a hot dog in the staging area. The hot dog is edible.
+
+Check eating something for the second time:
+	say "If you don't be careful you're going to break your teeth.";
+	rule succeeds;
+	
+Check eating something for the third time:
+	move the hot dog to the kitchen;
+	say "ok fine.  There's food in the kitchen.";
+	rule succeeds;
+
 The New room West is south of the dining room. "this room is big."
 
 The New room East is south of the kitchen and east of the New room west. "This room is more big."
@@ -198,10 +215,10 @@ Section 3 - Downstairs
 Cellar stairs are below the back hallway and above the cellar.  Cellar stairs is a door. Cellar stairs is open.   "[if audio equipment is switched on][bold type][red letters][Fixed letter spacing]ON AIR[variable letter spacing][roman type][default letters]"
 
 The Radiostation is north of the cellar. "The size of a closet, there is about 2x4 feet of space to move around next to the table."  
-There is a suite of audio equipment in the Radiostation. The audio equipment is a device. The audio equipment is switched off. The description of the audio equipment is "[if audio equipment is switched on]The various boxes have glowing dials and humming motors[otherwise]There are various boxes that have dark dials and do not hum[end if]."
+There is a suite of audio equipment in the Radiostation. The audio equipment is a device. The audio equipment is switched off. The audio equipment is fixed in place. The description of the audio equipment is "[if audio equipment is switched on]The various boxes have glowing dials and humming motors[otherwise]There are various boxes that have dark dials and do not hum[end if]."
 Understand "radio equipment" as the audio equipment.  
 
-The AM Transmitter is a device in the Radiostation.  AM Transmitter is switched off.
+The AM Transmitter is a device in the Radiostation.  AM Transmitter is switched off. The AM transmitter is fixed in place.
 The AM Transmitter Frequency is initially 1070.
 
 After switching on the audio equipment:
@@ -217,7 +234,8 @@ After switching on the AM Transmitter:
 
 The Furnace room is west of the cellar. 
 
-The Pump room is west of the furnace room.  "A small room about the size of a closet."  
+The Pump room is west of the furnace room.  "A small room about the size of a closet.".  There is an abandoned well pump in the pump room.  The well pump is fixed in place. The description of the well pump is "A black motor on a tall metal tank.  It seems disconnected from everything else.".
+Does the player mean doing something to the well pump: it is likely.
 
 There is a 2 inch pipe in the pump room.  The 2 inch pipe is fixed in place.  The description of the 2 inch pipe is " A 2 inch pipe is sticking out of the wall.  You notice that it ends in a Tee.  One branch of the Tee is open and available to connect.  The other branch returns into the wall, with a tag stating, 'To Back Yard Hydrant ^'  ";
 
