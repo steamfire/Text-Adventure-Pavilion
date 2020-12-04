@@ -585,19 +585,12 @@ Instead of ordering the noun when the player is carrying the magazine:
 	if FillOutGo is false:
 		say "You already filled out that order form.  Did you mail it?";
 		rule fails;
-[Instead of ordering the noun for more than one times:
-	If the player is carrying the noun, say "You already filled out the [the noun].  Do you think those things mail themselves?";
-	if the player is not carrying the noun, say "Didn't your mother teach you about order forms?";]
 
 Instead of ordering when the player is not carrying the magazine:
 	if the player is carrying the noun:
 		say "you already have the filled out [the noun]. Shouldn't you do something with it?";
 	otherwise:
 		say " you can't order something without an order form.";
-
-Instead of ordering something which is not the generators:
-	say "you can't order that.";
-
 
 Part 3 - The mail pickup
 
