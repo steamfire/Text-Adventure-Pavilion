@@ -29,11 +29,16 @@ Score	Rank
 The player's firstName is a text that varies. The player's full name is a text that varies.
 SleepyMoveToBed is initially false.
 
-When play begins:	
-Now the command prompt is "What is your name? > ";
-Now the left hand status line is "[the player's surroundings] / Score: [score]";
-Now the right hand status line is "Time: [time of day]";
-Say "You are in your rural home in the countryside, and it is [time of day].[if SleepyMoveToBed is false] DEBUG: NO AUTO-MOVE TO BEDROOM WHEN ADVANCING TO MORNING".
+When play begins:
+	Now the left hand status line is "[the player's surroundings] / Score: [score]";
+	Now the right hand status line is "Time: [time of day]";
+	Say "You are in your rural home in the countryside, and it is [time of day].[if SleepyMoveToBed is false] DEBUG: NO AUTO-MOVE TO BEDROOM WHEN ADVANCING TO MORNING";
+	Now the command prompt is "What is your name? > ";
+	if the screen width is less than 64:
+		say "[paragraph break]*** It would be good if you could widen your window, or shrink your font, so this line fits: ";
+		say "[line break][fixed letter spacing]----------------------------------------------------------------[line break][variable letter spacing]
+		Press any key to continue...";
+		wait for any key;
 
 The player is in Your Bedroom.
 
@@ -336,7 +341,7 @@ Understand "read [named page] in/from/of [something]" or "read the [named page] 
 Does the player mean reading something in the Popular Mechanics Magazine: it is very likely.
 
 This is the magazine requirement rule:
-	if the player is not carrying the Popular Mechanics Magazine, say "You strain your eyes, but alas, it's too far away to read the pages." instead.
+	if the player is not carrying the Popular Mechanics Magazine, say "You strain your eyes, but alas, it's too far away to read the print." instead.
 
 Check reading it relatively in:
 	if the second noun is not the Popular Mechanics Magazine, say "There are no pages in [the second noun]." instead;
@@ -630,9 +635,9 @@ Part 4 - The UPS dispatch
 The UPS truck is a closed openable enterable vehicle in the UPS depot.  The UPS truck is lockable.
 A large wooden box, a small box, a medium box, and a flat box are closed openable containers in the UPS depot.
 
-The description of the large wooden box is "The box is about 4ft x 4ft x 6ft in size. It has the words 'GasCo Industries Model 7' stencilled on the side.  It is addressed to you."
+The description of the large wooden box is "The box is about 4ft x 4ft x 6ft in size. It has the words 'GasCo Industries Model 7 Generator Pack' stencilled on the side.  It is addressed to you."
 
-A giraffe is in the wooden box.  A hamster cage is in the small box. An accordion is in the medium box.  A set of magic tricks is in the flat box.  They are closed openable containers.
+A hamster cage is in the small box. An accordion is in the medium box.  A set of magic tricks is in the flat box.  They are closed openable containers.
 
 Every turn when the number of things in the post office is greater than 0:
 	If the generators form is in the post office:
@@ -854,25 +859,25 @@ The STARSHIP-OS-REMOTE program is an enumerated multiple-choice program. The opt
 
 Carry out examining the STARSHIP-OS-REMOTE program for the first time:
 	[https://en.rakko.tools/tools/68/]
-	say "[fixed letter spacing]   WELCOME TO [line break]";
-	say "                                   .:----:::...   [line break]  ";
-	say "                           :-=**+=-.       [line break]";
-	say "                       :=*#%*=:        [line break]";
-	say "                   :+#X%*=.            [line break]";
-	say " .+XXXX*:      .=#XX%+:             [line break]";
-	say "   .=%XXX#: .+#XX%+:             [line break]";
-	say "      =%*-=#XXX*-                [line break]";
-	say "       :*XXX%+-                      [line break]";
-	say "     -#XXX%=-#X%=.                   [line break]";
-	say "   -#XXX%=  :*XXXX+.                [line break]";
-	say " :#XXXX+.     :*XXXX*:                  [paragraph break]";
+	say "[fixed letter spacing]   WELCOME TO[line break]";
+	say "                                   .:----:::...[line break]  ";
+	say "                           :-=**+=-.[line break]";
+	say "                       :=*#%*=:[line break]";
+	say "                   :+#X%*=. [line break]";
+	say " .+XXXX*:      .=#XX%+: [line break]";
+	say "   .=%XXX#: .+#XX%+: [line break]";
+	say "      =%*-=#XXX*-     [line break]";
+	say "       :*XXX%+-        [line break]";
+	say "     -#XXX%=-#X%=.    [line break]";
+	say "   -#XXX%=  :*XXXX+.   [line break]";
+	say " :#XXXX+.     :*XXXX*:     [paragraph break]";
 	say "	#####      [line break]";                                       
-	say "#     # #####   ##   #####   ####  #    # # #####  [line break]";
-	say "#         #    #  #  #    # #      #    # # #    # [line break]";
-	say " #####    #   #    # #    #  ####  ###### # #    # [line break]";
-	say "      #   #   ###### #####       # #    # # #####  [line break]";
-	say "#     #   #   #    # #   #  #    # #    # # #      [line break]";
-	say " #####    #   #    # #    #  ####  #    # # #      [line break]";
+	say "#     # #####   ##   #####   ####  #    # # ##### [line break]";
+	say "#         #    #  #  #    # #      #    # # #    #[line break]";
+	say " #####    #   #    # #    #  ####  ###### # #    #[line break]";
+	say "      #   #   ###### #####       # #    # # #####[line break]";
+	say "#     #   #   #    # #   #  #    # #    # # # [line break]";
+	say " #####    #   #    # #    #  ####  #    # # #[line break]";
 	say "[variable letter spacing]";
 	[http://www.network-science.de/ascii/]
 	
