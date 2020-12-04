@@ -9,6 +9,7 @@ Include Exit Lister by Gavin Lambert.
 Include Basic Screen Effects by Emily Short.
 Include Easy Doors by Hanon Ondricek.
 Include ComputersTeletype by Dan Bowen.
+Include Menus by Emily Short.
 
 Book 1 - Setting up the game
 
@@ -196,7 +197,7 @@ Every turn when the panasonic radio is switched on:
 The Main Bathroom is south of Mid Hallway.
 The toilet is a supporter in the main bathroom.  The toilet is fixed in place.  The Popular Mechanics Magazine is on the toilet. The popular mechanics magazine is a container. it is closed. It is unopenable.
 
-The Foyer is east of the Mid Hallway.  "Lined with a linoluem floor." An Ironing Board is in the foyer. The ironing board is fixed in place.  A can of starch is on the ironing board.  The description of the starch is "The spray can, shiny green, coyly proclaims 'Niagara Starch:  Now your life has meaning!™'"
+The Foyer is east of the Mid Hallway.  "Lined with a linoleum floor." An Ironing Board is in the foyer. The ironing board is fixed in place.  A can of starch is on the ironing board.  The description of the starch is "The spray can, shiny green, coyly proclaims 'Niagara Starch:  Now your life has meaning!™'"
 
 The Living room is east of the foyer. A shelf is in the Living Room.  A brown book is on the shelf. The description of the book is "The book has the title 'Satellite Frequencies.'" After taking the book:
 	increase the score by 10.
@@ -903,7 +904,8 @@ This is the Starship-remote-status rule:
 	say "[LINE BREAK]  ***STARSHIP ROCKET SYSTEMS STATUS***[LINE BREAK]";
 	say "  NAV MODE:       [StarshipRemoteNavMode]";
 	if StarshipRemoteNavMode is "GO TO BEACON":
-		say " [StarshipLandingFreq] KHZ[LINE BREAK]";
+		say " [StarshipLandingFreq] KHZ";
+	say line break;
 	say "  AP MODE:        [StarshipAPMode][LINE BREAK]";
 	say "  AP ENGAGED:     [IF StarshipAutopilotEngaged is true]ENGAGED[otherwise]DISENGAGED[end if][line break]";
 	say "  AP GUIDANCE:    NAV COMPUTER";
@@ -1158,7 +1160,7 @@ At 10:35 PM:
 	try looking;
 
 
-Chapter 2 - Fueling Parts
+Chapter 2 - Fuelling Parts
 
 
 A liquid methane generator is in the large wooden box.   The methane generator is a device. The description of the liquid methane generator is "A metal frame containing a massive number of stainless steel tubes, valves, and electronic control systems. Printed on the side it says, 
@@ -1203,7 +1205,7 @@ Every turn:
 		if ( oxygen flow is 1 ) and ( methane flow is 1 ): 
 			say "
 			you've got rocket fuel!!! ";
-			end the story finally saying "The hyper flammable gas cloud ignites as you swish your nylon track pants.  You is ded.  But you won!  That's all Dan wrote so far :-)"	
+			end the story saying "The hyper flammable gas cloud ignites as you swish your nylon track pants.  You is ded.  But you won!  That's all Dan wrote so far :-)"	
 
 After dropping the methane generator in the radiostation:
 	say "The liquid methane generator settles to the floor.  Conveniently, its 1.5 inch output coupling lines up with the 1.5 inch pipe in the wall, and they snap together, sealed perfectly.";
@@ -1289,7 +1291,7 @@ After switching off the interlock:
 
 
 
-Section 4 - Fueling the rocket
+Section 4 - Fuelling the rocket
 
 A fuel display is part of the starship.  Understand "screen" as display.  The description of the fuel display is " [line break]
   Fuel Quantities: [line break]
@@ -1324,7 +1326,7 @@ Every turn:
 	if the end of the yellow hose is in the CH4 fill port:
 		if methane flow is 1:
 		 	if CH4 tank level is less than 100:
-				say "fueling CH4[line break]";
+				say "fuelling CH4[line break]";
 				increase CH4 tank level by 10;
 			otherwise if the player is in the west side yard:
 				now methane flow is 0;
@@ -1373,7 +1375,7 @@ After switching on the autopilot:
 			end the story saying "You have died.";
 		otherwise:
 			say "[line break] Blastoff!  You have gone to space today.  Good jeorb.";
-			end the story;
+			end the story finally;
 	otherwise:
 		say "autopilot turns off.";
 		now autopilot is switched off;
@@ -1419,3 +1421,17 @@ say "[localhint of the location]".
 
 
 
+
+Section 2 - Amusing list for the end
+
+Table of Amusing Matter
+title	subtable	description	toggle
+"Doing things to things"	--	"Did you try... [paragraph break]  Examining the air filter after taking it? [line break]  Taking the answering machine? [line break]  Eating a few things? [line break]  Getting into the waterbed? [line break]  Getting the starship? [line break]  Listening to the panasonic radio multiple times? [line break]  Reading the magazine when you aren't holding it? [line break]  Ordering things from Popular Mechanics besides the generators? [line break]  Putting other items into the mailbox with the order forms? [line break]  "	--
+"Getting into trouble"	--	"Did you try... [paragraph break]  Going inside the UPS truck? [line break]  Staying in the UPS truck when it drives away? [line break]  Engaging the starship abort system? [line break]  Going out the sliding glass door? [line break]  Jumping out the sliding glass door? [line break  ] Going to the west yard when the cryogenic liquids are running but not connected to Starship?  [line break] "
+
+Rule for amusing a victorious player:
+	now the current menu is the Table of Amusing Matter;
+	now the current menu title is "Things to Try";
+	carry out the displaying activity;
+	clear the screen.
+	
