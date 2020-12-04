@@ -1,4 +1,9 @@
-"Rogers Rd" by Dan Bowen,  Version 1.4.1 Beta
+"Rogers Rd" by Dan Bowen
+
+The story headline is "Version 1.4.2 Beta decbeee". 
+The story genre is "Science Fiction". 
+The story description is "A nerdy adventurer in their rural home uses technology at hand to bring space is closer than they thought possible.".
+The story creation year is 2020.
 
 Include Exit Lister by Gavin Lambert.
 Include Basic Screen Effects by Emily Short.
@@ -7,7 +12,7 @@ Include ComputersTeletype by Dan Bowen.
 
 Book 1 - Setting up the game
 
-use memory economy.
+Use memory economy.
 
 Use scoring and the serial comma. 
 The maximum score is 60.
@@ -32,7 +37,9 @@ SleepyMoveToBed is initially false.
 When play begins:
 	Now the left hand status line is "[the player's surroundings] / Score: [score]";
 	Now the right hand status line is "Time: [time of day]";
-	Say "You are in your rural home in the countryside, and it is [time of day].[if SleepyMoveToBed is false] DEBUG: NO AUTO-MOVE TO BEDROOM WHEN ADVANCING TO MORNING";
+	say "[banner text][paragraph break]";
+	say "[if SleepyMoveToBed is false] DEBUG: NO AUTO-MOVE TO BEDROOM WHEN ADVANCING TO MORNING[paragraph break]";
+	Say "You are in your rural home in the countryside, and it is [time of day].";
 	Now the command prompt is "What is your name? > ";
 	if the screen width is less than 64:
 		say "[paragraph break]*** It would be good if you could widen your window, or shrink your font, so this line fits: ";
@@ -55,7 +62,7 @@ Night begins when play begins.
 
 
 When Day begins: 
-	Say "The sun is up outside.";
+	[Say "The sun is up outside.";]
 	Now the description of the sky is "The sun is up, and the sky is nicely blue.";
 	Now the west side yard is lighted;
 	Now the front yard hydrant is in the front yard;
@@ -67,7 +74,7 @@ When Day begins:
 
 	
 When Night begins: 
-	Say "The sun has set outside.";
+	[Say "The sun has set outside.";]
 	Now the description of the sky is "There is a satellite crawling across the sky...";
 	Now the west side yard is dark;	
 	Now the front yard hydrant is nowhere;
@@ -88,7 +95,6 @@ After reading a command when collecting names:
 	now the player's firstName is word number 1 in the player's full name;
 	now the command prompt is ">";
 	say "Hi, [player's firstName]![paragraph break]";
-	say "[banner text]";
 	move the player to the location;
 	reject the player's command.
 
