@@ -7,6 +7,8 @@ Include ComputersTeletype by Dan Bowen.
 
 Book 1 - Setting up the game
 
+Use memory economy.
+
 Use scoring and the serial comma. 
 The maximum score is 60.
 
