@@ -9,7 +9,6 @@ Include Exit Lister by Gavin Lambert.
 Include Basic Screen Effects by Emily Short.
 Include Easy Doors by Hanon Ondricek.
 Include ComputersTeletype by Dan Bowen.
-Include Menus by Emily Short.
 
 Book 1 - Setting up the game
 
@@ -1420,18 +1419,3 @@ Report hinting:
 say "[localhint of the location]".
 
 
-
-
-Section 2 - Amusing list for the end
-
-Table of Amusing Matter
-title	subtable	description	toggle
-"Doing things to things"	--	"Did you try... [paragraph break]  Examining the air filter after taking it? [line break]  Taking the answering machine? [line break]  Eating a few things? [line break]  Getting into the waterbed? [line break]  Getting the starship? [line break]  Listening to the panasonic radio multiple times? [line break]  Reading the magazine when you aren't holding it? [line break]  Ordering things from Popular Mechanics besides the generators? [line break]  Putting other items into the mailbox with the order forms? [line break]  "	--
-"Getting into trouble"	--	"Did you try... [paragraph break]  Going inside the UPS truck? [line break]  Staying in the UPS truck when it drives away? [line break]  Engaging the starship abort system? [line break]  Going out the sliding glass door? [line break]  Jumping out the sliding glass door? [line break  ] Going to the west yard when the cryogenic liquids are running but not connected to Starship?  [line break] "
-
-Rule for amusing a victorious player:
-	now the current menu is the Table of Amusing Matter;
-	now the current menu title is "Things to Try";
-	carry out the displaying activity;
-	clear the screen.
-	
