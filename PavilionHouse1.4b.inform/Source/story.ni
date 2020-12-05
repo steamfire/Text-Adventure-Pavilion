@@ -15,7 +15,7 @@ Book 1 - Setting up the game
 Use memory economy.
 
 Use scoring and the serial comma. 
-The maximum score is 60.
+The maximum score is 200.
 
 Part 1 - Variables, Scenes, Times
 
@@ -29,7 +29,9 @@ Score	Rank
 10	"Curious person"
 20	"Interesting person"
 40	"Smart person"
-60	"Rocket scientist, Dead."
+60	"Nosey Sleuth"
+100	"Elon Musk"
+200	"Astronaut, Marooned"
 
 
 The player's firstName is a text that varies. The player's full name is a text that varies.
@@ -199,8 +201,6 @@ The Foyer is east of the Mid Hallway.  "Lined with a linoleum floor." An Ironing
 
 The Living room is east of the foyer. A shelf is in the Living Room.  A brown book is on the shelf. The description of the book is "The book has the title 'Satellite Frequencies.'" After taking the book for the first time:
 	increase the score by 5.
-	[the  when the book is not handled thing doesn't work to assign score for some reason!]
-
 
 The Dining room is south of the foyer. "This room has a green rug." A green rug is scenery in the dining room.  "The rug is green and shaggy, as a grassy lawn in the springtime isn't.".
 
@@ -798,7 +798,7 @@ chapter 4 - HAL OS
 The teletype HAL-OS-REMOTE program is an enumerated multiple-choice program. The options table of the Teletype HAL-OS-REMOTE program is the Table of HAL-OS-REMOTE Options.
 
 Instead of examining the HAL-OS-REMOTE program for the first time:
-	increase score by 20;
+	increase score by 10;
 	try examining the teletype;
 
 Table of HAL-OS-REMOTE Options
@@ -1205,7 +1205,6 @@ Every turn:
 	Otherwise:
 		Now the oxygen flow is 0;
 	if the methane flow is 1:
-		if the methane flow is 1 for the first time, increase score by 10;
 		if the player is in the radiostation:
 			Say "A whooshing gurgling sound of liquid methane rattles through the pipe in the wall.";
 		if the player is in the front yard:
@@ -1213,7 +1212,6 @@ Every turn:
 		if (the player is in the west side yard) and (the end of the yellow hose is not in the ch4 fill port):
 			say "** Clear cryogenic liquid methane roars out of the (now frosty) yellow hose into a gasous cloud.  OSHA would not be pleased.** ";
 	If the oxygen flow is 1:
-		if the oxygen flow is 1 for the first time, increase score by 10;
 		if the player is in the pump room:
 			Say "A whooshing gurgling sound of liquid oxygen rattles through the pipe in the wall.";
 		if the player is in the middle back yard:
@@ -1246,6 +1244,8 @@ Chapter 2 - Rocket at home
 Section 1 - Offstage Starship Pre-Landing
 
 A Starship is in the staging area. The starship is fixed in place.  The description of the starship is "A great silvery rocket, 30m tall, it has a set of hose ports at the bottom, and next to the ports is a small display screen.".
+
+A Starship can be fuelled or unfuelled.  The Starship is unfuelled.
 
 [There is a Ladder above the staging area. ]
 Docking Port is a room.
@@ -1328,19 +1328,19 @@ Instead of inserting an end of the yellow hose into a O2 fill port:
 	say "The yellow hose end doesn't fit in this port."
 
 The O2 tank level is initially 0.
-The CH4 tank level is initially 0. 
+The CH4 tank level is initially 0.
 
-Every turn:
-	if the end of the green hose is in the O2 fill port:
-		if oxygen flow is 1:
-		 	if O2 tank level is less than 100:
-				say "fuelling O2[line break]";
-				increase O2 tank level by 5;
-	if the end of the yellow hose is in the CH4 fill port:
-		if methane flow is 1:
-		 	if CH4 tank level is less than 100:
-				say "fuelling CH4[line break]";
-				increase CH4 tank level by 10;
+Every turn when the Starship is in the west side yard and starship is unfuelled:
+	if  (the end of the green hose is in the O2 fill port) and (oxygen flow is 1) and (the O2 tank level is less than 100):
+		say "-- you hear a a sloshing rumble in the distance --[line break]";
+		increase O2 tank level by 5;
+	if  (the end of the yellow hose is in the CH4 fill port) and (methane flow is 1) and (the CH4 tank level is less than 100):
+		say "-- a swishing grumble in the distance --[line break]";
+		increase CH4 tank level by 10;
+	if (O2 tank level is 100) and (CH4 tank level is 100):
+		Now starship is fuelled;
+		say "-- a pleasant voice resounds from a speaker on the rocket: STARSHIP FUELLING COMPLETE. --";
+		Increase score by 15	;
 
 Chapter 3 - Moving the ship
 
@@ -1382,9 +1382,11 @@ After switching on the autopilot:
 		if (green hose is in O2 port) or (yellow hose is in ch4 port):
 			say "The engines roar, the rocket rises away from the ground.  A hose, still connected to a fill port, tears the fuel manifold out of the bottom of the ship.  A large explosion consumes the rocket instantly. ";
 			end the story saying "You have died.";
+			decrease the score by 20;
 		otherwise:
-			say "[line break] Blastoff!  You have gone to space today.  Good jeorb.";
+			say "[line break] Blastoff!  You have gone to space today, and you sense that your adventure is just beginning... [paragraph break] Buy [story title] Part II in fine microcomputer shops everywhere.";
 			end the story finally;
+			Increase the score by 100;
 	otherwise:
 		say "autopilot turns off.";
 		now autopilot is switched off;
