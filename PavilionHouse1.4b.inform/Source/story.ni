@@ -1,6 +1,6 @@
 "Rogers Rd" by Dan Bowen
 
-The story headline is "Version 1.4.2 Beta decbeee". 
+The story headline is "Version 1.4.3 Beta". 
 The story genre is "Science Fiction". 
 The story description is "A nerdy adventurer in their rural home uses technology at hand to bring space is closer than they thought possible.".
 The story creation year is 2020.
@@ -197,8 +197,8 @@ The toilet is a supporter in the main bathroom.  The toilet is fixed in place.  
 
 The Foyer is east of the Mid Hallway.  "Lined with a linoleum floor." An Ironing Board is in the foyer. The ironing board is fixed in place.  A can of starch is on the ironing board.  The description of the starch is "The spray can, shiny green, coyly proclaims 'Niagara Starch:  Now your life has meaning!™'"
 
-The Living room is east of the foyer. A shelf is in the Living Room.  A brown book is on the shelf. The description of the book is "The book has the title 'Satellite Frequencies.'" After taking the book:
-	increase the score by 10.
+The Living room is east of the foyer. A shelf is in the Living Room.  A brown book is on the shelf. The description of the book is "The book has the title 'Satellite Frequencies.'" After taking the book for the first time:
+	increase the score by 5.
 	[the  when the book is not handled thing doesn't work to assign score for some reason!]
 
 
@@ -257,6 +257,7 @@ After switching on the audio equipment:
 
 After switching on the AM Transmitter:
 	Say "A glass vacuum tube begins to glow slightly.";
+	increase score by 5;
 	
  
  There is a 1.5 inch pipe in the radiostation.  The 1.5 inch pipe is fixed in place.  The description of the 1.5 inch pipe is "A 1.5 inch pipe is sticking out of the wall.  You notice that it ends in a Tee coupling.  One branch of the Tee is open and available to connect.  The other branch returns into the wall, with a tag stating, 'To Front Yard Hydrant ^ '";
@@ -563,6 +564,7 @@ Instead of ordering the noun when the player is carrying the magazine:
 		Now the player carries the generators order form;
 		Now the generators item is nowhere;		
 		now FillOutGo is true;
+		increase score by 5;
 	if the noun is hamsters and the hamsters form is in the magazine:
 		Now the player carries the hamsters order form;
 		Now the hamsters item is nowhere;		
@@ -683,7 +685,6 @@ After switching on the heavy UHF radio:
 	Say "The radio dial lights up. Static crackles.";	
 	if the player is carrying the brown book:
 		now TeletypeStatic is false;
-		increase score by 10;
 		say "You have the satellite frequency book, and you're bored, so you set the radio to the frequency of Radstar-1.  The radio warbles with tones of data.";
 		now the teletype runs HAL-Bootloader;
 	Otherwise:
@@ -1174,7 +1175,7 @@ At 10:35 PM:
 Chapter 2 - Fuelling Parts
 
 
-A liquid methane generator is in the large wooden box.   The methane generator is a device. The description of the liquid methane generator is "A metal frame containing a massive number of stainless steel tubes, valves, and electronic control systems. Printed on the side it says, 
+A liquid methane generator is in the large wooden box.   The methane generator is a device. The description of the liquid methane generator is "A metal frame containing a massive number of stainless steel tubes, valves, and electronic control systems. Printed on the side it says,
 
 'Your  GasCo CH4 Generator will take ambient humid air and convert it into liquid methane.  It has an output coupling that is 1.5 inches in diameter.
 * Features convenient Drop-to-Connect couplers.  Just drop the generator near your favorite pipe coupling. *'"
@@ -1201,6 +1202,7 @@ Every turn:
 	Otherwise:
 		Now the oxygen flow is 0;
 	if the methane flow is 1:
+		if the methane flow is 1 for the first time, increase score by 10;
 		if the player is in the radiostation:
 			Say "A whooshing gurgling sound of liquid methane rattles through the pipe in the wall.";
 		if the player is in the front yard:
@@ -1208,6 +1210,7 @@ Every turn:
 		if (the player is in the west side yard) and (the end of the yellow hose is not in the ch4 fill port):
 			say "** Clear cryogenic liquid methane roars out of the (now frosty) yellow hose into a gasous cloud.  OSHA would not be pleased.** ";
 	If the oxygen flow is 1:
+		if the oxygen flow is 1 for the first time, increase score by 10;
 		if the player is in the pump room:
 			Say "A whooshing gurgling sound of liquid oxygen rattles through the pipe in the wall.";
 		if the player is in the middle back yard:
@@ -1221,13 +1224,11 @@ Every turn:
 			end the story saying "The hyper flammable gas cloud ignites as you swish your nylon track pants.  You are dead and crispy. :-o"	;
 After dropping the methane generator in the radiostation:
 	say "The liquid methane generator settles to the floor.  Conveniently, its 1.5 inch output coupling lines up with the 1.5 inch pipe in the wall, and they snap together, sealed perfectly.";
-	increase score by 10;
 After dropping the methane generator in the pump room:
 	say "The liquid methane generator clunks to the floor.  It's output coupling doesn't fit with the 1.5 inch pipe in the wall."
 
 After dropping the oxygen generator in the pump room:
 	say "The liquid oxygen generator settles to the floor.  Conveniently, its 2 inch output coupling lines up with the 2 inch pipe in the wall, and they snap together, sealed perfectly.";
-	increase score by 10;
 After dropping the oxygen generator in the radiostation:
 	say "The liquid oxygen generator clunks to the floor.  It's output coupling doesn't fit with the 1.5 inch pipe in the wall."	
 	
@@ -1316,11 +1317,10 @@ A set of ports is part of the starship. The description of the set of ports is "
 The carrying capacity of the CH4 port is 1.
 The carrying capacity of the O2 port is 1.
 
-
 Instead of inserting an end of the green hose into a CH4 fill port:
-	say "The hose end doesn't fit in this port."
+	say "The green hose end doesn't fit in this port."
 Instead of inserting an end of the yellow hose into a O2 fill port:
-	say "The hose end doesn't fit in this port."
+	say "The yellow hose end doesn't fit in this port."
 
 The O2 tank level is initially 0.
 The CH4 tank level is initially 0. 
