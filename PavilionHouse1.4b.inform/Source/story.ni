@@ -666,6 +666,7 @@ Every turn when the number of things in the post office is greater than 0:
 	
 Book 3 - HAL-Starship
 
+StarshipHALDocked is initially true.
 
 Part 2 - Teletype Startup
 
@@ -845,14 +846,15 @@ This is the OS-remote-login-starship rule:
 	* SHIP-COMM v1.2 *[paragraph break]
 	QUERYING DOCKING PORT FOR CONNECTED SHIP...";
 	wait for any key;
-	say "[LINE BREAK] DOCKING PORT REPORTS SHIP IS PRESENT.[paragraph BREAK]
-	INITIALIZING INTERSHIP DATALINK:[LINE BREAK]
-	TRYING 45.45 BAUD...[variable letter spacing]";
-	wait for any key;
-	clear only the main screen;
-	Now the teletype is not running HAL-OS-REMOTE program;
-	Now halNotice is "";
-	Now the teletype is running STARSHIP-OS-REMOTE program;
+	say "[LINE BREAK] DOCKING PORT REPORTS SHIP IS [If StarshipHALDocked is false]NOT [end if]PRESENT.[paragraph BREAK]";
+	if StarshipHALDocked is true:
+		say "INITIALIZING INTERSHIP DATALINK:[LINE BREAK]
+		TRYING 45.45 BAUD...[variable letter spacing]";
+		wait for any key;
+		clear only the main screen;
+		Now the teletype is not running HAL-OS-REMOTE program;
+		Now halNotice is "";
+		Now the teletype is running STARSHIP-OS-REMOTE program;
 	try examining teletype;
 	
 This is the OS-remote-logout rule:
@@ -1118,6 +1120,7 @@ This is the starship-ap-mode-engage rule:
 		**** STARSHIP AUTO-UNDOCK IN PROGRESS ****[paragraph break]";
 		wait for any key;
 		say "[paragraph break]**** STARSHIP REMOTE LOGIN SESSION IS TERMINATED ****[paragraph break][variable letter spacing]";
+		Now StarshipHALDocked is false;
 		wait for any key;
 		now halnotice is "[halOSIntro]";	
 		Now the teletype is not running STARSHIP-AUTOPILOT-REMOTE program;
@@ -1312,7 +1315,9 @@ O2 Tank Level [O2 tank level]%[line break]
 CH4 tank level [CH4 tank level]%[line break]".
 
 
-A set of ports is part of the starship. The description of the set of ports is "there is an 02 fill port and a CH4 fill port."  A CH4 fill port is part of the set of ports. The CH4 fill port is a container.  A O2 fill port is part of the set of ports.  The O2 fill port is a container. 
+A set of ports is part of the starship. The description of the set of ports is "there is an O2 fill port and a CH4 fill port."  A CH4 fill port is part of the set of ports. The CH4 fill port is a container.  A O2 fill port is part of the set of ports.  The O2 fill port is a container. 
+
+Understand "02" as O2 fill port.
 
 The carrying capacity of the CH4 port is 1.
 The carrying capacity of the O2 port is 1.
