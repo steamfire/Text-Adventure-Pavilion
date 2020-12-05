@@ -1190,36 +1190,37 @@ A liquid oxygen generator is in the large wooden box. The liquid oxygen generato
 Chapter 3 - Rules to make things happen when solving
 
 Every turn:
-	if the methane generator is in the radiostation: 
-		if the methane generator is switched on:
-			if the player is in the radiostation:
-				Say "A whooshing gurgling sound of liquid methane rattles through the pipe in the wall.";
-			if the front yard hydrant is switched on:
-				now The methane flow is 1;
-				if the player is in the front yard:
-					say "A whooshing gurgling sound of liquid methane rattles through the yellow hydrant.";
-				if the player is in the west side yard:
-					say "** Clear cryogenic liquid methane roars out of the (now frosty) yellow hose into a gasous cloud.  OSHA would not be pleased.** ";
-	if the oxygen generator is in the pump room:
-		if the oxygen generator is switched on:
-			if the player is in the pump room:
-				Say "A whooshing gurgling sound of liquid oxygen rattles through the pipe in the wall.";
-			if the back yard hydrant is switched on:
-				Now The oxygen flow is 1;
-				if the player is in the middle back yard:
-					say "A whooshing gurgling sound of liquid oxygen rattles through the green hydrant.";
-				if the player is in the west side yard:
-					say "** Bluish cryogenic liquid oxygen rushes out of the (now frosty) green hose into a gasous cloud.  Safety minders, if there were any here, would not be pleased.**";		
 	if the oxygen generator is in the west side yard:
 		say "The oxygen generator's autocoupler emits a connector-mismatch beep.";
 	if the methane generator is in the west side yard:
 		say "the methane generator's autocoupler emits a connector-mismatch beep.";
-	if the player is in the west yard:
-		if ( oxygen flow is 1 ) and ( methane flow is 1 ): 
+	if (the methane generator is switched on) and (the front hydrant is switched on) and (the methane generator is in the radiostation):
+		Now the methane flow is 1;
+	Otherwise:
+		Now the methane flow is 0;
+	If (the oxygen generator is switched on) and (the back yard hydrant is switched on) and (the oxygen generator is in the pump room):
+		Now the oxygen flow is 1;
+	Otherwise:
+		Now the oxygen flow is 0;
+	if the methane flow is 1:
+		if the player is in the radiostation:
+			Say "A whooshing gurgling sound of liquid methane rattles through the pipe in the wall.";
+		if the player is in the front yard:
+		 	say "A whooshing gurgling sound of liquid methane rattles through the yellow hydrant.";
+		if (the player is in the west side yard) and (the end of the yellow hose is not in the ch4 fill port):
+			say "** Clear cryogenic liquid methane roars out of the (now frosty) yellow hose into a gasous cloud.  OSHA would not be pleased.** ";
+	If the oxygen flow is 1:
+		if the player is in the pump room:
+			Say "A whooshing gurgling sound of liquid oxygen rattles through the pipe in the wall.";
+		if the player is in the middle back yard:
+			say "A whooshing gurgling sound of liquid oxygen rattles through the green hydrant.";				
+		if the player is in the west side yard and (the end of the green hose is not in the O2 fill port):
+			say "** Bluish cryogenic liquid oxygen rushes out of the (now frosty) green hose into a gasous cloud.  Safety minders, if there were any here, would not be pleased.**";
+	if ( oxygen flow is 1 ) and ( methane flow is 1 ):
+		If (the player is in the west yard) and (the end of the yellow hose is not in the ch4 fill port) and (the end of the green hose is not in the O2 fill port):
 			say "
-			you've got rocket fuel!!! ";
-			end the story saying "The hyper flammable gas cloud ignites as you swish your nylon track pants.  You is ded.  But you won!  That's all Dan wrote so far :-)"	
-
+			You've made rocket fuel in the yard!!! ";
+			end the story saying "The hyper flammable gas cloud ignites as you swish your nylon track pants.  You are dead and crispy. :-o"	;
 After dropping the methane generator in the radiostation:
 	say "The liquid methane generator settles to the floor.  Conveniently, its 1.5 inch output coupling lines up with the 1.5 inch pipe in the wall, and they snap together, sealed perfectly.";
 	increase score by 10;
@@ -1335,16 +1336,16 @@ Every turn:
 			otherwise if the player is in the west side yard:
 				now oxygen flow is 0;
 				say "You hear a loud clunk back toward the house, and the green hose pops out of the port onto the ground, having shut off automatically.";
-				move green hose to west side yard;
+				move the end of the green hose to west side yard;]
 	if the end of the yellow hose is in the CH4 fill port:
 		if methane flow is 1:
 		 	if CH4 tank level is less than 100:
 				say "fuelling CH4[line break]";
 				increase CH4 tank level by 10;
-			otherwise if the player is in the west side yard:
+			[otherwise if the player is in the west side yard:
 				now methane flow is 0;
 				say "You hear a faint thunk from the back yard, and the yellow hose pops out of the port onto the ground, having shut off automatically.";
-				move the yellow hose to west side yard.
+				move the end of the yellow hose to west side yard.]
 
 Chapter 3 - Moving the ship
 
@@ -1418,7 +1419,7 @@ test station with "s / s / e / e / d / n / turn equipment on / s"
 
 test all with "test radiation / test gases "
 
-
+Test orderGen  with " s / s / get magazine / read magazine / read  16 / order generators / i / n / e / n / n / e / put form in mailbox "
 
 Book 7 - Misc General Helper functions
 
