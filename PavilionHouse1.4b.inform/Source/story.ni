@@ -44,9 +44,7 @@ When play begins:
 	Now the command prompt is "What is your name? > ";
 	if the screen width is less than 64:
 		say "[paragraph break]*** It would be good if you could widen your window, or shrink your font, so this line fits: ";
-		say "[line break][fixed letter spacing]----------------------------------------------------------------[line break][variable letter spacing]
-		Press any key to continue...";
-		wait for any key;
+		say "[line break][fixed letter spacing]----------------------------------------------------------------[line break][variable letter spacing]";
 
 The player is in Your Bedroom.
 
@@ -1129,7 +1127,7 @@ This is the starship-ap-mode-engage rule:
 		Now the starship is in the west side yard;
 		Now the Bottom of the Ladder is in the West side yard;	
 	Otherwise:
-		say "AUTOPILOT GUIDANCE ERROR.  PLEASE CHECK NAV AND AUTOPILOT SETUP.";
+		say "[fixed letter spacing]AUTOPILOT GUIDANCE ERROR.  PLEASE CHECK NAV AND AUTOPILOT SETUP.[variable letter spacing]";
 		now StarshipAutopilotEngaged is FALSE;
 
 This is the starship-ap-mode-disengage rule:
@@ -1333,19 +1331,11 @@ Every turn:
 		 	if O2 tank level is less than 100:
 				say "fuelling O2[line break]";
 				increase O2 tank level by 5;
-			otherwise if the player is in the west side yard:
-				now oxygen flow is 0;
-				say "You hear a loud clunk back toward the house, and the green hose pops out of the port onto the ground, having shut off automatically.";
-				move the end of the green hose to west side yard;]
 	if the end of the yellow hose is in the CH4 fill port:
 		if methane flow is 1:
 		 	if CH4 tank level is less than 100:
 				say "fuelling CH4[line break]";
 				increase CH4 tank level by 10;
-			[otherwise if the player is in the west side yard:
-				now methane flow is 0;
-				say "You hear a faint thunk from the back yard, and the yellow hose pops out of the port onto the ground, having shut off automatically.";
-				move the end of the yellow hose to west side yard.]
 
 Chapter 3 - Moving the ship
 
