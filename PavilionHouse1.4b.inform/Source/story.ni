@@ -1379,10 +1379,13 @@ After switching on the autopilot:
 	if the CH4 tank level is not 100:
 		say "Insufficient methane. ";
 	if (O2 tank level is 100) and (CH4 tank level is 100):
-		if (green hose is in O2 port) or (yellow hose is in ch4 port):
-			say "The engines roar, the rocket rises away from the ground.  A hose, still connected to a fill port, tears the fuel manifold out of the bottom of the ship.  A large explosion consumes the rocket instantly. ";
-			end the story saying "You have died.";
+		if (the end of the green hose is in O2 port) or (the end of the yellow hose is in CH4 port):
+			say "The engines roar and the rocket rises slowly up from the ground!";
+			pause the game;
 			decrease the score by 20;
+			say "A hose, still connected to a fill port, tears the fuel manifold out of the bottom of the ship.  A large explosion consumes the rocket instantly. [paragraph break] ";
+			say "[bracket]Not surprisingly, your score has just gone down by 20 points.[close bracket]";
+			end the story saying "You have died.";
 		otherwise:
 			say "[line break] Blastoff!  You have gone to space today, and you sense that your adventure is just beginning... [paragraph break] Buy [story title] Part II in fine microcomputer shops everywhere.";
 			end the story finally;
