@@ -1315,27 +1315,27 @@ O2 Tank Level [O2 tank level]%[line break]
 CH4 tank level [CH4 tank level]%[line break]".
 
 
-A set of ports is part of the starship. The description of the set of ports is "there is an O2 fill port and a CH4 fill port."  A CH4 fill port is part of the set of ports. The CH4 fill port is a container.  A O2 fill port is part of the set of ports.  The O2 fill port is a container. 
+A set of ports is part of the starship. The description of the set of ports is "there is an O2 fill port and a CH4 fill port."  A CH4 fill port and an O2 fill port are part of the set of ports. The CH4 fill port and the O2 fill port are transparent containers. 
 
 Understand "02" as O2 fill port.
 
 The carrying capacity of the CH4 port is 1.
 The carrying capacity of the O2 port is 1.
 
-Instead of inserting an end of the green hose into a CH4 fill port:
-	say "The green hose end doesn't fit in this port."
-Instead of inserting an end of the yellow hose into a O2 fill port:
-	say "The yellow hose end doesn't fit in this port."
+Instead of inserting something that is not the yellow hose end into the CH4 fill port:
+	say "That doesn't fit in the the CH4 port."
+Instead of inserting something that is not end of the green hose into the O2 fill port:
+	say "That doesn't fit in the the O2 port."
 
 The O2 tank level is initially 0.
 The CH4 tank level is initially 0.
 
 Every turn when the Starship is in the west side yard and starship is unfuelled:
 	if  (the end of the green hose is in the O2 fill port) and (oxygen flow is 1) and (the O2 tank level is less than 100):
-		say "-- you hear a a sloshing rumble in the distance --[line break]";
+		say "-- you hear a faint sloshing rumble --[line break]";
 		increase O2 tank level by 5;
 	if  (the end of the yellow hose is in the CH4 fill port) and (methane flow is 1) and (the CH4 tank level is less than 100):
-		say "-- a swishing grumble in the distance --[line break]";
+		say "-- there's a faint swishing grumble --[line break]";
 		increase CH4 tank level by 10;
 	if (O2 tank level is 100) and (CH4 tank level is 100):
 		Now starship is fuelled;
