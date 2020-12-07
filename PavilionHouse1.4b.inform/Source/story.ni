@@ -437,6 +437,7 @@ MAGIC TRICKS - Amaze—mystify-entertain!  500 TRICKS.  Contains[line break]
 latest, best magic for pocket, club, stage.  Only 10¢. DOUGLAS[line break]
 MAGICLAND, Dept. E, DALLAS TEXAS. Order magic tricks today![line break]".
 
+[
 rocketPower is initially "[bold type]Seeking Fuel for Space Rockets[roman type][paragraph break]
     Guarded by sandbags, a man sits before a panel on which[line break]
 are rows of gauges. as he turns valves, needles of the gauges[line break]
@@ -470,8 +471,29 @@ hour, would be necessary for a rocket to escape the earth's[line break]
 gravity.  With the hissing roar of the sandbagged motor,[line break]
 another significant step is taken in humankind's struggle to[line break]
 conquer space.[line break]"
+]
+
+[Trimmed for size]
+rocketPower is initially "[bold type]Seeking Fuel for Space Rockets[roman type][paragraph break]
+    The problems of a powerful enough fuel and a long-life[line break]
+combustion chamber are the stumbling blocks which are holding[line break]
+back rocket flights.  Certain experiments seem to favor the[line break]
+use of powder explosives, but in general, liquid fuels seem[line break]
+to offer the best prospects.  A combination of liquid oxygen[line break]
+and liquid methane has proved very efficient.  Combustion[line break]
+chambers of carbon, stainless steel alloys and copper alloys[line break]
+have shown modest success, but it is likely that the ideal[line break]
+metal may be an alloy yet to be discovered.[paragraph break]
+    Rocket scientists have calculated that a velocity of[line break]
+seven miles per second, or approximately 25,000 miles per[line break]
+hour, would be necessary for a rocket to escape the earth's[line break]
+gravity.  With the hissing roar of the sandbagged motor,[line break]
+another significant step is taken in humankind's struggle to[line break]
+conquer space.[line break]"
 
 
+
+[
 camping is initially "[bold type]Outdoor Gear of the Year[roman type][paragraph break]
   Outdoor activities far from power lines and modern[line break]
   conveniences have brought back many 'old-time' appliances for[line break]
@@ -500,6 +522,15 @@ camping is initially "[bold type]Outdoor Gear of the Year[roman type][paragraph 
   bird noises that comes with the Part Animal Sounds and[line break]
   Communication, published by the American Institute of[line break]
   Biological Sciences, 2000 P. St. N.W., Washington 6, D.C.[line break]".
+]
+
+[Trimmed for size]
+camping is initially "[bold type]Outdoor Gear of the Year[roman type][paragraph break]
+  Fishers and bird-watchers can learn to spot their quarry[line break]
+  by sound with a new 12-inch long-playing record of fish and[line break]
+  bird noises that comes with the Part Animal Sounds and[line break]
+  Communication, published by the American Institute of[line break]
+  Biological Sciences, 2000 P. St. N.W., Washington 6, D.C.[line break]".
 
 
 instead of examining the magazine:
@@ -512,6 +543,7 @@ instead of examining the magazine:
 	say "  \  | __|  __| |  |   \    \ |_ _|  __|  __|''''''''''''_''''''[line break]";
 	say " |\/ | _|  (    __ |  _ \  .  |  |  (   \__ \'''''''''''''''''''[line break]";
 	say "_|  _|___|\___|_| _|_/  _\_|\_|___|\___|____/'''''''''''''''''''[line break]";
+	[
 	say "_______________'':,''''''''''''''''''__'''''''''''''''''''''''''[line break]";
 	say "__,,,__________',}y)=_'''''''''''''_____'''''''''' ''''''''''''''[line break]";
 	say ",,,,___________'_Jy4aos>~'''''''____'_''''''''''''''''''''''''''[line break]";
@@ -543,6 +575,7 @@ instead of examining the magazine:
 	say "``.''''''__'_____,,,,::~~~!!++=^^rrr>><<<>>>>rrrr>><<<******<<>>[line break]";
 	say "..''''___,,,,:::::~~~~~~~!!!+=^^rr>>><<<<<<<<<<<<<<<<<<<<<<>r^!![line break]";
 	say "````.'_,,:::,,,::~~~!!!!!;+=^^rr>><<<<<<<<<<<>>>>rrrrrrrrr^^=+!~[line break]";
+	]
 	say variable letter spacing;
 
 
@@ -823,14 +856,16 @@ This is the OS-remote-status rule:
 	LOW GAIN ANTENNA                OK (SIGNAL LOCK)[line break]
 	HIGH GAIN ANTENNA               FAIL[line break]
 	DATA STORAGE                    OK (3.2TB FREE)[line break]
-	OPERATING SYSTEM                OK (HAL V9K)[line break]
+	OPERATING SYSTEM                OK (HAL V9K)[line break]";
+	[
 	SOFTWARE                        OK[line break]
 	RADAR IMAGER/SPECTROMETER       OK (OFF)[line break]
 	OPTICAL IMAGER/SPECTROMETER     OK (OFF)[line break]
 	LIFE SUPPORT                    OK[line break]
 	DOCKING PORT                    OK (OCCUPIED)[line break]
 	CABIN DATA CONSOLE              OK (FAST)[LINE BREAK]
-	[variable letter spacing]";
+	]
+	say variable letter spacing;
 	
 This is the OS-remote-scan rule:
 	say "[fixed letter spacing]PLANETARY SYSTEM MONITOR ONLINE.[PARAGRAPH BREAK]
@@ -884,6 +919,7 @@ The STARSHIP-OS-REMOTE program is an enumerated multiple-choice program. The opt
 Carry out examining the STARSHIP-OS-REMOTE program for the first time:
 	[https://en.rakko.tools/tools/68/]
 	say "[fixed letter spacing]   WELCOME TO[line break]";
+	[
 	say "                                   .:----:::...[line break]  ";
 	say "                           :-=**+=-.[line break]";
 	say "                       :=*#%*=:[line break]";
@@ -895,6 +931,7 @@ Carry out examining the STARSHIP-OS-REMOTE program for the first time:
 	say "     -#XXX%=-#X%=.    [line break]";
 	say "   -#XXX%=  :*XXXX+.   [line break]";
 	say " :#XXXX+.     :*XXXX*:     [paragraph break]";
+	]
 	say "	#####      [line break]";                                       
 	say "#     # #####   ##   #####   ####  #    # # ##### [line break]";
 	say "#         #    #  #  #    # #      #    # # #    #[line break]";
