@@ -1,8 +1,8 @@
 "Rogers Rd" by Dan Bowen
 
-The story headline is "Version 1.4.3 Beta". 
+The story headline is "Version 1.4.3 Beta 403dd23". 
 The story genre is "Science Fiction". 
-The story description is "A nerdy adventurer in their rural home uses technology at hand to bring space is closer than they thought possible.".
+The story description is "You are a nerdy science fan at home, and you must explore scientific and technological puzzles to progress through a casual adventure.".
 The story creation year is 2020.
 
 Include Exit Lister by Gavin Lambert.
@@ -132,7 +132,10 @@ The middle back yard is south of the back yard hill.   The back yard hydrant is 
 
 
 The west side yard is west of the front yard and northwest of the back yard hill. "A long flat lawn down the road from the house."
+
 The end of the green hose is in the west side yard.  The description of the end of the green hose is "This is the end of the green hose.  It snakes off toward the back yard. The hose is apparently a genuine vacuum jacketed garden hose. " 
+
+The end of the yellow hose is in the west side yard. The description of the end of the yellow hose is "This is the end of the yellow hose.  It snakes off toward the front yard. The hose is apparently a genuine vacuum jacketed garden hose. "
 
 Instead of going from the west yard when the player carries the end of the green hose: 
 	say "You can't walk around with the end of hoses. "
@@ -140,7 +143,7 @@ Instead of going from the west yard when the player carries the end of the green
 Instead of going from the west yard when the player carries the end of the yellow hose:
 	say "You can't walk around with the end of hoses. "
 	
-The end of the yellow hose is in the west side yard. The description of the end of the yellow hose is "This is the end of the yellow hose.  It snakes off toward the front yard. The hose is apparently a genuine vacuum jacketed garden hose. "
+Understand "connect [other things] to [something]" as inserting it into;
 
 The front door is north of the foyer and south of the Front porch. The front door is a door.
 
@@ -262,7 +265,7 @@ After switching on the AM Transmitter:
  
  There is a 1.5 inch pipe in the radiostation.  The 1.5 inch pipe is fixed in place.  The description of the 1.5 inch pipe is "A 1.5 inch pipe is sticking out of the wall.  You notice that it ends in a Tee coupling.  One branch of the Tee is open and available to connect.  The other branch returns into the wall, with a tag stating, 'To Front Yard Hydrant ^ '";
 
-[Understand "tee", "coupler" and "coupling" as pipe.]
+Understand "tee", "coupler" and "coupling" as pipe.
 
 The Furnace room is west of the cellar. 
 
