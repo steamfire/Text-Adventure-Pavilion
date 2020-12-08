@@ -17,6 +17,11 @@ Use memory economy.
 Use scoring and the serial comma. 
 The maximum score is 200.
 
+After reading a command (this is the ignore beta-comments rule): 
+	if the player's command matches the regular expression "^\p": 
+		say "(Noted.)"; 
+		reject the player's command.
+
 Part 1 - Variables, Scenes, Times
 
 [Fix the halNotice when UHF/teletype go off/on]
