@@ -1470,17 +1470,19 @@ Book 7 - Misc General Helper functions
 
 Section 1 - Hinting setup
 
-
+Spoiler is initially false;
 
 [Overall setup for hinting]
-Hinting is an action out of world applying to nothing. Understand "hint" and "hints" as hinting.
+Hinting is an action out of world applying to nothing. Understand "hint", "hints" and "hint2" as hinting.
 
 A room has a text called localhint. The localhint of a room is usually "There are no hints specifically for this location.  Use HELP for general advice.";
 
 Report hinting:
-	say "[localhint of the location]".
+	if the player's command matches "hint2", now Spoiler is true;		
+	say "[localhint of the location]";
+	now Spoiler is false;
 
-The localhint of Ham Shack is "A. There's a book that lists interesting frequencies, that would be helpful to have.[Line Break]B. TYPE is a useful command here.[line break]C. You can put things into the paper tape reader.";
+The localhint of Ham Shack is "A. There's a book that lists interesting frequencies, that would be helpful to have.[Line Break]B. TYPE is a useful command here.[line break]C. You can put things into the paper tape reader.[line break]D. Your friend called earlier about something important.[if spoiler is true][line break]E. Try putting the paper tape into the reader and then uploading the system software.[line break]F. Set the nav beacon frequency to the AM transmitter frequency.[line break]G. Listen to the AM broadcast on the bathroom radio to find the frequency after you turn the transmitter on.";
 
 Section 2 - Navigation Assistance
 
