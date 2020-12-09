@@ -1470,12 +1470,54 @@ Book 7 - Misc General Helper functions
 
 Section 1 - Hinting setup
 
-[Overall setup for hinting]
-Hinting is an action out of world applying to nothing. Understand "hint" and "help" as hinting.
 
-A room has a text called localhint. The localhint of a room is usually "There are no hints available in this location."
+
+[Overall setup for hinting]
+Hinting is an action out of world applying to nothing. Understand "hint" and "hints" as hinting.
+
+A room has a text called localhint. The localhint of a room is usually "There are no hints specifically for this location.  Use HELP for general advice.";
 
 Report hinting:
-say "[localhint of the location]".
+	say "[localhint of the location]".
+
+The localhint of Ham Shack is "A. There's a book that lists interesting frequencies, that would be helpful to have.[Line Break]B. TYPE is a useful command here.[line break]C. You can put things into the paper tape reader.";
+
+Section 2 - Navigation Assistance
+
+[Tell the player the ways out if they go the wrong way]
+Definition: a direction (called thataway) is viable if the room thataway from the location is a room.
 
 
+Instead of going nowhere: 
+	let count of exits be the number of viable directions; 
+	if the count of exits is 0, say "You appear to be trapped in here." instead; 
+	if the count of exits is 1, say "From here, the only way out is [list of viable directions]."; 
+	otherwise say "From here, the viable exits are [list of viable directions]."
+
+
+Section 3 - General Help
+
+Understand "help" or "instructions" or "info" or "about" as asking for help. Asking for help is an action out of world. 
+
+Carry out asking for help:
+	say "Commonly used commands (there are other less common commands to be discovered):";
+	say "[fixed letter spacing][line break]
+	   NORTH     SOUTH     EAST      WEST      UP      DOWN[LINE BREAK]
+	   ENTER     LOOK      EXAMINE   SEARCH    EAT     TYPE[LINE BREAK]
+	   OPEN      CLOSE     WAIT      MOVE      INVENTORY[LINE BREAK]
+	   GET       DROP      TELL      TURN	     JUMP   [VARIABLE LETTER SPACING][PARAGRAPH BREAK]";
+	say "   The most common commands can usually be shortened to single letters, for example N, S, E, W for directional commands, I for Inventory, X for Examine etc.  Wait is abbreviated as Z.[paragraph break]"; 
+	say "Out of game commands:[line break]";
+	say "[fixed letter spacing]
+	      SAVE      RESTORE    RESTART   UNDO    TRANSCRIPT[LINE BREAK]
+		BRIEF     VERBOSE    QUIT[variable letter spacing][paragraph break]";
+	say "Some locations have hints available, type HINT if you get stuck, and HINT2 if you still need help.  HINT2 may contain spoilers though.";
+	
+
+
+Section 4 - Amusing
+
+Rule for amusing a victorious player:
+	say "Did you try... [paragraph break]  Examining the air filter after taking it? [line break]  Taking the answering machine? [line break]  Eating a few things? [line break]  Getting into the waterbed? [line break]  Getting the starship? [line break]  Listening to the panasonic radio multiple times? [paragraph break] ";
+	say "Mail order[line break]  Ordering things from Popular Mechanics besides the generators? [line break]  Putting other items into the mailbox with the order forms? [line break]  Letting the hamster out of the cage? [line break]  Following the hamster? Going inside the UPS truck? [line break]  Staying in the UPS truck when it drives away? [line break]  Engaging the starship abort system? [line break]  Going south through the the sliding glass door? [line break]  Jumping out the sliding glass door? [line break  ]  Going to the west yard when the cryogenic liquids are running but not connected to Starship?  [paragraph break] ";
+	Say "Can of Starch[line break]  Spraying different kinds of floors?[line break]  going somewhere after spraying the hard floor?[line break]  Spraying the dog?[line break]  Spraying the dog multiple times?[line break]  Spraying yourself?[line break]  Spraying?[line break]  Spraying the starch with the starch?[line break]  Opening your eyes?[line break]";
