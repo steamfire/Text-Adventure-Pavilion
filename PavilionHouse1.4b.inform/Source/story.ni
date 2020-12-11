@@ -686,7 +686,9 @@ A large wooden box, a small box, a medium box, and a flat box are closed openabl
 
 The description of the large wooden box is "The box is about 4ft x 4ft x 6ft in size. It has the words 'GasCo Industries Model 7 Generator Pack' stencilled on the side.  It is addressed to you."
 
-A hamster cage is in the small box. An accordion is in the medium box.  A set of magic tricks is in the flat box.  They are closed openable containers.
+A cage is in the small box.  A cage is an openable container.  The cage is transparent and closed. 
+ An accordion is in the medium box. 
+ A set of magic tricks is in the flat box.
 
 Every turn when the number of things in the post office is greater than 0:
 	If the generators form is in the post office:
