@@ -333,6 +333,7 @@ Instead of reading the magazine for the first time:
 		wait for any key;
 		try reading magazine;
 
+[
 Named page is a kind of value. The named pages are first page, last page, next page, previous page.
 
 To decide what number is the effective value of (L - last page):
@@ -350,12 +351,13 @@ To decide what number is the effective value of (P - previous page):
 	decide on X.
 
 Understand "read [named page] in/from/of [something]" or "read the [named page] in/from/of [something]" as reading it relatively in. Reading it relatively in is an action applying to one named page and one thing, requiring light.
+]
 
 Does the player mean reading something in the Popular Mechanics Magazine: it is very likely.
 
 This is the magazine requirement rule:
 	if the player is not carrying the Popular Mechanics Magazine, say "You strain your eyes, but alas, it's too far away to read the print." instead.
-
+[
 Check reading it relatively in:
 	if the second noun is not the Popular Mechanics Magazine, say "There are no pages in [the second noun]." instead;
 	abide by the magazine requirement rule.
@@ -364,7 +366,7 @@ Carry out reading it relatively in:
 	let N be the effective value of the named page understood;
 	now the number understood is N;
 	try reading N in the magazine.
-
+]
 Check reading it in:
 	if the second noun is not the Popular Mechanics Magazine, say "There are no pages in [the second noun]." instead;
 	abide by the magazine requirement rule.
