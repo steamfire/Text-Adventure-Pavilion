@@ -705,8 +705,35 @@ Every turn when the number of things in the post office is greater than 0:
 		[say "accordions on order!";]
 		Now the accordions form is nowhere;
 		Now the medium box is in the UPS truck;
-	
-	
+
+Part 5 - Hamsters
+
+Understand "cage door" as the cage.
+A hamster is an animal inside the cage. 
+
+
+The can take hamsters rule is listed instead of the can't take other people rule in the check taking rules.
+Check an actor taking a hamster (this is the can take hamsters rule):
+	if the noun is a person and the noun is not a hamster:
+		say "I don't suppose [noun] would care for that.";
+		stop the action;
+	If the noun is a hamster:
+		The hamster squirms from your hands in five turns from now;
+		
+At the time when Hamster squirms from your hands:
+	if the hamster is carried by the player:
+		say "The hamster squirms out of your hands!";
+		Move the hamster to the location of the player;
+
+Every turn when (the turn count is even):
+	if (the hamster is in the cage) and (the cage is open):
+		say "The hamster scampers out of the cage, and cavorts about your feet[one of].  A new friend![or].[stopping]";
+		move the hamster to the location of the player;
+	If (the player is NOT holding the hamster) and (the hamster is NOT in the cage) and (the location of the hamster is not the location of the player):
+		let the way be the best route from the location of the hamster to the location of the player, using doors;
+		try hamster going the way;
+
+			
 Book 3 - HAL-Starship
 
 StarshipHALDocked is initially true.
